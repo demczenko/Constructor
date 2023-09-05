@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+/* HEADER START */
+
+#newsletter .title-advantages {
+  text-align: center;
+  font-size: 11px;
+  color: #8c8278;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+#newsletter .title-advantages-item {
+  margin-left: 4px;
+}
+
+#newsletter .newsletterCounter {
+  padding-left: 140px!important;
+  padding-right: 140px!important;
+}
+
+#newsletter .newsletterRecommendationHeader {
+  text-align: center;
+  font-size: 11px;
+  color: #8c8278;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* HEADER END */
+
+#newsletter .newsletterIntroSection {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+}
+
+#newsletter .newsletterIntroSectionItem {
+  padding-bottom: 35px !important;
+}
+
+#newsletter .newsletterCategories {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+}
+
+#newsletter .newsletterCategoryContainer {
+  padding-bottom: 5px;
+}
+
+#newsletter .newsletterCategory {
+  border: 2px solid #ff6f4d;
+  padding: 6px 0px !important;
+  text-align: center;
+  font-size: 22px;
+}
+
+#newsletter .newsletterLine {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+#newsletter .newsletterCategoryColumnLeft {
+  padding-right: 5px !important;
+  width: 50% !important;
+}
+
+#newsletter .newsletterCategoryColumnRight {
+  padding-left: 5px !important;
+  width: 50% !important;
+}
+
+#newsletter .newsletterGif {
+  background-color: #ff6f4d;
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+  padding-top: 35px !important;
+}
+
+#newsletter .newsletterFooter {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+#newsletter .newsletterConditions {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+
+#newsletter .newsletterFooterCompanyDetails {
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif !important;
+  color: #000000;
+  background: #ececec;
+  width: 100%;
+}
+
+#newsletter .newsletterFooterTitle {
+  text-align: left;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+#newsletter .newsletterFooterCategories {
+  padding-bottom: 35px;
+}
+
+#newsletter .newsletterFooterBanner {
+  padding-bottom: 20px !important;
+}
+
+#newsletter .newsletterFooterCategoryLEFT {
+  padding-bottom: 20px !important;
+  padding-right: 10px !important;
+}
+
+#newsletter .newsletterFooterCategoryRIGHT {
+  padding-bottom: 20px !important;
+  padding-left: 10px !important;
+}
+
+#newsletter .newsletterFooterCategoryLEFTBottom {
+  padding-right: 10px !important;
+}
+
+#newsletter .newsletterFooterCategoryRIGHTBottom {
+  padding-left: 10px !important;
+}
+
+#newsletter .newsletterSocialIcon {
+  padding-left: 25px !important;
+}
+
+#newsletter .newsletterTopBottomContainer {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+
+#newsletter .newsletterKlarnaBannerContainer {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+}
+
+#newsletter .footer {
+  width: 50% !important;
+}
+
+/* FOOTER END */
+
+/* NEWSLETTER LINE START */
+
+#newsletter .newsletterLineTop60 {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* NEWSLETTER LINE END */
+
+/* SOONENDING START */
+
+#newsletter .newsletterSoonEndingTitle {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+#newsletter .newsletterSoonEndingBanner {
+  padding-bottom: 20px;
+}
+
+#newsletter .newsletterSoonEndingContainer {
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+#newsletter .newsletterSoonEndingTitleContainer {
+  padding-bottom: 35px !important;
+}
+
+/* SOONENDING END */
+
+/* CONTAINERS START */
+
+#newsletter .newsletterProductContainer {
+  padding-top: 20px !important;
+  padding-left: 20px !important;
+  padding-right: 15px !important;
+}
+
+#newsletter .newsletterContainer {
+  padding-top: 35px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+#newsletter .newsletterBottom35px {
+  padding-bottom: 35px !important;
+}
+
+#newsletter .newsletterBottom80px {
+  padding-bottom: 80px !important;
+}
+
+#newsletter .newsletterTitleContainer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#newsletter .newsletterCtaContainer {
+  padding-bottom: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#newsletter .newsletterInterestYouContainer {
+  padding-bottom: 80px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+/* CONTAINERS END */
+
+/* PRODUCT START */
+
+#newsletter .newsletterProductTitle {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #000000;
+}
+
+#newsletter .newsletterProductTitleContainer {
+  padding-top: 20px;
+}
+
+#newsletter .newsletterProductLowPrice {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #000000;
+  font-weight: 600;
+}
+
+#newsletter .newsletterProductHightPrice {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #000000;
+  text-decoration: line-through;
+  padding-left: 5px;
+}
+
+#newsletter .newsletterProductContainerLEFT {
+  width: 50% !important;
+  vertical-align: top;
+  padding-right: 10px !important;
+  padding-bottom: 35px !important;
+}
+
+#newsletter .newsletterProductContainerRIGHT {
+  width: 50% !important;
+  vertical-align: top;
+  padding-left: 10px !important;
+  padding-bottom: 35px !important;
+}
+
+/* PRODUCT END */
+
+#newsletter .newsletterParagraph {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #000000;
+}
+
+#newsletter .newsletterInfluencersChoiceText {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #000000;
+}
+
+#newsletter .newsletterSummerSale {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+#newsletter .newsletterTitle {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #000000;
+}
+
+#newsletter .newsletterCta {
+  font-size: 20px;
+  line-height: 1.25;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: underline!important;
+}
+
+#newsletter .newsletterInterestYouCta {
+  font-size: 25px;
+  line-height: 1.25;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: underline;
+}
+
+#newsletter .newsletterFreeProduct {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#newsletter .newsletterFreebies {
+  padding-top: 35px !important;
+  padding-bottom: 40px !important;
+  padding-left: 80px !important;
+  padding-right: 80px !important;
+}
+
+#newsletter .newsletterFreebieTopLeft {
+  padding-right: 40px !important;
+}
+
+#newsletter .newsletterFreebieTopRight {
+  padding-left: 40px !important;
+}
+
+#newsletter .newsletterIFrame {
+  margin-bottom: 35px !important;
+}
+
+#newsletter .newsletterFreebieBottomLeft {
+  padding-right: 40px !important;
+}
+
+#newsletter .newsletterBottomFreebieMiddle {
+  padding-right: 50px !important;
+  padding-left: 50px !important;
+}
+
+#newsletter .newsletterFreebieBottomRight {
+  padding-left: 40px !important;
+}
+
+
+
+@media only screen and (max-width: 680px) {
+  #newsletter .newsletterCategoryColumnLeft,
+  #newsletter .newsletterCategoryColumnRight {
+    display: block;
+    padding: 0 !important;
+    width: 100% !important;
+    margin-bottom: 5px !important;
+  }
+
+  #newsletter .newsletterCounter {
+    padding-left: 35px!important;
+    padding-right: 35px!important;
+  }
+
+  #newsletter .newsletterInfluencersChoice {
+    width: 100%!important;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  /* HEADER START */
+
+  /* .title-advantages-item {
+        display: block;
+    } */
+
+  /* HEADER END */
+
+  #newsletter .newsletterSummerSale {
+    font-size: 25px!important;
+  }
+
+  #newsletter .newsletterInterestYouContainer {
+    vertical-align: top;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #newsletter .newsletterInterestYouCta {
+    font-size: 20px;
+    line-height: 1.25;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: underline;
+  }
+
+  #newsletter .newsletterIFrame {
+    margin-bottom: 20px !important;
+  }
+
+  #newsletter .newsletterFreebieTopLeft {
+    padding-right: 10px !important;
+  }
+
+  #newsletter .newsletterFreebieTopRight {
+    padding-left: 10px !important;
+  }
+
+  #newsletter .newsletterBottomFreebieMiddle {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+
+  #newsletter .newsletterFreebieBottomLeft {
+    padding-right: 10px !important;
+  }
+
+  #newsletter .newsletterFreebieBottomRight {
+    padding-left: 10px !important;
+  }
+
+  /* FOOTER START */
+  #newsletter .newsletterSocialIcon {
+    padding-left: 13px !important;
+  }
+
+  #newsletter .newsletterFooterCategoryLEFT {
+    padding-bottom: 10px !important;
+    padding-right: 5px !important;
+  }
+
+  #newsletter .newsletterFooterCategoryRIGHT {
+    padding-bottom: 10px !important;
+    padding-left: 5px !important;
+  }
+
+  #newsletter .newsletterFooterCategoryLEFTBottom {
+    padding-right: 5px !important;
+  }
+
+  #newsletter .newsletterFooterCategoryRIGHTBottom {
+    padding-left: 5px !important;
+  }
+
+  #newsletter .newsletterFooter {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  #newsletter .newsletterFooterCategories {
+    padding-bottom: 20px !important;
+  }
+
+  #newsletter .newsletterFooterBanner {
+    padding-bottom: 10px !important;
+  }
+
+  #newsletter .newsletterFooterTitle {
+    font-size: 18px !important;
+  }
+
+  #newsletter .newsletterTopBottomContainer {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  #newsletter .footer {
+    width: 50% !important;
+  }
+
+  #newsletter .newsletterKlarnaBannerContainer {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  /* FOOTER END */
+
+  /* NEWSLETTER-LINE START */
+  #newsletter .newsletterLine {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  #newsletter .newsletterLineTop60 {
+    padding-top: 30px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* NEWSLETTER-LINE END */
+
+  /* SOONENDING START */
+  #newsletter .newsletterSoonEndingContainer {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  #newsletter .newsletterSoonEndingTitleContainer {
+    padding-bottom: 20px !important;
+  }
+
+  #newsletter .newsletterSoonEndingBanner {
+    padding-bottom: 20px !important;
+  }
+
+  #newsletter .newsletterSoonEndingTitle {
+    font-size: 18px !important;
+  }
+
+  /* SOONENDING END */
+
+  /* CONTAINERS START */
+
+  #newsletter .newsletterContainer {
+    padding-top: 20px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  #newsletter .newsletterProductContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px !important;
+    padding-right: 15px !important;
+  }
+
+  #newsletter .newsletterTitleContainer {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+  }
+
+  #newsletter .newsletterCtaContainer {
+    padding-bottom: 40px !important;
+  }
+
+  /* CONTAINERS END */
+
+  /* PRODUCT START */
+
+  #newsletter .newsletterProductTitleContainer {
+    padding-top: 10px !important;
+  }
+
+  #newsletter .newsletterProductContainerRIGHT {
+    padding-bottom: 20px !important;
+  }
+
+  #newsletter .newsletterProductContainerLEFT {
+    padding-bottom: 20px !important;
+  }
+
+  /* PRODUCT END */
+
+  #newsletter .newsletterBottom35px {
+    padding-bottom: 20px !important;
+  }
+
+  #newsletter .newsletterBottom80px {
+    padding-bottom: 35px !important;
+  }
+
+  #newsletter .newsletterFreebies {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  #newsletter .newsletterFreebieInsidePaddings {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  #newsletter .newsletterProductHightPrice {
+    display: block;
+    padding-left: 0px !important;
+  }
+
+  #newsletter .newsletterProductTitle {
+    font-size: 16px !important;
+  }
+
+  #newsletter .newsletterProductLowPrice {
+    font-size: 14px !important;
+  }
+
+  #newsletter .newsletterIntroSection {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  #newsletter .newsletterIntroSectionItem {
+    padding-bottom: 20px !important;
+  }
+
+  #newsletter .newsletterCategories {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  #newsletter .newsletterCategory {
+    font-size: 22px !important;
+  }
+
+  #newsletter .newsletterParagraph {
+    font-size: 16px !important;
+  }
+
+  #newsletter .newsletterTitle {
+    font-size: 25px !important;
+  }
+
+  #newsletter .newsletterGif {
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  #newsletter .newsletterInfluencersChoiceTextContainer {
+    padding-left: 3px!important;
+    padding-top: 3px!important;
+    padding-bottom: 3px!important;
+    padding-right: 3px!important;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  #newsletter .newsletterInfluencersChoiceText {
+    font-size: 10px!important;
+  }
+  
+  #newsletter .newsletterProductContainer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px !important;
+    padding-right: 10px !important;
+  }
+
+  #newsletter .newsletterCategories {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  #newsletter .newsletterIntroSection {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  #newsletter .newsletterCategory {
+    font-size: 20px !important;
+  }
+
+  #newsletter .newsletterInterestYouCta {
+    font-size: 18px;
+    line-height: 1.25;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: underline;
+  }
+}
