@@ -175,8 +175,8 @@ const filters = {
   },
   retro: {
     UK: "Retro",
-    FR: "Rétro",
-    CHFR: "Rétro",
+    FR: "Retro",
+    CHFR: "Retro",
     IT: "Retrò",
     CHDE: "Retro",
     DE: "Retro",
