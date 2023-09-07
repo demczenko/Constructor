@@ -158,7 +158,7 @@ export function newsletter({
                   products: [
                     products[4],
                     products[5],
-                    priceFrom(products[6]),
+                    products[6],
                     products[7],
                   ],
                   cta: shopNow,
@@ -234,7 +234,7 @@ export function newsletter({
                   },
                   products: [
                     products[12],
-                    priceFrom(products[13]),
+                    products[13],
                     products[14],
                     products[15],
                   ],
@@ -253,7 +253,7 @@ export function newsletter({
                   },
                   products: [
                     products[16],
-                    priceFrom(products[17]),
+                    products[17],
                     products[18],
                     products[19],
                   ],

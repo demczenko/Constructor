@@ -1,29 +1,29 @@
-export function addParams(arr, id, country) {
+export function addParams(template, arr, id, country) {
   return arr.map((link) => {
     if (!link.includes("https://beliani.info/newsletter/2022/")) {
       if (!link.includes("https://upload.pictureserver.net/static/")) {
-        return getQueryLink({ href: link }, id, country);
+        return getQueryLink(template, { href: link }, id, country);
       }
     }
     return link;
   });
 }
 
-export function addParamsProduct(arr, id, country) {
+export function addParamsProduct(template,arr, id, country) {
   return arr.map((product) => ({
     ...product,
-    href: getQueryLink(product, id, country),
+    href: getQueryLink(template, product, id, country),
   }));
 }
 
-export function addParamsCategory(arr, id, country) {
+export function addParamsCategory(template, arr, id, country) {
   return arr.map((category) => ({
     ...category,
-    href: getQueryLink(category, id, country),
+    href: getQueryLink(template, category, id, country),
   }));
 }
 
-function getQueryLink(item, id, country) {
+function getQueryLink(template, item, id, country) {
 
   if(item.href === undefined) return undefined
 
@@ -42,9 +42,11 @@ function getQueryLink(item, id, country) {
       }
   }
 
-  queryLink.searchParams.set("utm_source", "newsletter");
-  queryLink.searchParams.set("utm_medium", "email");
-  queryLink.searchParams.set("utm_campaign", id);
+  if (template === "newsletter") {
+    queryLink.searchParams.set("utm_source", "newsletter");
+    queryLink.searchParams.set("utm_medium", "email");
+    queryLink.searchParams.set("utm_campaign", id);
+  }
 
   return queryLink.href;
 }

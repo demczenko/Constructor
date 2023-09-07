@@ -2,7 +2,7 @@ import { fetchToken } from "./api/fetchToken.js";
 import { initApp } from "./main/initApp.js";
 
 const token = await fetchToken(
-  "1//04sWfF8Rjrp0sCgYIARAAGAQSNwF-L9IrW89ut870o5P0RpcNfZvWapkUhQvNVLpuF644Qi4fAVJtmUXiaqyiwJS5lRBU5o3t9tM"
+  "1//04dlfbzdZhLERCgYIARAAGAQSNwF-L9Ir_XXzbF7sssMD_UoFW4SjaAx14ckoVoysBiRKMBHHzAVJZPTxe2mbnoIhXKYQGVaSOlI"
 );
 if (token.Response["Status-Code"] === 200) {
   initApp({
