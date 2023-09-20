@@ -26,6 +26,7 @@ export function addParamsCategory(template, arr, id, country) {
 function getQueryLink(template, item, id, country) {
 
   if(item.href === undefined) return undefined
+  if(item.href === null) return undefined
 
   const queryLink = new URL(item.href);
 
@@ -34,10 +35,12 @@ function getQueryLink(template, item, id, country) {
       for (const [key, value] of link.searchParams.entries()) {
           if (key.toLowerCase() in filterNames) {
               const newKey = filterNames[key.toLocaleLowerCase()][country];
-              const newValue = filters[value.toLocaleLowerCase()][country];
-
+              const allFilters = link.searchParams.get(key).split(',')
               queryLink.searchParams.delete(key, value);
-              queryLink.searchParams.set(newKey, newValue);
+              allFilters.forEach(item => {
+                const newValue = filters[item.toLocaleLowerCase()][country];
+                queryLink.searchParams.append(newKey, newValue);
+              })
           }
       }
   }
@@ -50,7 +53,6 @@ function getQueryLink(template, item, id, country) {
 
   return queryLink.href;
 }
-
 const filterNames = {
   style: {
     SE: "Stil",
@@ -92,6 +94,46 @@ const filterNames = {
     PL: "sort",
     SK: "sort",
   },
+  material: {
+    SE: "Material",
+    UK: "Material",
+    FR: "Matiere",
+    IT: "Materiale",
+    CHDE: "Matiere",
+    CHFR: "Material",
+    DE: "Material",
+    AT: "Material",
+    HU: "Anyag_tipusa",
+    PT: "Material",
+    FI: "Materiaali",
+    ES: "Material",
+    CZ: "Material",
+    NO: "Materiale",
+    NL: "Materiaal",
+    DK: "Materiale",
+    PL: "Material",
+    SK: "Material",
+  },
+  features: {
+    SE: "Egenskaper",
+    UK: "Features",
+    FR: "Caracteristiques",
+    IT: "Caratteristiche",
+    CHDE: "Merkmale",
+    CHFR: "Caracteristiques",
+    DE: "Merkmale",
+    AT: "Merkmale",
+    HU: "Fobb_jellemzok",
+    PT: "Caracteristicas",
+    FI: "Ominaisuudet",
+    ES: "Caracteristicas",
+    CZ: "Vlastnosti",
+    NO: "Egenskaper",
+    NL: "Eigenschappen",
+    DK: "Funktioner",
+    PL: "Cechy",
+    SK: "Vlastnosti",
+  }
 };
 
 const filters = {
@@ -354,4 +396,144 @@ const filters = {
     FR: "default",
     CHFR: "default",
   },
+  fabric: {
+    IT: "Tessuto",
+    CHDE: "Stoff",
+    DE: "Stoff",
+    AT: "Stoff",
+    NO: "Stoff",
+    HU: "Anyag",
+    PL: "Tkanina",
+    FI: "kangas",
+    PT: "Tecido",
+    ES: "Tejido",
+    CZ: "Tkanina",
+    SK: "Textil",
+    UK: "Fabric",
+    SE: "Tyg",
+    NL: "Stof",
+    DK: "Stof",
+    FR: "Tissu",
+    CHFR: "Tissu",
+  },
+  metal: {
+    IT: "Metallo",
+    CHDE: "Metall",
+    DE: "Metall",
+    AT: "Metall",
+    NO: "Metal",
+    HU: "Fem",
+    PL: "Metal",
+    FI: "metalli",
+    PT: "Metal",
+    ES: "Metal",
+    CZ: "Kov",
+    SK: "Kov",
+    UK: "Metal",
+    SE: "Metall",
+    NL: "Metaal",
+    DK: "Metal",
+    FR: "Metal",
+    CHFR: "Metal",
+  },
+  rattan: {
+    IT: "Rattan_sintetico",
+    CHDE: "Rattan",
+    DE: "Rattan",
+    AT: "Rattan",
+    NO: "Rotting",
+    HU: "Rattan",
+    PL: "Rattan",
+    FI: "rottinki",
+    PT: "Rattan",
+    ES: "Mimbre_sintetico",
+    CZ: "Ratan",
+    SK: "Ratan",
+    UK: "Rattan",
+    SE: "Rotting",
+    NL: "Rotan",
+    DK: "Rattan",
+    FR: "Rotin",
+    CHFR: "Rotin",
+  },
+  pe_rattan: {
+    IT: "Rattan_sintetico",
+    CHDE: "PE_Rattan",
+    DE: "PE_Rattan",
+    AT: "PE_Rattan",
+    NO: "Kunstrotting",
+    HU: "Szintetikus_rattan",
+    PL: "Technorattan",
+    FI: "polyrottinki",
+    PT: "Ratan_sintetico",
+    ES: "Ratan_sintetico",
+    CZ: "Umely_ratan",
+    SK: "Umely_ratan",
+    UK: "PE_Rattan",
+    SE: "Konstrotting",
+    NL: "PE_rotan",
+    DK: "PE_Rattan",
+    FR: "Polyrotin",
+    CHFR: "Polyrotin",
+  },
+  synthetic_material: {
+    IT: "",
+    CHDE: "",
+    DE: "",
+    AT: "",
+    NO: "",
+    HU: "",
+    PL: "",
+    FI: "",
+    PT: "",
+    ES: "",
+    CZ: "",
+    SK: "",
+    UK: "Synthetic_Material",
+    SE: "",
+    NL: "",
+    DK: "",
+    FR: "",
+    CHFR: "",
+  },
+  wood: {
+    IT: "",
+    CHDE: "",
+    DE: "",
+    AT: "",
+    NO: "",
+    HU: "",
+    PL: "",
+    FI: "",
+    PT: "",
+    ES: "",
+    CZ: "",
+    SK: "",
+    UK: "Wood",
+    SE: "",
+    NL: "",
+    DK: "",
+    FR: "",
+    CHFR: "",
+  },
+  "marble_effect_finish": {
+    IT: "Finitura_effetto_marmo",
+    CHDE: "Marmor_Optik",
+    DE: "Marmor_Optik",
+    AT: "Marmor_Optik",
+    NO: "Marmoreffekt",
+    HU: "Marvanyhatasu_felulet",
+    PL: "Z_efektem_marmuru",
+    FI: "marmorimainen_viimeistely",
+    PT: "Acabamento_com_efeito_de_marmore",
+    ES: "Acabado_efecto_marmol",
+    CZ: "Povrch_s_mramorovym_efektem",
+    SK: "Povrch_s_mramorovym_efektom",
+    UK: "Marble_Effect_Finish",
+    SE: "Marmoreffekt",
+    NL: "Gemarmerde_afwerking",
+    DK: "Marmor_effekt_finish",
+    FR: "Finition_effet_marbre",
+    CHFR: "Finition_effet_marbre",
+  }
 };

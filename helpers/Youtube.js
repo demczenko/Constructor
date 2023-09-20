@@ -5,29 +5,42 @@
 </tr>
 
 <tr>
-<td align="center" style="background-color: #f2e6e6;" class="newsletterContainer">
-    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-        <tr>
-          <td align="center" class="newsletterBottom35px" >
-            <a href="https://www.youtube.com/watch?v=n9qWMPFJP_I">
-              <img width="100%" src="https://beliani.info/newsletter/2022/230828YouTubeImage.jpg" style="display: block;">
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td align="center" >
-              <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                  <tr>
-                      <td align="center" class="newsletterCtaContainer" style="text-align: center;">
-                          <a href="https://www.youtube.com/watch?v=n9qWMPFJP_I" style="color: #000000; text-decoration: underline;" class="newsletterCta">${watchNow}</a>
-                      </td>
-                  </tr>
-              </table>
-          </td>
-        </tr>
-    </table>
-</td>
-</tr>
+                  <td align="center" class="newsletterContainer" style="background-color: #ffe8de;">
+                      <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                          <tr>
+                              <td align="left" class="newsletterBottom35px" >
+                                  <span class="newsletterTitle">
+                                      ${translations[9]}
+                                  </span>
+                              </td>
+                          </tr>
+                      </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="background-color: #ffe8de;">
+                      <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                          <tr>
+                            <td align="center" class="newsletterBottom35px" >
+                              <a href="https://www.youtube.com/watch?v=KsQWHKvjH-4">
+                                <img width="100%" src="https://beliani.info/newsletter/2022/230911YouTubeImage.jpg" style="display: block;">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" >
+                                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                                    <tr>
+                                        <td align="center" class="newsletterCtaContainer" style="text-align: center;">
+                                            <a href="https://www.youtube.com/watch?v=KsQWHKvjH-4" style="color: #000000; text-decoration: underline;" class="newsletterCta">${watchNow}</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                          </tr>
+                      </table>
+                  </td>
+                </tr>
 
 // Id of iframe in selectors
 const selectorss = ["newsletterIFrame"]

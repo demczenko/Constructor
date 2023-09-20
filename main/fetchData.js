@@ -17,6 +17,7 @@ import {
 } from "../data/index.js";
 import { productsXLS } from "../helpers/productsXLS.js";
 import { sort } from "../helpers/sort.js";
+import { fetchToken } from "../api/fetchToken.js";
 
 export async function fetchData({
     countriesColumns,
@@ -38,6 +39,19 @@ export async function fetchData({
         let productsXls = await productsXLS()
         productsXls = sort(productsXls, productsOrder)
         setState("productsToParse", JSON.stringify(productsXls))
+    }
+
+    if (token) {
+        const tokenResponse = await fetchToken(token);
+        if (tokenResponse.Response["Status-Code"] === 200) {
+            setState("token", tokenResponse.access_token)
+        } else {
+            Toastify({
+              text: "Please refresh token. " + tokenResponse.error,
+              escapeMarkup: false,
+              duration: 3000,
+            }).showToast();
+          }
     }
 
     const translationsPromise = new Promise((resolve, reject) => {
@@ -64,7 +78,7 @@ export async function fetchData({
             const conditionsCell = countriesColumns[state.country] + conditionsRow
             const codeCell = countriesColumns[state.country] + codesRow
             
-            getTranslationRange(translationsTableName, range, token)
+            getTranslationRange(translationsTableName, range, state.token)
                 .then((translations) => {
                     if (translations.error) {
                         throw new Error("Error while fetching translations. <br />" + translations.error.message)
@@ -81,7 +95,7 @@ export async function fetchData({
                 })
                 .then(async () =>{
                     if (conditionsRow) {
-                        await getTranslationCell(translationsTableName, conditionsCell, token).then((conditionsData) => {
+                        await getTranslationCell(translationsTableName, conditionsCell, state.token).then((conditionsData) => {
                             if (conditionsData.error) {
                                 throw new Error(conditionsData.error.message)
                             } else {
@@ -99,7 +113,7 @@ export async function fetchData({
                     }
 
                     if (codesRow) {
-                        await getTranslationCell(translationsTableName, codeCell, token).then((codeData) => codeData).then(codes => {
+                        await getTranslationCell(translationsTableName, codeCell, state.token).then((codeData) => codeData).then(codes => {
                             if (codes.error) {
                                 throw new Error(codes.error.message)
                             } else {
@@ -122,7 +136,7 @@ export async function fetchData({
                     }
         
                     if (additionalTranslations) {
-                        return await getTranslationRange(translationsTableName, range, token).then(additionalData => {
+                        return await getTranslationRange(translationsTableName, range, state.token).then(additionalData => {
                             if (additionalData.error) {
                                 throw new Error(additionalData.error.message)
                             } else {

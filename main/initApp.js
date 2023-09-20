@@ -97,7 +97,6 @@ export function initApp({
     }).showToast();
   }
 
-
   window.location.hash = "country=DE&template=newsletter";
   attachCss(state);
   setEvents();
@@ -119,6 +118,7 @@ export function initApp({
       productsOrder,
     })
       .then((data) => {
+        console.log(data);
         return getTemplate({
           ...data,
           products: productsOrder && sort(data.products, productsOrder),

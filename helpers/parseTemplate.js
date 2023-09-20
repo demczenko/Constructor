@@ -6,14 +6,14 @@ let links = []
 export function parseTemplate(template, country) {
 
   const functions = {
-    addOrigin: (data) => {
-      return origins[country] + data;
+    addOrigin: ({value}) => {
+      return origins[country] + value;
     },
-    addContentOrigin: (data) => {
-      return origins[country] + "content/" + data;
+    addContentOrigin: ({value}) => {
+      return origins[country] + "content/" + value;
     },
-    addServer: (data) => {
-      return "https://beliani.info/newsletter/2022/" + countries[country] + data
+    addServer: ({value, server = "https://beliani.info/newsletter/2022/"}) => {
+      return server + countries[country] + value
     },
   };
 
@@ -22,7 +22,7 @@ export function parseTemplate(template, country) {
 
     for (const j in partOfTemplate) {
       if (j in functions && partOfTemplate[j] === true) {
-        links[key] = functions[j](partOfTemplate.value);
+        links[key] = functions[j](partOfTemplate);
       } else {
         links[key] = partOfTemplate.value;
       }

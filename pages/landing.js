@@ -3,7 +3,7 @@ import { Category } from "../components/category.js";
 import { ThisMayInterestYou } from "../components/interest_you.js";
 import { Freebies } from "../components/freebies.js";
 import { Intro } from "../components/intro.js";
-import { IntoText } from "../components/introtext.js";
+import { IntroText } from "../components/introtext.js";
 import { Matrix } from "../components/matrix.js";
 import { Product } from "../components/product.js";
 import { priceFrom } from "../helpers/from.js";
@@ -67,8 +67,8 @@ export function landing({
   // console.log(links);
 
   return `
-    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; background-color: #ffffff;" id="newsletter" >
-      <tbody>
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; background-color: #ffffff;" id="newsletter">
+    <tbody>
         <tr>
             <td align="center">
                 <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
@@ -109,7 +109,7 @@ export function landing({
           offerValid: translations[2],
           chooseFrom: chooseFrom,
           style: {
-            bgColor: "#fed399",
+            bgColor: "#ffd8a6",
           },
           type,
         })}
@@ -119,36 +119,32 @@ export function landing({
               ...products[0],
               align: "center",
               style: {
-                bgColor: "#fff4e6",
-                paddingRight: "5px",
-                paddingBottom: "10px",
+                bgColor: "#ffd8a6",
+                paddingRight: "10px"
               },
             }),
             priceFree({
               ...products[1],
               align: "center",
               style: {
-                bgColor: "#fff4e6",
-                paddingLeft: "5px",
-                paddingBottom: "10px",
+                bgColor: "#ffd8a6",
+                paddingLeft: "10px"
               },
             }),
             priceFree({
               ...products[2],
               align: "center",
               style: {
-                bgColor: "#fff4e6",
-                paddingRight: "5px",
-                paddingBottom: "10px",
+                bgColor: "#ffd8a6",
+                paddingRight: "10px"
               },
             }),
             priceFree({
               ...products[3],
               align: "center",
               style: {
-                bgColor: "#fff4e6",
-                paddingLeft: "5px",
-                paddingBottom: "10px",
+                bgColor: "#ffd8a6",
+                paddingLeft: "10px"
               },
             }),
           ],
@@ -157,16 +153,15 @@ export function landing({
             row: 2,
           },
           style: {
-            bgColor: '#fed399'
+            bgColor: '#ffd8a6'
           },
           className: "newsletterFreebies",
         })}
-        ${Line("https://beliani.info/newsletter/2022/230911freebieline.jpg")}
         ${Intro({
           title: translations[3],
           paragraph: translations[4],
           style: {
-            bgColor: "#ffe8de",
+            bgColor: "#ffefd9",
           },
         })}
         ${Category({
@@ -185,10 +180,9 @@ export function landing({
           type: "monday",
           country,
           style: {
-            bgColor: "#ffe8de",
+            bgColor: "#ffefd9",
           },
         })}
-      ${Line("https://beliani.info/newsletter/2022/230911line.jpg")}
         ${Category({
           category: {
             ...categories[1],
@@ -202,50 +196,12 @@ export function landing({
           ],
           cta: shopNow,
           style: {
-            bgColor: "#ffe8de;",
+            bgColor: "#ffffff;",
           },
           type: "monday",
           country,
         })}
-        ${Line("https://beliani.info/newsletter/2022/230911line.jpg")}
-        <tr>
-          <td align="center" class="newsletterContainer" style="background-color: #ffe8de;">
-              <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                  <tr>
-                      <td align="left" class="newsletterBottom35px" >
-                          <span class="newsletterTitle">
-                              ${translations[9]}
-                          </span>
-                      </td>
-                  </tr>
-              </table>
-          </td>
-        </tr>
-        <tr>
-          <td align="center" style="background-color: #ffe8de;">
-              <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                  <tr>
-                    <td align="center" class="newsletterBottom35px" >
-                      <a href="https://www.youtube.com/watch?v=KsQWHKvjH-4">
-                        <img width="100%" src="https://beliani.info/newsletter/2022/230911YouTubeImage.jpg" style="display: block;">
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" >
-                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                            <tr>
-                                <td align="center" class="newsletterCtaContainer" style="text-align: center;">
-                                    <a href="https://www.youtube.com/watch?v=KsQWHKvjH-4" style="color: #000000; text-decoration: underline;" class="newsletterCta">${watchNow}</a>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                  </tr>
-              </table>
-          </td>
-        </tr>
-      ${Line("https://beliani.info/newsletter/2022/230911line.jpg")}
+      
         ${Category({
           category: {
             ...categories[2],
@@ -260,11 +216,10 @@ export function landing({
           cta: shopNow,
           type: "monday",
           style: {
-            bgColor: "#ffe8de;",
+            bgColor: "#ffefd9;",
           },
           country,
         })}
-      ${Line("https://beliani.info/newsletter/2022/230911line.jpg")}
         ${Category({
           category: {
             ...categories[3],
@@ -278,16 +233,16 @@ export function landing({
           ],
           cta: shopNow,
           style: {
-            bgColor: "#ffe8de;",
+            bgColor: "#ffffff;",
           },
           type: "monday",
           country,
         })}
         ${Line(undefined, true)}
     <tbody>
-    </table>
+  </table>
 
-    <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterSoonEndingTable" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterSoonEndingTable" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
     <tbody>
         <tr>
             <td align="left" class="newsletterSoonEndingContainer">

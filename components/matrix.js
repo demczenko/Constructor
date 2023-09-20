@@ -3,7 +3,7 @@ function rowFn(item) {
 }
 
 function colFn(item) {
-  return `<td style="width: 50%">${item}</td>`;
+  return `<td style="width: 50%; vertical-align: top;">${item}</td>`;
 }
 
 export function Matrix({ row, col, html }) {
