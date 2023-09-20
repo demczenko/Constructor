@@ -58,10 +58,10 @@ export function Product({ product }) {
               : ""
             }
           </td>
-          <td align="left" style="width: 60px; padding-left: 5px; background-color: ${product.style.bgColor };">
-            ${
-              product.type === "priceRight" ?
+          ${
+            product.type === "priceRight" ?
               `
+              <td align="left" style="width: 60px; padding-left: 5px; background-color: ${product.style.bgColor };">
                 <table cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: ${product.style.bgColor};">
                   <tbody>
                     <tr>
@@ -89,10 +89,10 @@ export function Product({ product }) {
                     </tr>
                   </tbody>
                 </table>
+              </td>
             `
             : ""
             }
-          </td>
         </tr>
       </table>
     `;
