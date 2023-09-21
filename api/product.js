@@ -8,9 +8,9 @@ const TABLE_ID = "1Ei4LYnceelUYgtaPrfvXRgiBzioRLXQvX4h71aZcBE8"
 
 export async function getIds(products) {
 
-    return Promise.all(products.map(product => fetch(`http://${endpoint}:7777/product-sa/${product.main_id}`)))
-        .then(r => Promise.all(r.map(item => item.json())))
-        .then(r => Promise.all(r.map(item => item.slaves)))
+    return Promise.all(products.map(product => fetch(`http://${endpoint}:7777/product-ids/${product.main_id}`)))
+        .then(r => Promise.all(r.map(ids => ids.json())))
+        .then(r => Promise.all(r.map(ids => ids)))
         .catch(err => {
             throw new Error(err)
         })
@@ -19,9 +19,9 @@ export async function getIds(products) {
 
 export async function getLink(ids, country) {
 
-    return Promise.all(ids.map(id => fetch(`http://${endpoint}:7777/product-sa/${id}`)))
+    return Promise.all(ids.map(id => fetch(`http://${endpoint}:7777/product-links/${id}`)))
         .then(r => Promise.all(r.map(item => item.json())))
-        .then(r => Promise.all(r.map(item => parseLinkToCountry(Object.values(item.templates[0].preview))[country])))
+        .then(r => Promise.all(r.map(item => parseLinkToCountry(item)[country])))
 }
 
 

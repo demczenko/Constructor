@@ -3,9 +3,10 @@ import { initApp } from "./main/initApp.js";
 initApp({
   startId: "18445",
   token:
-    "1//04XqvKDSZw2ofCgYIARAAGAQSNwF-L9IrS__EBMPh4ETZtUF0Mk9kCTwriHJuNkmucqN9SE1j3CvGBog0r6jCbaI0STQLAMhYVdo",
-  translationsTableName: "Voucher 25.09.23 - Surprise freebies",
+    "1//048POD3aUuodFCgYIARAAGAQSNwF-L9Ir9DkYMYrJw-WHFYQLFQ8FzbUUB02dCU5cV9HLvRSkTiVcGyZ0BibG_E7j8CRDvF62GEg",
+  translationsTableName: "Voucher - 25.09.23 - Surprise freebies",
   translationsRange: "17:25",
+  conditionsRow: "35",
   countriesColumns: {
     UK: "F",
     PL: "H",

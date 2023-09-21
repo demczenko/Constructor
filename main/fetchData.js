@@ -38,7 +38,7 @@ export async function fetchData({
     if (productsOrder) {
         let productsXls = await productsXLS()
         productsXls = sort(productsXls, productsOrder)
-        setState("productsToParse", JSON.stringify(productsXls))
+        setState("productsToParse", productsXls)
     }
 
     if (token) {
@@ -178,8 +178,8 @@ export async function fetchData({
     const productsPromise = new Promise((resolve, reject) => {
         if (apiCall) {
             //1. Получаю айдишники на продукты которые были поставлены для парсинга
-            getIds(productsXls)
-                .then((shopsIDs) => parseShopId(productsXls, shopsIDs))
+            getIds(state.productsToParse)
+                .then((shopsIDs) => parseShopId(state.productsToParse, shopsIDs))
                 .then(data => {
                     setState("productsIds", data)
                     resolve()
@@ -200,8 +200,6 @@ export async function fetchData({
     return Promise.allSettled([translationsPromise, categoriesPromise, productsPromise]).then(results => {
         const links = state.template === 'newsletter' ? newsletterLinks : landingLinks
 
-        console.log(results);
-
         for (const key of results) {
             if (key.status === "rejected") {
                 return Toastify({
@@ -212,9 +210,9 @@ export async function fetchData({
             }
         }
 
-        setState("products", results[2].value)
-        setState("categories", results[1].value)
         setState("translations", results[0].value)
+        setState("categories", results[1].value)
+        setState("products", results[2].value)
 
         setState("links", parseTemplate([...links], state.country))
         
@@ -222,25 +220,24 @@ export async function fetchData({
             // Products from the API
             // Translations from the google spreadsheet
             //2. Получаю айдишники на которые мне нужны цены и ссылки
-            const requestIds = productsXls.map(item => state.productsIds[item.main_id][state.country])
-            let finalProducts = productsXls.map(item => ({...item, id: state.productsIds[item.main_id][state.country]}))
+            const requestIds = state.productsToParse.map(item => state.productsIds[item.main_id][state.country])
+            let finalProducts = state.productsToParse.map(item => ({...item, id: state.productsIds[item.main_id][state.country]}))
             
             // 3. Делаю запрос на сервер для получения данных 1 раз для всех айдишников.
             return getProductsPrice(requestIds)
                 .then(data => {
-                    const jsonData = JSON.parse(data.res)
                     return finalProducts.map(item => {
                         return {
                             ...item,
-                            lowPrice: jsonData[item.id].ShopPrice,
-                            highPrice: jsonData[item.id].ShopHPrice,
+                            lowPrice: data[item.id].ShopPrice,
+                            highPrice: data[item.id].ShopHPrice,
                             country: state.country
                         }
                     })
                 })
                 .then((finalProducts) => {
                     // 4.Делаю запрос на сервер для получения ссылок
-                    return getLink(productsXls.map(item => item.main_id), state.country)
+                    return getLink(state.productsToParse.map(item => item.main_id), state.country)
                         .then(data => {
                             setState("products", finalProducts.map((item, i) => {
                                 return {
@@ -261,8 +258,8 @@ export async function fetchData({
         } else if (xlsPath && translationsTableName) {
             // Products from the data/xls/
             // Translations from the google spreadsheet
-            if (productsXls.length > 0) {
-                return getProductsFromXLS(state.country, productsXls, xlsPath)
+            if (state.productsToParse.length > 0) {
+                return getProductsFromXLS(state.country, state.productsToParse, xlsPath)
                     .then(products => {
                         if (products) {
                             return {
@@ -285,23 +282,22 @@ export async function fetchData({
             // Products from the API 
             // Translations from the data/text.js
             //2. Получаю айдишники на которые мне нужны цены и ссылки
-            const requestIds = productsXls.map(item => state.productsIds[item.main_id][state.country])
-            let finalProducts = productsXls.map(item => ({...item,id: state.productsIds[item.main_id][state.country]}))
+            const requestIds = state.productsToParse.map(item => state.productsIds[item.main_id][state.country])
+            let finalProducts = state.productsToParse.map(item => ({...item,id: state.productsIds[item.main_id][state.country]}))
             return getProductsPrice(requestIds)
                 .then(data => {
-                    const jsonData = JSON.parse(data.res)
                     return finalProducts.map(item => {
                         return {
                             ...item,
-                            lowPrice: jsonData[item.id].ShopPrice,
-                            highPrice: jsonData[item.id].ShopHPrice,
+                            lowPrice: data[item.id].ShopPrice,
+                            highPrice: data[item.id].ShopHPrice,
                             country: state.country
                         }
                     })
                 })
                 .then((finalProducts) => {
                     // 4.Делаю запрос на сервер для получения ссылок
-                    return getLink(productsXls.map(item => item.main_id), state.country)
+                    return getLink(state.productsToParse.map(item => item.main_id), state.country)
                         .then(data => {
                             setState("products", finalProducts.map((item, i) => {
                                 return {
@@ -321,8 +317,8 @@ export async function fetchData({
         } else if (xlsPath) {
             // Products from the data/xls/
             // Translations from the data/text.js
-            if (productsXls.length > 0) {
-                return getProductsFromXLS(state.country, productsXls, xlsPath)
+            if (state.productsToParse.length > 0) {
+                return getProductsFromXLS(state.country, state.productsToParse, xlsPath)
                     .then(products => {
                         if (products) {
                             return {
