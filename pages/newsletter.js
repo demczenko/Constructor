@@ -50,7 +50,7 @@ export function newsletter({
 
   return `
     ${header[country]("newsletter", id)}
-        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #ffffff;" >
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #fff0d1;" >
             <tbody>
                 <tr>
                     <td align="center">
@@ -91,8 +91,7 @@ export function newsletter({
                     text: getCode,
                   },
                   style: {
-                    bgColor: "#ff6e4d",
-                    textColor: "#ffffff",
+                    bgColor: "#fff0d1",
                   },
                   type,
                 })}
@@ -115,7 +114,7 @@ export function newsletter({
                   cta: shopNow,
                   type: "monday",
                   style: {
-                    bgColor: "#ffffff",
+                    bgColor: "#fff0d1",
                   },
                 })}
                 ${Line(undefined, true)}
@@ -133,7 +132,7 @@ export function newsletter({
                   cta: shopNow,
                   type: "monday",
                   style: {
-                    bgColor: "#ffffff",
+                    bgColor: "#fff0d1",
                   },
                 })}
                 ${Line(undefined, true)}
@@ -151,7 +150,7 @@ export function newsletter({
                   cta: shopNow,
                   type: "monday",
                   style: {
-                    bgColor: "#ffffff",
+                    bgColor: "#fff0d1",
                   },
                 })}
                 ${Line(undefined, true)}
@@ -169,14 +168,14 @@ export function newsletter({
                   cta: shopNow,
                   type: "monday",
                   style: {
-                    bgColor: "#ffffff",
+                    bgColor: "#fff0d1",
                   },
                 })}
                 ${Line(undefined, true)}
             <tbody>
         </table>
 
-        <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterSoonEndingTable" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterSoonEndingTable" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#fff0d1;">
             <tbody>
                 <tr>
                     <td align="left" class="newsletterSoonEndingContainer">

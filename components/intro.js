@@ -6,9 +6,12 @@
 
 
 
-export function Intro({ title = "Your text", paragraph = "Your text", style = {bgColor: "#ffffff"} }) {
+export function Intro({ title = "Your text", paragraph = "Your text", style = {bgColor: ""} }) {
 
-
+    style = {
+        bgColor: "#ffffff",
+        ...style
+    }
 
     return `
     <tr>

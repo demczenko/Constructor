@@ -9,8 +9,14 @@ export function IntroText({
   offerValid,
   chooseFrom,
   type,
-  style = { bgColor: "#ffffff", textColor: "#000000" },
+  style = { bgColor: "", textColor: "" },
 }) {
+
+    style = {
+        bgColor: "#ffffff",
+        textColor: "#000000",
+        ...style
+    }
     
   return `
     <tr>

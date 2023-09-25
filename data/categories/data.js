@@ -1,18 +1,18 @@
 export default [
     {
-        src: "https://beliani.info/newsletter/2022/230925Category1.png",
-        category: "/beds/wooden-beds/",
+        src: "https://beliani.info/newsletter/2022/231002Category1.png",
+        category: "/sofas/",
     },
     {
-        src: "https://beliani.info/newsletter/2022/230925Category2.png",
-        category: "/beds/divan-beds/",
+        src: "https://beliani.info/newsletter/2022/231002Category2.png",
+        category: "/armchairs/",
     },
     {
-        src: "https://beliani.info/newsletter/2022/230925Category3.png", 
-        category: "/beds/fabric-beds/",
+        src: "https://beliani.info/newsletter/2022/231002Category3.png", 
+        category: "/chairs/",
     },
     {
-        src: "https://beliani.info/newsletter/2022/230925Category4.png",
-        category: "/beds/metal-beds/",
+        src: "https://beliani.info/newsletter/2022/231002Category4.png",
+        category: "/home-accessories/stools/pouffes/",
     },
 ];

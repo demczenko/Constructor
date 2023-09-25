@@ -101,6 +101,7 @@ export function initApp({
   attachCss(state);
   setEvents();
   function render() {
+    setState("loading", true)
     // const header = fetchHeader({ type: state.template, country: state.country, id: state.ids[state.country] })
     fetchData({
       countriesColumns,
@@ -118,7 +119,6 @@ export function initApp({
       productsOrder,
     })
       .then((data) => {
-        console.log(data);
         return getTemplate({
           ...data,
           products: productsOrder && sort(data.products, productsOrder),
