@@ -3,7 +3,7 @@ import { Product } from "./product.js";
 
 
 
-export function Category({ category, products, cta, style = { bgColor: "#ffffff" }, type, country, revert = false }) {
+export function Category({ category, products, align = "left", cta, style = { bgColor: "#ffffff" }, type, country, revert = false }) {
 
     style = {
         bgColor: "#ffffff",
@@ -17,13 +17,13 @@ export function Category({ category, products, cta, style = { bgColor: "#ffffff"
     if (type === "monday") {
         return `
         <tr>
-            <td align="center" style="background-color: ${style.bgColor}">
-                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+            <td align="${align}" style="background-color: ${style.bgColor}">
+                <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
                     <tr>
-                        <td align="center" class="newsletterContainer" style="background-color: ${style.bgColor}">
-                            <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                        <td align="${align}" class="newsletterContainer" style="background-color: ${style.bgColor}">
+                            <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
                                 <tr>
-                                    <td align="left" class="newsletterBottom35px" >
+                                    <td align="${align}" class="newsletterBottom35px" >
                                         <span class="newsletterTitle">
                                             ${category.name}
                                         </span>
@@ -33,10 +33,10 @@ export function Category({ category, products, cta, style = { bgColor: "#ffffff"
                         </td>
                     </tr>
                     <tr>
-                        <td align="center">
-                            <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                        <td align="${align}">
+                            <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
                                 <tr>
-                                    <td align="center">
+                                    <td align="${align}">
                                         <a href=${category.href}>
                                             <img width="100%" src=${category.src} style="display: block;">
                                         </a>
