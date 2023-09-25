@@ -86,6 +86,7 @@ export function newsletter({
                   offerPart1: translations[0],
                   offerPart2: translations[1],
                   offerValid: translations[2],
+                  chooseFrom: chooseFrom,
                   getCode: {
                     link: links[0],
                     text: getCode,
@@ -95,10 +96,28 @@ export function newsletter({
                   },
                   type,
                 })}
+                ${Freebies({
+                  products: [
+                    {...products[0], align: 'center'},
+                    {...products[1], align: 'center'},
+                    {...products[2], align: 'center'},
+                    {...products[3], align: 'center'},
+                    {...products[4], align: 'center'},
+                    {...products[5], align: 'center'},
+                  ],
+                  style: { bgColor: "#fff0d1" },
+                  size: {
+                    row: 2,
+                    col: 3,
+                  },
+                })}
                 ${Line(undefined, true)}
                 ${Intro({
                   title: translations[3],
                   paragraph: translations[4],
+                  style: {
+                    bgColor: "#fff0d1",
+                  },
                 })}
                 ${Category({
                   category: {
@@ -106,10 +125,10 @@ export function newsletter({
                     name: translations[5],
                   },
                   products: [
-                    products[0],
-                    products[1],
-                    products[2],
-                    products[3],
+                    products[6],
+                    products[7],
+                    products[8],
+                    products[9],
                   ],
                   cta: shopNow,
                   type: "monday",
@@ -124,10 +143,10 @@ export function newsletter({
                     name: translations[6],
                   },
                   products: [
-                    products[4],
-                    products[5],
-                    products[6],
-                    products[7],
+                    products[10],
+                    products[11],
+                    products[12],
+                    products[13],
                   ],
                   cta: shopNow,
                   type: "monday",
@@ -142,10 +161,10 @@ export function newsletter({
                     name: translations[7],
                   },
                   products: [
-                    products[8],
-                    products[9],
-                    products[10],
-                    products[11],
+                    products[14],
+                    products[15],
+                    products[16],
+                    products[17],
                   ],
                   cta: shopNow,
                   type: "monday",
@@ -160,10 +179,10 @@ export function newsletter({
                     name: translations[8],
                   },
                   products: [
-                    products[12],
-                    products[13],
-                    products[14],
-                    products[15],
+                    products[18],
+                    products[19],
+                    products[20],
+                    products[21],
                   ],
                   cta: shopNow,
                   type: "monday",

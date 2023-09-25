@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 /* HEADER START */
 
+table {
+  table-layout: fixed;
+}
+
 .title-advantages {
   text-align: center;
   font-size: 11px;

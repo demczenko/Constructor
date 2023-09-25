@@ -3,7 +3,7 @@ import { initApp } from "./main/initApp.js";
 initApp({
   startId: "18541",
   token:
-    "1//04ljJIH79Drr_CgYIARAAGAQSNwF-L9IrMITeE5b0fRM4uMHybcpwv8tNsy2JzsEKl4AxOp4VWq6qfs_2mTVOhpff57BtE5KS1GI",
+    "1//048YIDdaiLkmMCgYIARAAGAQSNwF-L9IrNuVwThJObuugWx1OSMchvwfFDwXkkd8VOr6RHRljEXGMrmydVUUR6gaJLbbj4UMbueU",
   translationsTableName: "Voucher - 02.10.23- Free bean bag cover",
   translationsRange: "17:25",
   conditionsRow: "35",
@@ -66,7 +66,7 @@ initApp({
       addContentOrigin: true,
     },
     {
-      value: "230925_03.jpg",
+      value: "230925_03.png",
       addServer: true,
     },
     {

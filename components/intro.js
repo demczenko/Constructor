@@ -6,7 +6,7 @@
 
 
 
-export function Intro({ title = "Your text", paragraph = "Your text", style = {bgColor: ""} }) {
+export function Intro({ title = "Your text", paragraph = "Your text", style = {bgColor: "#ffffff"} }) {
 
     style = {
         bgColor: "#ffffff",

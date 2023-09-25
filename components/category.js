@@ -3,7 +3,7 @@ import { Product } from "./product.js";
 
 
 
-export function Category({ category, products, cta, style, type, country, revert = false }) {
+export function Category({ category, products, cta, style = { bgColor: "#ffffff" }, type, country, revert = false }) {
 
     style = {
         bgColor: "#ffffff",
@@ -50,7 +50,7 @@ export function Category({ category, products, cta, style, type, country, revert
                             <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%">
                                 <tr>
                                     <td align="center" class="newsletterProductContainer" >
-                                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                                        <table cellspacing="0" cellpadding="0" border="0" align="center" height="100%" width="100%">
                                             <tr>
                                                 <td align="center" class="newsletterProductContainerLEFT" width="50%">
                                                     ${Product({
