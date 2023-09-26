@@ -558,9 +558,8 @@ table {
   }
 
   .newsletterProductContainer {
-    padding-top: 20px!important;
-    padding-bottom: 20px!important;
-    padding-left: 20px !important;
+    padding-top: 15px!important;
+    padding-left: 15px !important;
     padding-right: 15px !important;
   }
 
@@ -678,13 +677,6 @@ table {
     font-size: 10px!important;
   }
   
-  .newsletterProductContainer {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px !important;
-    padding-right: 10px !important;
-  }
-
   .newsletterCategories {
     padding-left: 15px !important;
     padding-right: 15px !important;

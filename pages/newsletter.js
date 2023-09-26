@@ -98,12 +98,12 @@ export function newsletter({
                 })}
                 ${Freebies({
                   products: [
-                    {...products[0], align: 'center'},
-                    {...products[1], align: 'center'},
-                    {...products[2], align: 'center'},
-                    {...products[3], align: 'center'},
-                    {...products[4], align: 'center'},
-                    {...products[5], align: 'center'},
+                    priceFree({...products[0], align: 'center'}),
+                    priceFree({...products[1], align: 'center'}),
+                    priceFree({...products[2], align: 'center'}),
+                    priceFree({...products[3], align: 'center'}),
+                    priceFree({...products[4], align: 'center'}),
+                    priceFree({...products[5], align: 'center'}),
                   ],
                   style: { bgColor: "#fff0d1" },
                   size: {

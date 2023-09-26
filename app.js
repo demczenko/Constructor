@@ -3,7 +3,7 @@ import { initApp } from "./main/initApp.js";
 initApp({
   startId: "18541",
   token:
-    "1//048YIDdaiLkmMCgYIARAAGAQSNwF-L9IrNuVwThJObuugWx1OSMchvwfFDwXkkd8VOr6RHRljEXGMrmydVUUR6gaJLbbj4UMbueU",
+    "1//04rL3auusI7ZdCgYIARAAGAQSNwF-L9Ir_yFQtAufs-IBMxLiAKN4yf7N9dYRjJ0_N9T5Ktm26TFBJqBrrZGaqKYJ65tycnOqFrY",
   translationsTableName: "Voucher - 02.10.23- Free bean bag cover",
   translationsRange: "17:25",
   conditionsRow: "35",
