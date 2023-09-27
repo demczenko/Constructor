@@ -1333,27 +1333,6 @@ export default {
     ES: "griferia",
     SE: "blandare",
   },
-  "wooden-beds": {
-    link: "https://www.prologistics.info/shop_cat.php?id=0&cat_id=2544&shop_id=1",
-    CZ: "drevene-postele",
-    DK: "traesenge",
-    NL: "houten-bedden",
-    UK: "wooden-beds",
-    FI: "puiset-sangyt",
-    FR: "lits-en-bois",
-    DE: "holzbetten",
-    AT: "holzbetten",
-    CHDE: "holzbett",
-    CHFR: "lits-en-bois",
-    HU: "fa-agyak",
-    IT: "letti-in-legno",
-    NO: "tresenger",
-    PL: "lozka-drewniane",
-    PT: "camas-de-madeira",
-    SK: "drevene-postele",
-    ES: "camas-de-madera",
-    SE: "trasangar",
-  },
   "storage-beds": {
     link: "https://www.prologistics.info/shop_cat.php?id=0&cat_id=2606&shop_id=1",
     CZ: "postel-s-uloznym-prostorem",
@@ -5093,4 +5072,4 @@ export default {
     ES: "alfombras-exterior",
     SE: "mattor-for-utomhusbruk",
   },
-};
+}

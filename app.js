@@ -2,8 +2,9 @@ import { initApp } from "./main/initApp.js";
 
 initApp({
   startId: "18541",
+  apiCall: true,
   token:
-    "1//04rL3auusI7ZdCgYIARAAGAQSNwF-L9Ir_yFQtAufs-IBMxLiAKN4yf7N9dYRjJ0_N9T5Ktm26TFBJqBrrZGaqKYJ65tycnOqFrY",
+    "1//04vw_fO70HnDgCgYIARAAGAQSNwF-L9IrRu5d_EFhyfiQALhxZuZCj-eEvpeGIYCqtYfav6gwG6Am0TDJW_FVRxWpiYB9EJAoUY0",
   translationsTableName: "Voucher - 02.10.23- Free bean bag cover",
   translationsRange: "17:25",
   conditionsRow: "35",

@@ -208,7 +208,7 @@ table {
 .newsletterProductContainer {
   padding-top: 20px !important;
   padding-left: 20px !important;
-  padding-right: 15px !important;
+  padding-right: 20px !important;
 }
 
 .newsletterContainer {
@@ -238,7 +238,7 @@ table {
 }
 
 .newsletterCtaContainer {
-  padding-bottom: 70px;
+  padding-bottom: 80px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -557,12 +557,6 @@ table {
     padding-right: 15px !important;
   }
 
-  .newsletterProductContainer {
-    padding-top: 15px!important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-
   .newsletterTitleContainer {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
@@ -571,7 +565,7 @@ table {
   }
 
   .newsletterCtaContainer {
-    padding-bottom: 40px !important;
+    padding-bottom: 50px !important;
   }
 
   /* CONTAINERS END */

@@ -37,7 +37,7 @@ export async function fetchData({
     if (productsOrder) {
         let productsXls = await productsXLS()
         productsXls = sort(productsXls, productsOrder)
-        setState("productsToParse", JSON.stringify(productsXls))
+        setState("productsToParse", productsXls)
     }
 
     if (token) {
