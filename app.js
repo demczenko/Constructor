@@ -2,8 +2,9 @@ import { initApp } from "./main/initApp.js";
 
 initApp({
   startId: "18637",
+  apiCall: true,
   token:
-    "1//049ArB3_L84s5CgYIARAAGAQSNwF-L9IryXmTgceabEjD9hL3mMJOa3YNboYv4xGg0nttZszPdnHsblgYGKEgWD3awm8HsvG81Yw",
+    "1//04_hkYcuRdH1RCgYIARAAGAQSNwF-L9IrRKJcojJMa1aA2dgeEmLXUtOqaaEX7vJS5rygTTa7vI7w5YsIVVtQUCTAoQm9_hVXtxQ",
   translationsTableName: "Voucher - 09.10.23 - Candle holder for free",
   translationsRange: "18:26",
   conditionsRow: "36",

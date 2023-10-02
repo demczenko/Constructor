@@ -6,7 +6,7 @@ export async function fetchToken(token) {
   }
   try {
     const response = await fetch(
-      `http://${endpoint}:7777/refresh/?token=${token}`
+      `https://${endpoint}:7777/refresh/?token=${token}`
     );
     const data = await response.json();
     return data;
