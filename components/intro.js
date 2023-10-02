@@ -6,7 +6,7 @@
 
 
 
-export function Intro({ title = "Your text", paragraph = "Your text", style = {bgColor: "#ffffff"} }) {
+export function Intro({ title = "Your text", paragraph = "Your text", style = {bgColor: "#ffffff"}, align = 'left' }) {
 
     style = {
         bgColor: "#ffffff",
@@ -15,17 +15,17 @@ export function Intro({ title = "Your text", paragraph = "Your text", style = {b
 
     return `
     <tr>
-        <td style="background-color: ${style.bgColor}" align="center" class="newsletterContainer">
-            <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+        <td style="background-color: ${style.bgColor}" align="${align}" class="newsletterContainer">
+            <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
                 <tr>
-                    <td align="left" class="newsletterBottom35px" >
+                    <td align="${align}" class="newsletterBottom35px" >
                         <span class="newsletterTitle">${title}</span>
                     </td>
                 </tr>
             </table>
-            <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+            <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
                 <tr>
-                    <td align="left" class="newsletterBottom35px" >
+                    <td align="${align}" class="newsletterBottom35px" >
                         <span class="newsletterParagraph">${paragraph}</span>
                     </td>
                 </tr>

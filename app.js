@@ -1,13 +1,12 @@
 import { initApp } from "./main/initApp.js";
 
 initApp({
-  startId: "18541",
-  apiCall: true,
+  startId: "18637",
   token:
-    "1//04vw_fO70HnDgCgYIARAAGAQSNwF-L9IrRu5d_EFhyfiQALhxZuZCj-eEvpeGIYCqtYfav6gwG6Am0TDJW_FVRxWpiYB9EJAoUY0",
-  translationsTableName: "Voucher - 02.10.23- Free bean bag cover",
-  translationsRange: "17:25",
-  conditionsRow: "35",
+    "1//049ArB3_L84s5CgYIARAAGAQSNwF-L9IryXmTgceabEjD9hL3mMJOa3YNboYv4xGg0nttZszPdnHsblgYGKEgWD3awm8HsvG81Yw",
+  translationsTableName: "Voucher - 09.10.23 - Candle holder for free",
+  translationsRange: "18:26",
+  conditionsRow: "36",
   countriesColumns: {
     UK: "F",
     PL: "H",
@@ -30,34 +29,34 @@ initApp({
   },
   newsletterLinks: [
     {
+      value: "lp23-10-09",
+      addContentOrigin: true,
+    },
+    {
+      value: "231009_01.jpg",
+      addServer: true,
+    },
+    {
+      value: "lp23-10-09",
+      addContentOrigin: true,
+    },
+    {
+      value: "https://upload.pictureserver.net/static/231009gif.gif",
+    },
+    {
       value: "lp23-10-02",
       addContentOrigin: true,
     },
     {
-      value: "231002_01.jpg",
+      value: "231009.png",
       addServer: true,
     },
     {
-      value: "lp23-10-02",
+      value: "lp23-09-29",
       addContentOrigin: true,
     },
     {
-      value: "https://upload.pictureserver.net/static/231002gif.gif",
-    },
-    {
-      value: "lp23-09-25",
-      addContentOrigin: true,
-    },
-    {
-      value: "230925.png",
-      addServer: true,
-    },
-    {
-      value: "lp23-09-22",
-      addContentOrigin: true,
-    },
-    {
-      value: "230922.png",
+      value: "230929.png",
       addServer: true,
     },
   ],
@@ -96,92 +95,84 @@ initApp({
   ],
   productsOrder: [
     {
-      id: "59634",
-      src: "https://beliani.info/newsletter/2022/231002Freebie1.jpg",
+      id: "345836",
+      src: "https://beliani.info/newsletter/2022/231009Freebie1.jpg",
     },
     {
-      id: "3029",
-      src: "https://beliani.info/newsletter/2022/231002Freebie2.jpg",
+      id: "345988",
+      src: "https://beliani.info/newsletter/2022/231009Freebie2.jpg",
     },
     {
-      id: "546",
-      src: "https://beliani.info/newsletter/2022/231002Freebie3.jpg",
+      id: "346094",
+      src: "https://beliani.info/newsletter/2022/231009Freebie3.jpg",
     },
     {
-      id: "550",
-      src: "https://beliani.info/newsletter/2022/231002Freebie4.jpg",
+      id: "346007",
+      src: "https://beliani.info/newsletter/2022/231009Freebie4.jpg",
     },
     {
-      id: "554",
-      src: "https://beliani.info/newsletter/2022/231002Freebie5.jpg",
+      id: "211021",
+      src: "https://beliani.info/newsletter/2022/231009Category11.png",
     },
     {
-      id: "555",
-      src: "https://beliani.info/newsletter/2022/231002Freebie6.jpg",
+      id: "320861",
+      src: "https://beliani.info/newsletter/2022/231009Category12.png",
     },
     {
-      id: "397717",
-      src: "https://beliani.info/newsletter/2022/231002Category11.jpg",
+      id: "355154",
+      src: "https://beliani.info/newsletter/2022/231009Category13.png",
     },
     {
-      id: "372692",
-      src: "https://beliani.info/newsletter/2022/231002Category12.jpg",
+      id: "345674",
+      src: "https://beliani.info/newsletter/2022/231009Category14.png",
     },
     {
-      id: "116276",
-      src: "https://beliani.info/newsletter/2022/231002Category13.jpg",
+      id: "344110",
+      src: "https://beliani.info/newsletter/2022/231009Category21.png",
     },
     {
-      id: "374414",
-      src: "https://beliani.info/newsletter/2022/231002Category14.jpg",
+      id: "256514",
+      src: "https://beliani.info/newsletter/2022/231009Category22.png",
     },
     {
-      id: "403367",
-      src: "https://beliani.info/newsletter/2022/231002Category21.jpg",
+      id: "166584",
+      src: "https://beliani.info/newsletter/2022/231009Category23.png",
     },
     {
-      id: "403385",
-      src: "https://beliani.info/newsletter/2022/231002Category22.jpg",
+      id: "155851",
+      src: "https://beliani.info/newsletter/2022/231009Category24.png",
     },
     {
-      id: "185320",
-      src: "https://beliani.info/newsletter/2022/231002Category23.jpg",
+      id: "132136",
+      src: "https://beliani.info/newsletter/2022/231009Category31.png",
     },
     {
-      id: "405365",
-      src: "https://beliani.info/newsletter/2022/231002Category24.jpg",
+      id: "324363",
+      src: "https://beliani.info/newsletter/2022/231009Category32.png",
     },
     {
-      id: "405192",
-      src: "https://beliani.info/newsletter/2022/231002Category31.jpg",
+      id: "305415",
+      src: "https://beliani.info/newsletter/2022/231009Category33.png",
     },
     {
-      id: "403772",
-      src: "https://beliani.info/newsletter/2022/231002Category32.jpg",
+      id: "2177",
+      src: "https://beliani.info/newsletter/2022/231009Category34.png",
     },
     {
-      id: "245421",
-      src: "https://beliani.info/newsletter/2022/231002Category33.jpg",
+      id: "233764",
+      src: "https://beliani.info/newsletter/2022/231009Category41.png",
     },
     {
-      id: "133089",
-      src: "https://beliani.info/newsletter/2022/231002Category34.jpg",
+      id: "392733",
+      src: "https://beliani.info/newsletter/2022/231009Category42.png",
     },
     {
-      id: "318861",
-      src: "https://beliani.info/newsletter/2022/231002Category41.jpg",
+      id: "138862",
+      src: "https://beliani.info/newsletter/2022/231009Category43.png",
     },
     {
-      id: "198642",
-      src: "https://beliani.info/newsletter/2022/231002Category42.jpg",
-    },
-    {
-      id: "323179",
-      src: "https://beliani.info/newsletter/2022/231002Category43.jpg",
-    },
-    {
-      id: "391555",
-      src: "https://beliani.info/newsletter/2022/231002Category44.jpg",
+      id: "310412",
+      src: "https://beliani.info/newsletter/2022/231009Category44.png",
     },
   ],
 });

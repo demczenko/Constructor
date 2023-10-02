@@ -11,13 +11,13 @@ export function Product({ product }) {
   product.align = product.align ? product.align : "left";
 
   return `
-      <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="background-color: ${product.style.bgColor}">
+      <table cellspacing="0" cellpadding="0" border="0" align=${product.align} width="100%" >
         <tr>
-          <td align="center" ${product.className ? `class=${product.className}` : ""} style="padding-left: ${product.style.paddingLeft}; padding-right: ${product.style.paddingRight}; padding-top: ${ product.style.paddingTop }; padding-bottom: ${product.style.paddingBottom};">
+          <td align=${product.align} ${product.className ? `class=${product.className}` : ""} style="padding-left: ${product.style.paddingLeft}; padding-right: ${product.style.paddingRight}; padding-top: ${ product.style.paddingTop }; padding-bottom: ${product.style.paddingBottom};">
           <a href=${product?.href}>
             <img src=${product?.src} style="display: block; max-width: 100%">
           </a>  
-          <table cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: ${ product.style.bgColor };">
+          <table align=${product.align} cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: ${ product.style.bgColor };">
               <tbody>
                 <tr>
                     <td align=${ product.align } class="newsletterProductTitleContainer">
@@ -36,15 +36,9 @@ export function Product({ product }) {
                     : ""
                 }
                 <tr>
-                  <td align=${
-                    product.align
-                  }>
-                      <span class="newsletterProductLowPrice">${
-                        product.lowPrice
-                      } </span> 
-                      <span class="newsletterProductHightPrice">${
-                        product.highPrice
-                      }</span>
+                  <td ${product.align === 'center' ? 'style="padding-bottom: 15px"' : ""} align=${product.align}>
+                      <span class="newsletterProductLowPrice">${product.lowPrice} </span> 
+                      <span class="newsletterProductHightPrice">${product.highPrice}</span>
                   </td>
                 </tr>
               </tbody>

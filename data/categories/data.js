@@ -1,18 +1,19 @@
 export default [
     {
-        src: "https://beliani.info/newsletter/2022/231002Category1.png",
-        category: "/sofas/",
+        src: "https://beliani.info/newsletter/2022/231009Category1.png",
+        category: "/summer-trends/pastels/",
     },
     {
-        src: "https://beliani.info/newsletter/2022/231002Category2.png",
-        category: "/armchairs/",
+        src: "https://beliani.info/newsletter/2022/231009Category2.png",
+        category: "/interior-trends-2023/all-that-brown/",
     },
     {
-        src: "https://beliani.info/newsletter/2022/231002Category3.png", 
-        category: "/chairs/",
+        src: "https://beliani.info/newsletter/2022/231009Category3.png", 
+        category: "/Special link/",
     },
     {
-        src: "https://beliani.info/newsletter/2022/231002Category4.png",
-        category: "/home-accessories/stools/pouffes/",
+        src: "https://beliani.info/newsletter/2022/231009Category4.png",
+        category: "/dining-room-furniture/all+products",
+        query: "?Style=Modern"
     },
 ];

@@ -4,7 +4,7 @@ import { Product } from "./product.js";
 export function Freebies({
   products,
   style = { bgColor: "#ffffff" },
-  size = { row, col },
+  size = { row: 2, col: 2 },
   className,
 }) {
   className = className ? className : "newsletterFreebies";
