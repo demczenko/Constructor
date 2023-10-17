@@ -232,11 +232,11 @@ const formatPrice = {
         price = price.replace(".00", "")
 
         if (price.length === 5) {
-            price = price.split("").toSpliced(2, 0, " ").join("")
+            price = price.split("").toSpliced(2, 0, ".").join("")
         }
 
         if (price.length === 4) {
-            price = price.split("").toSpliced(1, 0, " ").join("")
+            price = price.split("").toSpliced(1, 0, ".").join("")
         }
 
 

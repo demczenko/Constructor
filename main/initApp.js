@@ -26,6 +26,7 @@ import {
   ThisMayAlsoInterestYou,
 } from "../data/index.js";
 import { sort } from "../helpers/sort.js";
+import { fetchHeader } from "../api/header.js";
 
 const root = document.querySelector("#app");
 const state = {
@@ -39,6 +40,7 @@ const state = {
   productsIds: [],
   translations: [],
   productsToParse: [],
+  token: ""
 };
 
 export function setState(key, value) {
@@ -102,7 +104,7 @@ export function initApp({
   setEvents();
   function render() {
     setState("loading", true)
-    // const header = fetchHeader({ type: state.template, country: state.country, id: state.ids[state.country] })
+    const header = fetchHeader({ type: state.template, country: state.country, id: state.ids[state.country] })
     fetchData({
       countriesColumns,
       state,
@@ -123,7 +125,10 @@ export function initApp({
           ...data,
           products: productsOrder && sort(data.products, productsOrder),
         });
-        // return header.then(header => header.header + getTemplate(data))
+        // return header.then(header => header.header + getTemplate({
+        //   ...data,
+        //   products: productsOrder && sort(data.products, productsOrder),
+        // }))
       })
       .then((html) => {
         if (html.includes("undefined")) {

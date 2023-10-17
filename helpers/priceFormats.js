@@ -8,7 +8,7 @@ const currencies = {
   swedishKrona: "kr",
   danishKrona: "kr.",
   czechKrona: "Kč",
-  norwegianKrone: ",-",
+  norwegianKrone: ",-/stk",
 };
 const relativePriceFormat = {
   DE: {

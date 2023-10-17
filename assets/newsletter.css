@@ -350,11 +350,11 @@ table {
 }
 
 .newsletterFreebieTopLeft {
-  padding-right: 40px !important;
+  padding-left: 80px !important;
 }
 
 .newsletterFreebieTopRight {
-  padding-left: 40px !important;
+  padding-right: 80px !important;
 }
 
 .newsletterIFrame {
@@ -398,6 +398,8 @@ table {
     font-size: 18px!important;
   }
 
+
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -411,6 +413,14 @@ table {
 
   .newsletterSummerSale {
     font-size: 20px!important;
+  }
+
+  .newsletterFreebieTopLeft {
+    padding-left: 30px !important;
+  }
+
+  .newsletterFreebieTopRight {
+    padding-right: 30px !important;
   }
 
   .newsletterInterestYouContainer {
@@ -431,13 +441,7 @@ table {
     margin-bottom: 20px !important;
   }
 
-  .newsletterFreebieTopLeft {
-    padding-right: 10px !important;
-  }
 
-  .newsletterFreebieTopRight {
-    padding-left: 10px !important;
-  }
 
   .newsletterBottomFreebieMiddle {
     padding-right: 15px !important;

@@ -1,19 +1,18 @@
 export default [
     {
-        src: "https://beliani.info/newsletter/2022/231009Category1.png",
-        category: "/summer-trends/pastels/",
+        src: "https://beliani.info/newsletter/2022/231023Category1.png",
+        category: "/bathtubs-hot-tubs/",
     },
     {
-        src: "https://beliani.info/newsletter/2022/231009Category2.png",
-        category: "/interior-trends-2023/all-that-brown/",
+        src: "https://beliani.info/newsletter/2022/231023Category2.png",
+        category: "/bathroom-furniture/showers/",
     },
     {
-        src: "https://beliani.info/newsletter/2022/231009Category3.png", 
-        category: "/Special link/",
+        src: "https://beliani.info/newsletter/2022/231023Category3.png", 
+        category: "/bathroom-furniture/bathroom-fittings/",
     },
     {
-        src: "https://beliani.info/newsletter/2022/231009Category4.png",
-        category: "/dining-room-furniture/all+products",
-        query: "?Style=Modern"
+        src: "https://beliani.info/newsletter/2022/231023Category4.png",
+        category: "/bathroom-furniture/bathroom-accessories/",
     },
 ];

@@ -47,31 +47,11 @@ export function newsletter({
   // console.log("Products", products);
   // console.log(additionalTranslations);
   // console.log(links);
-
-  const category = {
-    CZ: "https://www.beliani.cz/podzimni-trendy/prirodni-nabytek/",
-    DK: "https://www.beliani.dk/efterar-trends/naturlige-materialer/",
-    NL: "https://www.beliani.nl/herfst-trends/natuurlijke-materialen/",
-    UK: "https://www.beliani.co.uk/autumn-trends/natural-materials/",
-    FI: "https://www.beliani.fi/syksyn-trendit/luonnolliset-materiaalit/",
-    FR: "https://www.beliani.fr/tendances-automnales/materiaux-naturels/",
-    CHFR: "https://www.beliani.ch/tendances-automnales/materiaux-naturels",
-    DE: "https://www.beliani.de/herbsttrends-2022/natuerliche-materialien/",
-    CHDE: "https://www.beliani.ch/herbsttrends-2022/natuerliche-materialien/",
-    AT: "https://www.beliani.at/herbsttrends-2022/natuerliche-materialien/",
-    HU: "https://www.beliani.hu/oszi-trendek/termeszetes-anyagok/",
-    IT: "https://www.beliani.it/trend-autunno-it/materiali-naturali-it/",
-    NO: "https://www.beliani.no/hosttrender/naturlig-materiale/",
-    PL: "https://www.beliani.pl/jesienne-trendy/naturalne-materialy/",
-    PT: "https://www.beliani.pt/autumn-trends-pt/natural-materials-pt/",
-    SK: "https://www.beliani.sk/jesenne-trendy/prirodne-materialy/",
-    ES: "https://www.beliani.es/tendencias-de-otono-es/materiales-naturales-es/",
-    SE: "https://www.beliani.se/hosttrender/naturliga-material/",
-  };
-
+  console.log(products);
+  
   return `
-    ${header[country]("newsletter", id)}
-        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #e3cccc;" >
+  ${header[country]("newsletter", id)}
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #f1e4e4;" >
             <tbody>
                 <tr>
                     <td align="center">
@@ -113,45 +93,42 @@ export function newsletter({
                     text: getCode,
                   },
                   style: {
-                    bgColor: "#f6e7e6",
+                    bgColor: "#f1e4e4",
                   },
                   type,
                 })}
                 ${Freebies({
-                  products: [
-                    priceFree({
-                      ...products[0],
-                      align: "center",
-                      style: { bgColor: "#ffffff" },
-                      className: "newsletterProductContainerLEFT",
-                    }),
-                    priceFree({
-                      ...products[1],
-                      align: "center",
-                      style: { bgColor: "#ffffff" },
-                      className: "newsletterProductContainerRIGHT",
-                    }),
-                    priceFree({
-                      ...products[2],
-                      align: "center",
-                      style: { bgColor: "#ffffff" },
-                      className: "newsletterProductContainerLEFT",
-                    }),
-                    priceFree({
-                      ...products[3],
-                      align: "center",
-                      style: { bgColor: "#ffffff" },
-                      className: "newsletterProductContainerRIGHT",
-                    }),
-                  ],
-                  style: { bgColor: "#f6e7e6" },
-                })}
+                    products: [
+                      priceFree({
+                        ...products[0],
+                        src: links[8],
+                        type: 'image'
+                      }),
+                      priceFree({
+                        ...products[1],
+                        src: links[9],
+                        type: 'image'
+                      }),
+                      priceFree({
+                        ...products[2],
+                        src: links[10],
+                        type: 'image'
+                      }),
+                      priceFree({
+                        ...products[3],
+                        src: links[11],
+                        type: 'image'
+                      }),
+                    ],
+                    className: 'newsletterBottom35px',
+                    style: { bgColor: "#f1e4e4" },
+                  })}
                 ${Line(undefined, true)}
                 ${Intro({
                   title: translations[3],
                   paragraph: translations[4],
                   style: {
-                    bgColor: "#e3cccc",
+                    bgColor: "#f1e4e4",
                   },
                 })}
                 ${Category({
@@ -168,7 +145,7 @@ export function newsletter({
                   cta: shopNow,
                   type: "monday",
                   style: {
-                    bgColor: "#e3cccc",
+                    bgColor: "#f1e4e4",
                   },
                 })}
                 ${Line(undefined, true)}
@@ -186,14 +163,13 @@ export function newsletter({
                   cta: shopNow,
                   type: "monday",
                   style: {
-                    bgColor: "#e3cccc",
+                    bgColor: "#f1e4e4",
                   },
                 })}
                 ${Line(undefined, true)}
                 ${Category({
                   category: {
                     ...categories[2],
-                    href: category[country],
                     name: translations[7],
                   },
                   products: [
@@ -205,7 +181,7 @@ export function newsletter({
                   cta: shopNow,
                   type: "monday",
                   style: {
-                    bgColor: "#e3cccc",
+                    bgColor: "#f1e4e4",
                   },
                 })}
                 ${Line(undefined, true)}
@@ -223,14 +199,14 @@ export function newsletter({
                   cta: shopNow,
                   type: "monday",
                   style: {
-                    bgColor: "#e3cccc",
+                    bgColor: "#f1e4e4",
                   },
                 })}
                 ${Line(undefined, true)}
             <tbody>
         </table>
 
-        <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterSoonEndingTable" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#e3cccc;">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterSoonEndingTable" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;">
             <tbody>
                 <tr>
                     <td align="left" class="newsletterSoonEndingContainer">
@@ -252,7 +228,7 @@ export function newsletter({
                                 </tr>
                                 <tr>
                                     <td align="left">
-                                        <a href=${links[6]}>
+                                        <a href=${["FI", "NO", "SE"].includes(country) ? `https://www.beliani.${country.toLowerCase()}/content/lp23-10-17/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}` : links[6]}>
                                             <img src=${
                                               links[7]
                                             } style="display: block;" width="100%">
