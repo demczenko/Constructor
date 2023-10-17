@@ -170,7 +170,7 @@ export async function fetchData({
             })
         }
     })
-    // console.log(await getCampaign("garden-furniture", "DE"))
+    console.log(await getCampaign("garden-furniture", "DE"))
     
     const categoriesPromise = new Promise((resolve, reject) => {
         resolve(categories)

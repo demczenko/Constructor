@@ -1,4 +1,4 @@
-import endpoint from "./endpoint";
+import endpoint from "./endpoint.js";
 
 export async function getCampaign(category, country) {
   try {

@@ -3,7 +3,7 @@ import { initApp } from "./main/initApp.js";
 initApp({
   startId: "19022",
   token:
-    "1//04y_4O848QvduCgYIARAAGAQSNwF-L9Ir7Z03JtMFqYoaNqP747FHiLV9Ef18JLyRbnCkiR1GCmyT1Wr7iHtLGmY74UR4ELJYvSw",
+    "1//04uP5rpJw63XACgYIARAAGAQSNwF-L9Ir7Ln7uCc43kDDqZbmN0r1NSF_IuVfuNUx7bZU2mCj4V6EuQeo4Qm9OsTDbO6MgKC2ojs",
   translationsTableName: "Voucher - 23.10.23 - Free towels",
   translationsRange: "18:26",
   conditionsRow: "40",
