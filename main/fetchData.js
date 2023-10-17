@@ -18,6 +18,7 @@ import {
 import { productsXLS } from "../helpers/productsXLS.js";
 import { sort } from "../helpers/sort.js";
 import { fetchToken } from "../api/fetchToken.js";
+import { getCampaign } from "../api/category.js";
 
 export async function fetchData({
     countriesColumns,
@@ -169,6 +170,7 @@ export async function fetchData({
             })
         }
     })
+    // console.log(await getCampaign("garden-furniture", "DE"))
     
     const categoriesPromise = new Promise((resolve, reject) => {
         resolve(categories)
