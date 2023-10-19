@@ -421,8 +421,8 @@ table {
   }
 
   #newsletter .newsletterBottomFreebieMiddle {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   #newsletter .newsletterFreebieBottomLeft {
@@ -456,7 +456,7 @@ table {
     padding-left: 5px;
   }
 
-  #newsletter .newsletterFooter {
+  #newsletter.newsletterFooter {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -529,8 +529,8 @@ table {
 
   #newsletter .newsletterContainer {
     padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   #newsletter .newsletterProductContainer {
