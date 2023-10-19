@@ -1,6 +1,6 @@
 import endpoint from "./endpoint.js";
 
-export async function getCampaign(category, country) {
+export async function getCategory(category, country) {
   try {
     const response = await fetch(
       `https://${endpoint}:7777/category/?category=${category}&country=${country}`
