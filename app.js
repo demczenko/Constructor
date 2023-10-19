@@ -2,12 +2,31 @@ import { initApp } from "./main/initApp.js";
 
 initApp({
   startId: "19022",
+  serverProducts: true,
+  serverCategories: true,
   token:
-    "1//04FtbvoKGFdubCgYIARAAGAQSNwF-L9Irss-U3xEEk0MhdwIyD2Z1wE4MN8WauYAyZdeLNurIj_-G6g5aVDgw6ovGLxgfAy28i8A",
-  translationsTableName: "Voucher - 23.10.23 - Free towels",
-  translationsRange: "18:26",
-  conditionsRow: "40",
-  countriesColumns: {
+    "1//04RBOpPXfROLUCgYIARAAGAQSNwF-L9Irf6xobSMx0y9EpukRSWcX0VycB0LW2C-dEbH8z1LYkvtC_LjYKwbBI_UnnscncoAgvm4",
+  tableQueries: [
+    {
+      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+      tableName: "Voucher - 23.10.23 - Free towels",
+      tableRange: "18:26",
+      name: "translations",
+    },
+    {
+      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+      tableName: "Voucher - 23.10.23 - Free towels",
+      tableRange: "40",
+      name: "conditions",
+    },
+    {
+      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+      tableName: "Voucher - 23.10.23 - Free towels",
+      tableRange: "31",
+      name: "code",
+    },
+  ],
+  tableColumns: {
     UK: "F",
     PL: "H",
     DE: "J",
@@ -126,7 +145,7 @@ initApp({
       id: "243654",
       src: "https://beliani.info/newsletter/2022/231023Freebie4.jpg",
     },
-    
+
     {
       id: "403148",
       src: "https://beliani.info/newsletter/2022/231023Category11.png",

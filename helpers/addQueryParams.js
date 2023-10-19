@@ -1,54 +1,68 @@
-export function addParams(template, arr, id, country) {
+import { getState, setState } from "../main/initApp.js";
+
+export function addParams(arr, id) {
+  const country = getState("country");
+
   return arr.map((link) => {
     if (!link.includes("https://beliani.info/newsletter/2022/")) {
       if (!link.includes("https://upload.pictureserver.net/static/")) {
-        return getQueryLink(template, { href: link }, id, country);
+        return getQueryLink({ href: link });
       }
     }
     return link;
   });
 }
 
-export function addParamsProduct(template,arr, id, country) {
-  return arr.map((product) => ({
+export function addParamsProduct() {
+  const products = getState("products");
+
+  const newProducts = products.map((product) => ({
     ...product,
-    href: getQueryLink(template, product, id, country),
+    href: getQueryLink(product),
   }));
+
+  setState("products", newProducts);
 }
 
-export function addParamsCategory(template, arr, id, country) {
-  return arr.map((category) => ({
+export function addParamsCategory() {
+  const categories = getState("categories");
+  const newCategories = categories.map((category) => ({
     ...category,
-    href: getQueryLink(template, category, id, country),
+    href: getQueryLink(category),
   }));
+
+  setState("categories", newCategories);
 }
 
-function getQueryLink(template, item, id, country) {
+function getQueryLink(item) {
+  const template = getState("template");
+  const country = getState("country");
+  const ids = getState("ids");
 
-  if(item.href === undefined) return undefined
-  if(item.href === null) return undefined
+  if (item.href === undefined) return undefined;
+  if (item.href === null) return undefined;
 
   const queryLink = new URL(item.href);
 
   if (item.query) {
-      const link = new URL(item.href + item.query);
-      for (const [key, value] of link.searchParams.entries()) {
-          if (key.toLowerCase() in filterNames) {
-              const newKey = filterNames[key.toLocaleLowerCase()][country];
-              const allFilters = link.searchParams.get(key).split(',')
-              queryLink.searchParams.delete(key, value);
-              allFilters.forEach(item => {
-                const newValue = filters[item.toLocaleLowerCase()][country];
-                queryLink.searchParams.append(newKey, newValue);
-              })
-          }
+    const link = new URL(item.href + item.query);
+    for (const [key, value] of link.searchParams.entries()) {
+      if (key.toLowerCase() in filterNames) {
+        const newKey = filterNames[key.toLocaleLowerCase()][country];
+        const allFilters = link.searchParams.get(key).split(",");
+        queryLink.searchParams.delete(key, value);
+        allFilters.forEach((item) => {
+          const newValue = filters[item.toLocaleLowerCase()][country];
+          queryLink.searchParams.append(newKey, newValue);
+        });
       }
+    }
   }
 
   if (template === "newsletter") {
     queryLink.searchParams.set("utm_source", "newsletter");
     queryLink.searchParams.set("utm_medium", "email");
-    queryLink.searchParams.set("utm_campaign", id);
+    queryLink.searchParams.set("utm_campaign", ids[country]);
   }
 
   return queryLink.href;
@@ -133,7 +147,7 @@ const filterNames = {
     DK: "Funktioner",
     PL: "Cechy",
     SK: "Vlastnosti",
-  }
+  },
 };
 
 const filters = {
@@ -516,7 +530,7 @@ const filters = {
     FR: "",
     CHFR: "",
   },
-  "marble_effect_finish": {
+  marble_effect_finish: {
     IT: "Finitura_effetto_marmo",
     CHDE: "Marmor_Optik",
     DE: "Marmor_Optik",
@@ -535,5 +549,5 @@ const filters = {
     DK: "Marmor_effekt_finish",
     FR: "Finition_effet_marbre",
     CHFR: "Finition_effet_marbre",
-  }
+  },
 };

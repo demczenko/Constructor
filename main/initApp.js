@@ -6,7 +6,6 @@ import {
 } from "./events.js";
 import acceptedLocationHash from "../data/templates/acceptedHash.js";
 import { attachCss, incrementId } from "../helpers/index.js";
-import { fetchData } from "./fetchData.js";
 import templates from "../pages/index.js";
 import { SpinnerInit } from "../helpers/spinner/spinerOptions.js";
 
@@ -24,23 +23,40 @@ import {
   shopAll,
   YouMayBeAlsoInterestedIn,
   ThisMayAlsoInterestYou,
+  products,
+  categories,
+  codes,
 } from "../data/index.js";
-import { sort } from "../helpers/sort.js";
-import { fetchHeader } from "../api/header.js";
+import {
+  fetchHeader,
+  fetchToken,
+  getLink,
+  getProductsPrice,
+} from "../api/index.js";
+import { utils } from "../utils/index.js";
+import { handleCategories, handleProducts } from "./handlers/index.js";
+import { parseLinkToCountry } from "../helpers/parseLinkToCountry.js";
+import { mainValidation } from "../validation/mainValidation.js";
+import {
+  fetchCategories,
+  fetchProductsShopIds,
+  fetchTranslations,
+  parseLinks,
+} from "../api/fetch/fetch.js";
 
 const root = document.querySelector("#app");
 const state = {
   country: "DE",
   loading: false,
   template: "newsletter",
-  ids: [],
+  ids: {},
 
+  links: [],
   products: [],
   categories: [],
   productsIds: [],
   translations: [],
-  productsToParse: [],
-  token: ""
+  token: "",
 };
 
 export function setState(key, value) {
@@ -63,104 +79,192 @@ export function setState(key, value) {
 }
 
 export function getState(key) {
-  return state[key];
+  if (key in state) {
+    return state[key];
+  } else {
+    return undefined;
+  }
 }
 
 export function initApp({
-  countriesColumns,
+  tableQueries,
+  tableColumns,
   productsOrder,
   startId,
   countries,
   xlsPath,
   newsletterLinks,
-  additionalTranslations,
   landingLinks,
-  apiCall,
-  translationsTableName,
-  translationsRange,
-  conditionsRow,
-  codesRow,
+  serverProducts,
+  serverCategories,
   token,
 }) {
-  if (!startId) {
-    return Toastify({
-      text: "Please set startId in app.js",
-      escapeMarkup: false,
-      duration: 3000,
-    }).showToast();
-  }
+  mainValidation({
+    tableQueries,
+    tableColumns,
+    productsOrder,
+    startId,
+    newsletterLinks,
+    landingLinks,
+    token,
+  });
+
   setState("ids", incrementId(startId, countries));
-
-  if (!newsletterLinks || !landingLinks) {
-    return Toastify({
-      text: "Please set newsletterLinks, landingLinks in app.js",
-      escapeMarkup: false,
-      duration: 3000,
-    }).showToast();
-  }
-
-  window.location.hash = "country=DE&template=newsletter";
   attachCss(state);
   setEvents();
-  function render() {
-    setState("loading", true)
-    const header = fetchHeader({ type: state.template, country: state.country, id: state.ids[state.country] })
-    fetchData({
-      countriesColumns,
-      state,
-      xlsPath,
-      apiCall,
-      newsletterLinks,
-      additionalTranslations,
-      landingLinks,
-      translationsTableName,
-      translationsRange,
-      conditionsRow,
-      codesRow,
-      token,
-      productsOrder,
-    })
-      .then((data) => {
-        return getTemplate({
-          ...data,
-          products: productsOrder && sort(data.products, productsOrder),
-        });
-        // return header.then(header => header.header + getTemplate({
-        //   ...data,
-        //   products: productsOrder && sort(data.products, productsOrder),
-        // }))
-      })
-      .then((html) => {
-        if (html.includes("undefined")) {
-          if (confirm("Do you want to render template with undefined value?")) {
-            // getCss(state.template).then((css) => {
-            //     updateCampaign(state.ids[state.country], copyNewsletterWithHeaderAndStyles(html, css)).then(data => console.log(data))
-            // }).then(() => {
-            //     Toastify({
-            //         text: `Campaign <a style="color: white;" href="https://www.prologistics.info/news_email.php?id=${state.ids[state.country]}">${state.ids[state.country]}</a> succesfully updated &#128516;`,
-            //         escapeMarkup: false,
-            //         duration: 3000
-            //     }).showToast();
-            // })
-            return (root.innerHTML = html);
-          }
+  async function render() {
+    setState("loading", true);
+    const country = getState("country");
+    const template = getState("template");
+    const countryRelativeToIds = getState("ids");
 
-          return (root.innerHTML = templates.errorPage(
-            "Error rendering. HTML code has undefined value."
-          ));
-        } else {
-          root.innerHTML = html;
+    const headerHtmlTemplate = await fetchHeader({
+      type: template,
+      country: country,
+      id: countryRelativeToIds[country],
+    });
+    const tokenResponse = await fetchToken(token);
+    if (tokenResponse.Response["Status-Code"] === 200) {
+      setState("token", tokenResponse.access_token);
+    } else {
+      Toastify({
+        text: "Please refresh token. " + tokenResponse.error,
+        escapeMarkup: false,
+        duration: 3000,
+      }).showToast();
+    }
+
+    if (serverProducts) {
+      const ids = await fetchProductsShopIds({ productsOrder });
+      setState("productsIds", ids);
+      const country = getState("country");
+
+      //1. Получаю айдишники на которые мне нужны цены и ссылки
+      const XLSProducts = getState("XLSProducts");
+      const sortedRequestIds = XLSProducts.map((item) => {
+        return {
+          id: ids[item.main_id][country],
+          main_id: item.main_id,
+          name: item.name
+        };
+      });
+
+      //2. Получаю цены на продукты
+      const productsPrices = await getProductsPrice(
+        sortedRequestIds.map((item) => item.id)
+      );
+      //3. Привожу данные в нужный вид
+      const normalizedProduct = [];
+      for (const sorted in sortedRequestIds) {
+        const sortedProducts = sortedRequestIds[sorted];
+
+        for (const productId in productsPrices) {
+          if (sortedProducts.id === productId) {
+            normalizedProduct.push({
+              id: productId,
+              name: sortedProducts.name,
+              main_id: sortedProducts.main_id,
+              lowPrice: productsPrices[productId].ShopPrice,
+              highPrice: productsPrices[productId].ShopHPrice,
+              country: country,
+            });
+          }
         }
-      })
-      .catch((err) => {
-        console.error(err);
-        return Toastify({
-          text: "Error, pls check console. " + err,
+      }
+      //4. Получаю ссылки на продукты
+      const links = [];
+      let isError = false;
+      for (const product of normalizedProduct) {
+        let response;
+        if (!isError) {
+          response = await getLink(product.main_id);
+        }
+        links.push({
+          id: product.id,
+          links: parseLinkToCountry(response),
+        });
+        if (response.status === "error") {
+          isError = true;
+          Toastify({
+            text:
+              `Product ${product.id} link fetch Error ` + response.data.message,
+            escapeMarkup: false,
+            duration: 3000,
+          }).showToast();
+        }
+      }
+      // 5. Собираю продукты и ссылки вместе
+      const productsWithHref = [];
+      for (const product of normalizedProduct) {
+        for (const link of links) {
+          if (product.id === link.id) {
+            productsWithHref.push({
+              ...product,
+              href: link.links[product.country],
+            });
+          }
+        }
+      }
+
+      setState(
+        "products",
+        utils.addImageToProducts(productsWithHref, productsOrder)
+      );
+      handleProducts();
+    } else {
+      const country = getState("country");
+      setState(
+        "products",
+        utils.addImageToProducts(
+          products.filter((item) => item.country === country),
+          productsOrder
+        )
+      );
+      handleProducts();
+    }
+
+    if (serverCategories) {
+      const getSeverCategories = await fetchCategories({ categories });
+      setState("categories", getSeverCategories);
+    } else {
+      setState("categories", categories);
+      handleCategories();
+    }
+
+    if (tableQueries.length > 0) {
+      const translationsResult = await fetchTranslations({
+        tableQueries,
+        tableColumns,
+      });
+      if ("error" in translationsResult.data) {
+        Toastify({
+          text:
+            "Please refresh token. " + translationsResult.data.error.message,
           escapeMarkup: false,
           duration: 3000,
         }).showToast();
-      })
-      .finally(() => setState("loading", false));
+      } else {
+        const translations = {};
+        for (const translation of translationsResult.data) {
+          translations[translation.name] = translation.data;
+        }
+        setState("translations", translations);
+      }
+    }
+    setState("header", headerHtmlTemplate.header);
+    setState("links", parseLinks({ newsletterLinks, landingLinks }));
+    setState("loading", false);
+
+    const html = getTemplate();
+    if (html.includes("undefined")) {
+      if (confirm("Do you want to render template with undefined value?")) {
+        return (root.innerHTML = html);
+      } else {
+        templates.errorPage("Error rendering. HTML code has undefined value.");
+      }
+    } else {
+      root.innerHTML = html;
+    }
   }
 
   function setEvents() {
@@ -249,36 +353,31 @@ export function initApp({
     document.querySelector(".renderTemplate").textContent = template;
   }
 
-  function getTemplate(data) {
-    return templates[state.template]({
-      ...data,
+  function getTemplate() {
+    const country = getState("country");
+    const template = getState("template");
+    return templates[template]({
       text: {
-        shopAll: shopAll[state.country],
-        shopNow: shopNow[state.country],
-        getCode: getCode[state.country],
-        getCodes: getCodes[state.country],
-        chooseFrom: chooseFrom[state.country],
-        watchNow: watchNow[state.country],
-        from: fromm[state.country],
-        free: free[state.country],
-        influencersChoice: InfluencersChoice[state.country],
-        thisMayAlsoInterestYou: ThisMayAlsoInterestYou[state.country],
-        youMayBeAlsoInterestedIn: YouMayBeAlsoInterestedIn[state.country],
-
-        code: data.code,
-        conditions: data.conditions,
-        translations: data.translations,
-
-        soonEnding: soonEndingCampaigns[state.country],
+        shopAll: shopAll[country],
+        shopNow: shopNow[country],
+        getCode: getCode[country],
+        getCodes: getCodes[country],
+        chooseFrom: chooseFrom[country],
+        watchNow: watchNow[country],
+        from: fromm[country],
+        free: free[country],
+        code: codes[country],
+        influencersChoice: InfluencersChoice[country],
+        thisMayAlsoInterestYou: ThisMayAlsoInterestYou[country],
+        youMayBeAlsoInterestedIn: YouMayBeAlsoInterestedIn[country],
+        soonEnding: soonEndingCampaigns[country],
       },
-      links: data.links,
-      products: data.products,
-      categories: data.categories,
+      ...state,
 
-      id: state.ids[state.country],
-      save: save[state.country],
-      country: state.country,
-      type: state.template,
+      id: state.ids[country],
+      save: save[country],
+      country: country,
+      type: template,
     });
   }
 }

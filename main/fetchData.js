@@ -1,23 +1,3 @@
-import { setState } from "./initApp.js";
-import { handleProducts, handleLinks, handleCategories } from "./handlers/index.js";
-import { parseTemplate, parseShopId, getProductsFromXLS } from "../helpers/index.js";
-import { 
-    getIds,
-    getLink,
-    getProductsPrice,
-    getTranslationCell,
-    getTranslationRange,
- } from "../api/index.js";
-import { 
-    text,
-    products,
-    categories,
-    conditions,
-    codes
-} from "../data/index.js";
-import { productsXLS } from "../helpers/productsXLS.js";
-import { sort } from "../helpers/sort.js";
-import { fetchToken } from "../api/fetchToken.js";
 
 export async function fetchData({
     countriesColumns,
@@ -169,6 +149,7 @@ export async function fetchData({
             })
         }
     })
+    console.log(await getCampaign("garden-furniture", "DE"))
     
     const categoriesPromise = new Promise((resolve, reject) => {
         resolve(categories)

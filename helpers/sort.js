@@ -5,7 +5,6 @@ export function sort(data, order) {
       if (item.main_id === key.id) {
         result.push({
           ...item,
-          src: key.src,
         });
       }
     });

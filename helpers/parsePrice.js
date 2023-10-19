@@ -1,18 +1,19 @@
-import { normalize } from './normalizePrice.js';
-import { priceFormats  } from './priceFormats.js'
+import { getState, setState } from "../main/initApp.js";
+import { priceFormats } from "./priceFormats.js";
 
+export function parsePrice() {
+  const products = getState("products");
 
-export function parsePrice(pricesData) {
-
-  for (const key in pricesData) {
-    const product = pricesData[key];
-
-    pricesData[key] = {
+  const newProducts = products.map((product) => {
+    return {
       ...product,
       lowPrice: priceFormats[product.country](product.lowPrice),
-      highPrice: product.highPrice !== null ? priceFormats[product.country](product.highPrice): "",
-    }
-  }
-  return pricesData
-}
+      highPrice:
+        product.highPrice !== null
+          ? priceFormats[product.country](product.highPrice)
+          : "",
+    };
+  });
 
+  setState("products", newProducts);
+}

@@ -1,25 +1,24 @@
-import categories from "../data/templates/categories.js";
 import origins from "../data/templates/origins.js";
+import { getState, setState } from "../main/initApp.js";
+import categoriesDB from "../data/templates/categories.js";
 
-export function parseCategory(category, country) {
-  // split category "/garden-furniture/outdoor-furniture/balcony-furniture/" by "/" to array
-  let collectedCategory = origins[country];
-  const categoriesArr = category.category.split("/");
+export function parseCategory() {
+  const categories = getState("categories");
+  const country = getState("country");
 
-  // iterate over each category
-  categoriesArr.forEach((element) => {
-    // check if the category is available in the categories
-    if (element in categories) {
-      collectedCategory += categories[element][country] + "/";
-    }
-  });
+  const newCategories = [];
+  for (const category of categories) {
+    let collectedCategory = origins[country];
+    const categoriesArr = category.category
+      .split("/")
+      .filter((c) => c.length > 0);
+    categoriesArr.forEach((element) => {
+      if (element in categoriesDB) {
+        collectedCategory += categoriesDB[element][country] + "/";
+      }
+    });
 
-  category = {
-    ...category,
-    href: collectedCategory,
-  };
-
-  return category;
+    newCategories.push({ ...category, href: collectedCategory });
+  }
+  setState("categories", newCategories);
 }
-
-

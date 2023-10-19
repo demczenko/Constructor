@@ -6,7 +6,7 @@ export async function fetchToken(token) {
   }
   try {
     const response = await fetch(
-      `https://${endpoint}:7777/refresh/?token=${token}`
+      `${endpoint.belianiUs}:7777/refresh/?token=${token}`
     );
     const data = await response.json();
     return data;

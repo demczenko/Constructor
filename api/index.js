@@ -1,11 +1,12 @@
+import { fetchToken } from "./fetchToken.js";
+import { fetchHeader } from "./header.js";
 import { getIds, getLink, getProductsPrice } from "./product.js";
-import { getTranslationCell, getTranslationRange } from "./translations.js";
-
-
+import { getTranslations } from "./translations.js";
 export {
+    fetchHeader,
+    fetchToken,
     getIds,
     getLink,
     getProductsPrice,
-    getTranslationCell,
-    getTranslationRange,
+    getTranslations,
 }

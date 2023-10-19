@@ -1,1 +1,4 @@
-export default "beliani.us"
+export default {
+  localhost: "http://localhost",
+  belianiUs: "https://beliani.us"
+}

@@ -24,7 +24,6 @@ export function newsletter({
     code,
     from,
     conditions,
-    translations,
     soonEnding,
     influencersChoice,
     thisMayAlsoInterestYou,
@@ -34,6 +33,8 @@ export function newsletter({
   links,
   products,
   categories,
+  translations: { translations },
+  header,
 
   country,
   save,
@@ -41,16 +42,10 @@ export function newsletter({
   type,
   additionalTranslations,
 }) {
-  // console.log("Categories", categories);
-  // console.log("Translations", translations);
-  // console.log(additionalTranslations);
-  // console.log("Products", products);
-  // console.log(additionalTranslations);
-  // console.log(links);
-  console.log(products);
-  
+  // ${header[country]("newsletter", id)}
+
   return `
-  ${header[country]("newsletter", id)}
+  ${header}
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #f1e4e4;" >
             <tbody>
                 <tr>
@@ -98,31 +93,31 @@ export function newsletter({
                   type,
                 })}
                 ${Freebies({
-                    products: [
-                      priceFree({
-                        ...products[0],
-                        src: links[8],
-                        type: 'image'
-                      }),
-                      priceFree({
-                        ...products[1],
-                        src: links[9],
-                        type: 'image'
-                      }),
-                      priceFree({
-                        ...products[2],
-                        src: links[10],
-                        type: 'image'
-                      }),
-                      priceFree({
-                        ...products[3],
-                        src: links[11],
-                        type: 'image'
-                      }),
-                    ],
-                    className: 'newsletterBottom35px',
-                    style: { bgColor: "#f1e4e4" },
-                  })}
+                  products: [
+                    priceFree({
+                      ...products[0],
+                      src: links[8],
+                      type: "image",
+                    }),
+                    priceFree({
+                      ...products[1],
+                      src: links[9],
+                      type: "image",
+                    }),
+                    priceFree({
+                      ...products[2],
+                      src: links[10],
+                      type: "image",
+                    }),
+                    priceFree({
+                      ...products[3],
+                      src: links[11],
+                      type: "image",
+                    }),
+                  ],
+                  className: "newsletterBottom35px",
+                  style: { bgColor: "#f1e4e4" },
+                })}
                 ${Line(undefined, true)}
                 ${Intro({
                   title: translations[3],
@@ -228,7 +223,11 @@ export function newsletter({
                                 </tr>
                                 <tr>
                                     <td align="left">
-                                        <a href=${["FI", "NO", "SE"].includes(country) ? `https://www.beliani.${country.toLowerCase()}/content/lp23-10-17/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}` : links[6]}>
+                                        <a href=${
+                                          ["FI", "NO", "SE"].includes(country)
+                                            ? `https://www.beliani.${country.toLowerCase()}/content/lp23-10-17/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}`
+                                            : links[6]
+                                        }>
                                             <img src=${
                                               links[7]
                                             } style="display: block;" width="100%">
