@@ -5,7 +5,7 @@ const currencies = {
   swissFranc: "Fr.",
   poundSterling: "£",
   hungarianForint: "Ft",
-  swedishKrona: "kr",
+  swedishKrona: ":-",
   danishKrona: "kr.",
   czechKrona: "Kč",
   norwegianKrone: ",-/stk",
@@ -105,7 +105,7 @@ const priceFormats = {
     return relativePriceFormat.NL.currency + " " + normalize(price, "NL");
   },
   SE: (price) => {
-    return normalize(price, "SE") + " " + relativePriceFormat.SE.currency;
+    return normalize(price, "SE") + relativePriceFormat.SE.currency;
   },
   DK: (price) => {
     return normalize(price, "DK") + " " + relativePriceFormat.DK.currency;
