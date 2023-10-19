@@ -97,6 +97,7 @@ export function initApp({
   landingLinks,
   serverProducts,
   serverCategories,
+  serverHeader,
   token,
 }) {
   mainValidation({
@@ -118,11 +119,15 @@ export function initApp({
     const template = getState("template");
     const countryRelativeToIds = getState("ids");
 
-    const headerHtmlTemplate = await fetchHeader({
-      type: template,
-      country: country,
-      id: countryRelativeToIds[country],
-    });
+    let headerHtmlTemplate;
+    if (serverHeader) {
+      headerHtmlTemplate = await fetchHeader({
+        type: template,
+        country: country,
+        id: countryRelativeToIds[country],
+      });
+    }
+
     const tokenResponse = await fetchToken(token);
     if (tokenResponse.Response["Status-Code"] === 200) {
       setState("token", tokenResponse.access_token);
@@ -145,7 +150,7 @@ export function initApp({
         return {
           id: ids[item.main_id][country],
           main_id: item.main_id,
-          name: item.name
+          name: item.name,
         };
       });
 

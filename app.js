@@ -4,6 +4,7 @@ initApp({
   startId: "19022",
   serverProducts: true,
   serverCategories: true,
+  serverHeader: true,
   token:
     "1//04RBOpPXfROLUCgYIARAAGAQSNwF-L9Irf6xobSMx0y9EpukRSWcX0VycB0LW2C-dEbH8z1LYkvtC_LjYKwbBI_UnnscncoAgvm4",
   tableQueries: [
