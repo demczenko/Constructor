@@ -127,6 +127,7 @@ export function initApp({
         id: countryRelativeToIds[country],
       });
     }
+    
 
     const tokenResponse = await fetchToken(token);
     if (tokenResponse.Response["Status-Code"] === 200) {
