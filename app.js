@@ -2,29 +2,35 @@ import { initApp } from "./main/initApp.js";
 
 initApp({
   startId: "19022",
-  serverProducts: true,
+  // serverProducts: true,
   serverCategories: true,
-  serverHeader: true,
+  // serverHeader: true,
   token:
-    "1//04RBOpPXfROLUCgYIARAAGAQSNwF-L9Irf6xobSMx0y9EpukRSWcX0VycB0LW2C-dEbH8z1LYkvtC_LjYKwbBI_UnnscncoAgvm4",
+    "1//04dDj1FHBRByqCgYIARAAGAQSNwF-L9Ir_BtzosTMze8TwKNanaDdELY-V5DfSQxeakSfxnixOiZhg5H8PzPhBzWBY3dKEjf_pdU",
   tableQueries: [
     {
       tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
       tableName: "Voucher - 23.10.23 - Free towels",
       tableRange: "18:26",
-      name: "translations",
+      name: "magdaTranslations",
     },
     {
       tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
       tableName: "Voucher - 23.10.23 - Free towels",
       tableRange: "40",
-      name: "conditions",
+      name: "Myconditions",
     },
     {
       tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
       tableName: "Voucher - 23.10.23 - Free towels",
       tableRange: "31",
-      name: "code",
+      name: "Mycode",
+    },
+    {
+      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+      tableName: "Voucher - 30.10.23 - Cushion pyramid",
+      tableRange: "59",
+      name: "myNew",
     },
   ],
   tableColumns: {

@@ -257,7 +257,7 @@ export function initApp({
         setState("translations", translations);
       }
     }
-    setState("header", headerHtmlTemplate.header);
+    setState("header", headerHtmlTemplate?.header !== undefined ? headerHtmlTemplate.header : "");
     setState("links", parseLinks({ newsletterLinks, landingLinks }));
     setState("loading", false);
 
