@@ -26,6 +26,7 @@ import {
   products,
   categories,
   codes,
+  text,
 } from "../data/index.js";
 import {
   fetchHeader,
@@ -237,7 +238,7 @@ export function initApp({
       handleCategories();
     }
 
-    if (tableQueries.length > 0) {
+    if (tableQueries?.length > 0) {
       const translationsResult = await fetchTranslations({
         tableQueries,
         tableColumns,
@@ -256,20 +257,33 @@ export function initApp({
         }
         setState("translations", translations);
       }
+    } else {
+      const country = getState("country");
+      setState("translations", text[country]);
     }
     setState("header", headerHtmlTemplate?.header !== undefined ? headerHtmlTemplate.header : "");
     setState("links", parseLinks({ newsletterLinks, landingLinks }));
     setState("loading", false);
 
-    const html = getTemplate();
-    if (html.includes("undefined")) {
-      if (confirm("Do you want to render template with undefined value?")) {
-        return (root.innerHTML = html);
+    try {
+      const html = getTemplate();
+      if (html.includes("undefined")) {
+        if (confirm("Do you want to render template with undefined value?")) {
+          return (root.innerHTML = html);
+        } else {
+          templates.errorPage("Error rendering. HTML code has undefined value.");
+        }
       } else {
-        templates.errorPage("Error rendering. HTML code has undefined value.");
+        root.innerHTML = html;
       }
-    } else {
-      root.innerHTML = html;
+    } catch (error) {
+      console.log(error);
+      Toastify({
+        text:
+          "Please check console. " + error.message,
+        escapeMarkup: false,
+        duration: 3000,
+      }).showToast();
     }
   }
 
@@ -328,7 +342,7 @@ export function initApp({
         window.location.hash = "country=DE&template=newsletter";
       }
 
-      if (!template.includes("newsletter") && !template.includes("landing")) {
+      if (!template?.includes("newsletter") && !template?.includes("landing")) {
         state.country = "DE";
         window.location.hash = "country=DE&template=newsletter";
       }
