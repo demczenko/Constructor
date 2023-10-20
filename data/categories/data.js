@@ -1,6 +1,10 @@
 export default [
     {
         src: "https://beliani.info/newsletter/2022/231023Category1.png",
+        category: "/beds/",
+    },
+    {
+        src: "https://beliani.info/newsletter/2022/231023Category1.png",
         category: "/bathtubs-hot-tubs/",
     },
     {
