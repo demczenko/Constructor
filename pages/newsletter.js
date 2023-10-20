@@ -33,7 +33,7 @@ export function newsletter({
   links,
   products,
   categories,
-  translations: {magdaTranslations},
+  translations,
   header,
 
   country,
@@ -44,7 +44,7 @@ export function newsletter({
 }) {
 
   // ${header[country]("newsletter", id)}
-
+  console.log(translations);
   
   return `
   ${header}
@@ -81,9 +81,9 @@ export function newsletter({
                     </td>
                 </tr>
                 ${IntroText({
-                  offerPart1: magdaTranslations[0],
-                  offerPart2: magdaTranslations[1],
-                  offerValid: magdaTranslations[2],
+                  offerPart1: translations[0],
+                  offerPart2: translations[1],
+                  offerValid: translations[2],
                   chooseFrom: chooseFrom,
                   getCode: {
                     link: links[0],
@@ -122,8 +122,8 @@ export function newsletter({
                 })}
                 ${Line(undefined, true)}
                 ${Intro({
-                  title: magdaTranslations[3],
-                  paragraph: magdaTranslations[4],
+                  title: translations[3],
+                  paragraph: translations[4],
                   style: {
                     bgColor: "#f1e4e4",
                   },
@@ -131,7 +131,7 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[0],
-                    name: magdaTranslations[5],
+                    name: translations[5],
                   },
                   products: [
                     products[4],
@@ -149,7 +149,7 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[1],
-                    name: magdaTranslations[6],
+                    name: translations[6],
                   },
                   products: [
                     products[8],
@@ -167,7 +167,7 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[2],
-                    name: magdaTranslations[7],
+                    name: translations[7],
                   },
                   products: [
                     products[12],
@@ -185,7 +185,7 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[3],
-                    name: magdaTranslations[8],
+                    name: translations[8],
                   },
                   products: [
                     products[16],

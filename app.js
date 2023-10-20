@@ -7,32 +7,6 @@ initApp({
   // serverHeader: true,
   token:
     "1//04dDj1FHBRByqCgYIARAAGAQSNwF-L9Ir_BtzosTMze8TwKNanaDdELY-V5DfSQxeakSfxnixOiZhg5H8PzPhBzWBY3dKEjf_pdU",
-  tableQueries: [
-    {
-      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
-      tableName: "Voucher - 23.10.23 - Free towels",
-      tableRange: "18:26",
-      name: "magdaTranslations",
-    },
-    {
-      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
-      tableName: "Voucher - 23.10.23 - Free towels",
-      tableRange: "40",
-      name: "Myconditions",
-    },
-    {
-      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
-      tableName: "Voucher - 23.10.23 - Free towels",
-      tableRange: "31",
-      name: "Mycode",
-    },
-    {
-      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
-      tableName: "Voucher - 30.10.23 - Cushion pyramid",
-      tableRange: "59",
-      name: "myNew",
-    },
-  ],
   tableColumns: {
     UK: "F",
     PL: "H",
