@@ -6,6 +6,29 @@ In translation spreadsheet each country has its own column. By specifying a lett
 It is array of objects. Each object represents a product with mainId and src. MainId it is id from CHDE shop.
 In order to modify the order of products you need to specify the  order of id's by writing it in the order you want to get them.
 
+## tableColumns: REQUIRED
+Should be added if you want to make request to spreadsheet.
+{
+    UK: "F",
+    PL: "H",
+    DE: "J",
+    AT: "L",
+    CHDE: "N",
+    NL: "P",
+    FR: "R",
+    CHFR: "T",
+    ES: "V",
+    PT: "X",
+    IT: "Z",
+    DK: "AB",
+    NO: "AD",
+    FI: "AF",
+    SE: "AH",
+    CZ: "AJ",
+    SK: "AL",
+    HU: "AN",
+  },
+
 ## startId: REQUIRED
 It is id of Parent campaign. Chde created first (it is parent campaign) and than the rest one by clicking on the button "Add Newsletter Family"
 
@@ -110,18 +133,40 @@ example:
    "1//04sWfF8Rjrp0sCgYIARAAGAQSNwF-L9IrW89ut870o5P0RpcNfZvWapkUhQvNVLpuF644Qi4fAVJtmUXiaqyiwJS5lRBU5o3t9tM"
    );
 
-## translationsTableName and translationsRange: OPTIONAL (REQUIRED if you want get translations from spreadsheet)
-If you want get translations directly from Google spreadsheet you have to specify the name of the translation table and range for the translations.
+## tableQueries: OPTIONAL if not provided translations data will be used from data/text.js
+If you want get translations form spreadsheets.
+Object keys: tableId, tableName, tableRange, name is **REQUIRED** name of these keys **cannot** be changed.
+Example:
+  tableQueries: [
+    {
+      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+      tableName: "Voucher - 23.10.23 - Free towels",
+      tableRange: "18:26",
+      name: "magdaTranslations",
+    },
+    {
+      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+      tableName: "Voucher - 23.10.23 - Free towels",
+      tableRange: "40",
+      name: "Myconditions",
+    },
+    {
+      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+      tableName: "Voucher - 23.10.23 - Free towels",
+      tableRange: "31",
+      name: "Mycode",
+    },
+    {
+      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+      tableName: "Voucher - 30.10.23 - Cushion pyramid",
+      tableRange: "59",
+      name: "myNew",
+    },
+  ],
 
-## conditionsRow and codesRow: OPTIONAL 
-This is additional data for fetching from translations spreadsheet from CELL.
-additionalTranslations: this is additional data for fetching from translations spreadsheet from RANGE.
-example:
-    translationsRange: "17:26",
-    conditionsRow: "36",
-
-## apiCall: OPTIONAL
-If you want get products from server. It is not recomended option. Because you will make a lot of requests for creating and than recreating newsletters and landing pages.
+## serverCategories/serverHeader/serverProducts: OPTIONAL
+If you want get products/header or categories from server.
+For products it is not recomended option. Because you will make a lot of requests for creating and than recreating newsletters and landing pages.
 
 ## Shortcuts
 CTRL + D Select all
