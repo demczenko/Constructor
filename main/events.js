@@ -39,8 +39,8 @@ function copyHandlerTemplate(e, copyTemplate, html, state) {
 }
 
 function copyHandlerFormula(e, copyFormula, state) {
-  if (state.productsToParse) {
-    navigator.clipboard.writeText(getFormula(JSON.stringify(state.productsToParse)));
+  if (state.XLSProducts) {
+    navigator.clipboard.writeText(getFormula(JSON.stringify(state.XLSProducts)));
     copyFormula.textContent = "Copied to clipboard";
   } else {
     copyFormula.textContent = "Please set products";

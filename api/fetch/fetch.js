@@ -43,14 +43,13 @@ export const fetchTranslations = async ({ tableQueries, tableColumns }) => {
   };
 };
 
-const setProductandFixOrdering = async (productsOrder) => {
+export const setProductandFixOrdering = async (productsOrder) => {
   let productsXls = await productsXLS();
   productsXls = sort(productsXls, productsOrder);
   setState("XLSProducts", productsXls);
 };
 
-export const fetchProductsShopIds = async ({ productsOrder }) => {
-  await setProductandFixOrdering(productsOrder);
+export const fetchProductsShopIds = async () => {
   const XLSProducts = getState("XLSProducts");
 
   const shopsIDs = await getIds(XLSProducts);

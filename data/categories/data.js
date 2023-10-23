@@ -1,7 +1,7 @@
 export default [
     {
         src: "https://beliani.info/newsletter/2022/231023Category1.png",
-        category: "/beds/",
+        category: "scented-candles-and-diffusers",
     },
     {
         src: "https://beliani.info/newsletter/2022/231023Category1.png",
