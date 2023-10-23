@@ -6,7 +6,7 @@ initApp({
   serverCategories: true,
   // serverHeader: true,
   token:
-    "1//04dDj1FHBRByqCgYIARAAGAQSNwF-L9Ir_BtzosTMze8TwKNanaDdELY-V5DfSQxeakSfxnixOiZhg5H8PzPhBzWBY3dKEjf_pdU",
+    "1//04CEGW4rsJW3yCgYIARAAGAQSNwF-L9IrCe8fPeYEkX61z37RxPBUgct5boeFbZN9aizIUUArSEfIYndQ-sbL0WgiWnSnjmGxRXs",
   tableColumns: {
     UK: "F",
     PL: "H",

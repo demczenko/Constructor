@@ -44,7 +44,7 @@ export function newsletter({
 }) {
 
   // ${header[country]("newsletter", id)}
-  console.log(translations);
+  console.log(categories);
   
   return `
   ${header}

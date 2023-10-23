@@ -43,6 +43,7 @@ import {
   fetchProductsShopIds,
   fetchTranslations,
   parseLinks,
+  setProductandFixOrdering,
 } from "../api/fetch/fetch.js";
 
 const root = document.querySelector("#app");
@@ -130,19 +131,22 @@ export function initApp({
     }
     
 
-    const tokenResponse = await fetchToken(token);
-    if (tokenResponse.Response["Status-Code"] === 200) {
-      setState("token", tokenResponse.access_token);
-    } else {
-      Toastify({
-        text: "Please refresh token. " + tokenResponse.error,
-        escapeMarkup: false,
-        duration: 3000,
-      }).showToast();
+    if (token) {
+      const tokenResponse = await fetchToken(token);
+      if (tokenResponse.Response["Status-Code"] === 200) {
+        setState("token", tokenResponse.access_token);
+      } else {
+        Toastify({
+          text: "Please refresh token. " + tokenResponse.error,
+          escapeMarkup: false,
+          duration: 3000,
+        }).showToast();
+      }
     }
 
-    const ids = await fetchProductsShopIds({ productsOrder });
+    await setProductandFixOrdering(productsOrder);
     if (serverProducts) {
+      const ids = await fetchProductsShopIds();
       setState("productsIds", ids);
       const country = getState("country");
 
