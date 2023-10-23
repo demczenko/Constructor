@@ -141,8 +141,8 @@ export function initApp({
       }).showToast();
     }
 
+    const ids = await fetchProductsShopIds({ productsOrder });
     if (serverProducts) {
-      const ids = await fetchProductsShopIds({ productsOrder });
       setState("productsIds", ids);
       const country = getState("country");
 
