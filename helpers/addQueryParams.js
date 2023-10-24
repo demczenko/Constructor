@@ -1,7 +1,6 @@
 import { getState, setState } from "../main/initApp.js";
 
-export function addParams(arr, id) {
-  const country = getState("country");
+export function addParams(arr) {
 
   return arr.map((link) => {
     if (!link.includes("https://beliani.info/newsletter/2022/")) {
@@ -43,7 +42,6 @@ function getQueryLink(item) {
   if (item.href === null) return undefined;
 
   const queryLink = new URL(item.href);
-
   if (item.query) {
     const link = new URL(item.href + item.query);
     for (const [key, value] of link.searchParams.entries()) {

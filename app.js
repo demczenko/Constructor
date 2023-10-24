@@ -1,12 +1,26 @@
 import { initApp } from "./main/initApp.js";
 
 initApp({
-  startId: "19022",
+  startId: "19278",
   // serverProducts: true,
   serverCategories: true,
-  // serverHeader: true,
+  serverHeader: true,
   token:
-    "1//04CEGW4rsJW3yCgYIARAAGAQSNwF-L9IrCe8fPeYEkX61z37RxPBUgct5boeFbZN9aizIUUArSEfIYndQ-sbL0WgiWnSnjmGxRXs",
+    "1//044Hy3REf18XrCgYIARAAGAQSNwF-L9IrWeu3JsvQAwhPuN2xw-r_n_XUZEAZmix31mYafvyXV4AURcxivAVji8rw0GnWkt8KoDI",
+  tableQueries: [
+    {
+      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+      tableName: "Voucher - 13.11.23 - Seating solutions",
+      tableRange: "15:33",
+      name: "seating",
+    },
+    {
+      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+      tableName: "Voucher - 13.11.23 - Seating solutions",
+      tableRange: "38",
+      name: "condition",
+    },
+  ],
   tableColumns: {
     UK: "F",
     PL: "H",
@@ -29,170 +43,105 @@ initApp({
   },
   newsletterLinks: [
     {
-      value: "lp23-10-23",
+      value: "lp23-11-13",
       addContentOrigin: true,
     },
     {
-      value: "231023_01.jpg",
+      value: "231113_01.jpg",
       addServer: true,
     },
     {
-      value: "lp23-10-23",
+      value: "lp23-11-13",
       addContentOrigin: true,
     },
     {
-      value: "https://upload.pictureserver.net/static/231023gif.gif",
+      value: "https://upload.pictureserver.net/static/231113gif.gif",
     },
     {
-      value: "lp23-10-16",
+      value: "lp23-11-06",
       addContentOrigin: true,
     },
     {
-      value: "231016.png",
+      value: "231106.png",
       addServer: true,
     },
     {
-      value: "lp23-10-13",
+      value: "lp23-11-03",
       addContentOrigin: true,
     },
     {
-      value: "231013.png",
-      addServer: true,
-    },
-    {
-      value: "231023Freebie1.jpg",
-      addServer: true,
-    },
-    {
-      value: "231023Freebie2.jpg",
-      addServer: true,
-    },
-    {
-      value: "231023Freebie3.jpg",
-      addServer: true,
-    },
-    {
-      value: "231023Freebie4.jpg",
+      value: "231103.png",
       addServer: true,
     },
   ],
   landingLinks: [
     {
-      value: "lp23-10-23",
+      value: "lp23-11-13",
       addContentOrigin: true,
     },
     {
-      value: "231023_01.jpg",
+      value: "231113_01.jpg",
       addServer: true,
     },
     {
-      value: "lp23-10-23",
+      value: "lp23-11-13",
       addContentOrigin: true,
     },
     {
-      value: "https://upload.pictureserver.net/static/231023gif.gif",
+      value: "https://upload.pictureserver.net/static/231113gif.gif",
     },
     {
-      value: "lp23-10-16",
+      value: "lp23-11-06",
       addContentOrigin: true,
     },
     {
-      value: "231016.png",
+      value: "231106.png",
       addServer: true,
     },
     {
-      value: "lp23-10-13",
+      value: "lp23-11-03",
       addContentOrigin: true,
     },
     {
-      value: "231013.png",
+      value: "231103.png",
       addServer: true,
     },
   ],
   productsOrder: [
     {
-      id: "243661",
-      src: "https://beliani.info/newsletter/2022/231023Freebie1.jpg",
+      id: "413109",
+      src: "https://beliani.info/newsletter/2022/231113Category12.jpg",
     },
     {
-      id: "243659",
-      src: "https://beliani.info/newsletter/2022/231023Freebie2.jpg",
-    },
-    {
-      id: "243620",
-      src: "https://beliani.info/newsletter/2022/231023Freebie3.jpg",
-    },
-    {
-      id: "243654",
-      src: "https://beliani.info/newsletter/2022/231023Freebie4.jpg",
+      id: "410276",
+      src: "https://beliani.info/newsletter/2022/231113Category13.jpg",
     },
 
     {
-      id: "403148",
-      src: "https://beliani.info/newsletter/2022/231023Category11.png",
+      id: "361128",
+      src: "https://beliani.info/newsletter/2022/231113Category22.jpg",
     },
     {
-      id: "270526",
-      src: "https://beliani.info/newsletter/2022/231023Category12.png",
-    },
-    {
-      id: "158679",
-      src: "https://beliani.info/newsletter/2022/231023Category13.png",
-    },
-    {
-      id: "299174",
-      src: "https://beliani.info/newsletter/2022/231023Category14.png",
+      id: "246048",
+      src: "https://beliani.info/newsletter/2022/231113Category23.jpg",
     },
 
     {
-      id: "231122",
-      src: "https://beliani.info/newsletter/2022/231023Category21.png",
+      id: "387679",
+      src: "https://beliani.info/newsletter/2022/231113Category32.jpg",
     },
     {
-      id: "231312",
-      src: "https://beliani.info/newsletter/2022/231023Category22.png",
-    },
-    {
-      id: "231199",
-      src: "https://beliani.info/newsletter/2022/231023Category23.png",
-    },
-    {
-      id: "231238",
-      src: "https://beliani.info/newsletter/2022/231023Category24.png",
+      id: "372325",
+      src: "https://beliani.info/newsletter/2022/231113Category33.jpg",
     },
 
     {
-      id: "197872",
-      src: "https://beliani.info/newsletter/2022/231023Category31.png",
+      id: "360655",
+      src: "https://beliani.info/newsletter/2022/231113Category42.jpg",
     },
     {
-      id: "297034",
-      src: "https://beliani.info/newsletter/2022/231023Category32.png",
-    },
-    {
-      id: "5864",
-      src: "https://beliani.info/newsletter/2022/231023Category33.png",
-    },
-    {
-      id: "190626",
-      src: "https://beliani.info/newsletter/2022/231023Category34.png",
-    },
-
-    {
-      id: "408725",
-      src: "https://beliani.info/newsletter/2022/231023Category41.png",
-    },
-    {
-      id: "353660",
-      src: "https://beliani.info/newsletter/2022/231023Category42.png",
-    },
-    {
-      id: "320369",
-      src: "https://beliani.info/newsletter/2022/231023Category43.png",
-    },
-    {
-      id: "316932",
-      src: "https://beliani.info/newsletter/2022/231023Category44.png",
+      id: "368733",
+      src: "https://beliani.info/newsletter/2022/231113Category43.jpg",
     },
   ],
 });

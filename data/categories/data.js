@@ -1,22 +1,18 @@
 export default [
     {
-        src: "https://beliani.info/newsletter/2022/231023Category1.png",
-        category: "scented-candles-and-diffusers",
+        src: "https://beliani.info/newsletter/2022/231113Category1.png",
+        category: "sofas/",
     },
     {
-        src: "https://beliani.info/newsletter/2022/231023Category1.png",
-        category: "/bathtubs-hot-tubs/",
+        src: "https://beliani.info/newsletter/2022/231113Category2.png",
+        category: "/armchairs/",
     },
     {
-        src: "https://beliani.info/newsletter/2022/231023Category2.png",
-        category: "/bathroom-furniture/showers/",
+        src: "https://beliani.info/newsletter/2022/231113Category3.png",
+        category: "/home-accessories/stools/pouffes/",
     },
     {
-        src: "https://beliani.info/newsletter/2022/231023Category3.png", 
-        category: "/bathroom-furniture/bathroom-fittings/",
-    },
-    {
-        src: "https://beliani.info/newsletter/2022/231023Category4.png",
-        category: "/bathroom-furniture/bathroom-accessories/",
+        src: "https://beliani.info/newsletter/2022/231113Category4.png",
+        category: "/chairs/",
     },
 ];
