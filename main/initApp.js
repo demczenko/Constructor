@@ -45,6 +45,7 @@ import {
   parseLinks,
   setProductandFixOrdering,
 } from "../api/fetch/fetch.js";
+import { addParams } from "../helpers/addQueryParams.js";
 
 const root = document.querySelector("#app");
 const state = {
@@ -105,7 +106,6 @@ export function initApp({
   mainValidation({
     tableQueries,
     tableColumns,
-    productsOrder,
     startId,
     newsletterLinks,
     landingLinks,
@@ -144,99 +144,102 @@ export function initApp({
       }
     }
 
-    await setProductandFixOrdering(productsOrder);
-    if (serverProducts) {
-      const ids = await fetchProductsShopIds();
-      setState("productsIds", ids);
-      const country = getState("country");
-
-      //1. Получаю айдишники на которые мне нужны цены и ссылки
-      const XLSProducts = getState("XLSProducts");
-      const sortedRequestIds = XLSProducts.map((item) => {
-        return {
-          id: ids[item.main_id][country],
-          main_id: item.main_id,
-          name: item.name,
-        };
-      });
-
-      //2. Получаю цены на продукты
-      const productsPrices = await getProductsPrice(
-        sortedRequestIds.map((item) => item.id)
-      );
-      //3. Привожу данные в нужный вид
-      const normalizedProduct = [];
-      for (const sorted in sortedRequestIds) {
-        const sortedProducts = sortedRequestIds[sorted];
-
-        for (const productId in productsPrices) {
-          if (sortedProducts.id === productId) {
-            normalizedProduct.push({
-              id: productId,
-              name: sortedProducts.name,
-              main_id: sortedProducts.main_id,
-              lowPrice: productsPrices[productId].ShopPrice,
-              highPrice: productsPrices[productId].ShopHPrice,
-              country: country,
-            });
-          }
-        }
-      }
-      //4. Получаю ссылки на продукты
-      const links = [];
-      let isError = false;
-      for (const product of normalizedProduct) {
-        let response;
-        if (!isError) {
-          response = await getLink(product.main_id);
-        }
-        links.push({
-          id: product.id,
-          links: parseLinkToCountry(response),
+    if (productsOrder) {
+      await setProductandFixOrdering(productsOrder);
+      if (serverProducts) {
+        const ids = await fetchProductsShopIds();
+        setState("productsIds", ids);
+        const country = getState("country");
+  
+        //1. Получаю айдишники на которые мне нужны цены и ссылки
+        const XLSProducts = getState("XLSProducts");
+        const sortedRequestIds = XLSProducts.map((item) => {
+          return {
+            id: ids[item.main_id][country],
+            main_id: item.main_id,
+            name: item.name,
+          };
         });
-        if (response.status === "error") {
-          isError = true;
-          Toastify({
-            text:
-              `Product ${product.id} link fetch Error ` + response.data.message,
-            escapeMarkup: false,
-            duration: 3000,
-          }).showToast();
-        }
-      }
-      // 5. Собираю продукты и ссылки вместе
-      const productsWithHref = [];
-      for (const product of normalizedProduct) {
-        for (const link of links) {
-          if (product.id === link.id) {
-            productsWithHref.push({
-              ...product,
-              href: link.links[product.country],
-            });
+  
+        //2. Получаю цены на продукты
+        const productsPrices = await getProductsPrice(
+          sortedRequestIds.map((item) => item.id)
+        );
+        //3. Привожу данные в нужный вид
+        const normalizedProduct = [];
+        for (const sorted in sortedRequestIds) {
+          const sortedProducts = sortedRequestIds[sorted];
+  
+          for (const productId in productsPrices) {
+            if (sortedProducts.id === productId) {
+              normalizedProduct.push({
+                id: productId,
+                name: sortedProducts.name,
+                main_id: sortedProducts.main_id,
+                lowPrice: productsPrices[productId].ShopPrice,
+                highPrice: productsPrices[productId].ShopHPrice,
+                country: country,
+              });
+            }
           }
         }
+        //4. Получаю ссылки на продукты
+        const links = [];
+        let isError = false;
+        for (const product of normalizedProduct) {
+          let response;
+          if (!isError) {
+            response = await getLink(product.main_id);
+          }
+          links.push({
+            id: product.id,
+            links: parseLinkToCountry(response),
+          });
+          if (response.status === "error") {
+            isError = true;
+            Toastify({
+              text:
+                `Product ${product.id} link fetch Error ` + response.data.message,
+              escapeMarkup: false,
+              duration: 3000,
+            }).showToast();
+          }
+        }
+        // 5. Собираю продукты и ссылки вместе
+        const productsWithHref = [];
+        for (const product of normalizedProduct) {
+          for (const link of links) {
+            if (product.id === link.id) {
+              productsWithHref.push({
+                ...product,
+                href: link.links[product.country],
+              });
+            }
+          }
+        }
+  
+        setState(
+          "products",
+          utils.addImageToProducts(productsWithHref, productsOrder)
+        );
+        handleProducts();
+      } else {
+        const country = getState("country");
+        setState(
+          "products",
+          utils.addImageToProducts(
+            products.filter((item) => item.country === country),
+            productsOrder
+          )
+        );
+        handleProducts();
       }
-
-      setState(
-        "products",
-        utils.addImageToProducts(productsWithHref, productsOrder)
-      );
-      handleProducts();
-    } else {
-      const country = getState("country");
-      setState(
-        "products",
-        utils.addImageToProducts(
-          products.filter((item) => item.country === country),
-          productsOrder
-        )
-      );
-      handleProducts();
     }
 
     if (serverCategories) {
       const getSeverCategories = await fetchCategories({ categories });
       setState("categories", getSeverCategories);
+      handleCategories();
     } else {
       setState("categories", categories);
       handleCategories();
@@ -266,9 +269,10 @@ export function initApp({
       setState("translations", text[country]);
     }
     setState("header", headerHtmlTemplate?.header !== undefined ? headerHtmlTemplate.header : "");
-    setState("links", parseLinks({ newsletterLinks, landingLinks }));
+    setState("links", addParams(parseLinks({ newsletterLinks, landingLinks })));
     setState("loading", false);
 
+    console.log(state);
     try {
       const html = getTemplate();
       if (html.includes("undefined")) {

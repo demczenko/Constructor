@@ -6,7 +6,6 @@ export function mainValidation({
   newsletterLinks,
   landingLinks,
   tableColumns,
-  productsOrder,
   token,
 }) {
   if (!startId) {
@@ -38,14 +37,6 @@ export function mainValidation({
   if (!tableColumns) {
     return Toastify({
       text: "If you want to get text from spreadsheet. Please, set tableColumns relative to countries.",
-      escapeMarkup: false,
-      duration: 3000,
-    }).showToast();
-  }
-
-  if (!productsOrder) {
-    return Toastify({
-      text: "Please, set productsOrder.",
       escapeMarkup: false,
       duration: 3000,
     }).showToast();

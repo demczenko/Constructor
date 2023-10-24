@@ -45,6 +45,27 @@ export function Category({ category, products, align = "center", cta, style = { 
                             </table>
                         </td>
                     </tr>
+                    ${
+                        "paragraph" in category
+                        ?
+                        `
+                        <tr>
+                            <td align="left" class="newsletterContainer" style="background-color: ${style.bgColor}">
+                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%">
+                                    <tr>
+                                        <td align="left" class="newsletterBottom35px" >
+                                            <span class="newsletterParagraph">
+                                                ${category.paragraph}
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        `
+                        :
+                        ''
+                    }
                     <tr>
                         <td align="${align}" style="background-color: ${style.bgColor}">
                             <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">

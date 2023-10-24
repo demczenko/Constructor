@@ -42,13 +42,14 @@ export function newsletter({
   type,
   additionalTranslations,
 }) {
-
   // ${header[country]("newsletter", id)}
   console.log(categories);
-  
+
+  const { seating, condition } = translations;
+
   return `
   ${header}
-        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #f1e4e4;" >
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #ffffff;" >
             <tbody>
                 <tr>
                     <td align="center">
@@ -81,122 +82,140 @@ export function newsletter({
                     </td>
                 </tr>
                 ${IntroText({
-                  offerPart1: translations[0],
-                  offerPart2: translations[1],
-                  offerValid: translations[2],
-                  chooseFrom: chooseFrom,
+                  offerParts: [
+                    {
+                      title: seating[0],
+                      paragraph: seating[1],
+                    },
+                    {
+                      title: seating[2],
+                      paragraph: seating[3],
+                    },
+                    {
+                      title: seating[4],
+                      paragraph: seating[5],
+                    },
+                    {
+                      title: seating[6],
+                      paragraph: seating[7],
+                    },
+                  ],
+                  offerValid: seating[8],
                   getCode: {
                     link: links[0],
                     text: getCode,
                   },
                   style: {
-                    bgColor: "#f1e4e4",
+                    bgColor: "#ffffff",
                   },
                   type,
                 })}
-                ${Freebies({
-                  products: [
-                    priceFree({
-                      ...products[0],
-                      src: links[8],
-                      type: "image",
-                    }),
-                    priceFree({
-                      ...products[1],
-                      src: links[9],
-                      type: "image",
-                    }),
-                    priceFree({
-                      ...products[2],
-                      src: links[10],
-                      type: "image",
-                    }),
-                    priceFree({
-                      ...products[3],
-                      src: links[11],
-                      type: "image",
-                    }),
-                  ],
-                  className: "newsletterBottom35px",
-                  style: { bgColor: "#f1e4e4" },
-                })}
                 ${Line(undefined, true)}
-                ${Intro({
-                  title: translations[3],
-                  paragraph: translations[4],
-                  style: {
-                    bgColor: "#f1e4e4",
-                  },
-                })}
                 ${Category({
                   category: {
                     ...categories[0],
-                    name: translations[5],
+                    name: seating[11],
+                    paragraph: seating[12],
                   },
                   products: [
-                    products[4],
-                    products[5],
-                    products[6],
-                    products[7],
+                    {
+                      ...products[0],
+                      src: "https://beliani.info/newsletter/2022/231113Category11.png",
+                      type: "image",
+                    },
+                    products[1],
+                    products[2],
+                    {
+                      ...products[3],
+                      src: "https://beliani.info/newsletter/2022/231113Category14.png",
+                      type: "image",
+                    },
                   ],
                   cta: shopNow,
                   type: "monday",
                   style: {
-                    bgColor: "#f1e4e4",
+                    bgColor: "#ffffff",
                   },
                 })}
                 ${Line(undefined, true)}
                 ${Category({
                   category: {
                     ...categories[1],
-                    name: translations[6],
+                    name: seating[13],
+                    paragraph: seating[14],
                   },
                   products: [
-                    products[8],
-                    products[9],
-                    products[10],
-                    products[11],
+                    {
+                      ...products[4],
+                      type: "image",
+                      src: "https://beliani.info/newsletter/2022/231113Category21.png",
+                    },
+                    products[5],
+                    products[6],
+                    {
+                      ...products[7],
+                      type: "image",
+                      src: "https://beliani.info/newsletter/2022/231113Category24.png",
+                    },
                   ],
                   cta: shopNow,
                   type: "monday",
                   style: {
-                    bgColor: "#f1e4e4",
+                    bgColor: "#ffffff",
                   },
                 })}
                 ${Line(undefined, true)}
                 ${Category({
                   category: {
                     ...categories[2],
-                    name: translations[7],
+                    name: seating[15],
+                    paragraph: seating[16],
                   },
                   products: [
-                    products[12],
-                    products[13],
-                    products[14],
-                    products[15],
+                    {
+                      ...products[8],
+                      type: "image",
+                      src: "https://beliani.info/newsletter/2022/231113Category31.png",
+                    },
+                    products[9],
+                    products[10],
+                    {
+                      ...products[11],
+                      type: "image",
+                      src: "https://beliani.info/newsletter/2022/231113Categor34.png",
+                    },
                   ],
                   cta: shopNow,
                   type: "monday",
                   style: {
-                    bgColor: "#f1e4e4",
+                    bgColor: "#ffffff",
                   },
                 })}
                 ${Line(undefined, true)}
                 ${Category({
                   category: {
                     ...categories[3],
-                    name: translations[8],
+                    name: seating[17],
+                    paragraph: seating[18],
                   },
                   products: [
-                    products[16],
-                    products[17],
-                    products[18],
-                    products[19],
+                    {
+                      ...products[12],
+                      type: "image",
+                      src: "https://beliani.info/newsletter/2022/231113Category41.png",
+                    },
+                    products[13],
+                    products[14],
+                    {
+                      ...products[15],
+                      type: "image",
+                      src: "https://beliani.info/newsletter/2022/231113Category44.png",
+                    },
                   ],
                   cta: shopNow,
                   type: "monday",
                   style: {
-                    bgColor: "#f1e4e4",
+                    bgColor: "#ffffff",
                   },
                 })}
                 ${Line(undefined, true)}
@@ -242,6 +261,6 @@ export function newsletter({
                 </tr>
             </tbody>
         </table>
-        ${footer[country](conditions, "newsletter", id)}
+        ${footer[country](condition, "newsletter", id)}
     `;
 }

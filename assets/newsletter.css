@@ -18,6 +18,11 @@ table {
   margin-left: 4px;
 }
 
+.newsletterBlackWeekCode {
+  padding-top: 54px !important;
+  padding-bottom: 60px !important;
+}
+
 .newsletterCounter {
   padding-left: 140px!important;
   padding-right: 140px!important;
@@ -206,7 +211,6 @@ table {
 }
 
 .newsletterProductContainer {
-  padding-top: 20px !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
@@ -385,6 +389,11 @@ table {
     margin-bottom: 5px !important;
   }
 
+  .newsletterBlackWeekCode {
+    padding-top: 34px !important;
+    padding-bottom: 40px !important;
+  }
+
   .newsletterCounter {
     padding-left: 35px!important;
     padding-right: 35px!important;
@@ -397,9 +406,6 @@ table {
   .newsletterProductTitle {
     font-size: 18px!important;
   }
-
-
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -410,6 +416,14 @@ table {
     } */
 
   /* HEADER END */
+
+  .newsletterProductTitle {
+    font-size: 16px !important;
+  }
+
+  .newsletterProductLowPrice {
+    font-size: 14px !important;
+  }
 
   .newsletterSummerSale {
     font-size: 20px!important;
@@ -552,13 +566,13 @@ table {
 
   .newsletterContainer {
     padding-top: 20px !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
   .newsletterContainerLeftRigth {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
   .newsletterTitleContainer {
@@ -582,10 +596,17 @@ table {
 
   .newsletterProductContainerRIGHT {
     padding-bottom: 20px !important;
+    padding-left: 5px !important;
   }
 
   .newsletterProductContainerLEFT {
     padding-bottom: 20px !important;
+    padding-right: 5px !important;
+  }
+
+  .newsletterProductContainer {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
   /* PRODUCT END */
@@ -614,13 +635,7 @@ table {
     display: block;
   }
 
-  .newsletterProductTitle {
-    font-size: 18px !important;
-  }
 
-  .newsletterProductLowPrice {
-    font-size: 16px !important;
-  }
 
   .newsletterIntroSection {
     padding-top: 20px !important;

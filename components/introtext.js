@@ -1,52 +1,73 @@
-
 export function IntroText({
-  offerPart1,
-  offerPart2,
+  offerParts,
   getCode = {
     link,
-    text
+    text,
   },
   offerValid,
   chooseFrom,
   type,
   style = { bgColor: "#ffffff", textColor: "#000000" },
 }) {
+  style = {
+    bgColor: "#ffffff",
+    textColor: "#000000",
+    ...style,
+  };
 
-    style = {
-        bgColor: "#ffffff",
-        textColor: "#000000",
-        ...style
-    }
-    
-  return `
+
+    return `
     <tr>
-        <td class="newsletterIntroSection" style="background-color: ${style.bgColor};">
+        <td class="newsletterIntroSection" style="background-color: ${
+          style.bgColor
+        };">
             <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tbody>
                     <tr>
-                        <td align="center" class="newsletterIntroSectionItem">
-                            <span class="newsletterParagraph" style="color: ${style.textColor};">
-                                ${offerPart1}
-                            </span>
+                        <td align="center">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tbody>
+                                    ${offerParts.map((item, i) => {
+                                      return `
+                                            <tr>
+                                                <td align="center">
+                                                    <span class="newsletterTitle" style="color: ${
+                                                      style.textColor
+                                                    };">
+                                                        ${item.title}
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            ${
+                                              "paragraph" in item
+                                                ? `
+                                                <tr>
+                                                    <td align="center" ${(offerParts.length - 1) !== i ? 'class="newsletterIntroSectionItem"' : ''} >
+                                                        <span class="newsletterParagraph" style="color: ${style.textColor}; line-height: 1.75">
+                                                            ${item.paragraph}
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                `
+                                                : ""
+                                            }
+                                            `;
+                                    }).join('')}
+                                </tbody>
+                            </table>
                         </td>
                     </tr>
-                    <tr>
-                        <td align="center" class="newsletterIntroSectionItem">
-                            <span class="newsletterParagraph" style="color: ${style.textColor};">
-                                ${offerPart2}
-                            </span>
-                        </td>
-                    </tr>
+
                     ${
                       type === "newsletter"
                         ? `
                         <tr>
-                            <td align="center" class="newsletterIntroSectionItem" style="background-color: ${style.bgColor};">
+                            <td align="center" class="newsletterBlackWeekCode" style="background-color: ${style.bgColor};">
                                 <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                                     <tbody>
                                         <tr>
                                             <td align="center" style="background-color: ${style.bgColor}; ">
-                                                <a class="newsletterCta" href=${getCode.link} style="color: ${style.textColor};">
+                                                <a class="newsletterTitle" href=${getCode.link} style="color: ${style.textColor};">
                                                     ${getCode.text}
                                                 </a>
                                             </td>
@@ -67,9 +88,8 @@ export function IntroText({
                         `
                     }
                     ${
-                        offerValid
-                        ?
-                        `
+                      offerValid
+                        ? `
                         <tr>
                             <td align="center" class="newsletterIntroSectionItem">
                                 <span class="newsletterParagraph" style="color: ${style.textColor};">
@@ -78,13 +98,11 @@ export function IntroText({
                             </td>
                         </tr>
                         `
-                        :
-                        ""
+                        : ""
                     }
                     ${
-                        chooseFrom
-                        ?
-                        `
+                      chooseFrom
+                        ? `
                         <tr>
                             <td align="center">
                                 <span class="newsletterParagraph">
@@ -93,8 +111,7 @@ export function IntroText({
                             </td>
                         </tr>
                         `
-                        :
-                        ""
+                        : ""
                     }
                 </tbody>
             </table>
