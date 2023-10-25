@@ -3,10 +3,9 @@ import { initApp } from "./main/initApp.js";
 initApp({
   startId: "19278",
   // serverProducts: true,
-  serverCategories: true,
-  serverHeader: true,
-  token:
-    "1//044Hy3REf18XrCgYIARAAGAQSNwF-L9IrWeu3JsvQAwhPuN2xw-r_n_XUZEAZmix31mYafvyXV4AURcxivAVji8rw0GnWkt8KoDI",
+  // serverCategories: true,
+  // serverHeader: true,
+  token: "1//04PHr8dTrU25YCgYIARAAGAQSNwF-L9IrXDwDO-Zkuvc6SgFtTNQRA9kddqtZgO0ckXHV_SgZKmc4VnyO2dLuLHsucb2kJ38BoAc",
   tableQueries: [
     {
       tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
@@ -58,19 +57,19 @@ initApp({
       value: "https://upload.pictureserver.net/static/231113gif.gif",
     },
     {
-      value: "lp23-11-06",
+      value: "lp23-11-09",
       addContentOrigin: true,
     },
     {
-      value: "231106.png",
+      value: "231109.png",
       addServer: true,
     },
     {
-      value: "lp23-11-03",
+      value: "lp23-11-08",
       addContentOrigin: true,
     },
     {
-      value: "231103.png",
+      value: "231108.png",
       addServer: true,
     },
   ],

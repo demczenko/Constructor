@@ -59,7 +59,7 @@ const state = {
   categories: [],
   productsIds: [],
   translations: [],
-  token: "",
+  token: "ya29.a0AfB_byA9Y_b_6bzhbKYYZlxzt-vrtipPzyLueu0CLKTgeRcXSQQAg08vsRsUK-H6-tGHK7Z4YVZC5om_a_q3m4UOAnNBJo0PxjW51JwTZLZLp9iunKl4-FJ6I1fSSnQdRryRT50vTPdotXAj1fbuO2S2pHLbfXgZF31xaCgYKAdoSARMSFQGOcNnCItHUlPBQ4qPAIfN_hHuUsw0171",
 };
 
 export function setState(key, value) {
@@ -272,7 +272,6 @@ export function initApp({
     setState("links", addParams(parseLinks({ newsletterLinks, landingLinks })));
     setState("loading", false);
 
-    console.log(state);
     try {
       const html = getTemplate();
       if (html.includes("undefined")) {

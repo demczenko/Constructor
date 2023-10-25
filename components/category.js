@@ -71,7 +71,7 @@ export function Category({ category, products, align = "center", cta, style = { 
                             <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
                                 <tr>
                                     <td align="${align}" class="newsletterProductContainer" >
-                                        <table cellspacing="0" cellpadding="0" border="0" align="${align}" height="100%" width="100%">
+                                        <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
                                             <tr>
                                                 <td align="${align}" class="newsletterProductContainerLEFT" width="50%">
                                                     ${Product({

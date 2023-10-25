@@ -31,7 +31,7 @@ export function IntroText({
                                       return `
                                             <tr>
                                                 <td align="center">
-                                                    <span class="newsletterTitle" style="color: ${
+                                                    <span class="newsletterTitleBlackWeek" style="color: ${
                                                       style.textColor
                                                     };">
                                                         ${item.title}
@@ -67,8 +67,8 @@ export function IntroText({
                                     <tbody>
                                         <tr>
                                             <td align="center" style="background-color: ${style.bgColor}; ">
-                                                <a class="newsletterTitle" href=${getCode.link} style="color: ${style.textColor};">
-                                                    ${getCode.text}
+                                                <a href=${getCode.link} style="color: ${style.textColor}; text-decoration:underline!important;">
+                                                    <span class="newsletterTitle">${getCode.text}</span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -91,7 +91,7 @@ export function IntroText({
                       offerValid
                         ? `
                         <tr>
-                            <td align="center" class="newsletterIntroSectionItem">
+                            <td align="center" class="newsletterBottom30px">
                                 <span class="newsletterParagraph" style="color: ${style.textColor};">
                                     ${offerValid}
                                 </span>
