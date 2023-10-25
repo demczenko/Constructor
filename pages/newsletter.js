@@ -34,7 +34,7 @@ export function newsletter({
   products,
   categories,
   translations,
-  header,
+  // header,
 
   country,
   save,
@@ -42,13 +42,11 @@ export function newsletter({
   type,
   additionalTranslations,
 }) {
-  // ${header[country]("newsletter", id)}
-  console.log(categories);
 
   const { seating, condition } = translations;
 
   return `
-  ${header}
+  ${header[country]("newsletter", id)}
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #ffffff;" >
             <tbody>
                 <tr>
@@ -103,7 +101,7 @@ export function newsletter({
                   offerValid: seating[8],
                   getCode: {
                     link: links[0],
-                    text: getCode,
+                    text: getCodes,
                   },
                   style: {
                     bgColor: "#ffffff",
@@ -141,8 +139,8 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[1],
-                    name: seating[13],
-                    paragraph: seating[14],
+                    name: seating[15],
+                    paragraph: seating[16],
                   },
                   products: [
                     {
@@ -168,8 +166,9 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[2],
-                    name: seating[15],
-                    paragraph: seating[16],
+
+                    name: seating[17],
+                    paragraph: seating[18],
                   },
                   products: [
                     {
@@ -182,7 +181,7 @@ export function newsletter({
                     {
                       ...products[11],
                       type: "image",
-                      src: "https://beliani.info/newsletter/2022/231113Categor34.png",
+                      src: "https://beliani.info/newsletter/2022/231113Category34.png",
                     },
                   ],
                   cta: shopNow,
@@ -195,8 +194,8 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[3],
-                    name: seating[17],
-                    paragraph: seating[18],
+                    name: seating[13],
+                    paragraph: seating[14],
                   },
                   products: [
                     {

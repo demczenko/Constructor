@@ -42,11 +42,4 @@ export function mainValidation({
     }).showToast();
   }
 
-  if (!token) {
-    return Toastify({
-      text: "Please, set token.",
-      escapeMarkup: false,
-      duration: 3000,
-    }).showToast();
-  }
 }
