@@ -121,10 +121,10 @@ export function newsletter({
                       src: "https://beliani.info/newsletter/2022/231113Category11.png",
                       type: "image",
                     },
+                    products[0],
                     products[1],
-                    products[2],
                     {
-                      ...products[3],
+                      ...products[1],
                       src: "https://beliani.info/newsletter/2022/231113Category14.png",
                       type: "image",
                     },
@@ -144,14 +144,14 @@ export function newsletter({
                   },
                   products: [
                     {
-                      ...products[4],
+                      ...products[2],
                       type: "image",
                       src: "https://beliani.info/newsletter/2022/231113Category21.png",
                     },
-                    products[5],
-                    products[6],
+                    products[2],
+                    products[3],
                     {
-                      ...products[7],
+                      ...products[3],
                       type: "image",
                       src: "https://beliani.info/newsletter/2022/231113Category24.png",
                     },
@@ -172,14 +172,14 @@ export function newsletter({
                   },
                   products: [
                     {
-                      ...products[8],
+                      ...products[4],
                       type: "image",
                       src: "https://beliani.info/newsletter/2022/231113Category31.png",
                     },
-                    products[9],
-                    products[10],
+                    products[4],
+                    products[5],
                     {
-                      ...products[11],
+                      ...products[5],
                       type: "image",
                       src: "https://beliani.info/newsletter/2022/231113Category34.png",
                     },
@@ -199,14 +199,14 @@ export function newsletter({
                   },
                   products: [
                     {
-                      ...products[12],
+                      ...products[6],
                       type: "image",
                       src: "https://beliani.info/newsletter/2022/231113Category41.png",
                     },
-                    products[13],
-                    products[14],
+                    products[6],
+                    products[7],
                     {
-                      ...products[15],
+                      ...products[7],
                       type: "image",
                       src: "https://beliani.info/newsletter/2022/231113Category44.png",
                     },
@@ -243,11 +243,7 @@ export function newsletter({
                                 </tr>
                                 <tr>
                                     <td align="left">
-                                        <a href=${
-                                          ["FI", "NO", "SE"].includes(country)
-                                            ? `https://www.beliani.${country.toLowerCase()}/content/lp23-10-17/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}`
-                                            : links[6]
-                                        }>
+                                        <a href=${links[6]}>
                                             <img src=${
                                               links[7]
                                             } style="display: block;" width="100%">
