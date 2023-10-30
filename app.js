@@ -5,21 +5,21 @@ initApp({
   // serverProducts: true,
   // serverCategories: true,
   // serverHeader: true,
-  token: "1//040yER0aBOj2aCgYIARAAGAQSNwF-L9Ir4hxf3Bk71n25yBhX2kZteI3woy6mn3KDZjz6CZBB_LU3sFd2it63PvRkToioTw94saw",
-  tableQueries: [
-    {
-      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
-      tableName: "Voucher - 13.11.23 - Seating solutions",
-      tableRange: "15:33",
-      name: "seating",
-    },
-    {
-      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
-      tableName: "Voucher - 13.11.23 - Seating solutions",
-      tableRange: "38",
-      name: "condition",
-    },
-  ],
+  // token: "1//04p360fV2y6DbCgYIARAAGAQSNwF-L9IrQY-9RtRIbCHRiRHGVlAkRreQzNZwSxL6jrnogrNm9t_R9b6B02FaBurh5PSbh68qzC0",
+  // tableQueries: [
+  //   {
+  //     tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+  //     tableName: "Voucher - 13.11.23 - Seating solutions",
+  //     tableRange: "15:33",
+  //     name: "seating",
+  //   },
+  //   {
+  //     tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+  //     tableName: "Voucher - 13.11.23 - Seating solutions",
+  //     tableRange: "38",
+  //     name: "condition",
+  //   },
+  // ],
   tableColumns: {
     UK: "F",
     PL: "H",

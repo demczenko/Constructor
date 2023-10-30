@@ -42,8 +42,8 @@ export function newsletter({
   type,
   additionalTranslations,
 }) {
+  console.log(translations);
 
-  const { seating, condition } = translations;
 
   return `
   ${header[country]("newsletter", id)}
@@ -80,25 +80,26 @@ export function newsletter({
                     </td>
                 </tr>
                 ${IntroText({
+                  code: true,
                   offerParts: [
                     {
-                      title: seating[0],
-                      paragraph: seating[1],
+                      title: translations[0],
+                      paragraph: translations[1],
                     },
                     {
-                      title: seating[2],
-                      paragraph: seating[3],
+                      title: translations[2],
+                      paragraph: translations[3],
                     },
                     {
-                      title: seating[4],
-                      paragraph: seating[5],
+                      title: translations[4],
+                      paragraph: translations[5],
                     },
                     {
-                      title: seating[6],
-                      paragraph: seating[7],
+                      title: translations[6],
+                      paragraph: translations[7],
                     },
                   ],
-                  offerValid: seating[8],
+                  offerValid: translations[8],
                   getCode: {
                     link: links[0],
                     text: getCodes,
@@ -112,8 +113,8 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[0],
-                    name: seating[11],
-                    paragraph: seating[12],
+                    name: translations[11],
+                    paragraph: translations[12],
                   },
                   products: [
                     {
@@ -139,8 +140,8 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[1],
-                    name: seating[15],
-                    paragraph: seating[16],
+                    name: translations[15],
+                    paragraph: translations[16],
                   },
                   products: [
                     {
@@ -167,8 +168,8 @@ export function newsletter({
                   category: {
                     ...categories[2],
 
-                    name: seating[17],
-                    paragraph: seating[18],
+                    name: translations[17],
+                    paragraph: translations[18],
                   },
                   products: [
                     {
@@ -194,8 +195,8 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[3],
-                    name: seating[13],
-                    paragraph: seating[14],
+                    name: translations[13],
+                    paragraph: translations[14],
                   },
                   products: [
                     {
@@ -256,6 +257,6 @@ export function newsletter({
                 </tr>
             </tbody>
         </table>
-        ${footer[country](condition, "newsletter", id)}
+        ${footer[country](translations, "newsletter", id)}
     `;
 }
