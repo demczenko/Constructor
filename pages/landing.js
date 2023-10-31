@@ -41,7 +41,6 @@ export function landing({
   type,
   additionalTranslations,
 }) {
-
   return `
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #ffffff;" id="newsletter">
   <tbody>
@@ -76,30 +75,30 @@ export function landing({
           </td>
       </tr>
       ${IntroText({
-        code: true,
+        code: false,
         offerParts: [
           {
             title: translations.seating[0],
             paragraph: translations.seating[1],
+            code: translations.code.join('<br />').split('<br />')[0]
           },
           {
             title: translations.seating[2],
             paragraph: translations.seating[3],
+            code: translations.code.join('<br />').split('<br />')[1]
           },
           {
             title: translations.seating[4],
             paragraph: translations.seating[5],
+            code: translations.code.join('<br />').split('<br />')[2]
           },
           {
             title: translations.seating[6],
             paragraph: translations.seating[7],
+            code: translations.code.join('<br />').split('<br />')[3]
           },
         ],
         offerValid: translations.seating[8],
-        getCode: {
-          link: links[0],
-          text: getCodes,
-        },
         style: {
           bgColor: "#ffffff",
         },

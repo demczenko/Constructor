@@ -623,7 +623,7 @@ export default [
     country: "SK",
     name: "ROVIGO",
     href: "https://www.beliani.sk/sada-2-zahradnych-kresiel-siva-s-ciernou-rovigo.html",
-    highPrice: "709.99",
+    highPrice: null,
     lowPrice: "699.99",
   },
   {

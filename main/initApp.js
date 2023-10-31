@@ -114,8 +114,8 @@ export function initApp({
   });
 
   setState("ids", incrementId(startId, countries));
-  attachCss(state);
   setEvents();
+  attachCss(state);
   async function render() {
     setState("loading", true);
     const country = getState("country");
