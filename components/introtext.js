@@ -43,17 +43,32 @@ export function IntroText({
                                                 "paragraph" in item
                                                   ? `
                                                   <tr>
+                                                      <td align="center" style="padding-bottom: 4px">
+                                                          <span class="newsletterParagraph" style="color: ${
+                                                            style.textColor
+                                                          }; line-height: 1.25">
+                                                              ${item.paragraph}
+                                                          </span>
+                                                      </td>
+                                                  </tr>
+                                                  `
+                                                  : ""
+                                              }
+                                              ${
+                                                "code" in item
+                                                  ? `
+                                                  <tr>
                                                       <td align="center" ${
                                                         offerParts.length -
                                                           1 !==
                                                         i
-                                                          ? 'class="newsletterIntroSectionItem"'
+                                                          ? 'class="newsletterCodesPadding"'
                                                           : ""
                                                       } >
                                                           <span class="newsletterParagraph" style="color: ${
                                                             style.textColor
-                                                          }; line-height: 1.75">
-                                                              ${item.paragraph}
+                                                          }; line-height: 1.25">
+                                                              ${item.code}
                                                           </span>
                                                       </td>
                                                   </tr>

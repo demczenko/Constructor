@@ -16,6 +16,12 @@ initApp({
     {
       tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
       tableName: "Voucher - 13.11.23 - Seating solutions",
+      tableRange: "25",
+      name: "code",
+    },
+    {
+      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
+      tableName: "Voucher - 13.11.23 - Seating solutions",
       tableRange: "38",
       name: "condition",
     },

@@ -25,7 +25,6 @@ export function addParamsProduct() {
 
 export function addParamsCategory() {
   const categories = getState("categories");
-  console.log(categories);
   const newCategories = categories.map((category) => ({
     ...category,
     href: getQueryLink(category),

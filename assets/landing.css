@@ -370,6 +370,10 @@ table {
   padding-left: 40px;
 }
 
+#newsletter .newsletterCodesPadding {
+  padding-bottom: 24px;
+}
+
 @media only screen and (max-width: 680px) {
   #newsletter .newsletterCategoryColumnLeft,
   #newsletter .newsletterCategoryColumnRight {
@@ -377,6 +381,10 @@ table {
     padding: 0;
     width: 100%;
     margin-bottom: 5px;
+  }
+
+  #newsletter .newsletterCodesPadding {
+    padding-bottom: 12px;
   }
 
   #newsletter .newsletterCounter {
