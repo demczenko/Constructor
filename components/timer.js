@@ -2,7 +2,7 @@
 
 
 
-const Timer = ({ title, subtitle, imageHref, imageSrc, ctaHref, ctaText, style, className }) => {
+export const Timer = ({ title, subtitle, imageHref, imageSrc, ctaHref, ctaText, style, className }) => {
 
   style = {
     bgColor: "#ffffff",
@@ -49,5 +49,3 @@ const Timer = ({ title, subtitle, imageHref, imageSrc, ctaHref, ctaText, style, 
       </tr>
   `
 }
-
-export default Timer

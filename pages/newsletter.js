@@ -1,16 +1,15 @@
-import { Line } from "../components/Line.js";
-import { Category } from "../components/category.js";
-import { ThisMayInterestYou } from "../components/interest_you.js";
-import { Freebies } from "../components/freebies.js";
-import { Intro } from "../components/intro.js";
-import { IntroText } from "../components/introtext.js";
-import { Matrix } from "../components/matrix.js";
-import { Product } from "../components/product.js";
-import { priceFrom } from "../helpers/from.js";
+import {
+  Line,
+  Category,
+  ThisMayInterestYou,
+  Freebies,
+  Intro,
+  IntroText,
+  Product,
+  Timer
+} from "../components/index.js";
+import { priceFrom, priceFree } from "../helpers/index.js";
 import { footer, header } from "../templates/index.js";
-import { parsePrice } from "../helpers/parsePrice.js";
-import { priceFree } from "../helpers/priceFree.js";
-import Timer from "../components/timer.js";
 
 export function newsletter({
   text: {
@@ -43,7 +42,6 @@ export function newsletter({
   additionalTranslations,
 }) {
   console.log(translations);
-
 
   return `
   ${header[country]("newsletter", id)}
@@ -83,23 +81,23 @@ export function newsletter({
                   code: true,
                   offerParts: [
                     {
-                      title: translations[0],
-                      paragraph: translations[1],
+                      title: translations.seating[0],
+                      paragraph: translations.seating[1],
                     },
                     {
-                      title: translations[2],
-                      paragraph: translations[3],
+                      title: translations.seating[2],
+                      paragraph: translations.seating[3],
                     },
                     {
-                      title: translations[4],
-                      paragraph: translations[5],
+                      title: translations.seating[4],
+                      paragraph: translations.seating[5],
                     },
                     {
-                      title: translations[6],
-                      paragraph: translations[7],
+                      title: translations.seating[6],
+                      paragraph: translations.seating[7],
                     },
                   ],
-                  offerValid: translations[8],
+                  offerValid: translations.seating[8],
                   getCode: {
                     link: links[0],
                     text: getCodes,
@@ -113,8 +111,8 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[0],
-                    name: translations[11],
-                    paragraph: translations[12],
+                    name: translations.seating[11],
+                    paragraph: translations.seating[12],
                   },
                   products: [
                     {
@@ -140,8 +138,8 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[1],
-                    name: translations[15],
-                    paragraph: translations[16],
+                    name: translations.seating[15],
+                    paragraph: translations.seating[16],
                   },
                   products: [
                     {
@@ -168,8 +166,8 @@ export function newsletter({
                   category: {
                     ...categories[2],
 
-                    name: translations[17],
-                    paragraph: translations[18],
+                    name: translations.seating[17],
+                    paragraph: translations.seating[18],
                   },
                   products: [
                     {
@@ -195,8 +193,8 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[3],
-                    name: translations[13],
-                    paragraph: translations[14],
+                    name: translations.seating[13],
+                    paragraph: translations.seating[14],
                   },
                   products: [
                     {
@@ -257,6 +255,6 @@ export function newsletter({
                 </tr>
             </tbody>
         </table>
-        ${footer[country](translations, "newsletter", id)}
+        ${footer[country](translations.condition, "newsletter", id)}
     `;
 }

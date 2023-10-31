@@ -5,6 +5,14 @@ table {
   table-layout: fixed;
 }
 
+
+#newsletter .newsletterTitleBlackWeek {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #000000;
+}
+
 #newsletter .title-advantages {
   text-align: center;
   font-size: 11px;
@@ -378,6 +386,13 @@ table {
 
   #newsletter .newsletterInfluencersChoice {
     width: 100%;
+  }
+
+  #newsletter .newsletterTitleBlackWeek {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+    color: #000000;
   }
 }
 
