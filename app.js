@@ -90,19 +90,19 @@ initApp({
       value: "https://upload.pictureserver.net/static/231113gif.gif",
     },
     {
-      value: "lp23-11-06",
+      value: "lp23-11-09",
       addContentOrigin: true,
     },
     {
-      value: "231106.png",
+      value: "231109.png",
       addServer: true,
     },
     {
-      value: "lp23-11-03",
+      value: "lp23-11-08",
       addContentOrigin: true,
     },
     {
-      value: "231103.png",
+      value: "231108.png",
       addServer: true,
     },
   ],
