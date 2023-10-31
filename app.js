@@ -46,7 +46,7 @@ initApp({
       addContentOrigin: true,
     },
     {
-      value: "231113_01.jpg",
+      value: "231113_01.jps",
       addServer: true,
     },
     {
