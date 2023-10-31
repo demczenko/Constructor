@@ -310,15 +310,13 @@ export function initApp({
   function setEvents() {
     const app = document.querySelector("#app");
 
-    const first = document.querySelector("#first");
-    const firstChildNodes = Array.from(
-      document.querySelector("#first").children
-    );
+    const tabsParent = document.querySelector("#tabs");
+    const tabsChildNodes = Array.from(tabsParent.children);
     const copyFormula = document.querySelector(".copyFormula");
     const copyTemplate = document.querySelector(".copyTemplate");
     const openCampaign = document.querySelector(".openCampaign");
     const renderTemplateBtn = document.querySelector(".renderTemplate");
-    const sync = syncHash(firstChildNodes);
+    const sync = syncHash(tabsChildNodes);
 
     window.addEventListener("popstate", () => sync());
     openCampaign.addEventListener("click", (e) =>
@@ -327,8 +325,8 @@ export function initApp({
     copyFormula.addEventListener("click", (e) =>
       copyHandlerFormula(e, copyFormula, state)
     );
-    first.addEventListener("click", (e) =>
-      firstChildNodes.forEach((node) => setCountry(node, e.target))
+    tabsParent.addEventListener("click", (e) =>
+      tabsChildNodes.forEach((node) => setCountry(node, e.target))
     );
     renderTemplateBtn.addEventListener("click", (e) =>
       clickRenderBtnHandler(e.target.textContent.toLowerCase(), render)
@@ -349,7 +347,7 @@ export function initApp({
     }
   }
 
-  function syncHash(first) {
+  function syncHash(tabs) {
     return () => {
       const [, country, , template] = window.location.hash
         .replace("#", "")
@@ -360,6 +358,7 @@ export function initApp({
       if (!acceptedLocationHash.includes(country)) {
         state.country = "DE";
         window.location.hash = "country=DE&template=newsletter";
+        return 
       }
 
       if (!template?.includes("newsletter") && !template?.includes("landing")) {
@@ -370,7 +369,7 @@ export function initApp({
       state.country = country.toUpperCase();
       state.template = template;
 
-      setActive(first);
+      setActive(tabs);
       render();
     };
   }
