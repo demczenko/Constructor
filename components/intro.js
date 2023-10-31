@@ -1,21 +1,22 @@
+export function Intro({
+  title,
+  paragraph,
+  style = { bgColor: "#ffffff" },
+  align = "left",
+}) {
+  style = {
+    bgColor: "#ffffff",
+    ...style,
+  };
 
-
-
-
-
-
-
-
-export function Intro({ title = "Your text", paragraph = "Your text", style = {bgColor: "#ffffff"}, align = 'left' }) {
-
-    style = {
-        bgColor: "#ffffff",
-        ...style
-    }
-
-    return `
+  return `
     <tr>
-        <td style="background-color: ${style.bgColor}" align="${align}" class="newsletterContainer">
+        <td style="background-color: ${
+          style.bgColor
+        }" align="${align}" class="newsletterContainer">
+        ${
+          title
+            ? `
             <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
                 <tr>
                     <td align="${align}" class="newsletterBottom35px" >
@@ -23,14 +24,23 @@ export function Intro({ title = "Your text", paragraph = "Your text", style = {b
                     </td>
                 </tr>
             </table>
-            <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
+            `
+            : ""
+        }
+            ${
+                paragraph
+                ? `
+                <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
                 <tr>
                     <td align="${align}" class="newsletterBottom35px" >
                         <span class="newsletterParagraph">${paragraph}</span>
                     </td>
                 </tr>
             </table>
+                `
+                : ""
+            }
         </td>
     </tr>
-    `
+    `;
 }

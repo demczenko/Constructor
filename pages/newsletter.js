@@ -1,16 +1,15 @@
-import { Line } from "../components/Line.js";
-import { Category } from "../components/category.js";
-import { ThisMayInterestYou } from "../components/interest_you.js";
-import { Freebies } from "../components/freebies.js";
-import { Intro } from "../components/intro.js";
-import { IntroText } from "../components/introtext.js";
-import { Matrix } from "../components/matrix.js";
-import { Product } from "../components/product.js";
-import { priceFrom } from "../helpers/from.js";
+import {
+  Line,
+  Category,
+  ThisMayInterestYou,
+  Freebies,
+  Intro,
+  IntroText,
+  Product,
+  Timer
+} from "../components/index.js";
+import { priceFrom, priceFree } from "../helpers/index.js";
 import { footer, header } from "../templates/index.js";
-import { parsePrice } from "../helpers/parsePrice.js";
-import { priceFree } from "../helpers/priceFree.js";
-import Timer from "../components/timer.js";
 
 export function newsletter({
   text: {
@@ -42,8 +41,7 @@ export function newsletter({
   type,
   additionalTranslations,
 }) {
-
-  const { seating, condition } = translations;
+  console.log(translations);
 
   return `
   ${header[country]("newsletter", id)}
@@ -80,25 +78,26 @@ export function newsletter({
                     </td>
                 </tr>
                 ${IntroText({
+                  code: true,
                   offerParts: [
                     {
-                      title: seating[0],
-                      paragraph: seating[1],
+                      title: translations.seating[0],
+                      paragraph: translations.seating[1],
                     },
                     {
-                      title: seating[2],
-                      paragraph: seating[3],
+                      title: translations.seating[2],
+                      paragraph: translations.seating[3],
                     },
                     {
-                      title: seating[4],
-                      paragraph: seating[5],
+                      title: translations.seating[4],
+                      paragraph: translations.seating[5],
                     },
                     {
-                      title: seating[6],
-                      paragraph: seating[7],
+                      title: translations.seating[6],
+                      paragraph: translations.seating[7],
                     },
                   ],
-                  offerValid: seating[8],
+                  offerValid: translations.seating[8],
                   getCode: {
                     link: links[0],
                     text: getCodes,
@@ -112,8 +111,8 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[0],
-                    name: seating[11],
-                    paragraph: seating[12],
+                    name: translations.seating[11],
+                    paragraph: translations.seating[12],
                   },
                   products: [
                     {
@@ -121,10 +120,10 @@ export function newsletter({
                       src: "https://beliani.info/newsletter/2022/231113Category11.png",
                       type: "image",
                     },
+                    products[0],
                     products[1],
-                    products[2],
                     {
-                      ...products[3],
+                      ...products[1],
                       src: "https://beliani.info/newsletter/2022/231113Category14.png",
                       type: "image",
                     },
@@ -139,19 +138,19 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[1],
-                    name: seating[15],
-                    paragraph: seating[16],
+                    name: translations.seating[15],
+                    paragraph: translations.seating[16],
                   },
                   products: [
                     {
-                      ...products[4],
+                      ...products[2],
                       type: "image",
                       src: "https://beliani.info/newsletter/2022/231113Category21.png",
                     },
-                    products[5],
-                    products[6],
+                    products[2],
+                    products[3],
                     {
-                      ...products[7],
+                      ...products[3],
                       type: "image",
                       src: "https://beliani.info/newsletter/2022/231113Category24.png",
                     },
@@ -167,19 +166,19 @@ export function newsletter({
                   category: {
                     ...categories[2],
 
-                    name: seating[17],
-                    paragraph: seating[18],
+                    name: translations.seating[17],
+                    paragraph: translations.seating[18],
                   },
                   products: [
                     {
-                      ...products[8],
+                      ...products[4],
                       type: "image",
                       src: "https://beliani.info/newsletter/2022/231113Category31.png",
                     },
-                    products[9],
-                    products[10],
+                    products[4],
+                    products[5],
                     {
-                      ...products[11],
+                      ...products[5],
                       type: "image",
                       src: "https://beliani.info/newsletter/2022/231113Category34.png",
                     },
@@ -194,19 +193,19 @@ export function newsletter({
                 ${Category({
                   category: {
                     ...categories[3],
-                    name: seating[13],
-                    paragraph: seating[14],
+                    name: translations.seating[13],
+                    paragraph: translations.seating[14],
                   },
                   products: [
                     {
-                      ...products[12],
+                      ...products[6],
                       type: "image",
                       src: "https://beliani.info/newsletter/2022/231113Category41.png",
                     },
-                    products[13],
-                    products[14],
+                    products[6],
+                    products[7],
                     {
-                      ...products[15],
+                      ...products[7],
                       type: "image",
                       src: "https://beliani.info/newsletter/2022/231113Category44.png",
                     },
@@ -243,11 +242,7 @@ export function newsletter({
                                 </tr>
                                 <tr>
                                     <td align="left">
-                                        <a href=${
-                                          ["FI", "NO", "SE"].includes(country)
-                                            ? `https://www.beliani.${country.toLowerCase()}/content/lp23-10-17/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}`
-                                            : links[6]
-                                        }>
+                                        <a href=${links[6]}>
                                             <img src=${
                                               links[7]
                                             } style="display: block;" width="100%">
@@ -260,6 +255,6 @@ export function newsletter({
                 </tr>
             </tbody>
         </table>
-        ${footer[country](condition, "newsletter", id)}
+        ${footer[country](translations.condition, "newsletter", id)}
     `;
 }

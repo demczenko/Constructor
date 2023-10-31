@@ -59,7 +59,8 @@ const state = {
   categories: [],
   productsIds: [],
   translations: [],
-  token: "ya29.a0AfB_byA9Y_b_6bzhbKYYZlxzt-vrtipPzyLueu0CLKTgeRcXSQQAg08vsRsUK-H6-tGHK7Z4YVZC5om_a_q3m4UOAnNBJo0PxjW51JwTZLZLp9iunKl4-FJ6I1fSSnQdRryRT50vTPdotXAj1fbuO2S2pHLbfXgZF31xaCgYKAdoSARMSFQGOcNnCItHUlPBQ4qPAIfN_hHuUsw0171",
+  token:
+    "ya29.a0AfB_byA9Y_b_6bzhbKYYZlxzt-vrtipPzyLueu0CLKTgeRcXSQQAg08vsRsUK-H6-tGHK7Z4YVZC5om_a_q3m4UOAnNBJo0PxjW51JwTZLZLp9iunKl4-FJ6I1fSSnQdRryRT50vTPdotXAj1fbuO2S2pHLbfXgZF31xaCgYKAdoSARMSFQGOcNnCItHUlPBQ4qPAIfN_hHuUsw0171",
 };
 
 export function setState(key, value) {
@@ -129,7 +130,6 @@ export function initApp({
         id: countryRelativeToIds[country],
       });
     }
-    
 
     if (token) {
       const tokenResponse = await fetchToken(token);
@@ -150,7 +150,7 @@ export function initApp({
         const ids = await fetchProductsShopIds();
         setState("productsIds", ids);
         const country = getState("country");
-  
+
         //1. Получаю айдишники на которые мне нужны цены и ссылки
         const XLSProducts = getState("XLSProducts");
         const sortedRequestIds = XLSProducts.map((item) => {
@@ -160,7 +160,7 @@ export function initApp({
             name: item.name,
           };
         });
-  
+
         //2. Получаю цены на продукты
         const productsPrices = await getProductsPrice(
           sortedRequestIds.map((item) => item.id)
@@ -169,7 +169,7 @@ export function initApp({
         const normalizedProduct = [];
         for (const sorted in sortedRequestIds) {
           const sortedProducts = sortedRequestIds[sorted];
-  
+
           for (const productId in productsPrices) {
             if (sortedProducts.id === productId) {
               normalizedProduct.push({
@@ -199,7 +199,8 @@ export function initApp({
             isError = true;
             Toastify({
               text:
-                `Product ${product.id} link fetch Error ` + response.data.message,
+                `Product ${product.id} link fetch Error ` +
+                response.data.message,
               escapeMarkup: false,
               duration: 3000,
             }).showToast();
@@ -217,7 +218,7 @@ export function initApp({
             }
           }
         }
-  
+
         setState(
           "products",
           utils.addImageToProducts(productsWithHref, productsOrder)
@@ -246,29 +247,40 @@ export function initApp({
     }
 
     if (tableQueries?.length > 0) {
-      const translationsResult = await fetchTranslations({
-        tableQueries,
-        tableColumns,
-      });
-      if ("error" in translationsResult.data) {
+      try {
+        const translationsResult = await fetchTranslations({
+          tableQueries,
+          tableColumns,
+        });
+        if ("error" in translationsResult.data) {
+          Toastify({
+            text:
+              "Please refresh token. " + translationsResult.data.error.message,
+            escapeMarkup: false,
+            duration: 3000,
+          }).showToast();
+        } else {
+          const translations = {};
+          for (const translation of translationsResult.data) {
+            translations[translation.name] = translation.data;
+          }
+          setState("translations", translations);
+        }
+      } catch (error) {
         Toastify({
-          text:
-            "Please refresh token. " + translationsResult.data.error.message,
+          text: error,
           escapeMarkup: false,
           duration: 3000,
         }).showToast();
-      } else {
-        const translations = {};
-        for (const translation of translationsResult.data) {
-          translations[translation.name] = translation.data;
-        }
-        setState("translations", translations);
       }
     } else {
       const country = getState("country");
       setState("translations", text[country]);
     }
-    setState("header", headerHtmlTemplate?.header !== undefined ? headerHtmlTemplate.header : "");
+    setState(
+      "header",
+      headerHtmlTemplate?.header !== undefined ? headerHtmlTemplate.header : ""
+    );
     setState("links", addParams(parseLinks({ newsletterLinks, landingLinks })));
     setState("loading", false);
 
@@ -278,7 +290,9 @@ export function initApp({
         if (confirm("Do you want to render template with undefined value?")) {
           return (root.innerHTML = html);
         } else {
-          templates.errorPage("Error rendering. HTML code has undefined value.");
+          templates.errorPage(
+            "Error rendering. HTML code has undefined value."
+          );
         }
       } else {
         root.innerHTML = html;
@@ -286,8 +300,7 @@ export function initApp({
     } catch (error) {
       console.log(error);
       Toastify({
-        text:
-          "Please check console. " + error.message,
+        text: "Please check console. " + error.message,
         escapeMarkup: false,
         duration: 3000,
       }).showToast();
@@ -297,15 +310,13 @@ export function initApp({
   function setEvents() {
     const app = document.querySelector("#app");
 
-    const first = document.querySelector("#first");
-    const firstChildNodes = Array.from(
-      document.querySelector("#first").children
-    );
+    const tabsParent = document.querySelector("#tabs");
+    const tabsChildNodes = Array.from(tabsParent.children);
     const copyFormula = document.querySelector(".copyFormula");
     const copyTemplate = document.querySelector(".copyTemplate");
     const openCampaign = document.querySelector(".openCampaign");
     const renderTemplateBtn = document.querySelector(".renderTemplate");
-    const sync = syncHash(firstChildNodes);
+    const sync = syncHash(tabsChildNodes);
 
     window.addEventListener("popstate", () => sync());
     openCampaign.addEventListener("click", (e) =>
@@ -314,8 +325,8 @@ export function initApp({
     copyFormula.addEventListener("click", (e) =>
       copyHandlerFormula(e, copyFormula, state)
     );
-    first.addEventListener("click", (e) =>
-      firstChildNodes.forEach((node) => setCountry(node, e.target))
+    tabsParent.addEventListener("click", (e) =>
+      tabsChildNodes.forEach((node) => setCountry(node, e.target))
     );
     renderTemplateBtn.addEventListener("click", (e) =>
       clickRenderBtnHandler(e.target.textContent.toLowerCase(), render)
@@ -336,7 +347,7 @@ export function initApp({
     }
   }
 
-  function syncHash(first) {
+  function syncHash(tabs) {
     return () => {
       const [, country, , template] = window.location.hash
         .replace("#", "")
@@ -347,6 +358,7 @@ export function initApp({
       if (!acceptedLocationHash.includes(country)) {
         state.country = "DE";
         window.location.hash = "country=DE&template=newsletter";
+        return 
       }
 
       if (!template?.includes("newsletter") && !template?.includes("landing")) {
@@ -357,7 +369,7 @@ export function initApp({
       state.country = country.toUpperCase();
       state.template = template;
 
-      setActive(first);
+      setActive(tabs);
       render();
     };
   }

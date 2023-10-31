@@ -5,7 +5,6 @@ import categoriesDB from "../data/templates/categories.js";
 export function parseCategory() {
   const categories = getState("categories");
   const country = getState("country");
-
   const newCategories = [];
   for (const category of categories) {
     let collectedCategory = origins[country];

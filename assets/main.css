@@ -81,7 +81,7 @@ ul {
   font-size: 14px;
 }
 
-#first {
+#tabs {
   display: flex;
   gap: 6px;
 }

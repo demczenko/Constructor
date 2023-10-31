@@ -33,7 +33,7 @@ export const fetchTranslations = async ({ tableQueries, tableColumns }) => {
           name: query.name,
         });
       } else {
-        throw new Error(`Probably translation cell is empty for ${country}.`);
+        throw new Error(`Probably translation cell is empty for ${country}. Try to render another country or use local text instead.`);
       }
     }
   }
