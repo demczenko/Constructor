@@ -10,7 +10,7 @@ export default {
           <tbody>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -28,14 +28,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.de/sofas/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterSofas.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterSofas.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.de/betten/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterBeds.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterBeds.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -44,14 +44,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.de/tische/kaffeetische/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterCoffee.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterCoffee.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.de/stuehle/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterChairs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterChairs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -60,14 +60,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.de/sessel/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterArmchairs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterArmchairs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.de/aufbewahrung/kommoden/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterSideboards.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterSideboards.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -76,14 +76,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFTBottom">
                                       <a
                                           href="https://www.beliani.de/lampen/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterLamps.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterLamps.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHTBottom">
                                       <a
                                           href="https://www.beliani.de/teppich/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterRugs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterRugs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -101,7 +101,7 @@ export default {
           </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -129,7 +129,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.instagram.com/beliani_deutschland/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Instagram">
                                                       </a>
@@ -137,7 +137,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.facebook.com/beliani.de/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Facebook">
                                                       </a>
@@ -145,7 +145,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="YouTube">
                                                       </a>
@@ -153,7 +153,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.pinterest.de/belianide/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Pinterest">
                                                       </a>
@@ -169,7 +169,7 @@ export default {
               </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <!-- ADVANTAGES -->
@@ -181,7 +181,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.de/content/lieferung/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterAdvantages1New.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterAdvantages1New.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -190,7 +190,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.de/content/uber-uns/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterAdvantages2New.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterAdvantages2New.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -199,7 +199,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.de/content/faq/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterAdvantages3New.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterAdvantages3New.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -208,7 +208,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.de/content/agb/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterAdvantages4New.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterAdvantages4New.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -219,7 +219,7 @@ export default {
               </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -259,7 +259,7 @@ export default {
           <tbody>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -277,14 +277,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.de/sofas/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterSofas.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterSofas.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.de/betten/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterBeds.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterBeds.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -293,14 +293,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.de/tische/kaffeetische/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterCoffee.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterCoffee.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.de/stuehle/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterChairs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterChairs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -309,14 +309,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.de/sessel/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterArmchairs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterArmchairs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.de/aufbewahrung/kommoden/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterSideboards.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterSideboards.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -325,14 +325,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFTBottom">
                                       <a
                                           href="https://www.beliani.de/lampen/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterLamps.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterLamps.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHTBottom">
                                       <a
                                           href="https://www.beliani.de/teppich/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterRugs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterRugs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -350,7 +350,7 @@ export default {
           </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -378,7 +378,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.instagram.com/beliani_deutschland/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Instagram">
                                                       </a>
@@ -386,7 +386,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.facebook.com/beliani.de/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Facebook">
                                                       </a>
@@ -394,7 +394,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="YouTube">
                                                       </a>
@@ -402,7 +402,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.pinterest.de/belianide/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Pinterest">
                                                       </a>
@@ -418,7 +418,7 @@ export default {
               </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -687,14 +687,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.at/sofas/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterSofas.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterSofas.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.at/betten/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterBeds.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterBeds.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -703,14 +703,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.at/tische/kaffeetische/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterCoffee.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterCoffee.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.at/stuehle/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterChairs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterChairs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -719,14 +719,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.at/sessel/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterArmchairs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterArmchairs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.at/aufbewahrung/kommoden/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterSideboards.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterSideboards.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -735,14 +735,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFTBottom">
                                       <a
                                           href="https://www.beliani.at/lampen/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterLamps.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterLamps.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHTBottom">
                                       <a
                                           href="https://www.beliani.at/teppich/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterRugs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterRugs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -786,7 +786,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.instagram.com/beliani_oesterreich/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Instagram"    >
                                                       </a>
@@ -794,7 +794,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.facebook.com/beliani.oesterreich/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Facebook"    >
                                                       </a>
@@ -802,7 +802,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                               width="100%" border="0" style="display:block;" alt="YouTube"
                                                                  >
                                                       </a>
@@ -810,7 +810,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://pinterest.com/belianiat/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Pinterest"    >
                                                       </a>
@@ -826,7 +826,7 @@ export default {
               </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <!-- ADVANTAGES -->
@@ -837,7 +837,7 @@ export default {
                               <tr>
                                   <td>
                                       <a href="https://www.beliani.at/content/lieferung/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterAdvantages1New.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterAdvantages1New.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -846,7 +846,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.at/content/uber-uns/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterAdvantages2New.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterAdvantages2New.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -855,7 +855,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.at/content/faq/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterAdvantages3New.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterAdvantages3New.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -864,7 +864,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.at/content/agb/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterAdvantages4New.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterAdvantages4New.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -875,7 +875,7 @@ export default {
               </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -934,14 +934,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.at/sofas/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterSofas.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterSofas.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.at/betten/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterBeds.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterBeds.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -950,14 +950,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.at/tische/kaffeetische/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterCoffee.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterCoffee.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.at/stuehle/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterChairs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterChairs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -966,14 +966,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.at/sessel/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterArmchairs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterArmchairs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.at/aufbewahrung/kommoden/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterSideboards.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterSideboards.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -982,14 +982,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFTBottom">
                                       <a
                                           href="https://www.beliani.at/lampen/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterLamps.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterLamps.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHTBottom">
                                       <a
                                           href="https://www.beliani.at/teppich/">
-                                          <img src="https://beliani.info/newsletter/2022/dachfooterRugs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/dachfooterRugs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -1033,7 +1033,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.instagram.com/beliani_oesterreich/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Instagram"    >
                                                       </a>
@@ -1041,7 +1041,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.facebook.com/beliani.oesterreich/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Facebook"    >
                                                       </a>
@@ -1049,7 +1049,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                               width="100%" border="0" style="display:block;" alt="YouTube"
                                                                  >
                                                       </a>
@@ -1057,7 +1057,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://pinterest.com/belianiat/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Pinterest"    >
                                                       </a>
@@ -1073,7 +1073,7 @@ export default {
               </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -1120,14 +1120,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.fr/meubles-de-salon/canapes/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_08.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_08.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.fr/lits/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_10.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_10.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -1136,14 +1136,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.fr/tables/tables-basses/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_14.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_14.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.fr/chaises/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_15.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_15.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -1152,14 +1152,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.fr/fauteuils/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_18.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_18.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.fr/meubles-de-salon/rangement/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023footer_19.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023footer_19.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -1168,14 +1168,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFTBottom">
                                    <a
                                        href="https://www.beliani.fr/lampes/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_22.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_22.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHTBottom">
                                    <a
                                        href="https://www.beliani.fr/tapis/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_23.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_23.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -1193,7 +1193,7 @@ export default {
           </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -1221,7 +1221,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.instagram.com/beliani_fr/?hl=fr?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Instagram"    >
                                                    </a>
@@ -1229,7 +1229,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.facebook.com/beliani.fr/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Facebook"    >
                                                    </a>
@@ -1237,7 +1237,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                            width="100%" border="0" style="display:block;" alt="YouTube"
                                                               >
                                                    </a>
@@ -1245,7 +1245,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.pinterest.fr/belianifr/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Pinterest"    >
                                                    </a>
@@ -1261,7 +1261,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <!-- ADVANTAGES -->
@@ -1273,7 +1273,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.fr/content/livraison//?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_27.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_27.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -1282,7 +1282,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.fr/content/a-propos-de-nous/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_28.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_28.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -1291,7 +1291,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.fr/content/centre-d-aide/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_29.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_29.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -1300,7 +1300,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.fr/content/cgv/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_30.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_30.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -1311,7 +1311,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -1369,14 +1369,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.fr/meubles-de-salon/canapes/">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_08.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_08.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.fr/lits/">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_10.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_10.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -1385,14 +1385,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.fr/tables/tables-basses/">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_14.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_14.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.fr/chaises/">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_15.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_15.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -1401,14 +1401,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.fr/fauteuils/">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_18.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_18.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.fr/meubles-de-salon/rangement/">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023footer_19.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023footer_19.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -1417,14 +1417,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFTBottom">
                                    <a
                                        href="https://www.beliani.fr/lampes/">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_22.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_22.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHTBottom">
                                    <a
                                        href="https://www.beliani.fr/tapis/">
-                                       <img src="https://beliani.info/newsletter/2022/fr2023fr_23.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_23.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -1442,7 +1442,7 @@ export default {
           </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -1470,7 +1470,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.instagram.com/beliani_fr/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Instagram"    >
                                                    </a>
@@ -1478,7 +1478,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.facebook.com/beliani.fr/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Facebook"    >
                                                    </a>
@@ -1486,7 +1486,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                            width="100%" border="0" style="display:block;" alt="YouTube"
                                                               >
                                                    </a>
@@ -1494,7 +1494,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.pinterest.fr/belianifr/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Pinterest"    >
                                                    </a>
@@ -1510,7 +1510,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -1557,14 +1557,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
                                       href="https://www.beliani.ch/meubles-de-salon/canapes/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_08.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_08.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
                                       href="https://www.beliani.ch/lits/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_10.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_10.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -1573,14 +1573,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
                                       href="https://www.beliani.ch/tables/tables-basses/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_14.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_14.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
                                       href="https://www.beliani.ch/chaises/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_15.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_15.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -1589,14 +1589,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
                                       href="https://www.beliani.ch/fauteuils/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_18.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_18.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
                                       href="https://www.beliani.ch/meubles-de-salon/rangement/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023footer_19.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023footer_19.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -1605,14 +1605,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFTBottom">
                                   <a
                                       href="https://www.beliani.ch/lampes/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_22.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_22.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHTBottom">
                                   <a
                                       href="https://www.beliani.ch/tapis/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_23.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_23.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -1630,7 +1630,7 @@ export default {
          </tr>
           <tr>
               <td>
-                  <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                  <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
               </td>
           </tr>
           <tr>
@@ -1658,7 +1658,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.instagram.com/beliani_schweiz/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                      <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                           width="100%" border="0" style="display:block;"
                                                           alt="Instagram"    >
                                                   </a>
@@ -1666,7 +1666,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.facebook.com/beliani.ch/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                      <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                           width="100%" border="0" style="display:block;"
                                                           alt="Facebook"    >
                                                   </a>
@@ -1674,7 +1674,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                      <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                           width="100%" border="0" style="display:block;" alt="YouTube"
                                                              >
                                                   </a>
@@ -1682,7 +1682,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://pinterest.com/belianich/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                      <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                           width="100%" border="0" style="display:block;"
                                                           alt="Pinterest"    >
                                                   </a>
@@ -1698,7 +1698,7 @@ export default {
           </tr>
           <tr>
               <td>
-                  <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                  <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
               </td>
           </tr>
           <!-- ADVANTAGES -->
@@ -1710,7 +1710,7 @@ export default {
                               <td>
                                   <a
                                       href="https://www.beliani.ch/content/livraison/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_27.jpg"
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_27.jpg"
                                           alt="" style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -1719,7 +1719,7 @@ export default {
                               <td>
                                   <a
                                       href="https://www.beliani.ch/content/a-propos-de-nous/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_28.jpg"
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_28.jpg"
                                           alt="" style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -1728,7 +1728,7 @@ export default {
                               <td>
                                   <a
                                       href="https://www.beliani.ch/content/faq/#7._Kann_ich_die_Garantie_auf_meinen_M_beln_auch_verl_ngern_/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_29.jpg"
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_29.jpg"
                                           alt="" style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -1737,7 +1737,7 @@ export default {
                               <td>
                                   <a
                                       href="https://www.beliani.ch/content/cgv?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_30.jpg"
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_30.jpg"
                                           alt="" style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -1748,7 +1748,7 @@ export default {
           </tr>
           <tr>
               <td>
-                  <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                  <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
               </td>
           </tr>
           <tr>
@@ -1805,14 +1805,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
                                       href="https://www.beliani.ch/meubles-de-salon/canapes/">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_08.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_08.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
                                       href="https://www.beliani.ch/lits/">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_10.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_10.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -1821,14 +1821,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
                                       href="https://www.beliani.ch/tables/tables-basses/">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_14.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_14.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
                                       href="https://www.beliani.ch/chaises/">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_15.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_15.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -1837,14 +1837,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
                                       href="https://www.beliani.ch/fauteuils/">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_18.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_18.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
                                       href="https://www.beliani.ch/meubles-de-salon/rangement/">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023footer_19.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023footer_19.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -1853,14 +1853,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFTBottom">
                                   <a
                                       href="https://www.beliani.ch/lampes/">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_22.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_22.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHTBottom">
                                   <a
                                       href="https://www.beliani.ch/tapis/">
-                                      <img src="https://beliani.info/newsletter/2022/chfr2023chfr_23.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_23.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -1878,7 +1878,7 @@ export default {
          </tr>
           <tr>
               <td>
-                  <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                  <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
               </td>
           </tr>
           <tr>
@@ -1906,7 +1906,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.instagram.com/beliani_schweiz/">
-                                                      <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                           width="100%" border="0" style="display:block;"
                                                           alt="Instagram"    >
                                                   </a>
@@ -1914,7 +1914,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.facebook.com/beliani.ch/">
-                                                      <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                           width="100%" border="0" style="display:block;"
                                                           alt="Facebook"    >
                                                   </a>
@@ -1922,7 +1922,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                      <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                           width="100%" border="0" style="display:block;" alt="YouTube"
                                                              >
                                                   </a>
@@ -1930,7 +1930,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://pinterest.com/belianich/">
-                                                      <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                           width="100%" border="0" style="display:block;"
                                                           alt="Pinterest"    >
                                                   </a>
@@ -1946,7 +1946,7 @@ export default {
           </tr>
           <tr>
               <td>
-                  <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                  <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
               </td>
           </tr>
           <tr>
@@ -1993,14 +1993,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.it/divani/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_08.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_08.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.it/letti/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_10.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_10.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2009,14 +2009,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.it/tavoli/tavolini/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_14.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_14.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.it/sedie/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_15.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_15.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2025,14 +2025,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.it/poltrone/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_19.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_19.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.it/soggiorno/mobili-portaoggetti/tutti+i+prodotti/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_20.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_20.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2041,14 +2041,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFTBottom">
                                    <a
                                        href="https://www.beliani.it/illuminazione/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_23.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_23.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHTBottom">
                                    <a
                                        href="https://www.beliani.it/tappeti/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_24.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_24.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2066,7 +2066,7 @@ export default {
           </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -2094,7 +2094,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.instagram.com/beliani_italia/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Instagram"    >
                                                    </a>
@@ -2102,7 +2102,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.facebook.com/belianiitalia/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Facebook"    >
                                                    </a>
@@ -2110,7 +2110,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                            width="100%" border="0" style="display:block;" alt="YouTube"
                                                               >
                                                    </a>
@@ -2118,7 +2118,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.pinterest.com/belianiitalia/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Pinterest"    >
                                                    </a>
@@ -2134,7 +2134,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <!-- ADVANTAGES -->
@@ -2146,7 +2146,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.it/content/consegna/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_28.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_28.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2155,7 +2155,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.it/content/chi-siamo/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_29.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_29.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2164,7 +2164,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.it/content/help-center_italian/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_30.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_30.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2173,7 +2173,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.it/content/termini-e-condizioni/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_31.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_31.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2184,7 +2184,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -2243,14 +2243,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.it/divani/">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_08.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_08.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.it/letti/">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_10.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_10.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2259,14 +2259,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.it/tavoli/tavolini/">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_14.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_14.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.it/sedie/">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_15.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_15.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2275,14 +2275,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.it/poltrone/">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_19.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_19.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.it/soggiorno/mobili-portaoggetti/tutti+i+prodotti/">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_20.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_20.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2291,14 +2291,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFTBottom">
                                    <a
                                        href="https://www.beliani.it/illuminazione/">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_23.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_23.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHTBottom">
                                    <a
                                        href="https://www.beliani.it/tappeti/">
-                                       <img src="https://beliani.info/newsletter/2022/IT2023it_24.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/IT2023it_24.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2316,7 +2316,7 @@ export default {
           </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -2344,7 +2344,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.instagram.com/beliani_italia/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Instagram"    >
                                                    </a>
@@ -2352,7 +2352,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.facebook.com/belianiitalia/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Facebook"    >
                                                    </a>
@@ -2360,7 +2360,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                            width="100%" border="0" style="display:block;" alt="YouTube"
                                                               >
                                                    </a>
@@ -2368,7 +2368,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.pinterest.com/belianiitalia/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Pinterest"    >
                                                    </a>
@@ -2384,7 +2384,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -2431,14 +2431,14 @@ export default {
                            <td class="newsletterFooterCategoryLEFT">
                                <a
                                    href="https://www.beliani.co.uk/sofas/all+products/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_08.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_08.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
                            <td class="newsletterFooterCategoryRIGHT">
                                <a
                                    href="https://www.beliani.co.uk/beds/all+products/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_10.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_10.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
@@ -2447,14 +2447,14 @@ export default {
                            <td class="newsletterFooterCategoryLEFT">
                                <a
                                    href="https://www.beliani.co.uk/tables/coffee-tables/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_14.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_14.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
                            <td class="newsletterFooterCategoryRIGHT">
                                <a
                                    href="https://www.beliani.co.uk/chairs/all+products/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_15.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_15.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
@@ -2463,14 +2463,14 @@ export default {
                            <td class="newsletterFooterCategoryLEFT">
                                <a
                                    href="https://www.beliani.co.uk/armchairs/all+products/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_18.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_18.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
                            <td class="newsletterFooterCategoryRIGHT">
                                <a
                                    href="https://www.beliani.co.uk/storage/sideboards/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_19.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_19.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
@@ -2479,14 +2479,14 @@ export default {
                            <td class="newsletterFooterCategoryLEFTBottom">
                                <a
                                    href="https://www.beliani.co.uk/lighting/all+products/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_22.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_22.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
                            <td class="newsletterFooterCategoryRIGHTBottom">
                                <a
                                    href="https://www.beliani.co.uk/rugs/all+products/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_23.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_23.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
@@ -2504,7 +2504,7 @@ export default {
           </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -2532,7 +2532,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://instagram.com/beliani_uk/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Instagram"    >
                                                    </a>
@@ -2540,7 +2540,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.facebook.com/beliani.co.uk/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Facebook"    >
                                                    </a>
@@ -2548,7 +2548,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                            width="100%" border="0" style="display:block;" alt="YouTube"
                                                               >
                                                    </a>
@@ -2556,7 +2556,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.pinterest.co.uk/belianiuk/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Pinterest"    >
                                                    </a>
@@ -2572,7 +2572,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <!-- ADVANTAGES -->
@@ -2584,7 +2584,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.co.uk/content/delivery/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/uk2023uk_27.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_27.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2593,7 +2593,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.co.uk/content/about-us/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/uk2023uk_28.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_28.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2602,7 +2602,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.co.uk/content/faq-en/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/uk2023uk_29.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_29.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2611,7 +2611,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.co.uk/content/terms-and-conditions/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/uk2023uk_30.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_30.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -2622,7 +2622,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -2683,14 +2683,14 @@ export default {
                            <td class="newsletterFooterCategoryLEFT">
                                <a
                                    href="https://www.beliani.co.uk/sofas/all+products/">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_08.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_08.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
                            <td class="newsletterFooterCategoryRIGHT">
                                <a
                                    href="https://www.beliani.co.uk/beds/all+products/">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_10.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_10.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
@@ -2699,14 +2699,14 @@ export default {
                            <td class="newsletterFooterCategoryLEFT">
                                <a
                                    href="https://www.beliani.co.uk/tables/coffee-tables/">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_14.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_14.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
                            <td class="newsletterFooterCategoryRIGHT">
                                <a
                                    href="https://www.beliani.co.uk/chairs/all+products/">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_15.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_15.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
@@ -2715,14 +2715,14 @@ export default {
                            <td class="newsletterFooterCategoryLEFT">
                                <a
                                    href="https://www.beliani.co.uk/armchairs/all+products/">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_18.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_18.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
                            <td class="newsletterFooterCategoryRIGHT">
                                <a
                                    href="https://www.beliani.co.uk/storage/sideboards/">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_19.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_19.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
@@ -2731,14 +2731,14 @@ export default {
                            <td class="newsletterFooterCategoryLEFTBottom">
                                <a
                                    href="https://www.beliani.co.uk/lighting/all+products/">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_22.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_22.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
                            <td class="newsletterFooterCategoryRIGHTBottom">
                                <a
                                    href="https://www.beliani.co.uk/rugs/all+products/">
-                                   <img src="https://beliani.info/newsletter/2022/uk2023uk_23.jpg" alt=""
+                                   <img loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_23.jpg" alt=""
                                        style="display:block" width="100%" border="0" />
                                </a>
                            </td>
@@ -2756,7 +2756,7 @@ export default {
           </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -2784,7 +2784,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://instagram.com/beliani_uk/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Instagram"    >
                                                    </a>
@@ -2792,7 +2792,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.facebook.com/beliani.co.uk/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Facebook"    >
                                                    </a>
@@ -2800,7 +2800,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                            width="100%" border="0" style="display:block;" alt="YouTube"
                                                               >
                                                    </a>
@@ -2808,7 +2808,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.pinterest.co.uk/belianiuk/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Pinterest"    >
                                                    </a>
@@ -2824,7 +2824,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -2871,14 +2871,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.es/sofas/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_08.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_08.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.es/camas/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_10.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_10.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -2887,14 +2887,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.es/mesas/mesas-de-centro/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_14.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_14.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.es/sillas/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_15.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_15.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -2903,14 +2903,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.es/sillones/??utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_19.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_19.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.es/organizacion-y-almacenaje/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_20.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_20.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -2919,14 +2919,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFTBottom">
                                       <a
                                           href="https://www.beliani.es/lamparas/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_23.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_23.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHTBottom">
                                       <a
                                           href="https://www.beliani.es/alfombras/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_24.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_24.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -2944,7 +2944,7 @@ export default {
           </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
               <tr>
@@ -2972,7 +2972,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.instagram.com/beliani.espana/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Instagram"    >
                                                       </a>
@@ -2980,7 +2980,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.facebook.com/beliani.espana/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Facebook"    >
                                                       </a>
@@ -2988,7 +2988,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                               width="100%" border="0" style="display:block;" alt="YouTube"
                                                                  >
                                                       </a>
@@ -2996,7 +2996,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.pinterest.com/belianies/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Pinterest"    >
                                                       </a>
@@ -3012,7 +3012,7 @@ export default {
               </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <!-- ADVANTAGES -->
@@ -3024,7 +3024,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.es/content/envio/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_28.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_28.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -3033,7 +3033,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.es/content/sobre-nosotros/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_29.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_29.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -3042,7 +3042,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.es/content/centro-de-ayuda/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_30.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_30.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -3051,7 +3051,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.es/content/condiciones-generales/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_31.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_31.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -3062,7 +3062,7 @@ export default {
               </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -3121,14 +3121,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.es/sofas/">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_08.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_08.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.es/camas/">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_10.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_10.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -3137,14 +3137,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.es/mesas/mesas-de-centro/">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_14.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_14.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.es/sillas/">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_15.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_15.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -3153,14 +3153,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.es/sillones/?">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_19.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_19.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.es/organizacion-y-almacenaje/">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_20.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_20.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -3169,14 +3169,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFTBottom">
                                       <a
                                           href="https://www.beliani.es/lamparas/">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_23.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_23.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHTBottom">
                                       <a
                                           href="https://www.beliani.es/alfombras/">
-                                          <img src="https://beliani.info/newsletter/2022/footerES230330mp1_24.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_24.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -3194,7 +3194,7 @@ export default {
           </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
               <tr>
@@ -3222,7 +3222,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.instagram.com/beliani.espana/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Instagram"    >
                                                       </a>
@@ -3230,7 +3230,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.facebook.com/beliani.espana/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Facebook"    >
                                                       </a>
@@ -3238,7 +3238,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                               width="100%" border="0" style="display:block;" alt="YouTube"
                                                                  >
                                                       </a>
@@ -3246,7 +3246,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.pinterest.com/belianies/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Pinterest"    >
                                                       </a>
@@ -3262,7 +3262,7 @@ export default {
               </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -3531,14 +3531,14 @@ export default {
                                 <td class="newsletterFooterCategoryLEFT">
                                     <a
                                         href="https://www.beliani.pl/sofy/wszystkie+produkty/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                        <img src="https://beliani.info/newsletter/2022/pl2023pl_08.jpg" alt=""
+                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_08.jpg" alt=""
                                             style="display:block" width="100%" border="0" />
                                     </a>
                                 </td>
                                 <td class="newsletterFooterCategoryRIGHT">
                                     <a
                                         href="https://www.beliani.pl/lozka/wszystkie+produkty/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                        <img src="https://beliani.info/newsletter/2022/pl2023pl_10.jpg" alt=""
+                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_10.jpg" alt=""
                                             style="display:block" width="100%" border="0" />
                                     </a>
                                 </td>
@@ -3547,14 +3547,14 @@ export default {
                                 <td class="newsletterFooterCategoryLEFT">
                                     <a
                                         href="https://www.beliani.pl/stoly/stoliki-kawowe/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                        <img src="https://beliani.info/newsletter/2022/pl2023pl_14.jpg" alt=""
+                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_14.jpg" alt=""
                                             style="display:block" width="100%" border="0" />
                                     </a>
                                 </td>
                                 <td class="newsletterFooterCategoryRIGHT">
                                     <a
                                         href="https://www.beliani.pl/krzesla/wszystkie+produkty/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                        <img src="https://beliani.info/newsletter/2022/pl2023pl_15.jpg" alt=""
+                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_15.jpg" alt=""
                                             style="display:block" width="100%" border="0" />
                                     </a>
                                 </td>
@@ -3563,14 +3563,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.pl/fotele/wszystkie+produkty/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/pl2023pl_18.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_18.jpg" alt=""
                                               style="display:block" width="100%" border="0">
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.pl/przechowywanie/komody/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/pl2023pl_19.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_19.jpg" alt=""
                                               style="display:block" width="100%" border="0">
                                       </a>
                                   </td>
@@ -3579,14 +3579,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFTBottom">
                                       <a
                                           href="https://www.beliani.pl/oswietlenie/wszystkie+produkty/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/pl2023pl_22.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_22.jpg" alt=""
                                               style="display:block" width="100%" border="0">
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHTBottom">
                                       <a
                                           href="https://www.beliani.pl/dywany/wszystkie+produkty/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/pl2023pl_23.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_23.jpg" alt=""
                                               style="display:block" width="100%" border="0">
                                       </a>
                                   </td>
@@ -3604,7 +3604,7 @@ export default {
            </tr>
             <tr>
                 <td>
-                    <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                 </td>
             </tr>
             <tr>
@@ -3632,7 +3632,7 @@ export default {
                                                 <td class="newsletterSocialIcon">
                                                     <a
                                                         href="https://www.instagram.com/beliani_polska/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                        <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                             width="100%" border="0" style="display:block;"
                                                             alt="Instagram"    >
                                                     </a>
@@ -3640,7 +3640,7 @@ export default {
                                                 <td class="newsletterSocialIcon">
                                                     <a
                                                         href="https://www.facebook.com/BelianiPolska/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                        <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                             width="100%" border="0" style="display:block;"
                                                             alt="Facebook"    >
                                                     </a>
@@ -3648,7 +3648,7 @@ export default {
                                                 <td class="newsletterSocialIcon">
                                                     <a
                                                         href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                        <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                             width="100%" border="0" style="display:block;" alt="YouTube"
                                                                >
                                                     </a>
@@ -3656,7 +3656,7 @@ export default {
                                                 <td class="newsletterSocialIcon">
                                                     <a
                                                         href="https://www.pinterest.com/belianipl/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                        <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                             width="100%" border="0" style="display:block;"
                                                             alt="Pinterest"    >
                                                     </a>
@@ -3672,7 +3672,7 @@ export default {
             </tr>
             <tr>
                 <td>
-                    <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                 </td>
             </tr>
             <tr>
@@ -3690,7 +3690,7 @@ export default {
                                 <td>
                                     <a
                                         href="https://www.beliani.pl/content/dostawa/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                        <img src="https://beliani.info/newsletter/2022/pl2023pl_27.jpg"
+                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_27.jpg"
                                             alt="" style="display:block" width="100%" border="0" />
                                     </a>
                                 </td>
@@ -3699,7 +3699,7 @@ export default {
                                 <td>
                                     <a
                                         href="https://www.beliani.pl/content/o-nas/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                        <img src="https://beliani.info/newsletter/2022/pl2023pl_28.jpg"
+                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_28.jpg"
                                             alt="" style="display:block" width="100%" border="0" />
                                     </a>
                                 </td>
@@ -3708,7 +3708,7 @@ export default {
                                 <td>
                                     <a
                                         href="https://www.beliani.pl/content/najczesciej-zadawane-pytania/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                        <img src="https://beliani.info/newsletter/2022/pl2023pl_29.jpg"
+                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_29.jpg"
                                             alt="" style="display:block" width="100%" border="0" />
                                     </a>
                                 </td>
@@ -3717,7 +3717,7 @@ export default {
                                 <td>
                                     <a
                                         href="https://www.beliani.pl/content/ogolne-warunki-handlowe/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                        <img src="https://beliani.info/newsletter/2022/pl2023pl_30.jpg"
+                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_30.jpg"
                                             alt="" style="display:block" width="100%" border="0" />
                                     </a>
                                 </td>
@@ -3728,7 +3728,7 @@ export default {
             </tr>
             <tr>
                 <td>
-                    <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                 </td>
             </tr>
             <tr>
@@ -3789,14 +3789,14 @@ export default {
                                 <td class="newsletterFooterCategoryLEFT">
                                     <a
                                         href="https://www.beliani.pl/sofy/wszystkie+produkty/">
-                                        <img src="https://beliani.info/newsletter/2022/pl2023pl_08.jpg" alt=""
+                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_08.jpg" alt=""
                                             style="display:block" width="100%" border="0" />
                                     </a>
                                 </td>
                                 <td class="newsletterFooterCategoryRIGHT">
                                     <a
                                         href="https://www.beliani.pl/lozka/wszystkie+produkty/">
-                                        <img src="https://beliani.info/newsletter/2022/pl2023pl_10.jpg" alt=""
+                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_10.jpg" alt=""
                                             style="display:block" width="100%" border="0" />
                                     </a>
                                 </td>
@@ -3805,14 +3805,14 @@ export default {
                                 <td class="newsletterFooterCategoryLEFT">
                                     <a
                                         href="https://www.beliani.pl/stoly/stoliki-kawowe/">
-                                        <img src="https://beliani.info/newsletter/2022/pl2023pl_14.jpg" alt=""
+                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_14.jpg" alt=""
                                             style="display:block" width="100%" border="0" />
                                     </a>
                                 </td>
                                 <td class="newsletterFooterCategoryRIGHT">
                                     <a
                                         href="https://www.beliani.pl/krzesla/wszystkie+produkty/">
-                                        <img src="https://beliani.info/newsletter/2022/pl2023pl_15.jpg" alt=""
+                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_15.jpg" alt=""
                                             style="display:block" width="100%" border="0" />
                                     </a>
                                 </td>
@@ -3821,14 +3821,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.pl/fotele/wszystkie+produkty/">
-                                          <img src="https://beliani.info/newsletter/2022/pl2023pl_18.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_18.jpg" alt=""
                                               style="display:block" width="100%" border="0">
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.pl/przechowywanie/komody/">
-                                          <img src="https://beliani.info/newsletter/2022/pl2023pl_19.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_19.jpg" alt=""
                                               style="display:block" width="100%" border="0">
                                       </a>
                                   </td>
@@ -3837,14 +3837,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFTBottom">
                                       <a
                                           href="https://www.beliani.pl/oswietlenie/wszystkie+produkty/">
-                                          <img src="https://beliani.info/newsletter/2022/pl2023pl_22.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_22.jpg" alt=""
                                               style="display:block" width="100%" border="0">
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHTBottom">
                                       <a
                                           href="https://www.beliani.pl/dywany/wszystkie+produkty/">
-                                          <img src="https://beliani.info/newsletter/2022/pl2023pl_23.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/pl2023pl_23.jpg" alt=""
                                               style="display:block" width="100%" border="0">
                                       </a>
                                   </td>
@@ -3862,7 +3862,7 @@ export default {
            </tr>
             <tr>
                 <td>
-                    <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                 </td>
             </tr>
             <tr>
@@ -3890,7 +3890,7 @@ export default {
                                                 <td class="newsletterSocialIcon">
                                                     <a
                                                         href="https://www.instagram.com/beliani_polska/">
-                                                        <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                             width="100%" border="0" style="display:block;"
                                                             alt="Instagram"    >
                                                     </a>
@@ -3898,7 +3898,7 @@ export default {
                                                 <td class="newsletterSocialIcon">
                                                     <a
                                                         href="https://www.facebook.com/BelianiPolska/">
-                                                        <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                             width="100%" border="0" style="display:block;"
                                                             alt="Facebook"    >
                                                     </a>
@@ -3906,7 +3906,7 @@ export default {
                                                 <td class="newsletterSocialIcon">
                                                     <a
                                                         href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                        <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                             width="100%" border="0" style="display:block;" alt="YouTube"
                                                                >
                                                     </a>
@@ -3914,7 +3914,7 @@ export default {
                                                 <td class="newsletterSocialIcon">
                                                     <a
                                                         href="https://www.pinterest.com/belianipl/">
-                                                        <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                             width="100%" border="0" style="display:block;"
                                                             alt="Pinterest"    >
                                                     </a>
@@ -3930,7 +3930,7 @@ export default {
             </tr>
             <tr>
                 <td>
-                    <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                 </td>
             </tr>
             <tr>
@@ -3938,7 +3938,7 @@ export default {
            </tr>
             <tr>
                 <td>
-                    <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                 </td>
             </tr>
             <tr>
@@ -4193,14 +4193,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.nl/banken/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterSofas.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterSofas.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.nl/bedden/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterBeds.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterBeds.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -4209,14 +4209,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.nl/tafels/salontafels/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterCoffee.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterCoffee.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.nl/stoelen/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterChairs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterChairs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -4225,14 +4225,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.nl/fauteuils/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterArmchairs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterArmchairs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.nl/woonkamer/commodes-en-dressoirs/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterSideboards.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterSideboards.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -4241,14 +4241,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFTBottom">
                                       <a
                                           href="https://www.beliani.nl/lampen/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterLamps.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterLamps.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHTBottom">
                                       <a
                                           href="https://www.beliani.nl/tapijten/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterRugs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterRugs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -4266,7 +4266,7 @@ export default {
           </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -4294,7 +4294,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.instagram.com/beliani_nl/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Instagram"    >
                                                       </a>
@@ -4302,7 +4302,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.facebook.com/beliani.nederland/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Facebook"    >
                                                       </a>
@@ -4310,7 +4310,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                               width="100%" border="0" style="display:block;" alt="YouTube"
                                                                  >
                                                       </a>
@@ -4318,7 +4318,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://nl.pinterest.com/BelianiNederland/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                          <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Pinterest"    >
                                                       </a>
@@ -4334,7 +4334,7 @@ export default {
               </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <!-- ADVANTAGES -->
@@ -4346,7 +4346,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.nl/content/levering/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterAdvantages1New.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterAdvantages1New.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -4355,7 +4355,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.nl/content/over-ons/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterAdvantages2New.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterAdvantages2New.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -4364,7 +4364,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.nl/content/faq/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterAdvantages3New.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterAdvantages3New.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -4373,7 +4373,7 @@ export default {
                                   <td>
                                       <a
                                           href="https://www.beliani.nl/content/algemene-voorwaarden/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterAdvantages4New.jpg"
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterAdvantages4New.jpg"
                                               alt="" style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -4384,7 +4384,7 @@ export default {
               </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -4443,14 +4443,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.nl/banken/">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterSofas.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterSofas.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.nl/bedden/">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterBeds.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterBeds.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -4459,14 +4459,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.nl/tafels/salontafels/">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterCoffee.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterCoffee.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.nl/stoelen/">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterChairs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterChairs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -4475,14 +4475,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
                                           href="https://www.beliani.nl/fauteuils/">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterArmchairs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterArmchairs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHT">
                                       <a
                                           href="https://www.beliani.nl/woonkamer/commodes-en-dressoirs/">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterSideboards.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterSideboards.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -4491,14 +4491,14 @@ export default {
                                   <td class="newsletterFooterCategoryLEFTBottom">
                                       <a
                                           href="https://www.beliani.nl/lampen/">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterLamps.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterLamps.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
                                   <td class="newsletterFooterCategoryRIGHTBottom">
                                       <a
                                           href="https://www.beliani.nl/tapijten/">
-                                          <img src="https://beliani.info/newsletter/2022/nlfooterRugs.jpg" alt=""
+                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/nlfooterRugs.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
                                   </td>
@@ -4516,7 +4516,7 @@ export default {
           </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -4544,7 +4544,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.instagram.com/beliani_nl/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Instagram"    >
                                                       </a>
@@ -4552,7 +4552,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.facebook.com/beliani.nederland/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Facebook"    >
                                                       </a>
@@ -4560,7 +4560,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                               width="100%" border="0" style="display:block;" alt="YouTube"
                                                                  >
                                                       </a>
@@ -4568,7 +4568,7 @@ export default {
                                                   <td class="newsletterSocialIcon">
                                                       <a
                                                           href="https://nl.pinterest.com/BelianiNederland/">
-                                                          <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                          <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                               width="100%" border="0" style="display:block;"
                                                               alt="Pinterest"    >
                                                       </a>
@@ -4584,7 +4584,7 @@ export default {
               </tr>
               <tr>
                   <td>
-                      <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                      <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                   </td>
               </tr>
               <tr>
@@ -4631,14 +4631,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
                                       href="https://www.beliani.se/soffor/alla%20produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_06.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_06.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
                                       href="https://www.beliani.se/sangar/alla%20produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_08.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_08.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -4647,14 +4647,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
                                       href="https://www.beliani.se/bord/soffbord/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_11.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_11.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
                                       href="https://www.beliani.se/stolar/alla%20produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_12.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_12.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -4663,14 +4663,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
                                       href="https://www.beliani.se/fatolj/alla%20produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_15.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_15.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
                                       href="https://www.beliani.se/forvaring/skap-och-skankar/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_16.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_16.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -4679,14 +4679,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFTBottom">
                                   <a
                                       href="https://www.beliani.se/lampor/alla%20produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_20.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_20.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHTBottom">
                                   <a
                                       href="https://www.beliani.se/mattor/alla%20produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_21.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_21.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -4704,7 +4704,7 @@ export default {
           </tr>
           <tr>
               <td>
-                  <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                  <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
               </td>
           </tr>
           <tr>
@@ -4732,7 +4732,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.instagram.com/beliani_sverige/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                      <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                           width="100%" border="0" style="display:block;"
                                                           alt="Instagram"    >
                                                   </a>
@@ -4740,7 +4740,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.facebook.com/beliani.sverige?fref=ts%3Futm_source%3Dnewsletter&utm_medium=email&utm_campaign=${id}">
-                                                      <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                           width="100%" border="0" style="display:block;"
                                                           alt="Facebook"    >
                                                   </a>
@@ -4748,7 +4748,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                      <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                           width="100%" border="0" style="display:block;" alt="YouTube"
                                                               >
                                                   </a>
@@ -4756,7 +4756,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.pinterest.com/belianisverige/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                      <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                           width="100%" border="0" style="display:block;"
                                                           alt="Pinterest"    >
                                                   </a>
@@ -4772,7 +4772,7 @@ export default {
           </tr>
           <tr>
               <td>
-                  <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                  <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
               </td>
           </tr>
           <!-- ADVANTAGES -->
@@ -4784,7 +4784,7 @@ export default {
                               <td>
                                   <a
                                       href="https://www.beliani.se/content/leverans/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_24.jpg"
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_24.jpg"
                                           alt="" style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -4793,7 +4793,7 @@ export default {
                               <td>
                                   <a
                                       href="https://www.beliani.se/content/villkor/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_25.jpg"
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_25.jpg"
                                           alt="" style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -4802,7 +4802,7 @@ export default {
                               <td>
                                   <a
                                       href="https://www.beliani.se/content/om-oss/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_27.jpg"
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_27.jpg"
                                           alt="" style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -4811,7 +4811,7 @@ export default {
                               <td>
                                   <a
                                       href="https://www.beliani.se/content/sjalvbetjaning_swedish/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_28.jpg"
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_28.jpg"
                                           alt="" style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -4822,7 +4822,7 @@ export default {
           </tr>
           <tr>
               <td>
-                  <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                  <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
               </td>
           </tr>
           <tr>
@@ -4881,14 +4881,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
                                       href="https://www.beliani.se/soffor/alla%20produkter/">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_06.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_06.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
                                       href="https://www.beliani.se/sangar/alla%20produkter/">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_08.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_08.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -4897,14 +4897,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
                                       href="https://www.beliani.se/bord/soffbord/">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_11.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_11.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
                                       href="https://www.beliani.se/stolar/alla%20produkter/">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_12.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_12.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -4913,14 +4913,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
                                       href="https://www.beliani.se/fatolj/alla%20produkter/">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_15.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_15.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
                                       href="https://www.beliani.se/forvaring/skap-och-skankar/">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_16.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_16.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -4929,14 +4929,14 @@ export default {
                               <td class="newsletterFooterCategoryLEFTBottom">
                                   <a
                                       href="https://www.beliani.se/lampor/alla%20produkter/">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_20.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_20.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHTBottom">
                                   <a
                                       href="https://www.beliani.se/mattor/alla%20produkter/">
-                                      <img src="https://beliani.info/newsletter/2022/footer2023se_21.jpg" alt=""
+                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_21.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
@@ -4954,7 +4954,7 @@ export default {
           </tr>
           <tr>
               <td>
-                  <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                  <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
               </td>
           </tr>
           <tr>
@@ -4982,7 +4982,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.instagram.com/beliani_sverige/">
-                                                      <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                           width="100%" border="0" style="display:block;"
                                                           alt="Instagram"    >
                                                   </a>
@@ -4990,7 +4990,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.facebook.com/beliani.sverige">
-                                                      <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                           width="100%" border="0" style="display:block;"
                                                           alt="Facebook"    >
                                                   </a>
@@ -4998,7 +4998,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                      <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                           width="100%" border="0" style="display:block;" alt="YouTube"
                                                               >
                                                   </a>
@@ -5006,7 +5006,7 @@ export default {
                                               <td class="newsletterSocialIcon">
                                                   <a
                                                       href="https://www.pinterest.com/belianisverige/">
-                                                      <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                      <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                           width="100%" border="0" style="display:block;"
                                                           alt="Pinterest"    >
                                                   </a>
@@ -5022,7 +5022,7 @@ export default {
           </tr>
           <tr>
               <td>
-                  <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                  <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
               </td>
           </tr>
           <tr>
@@ -5069,14 +5069,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.dk/sofaer/alle+produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_08.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_08.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.dk/senge/alle+produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_10.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_10.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5085,14 +5085,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.dk/borde/sofaborde/looks/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_14.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_14.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.dk/stuemobler/stole/alle+produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_15.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_15.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5101,14 +5101,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.dk/lenestole/alle+produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_19.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_19.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.dk/opbevaring/skaenke/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_20.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_20.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5117,14 +5117,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFTBottom">
                                    <a
                                        href="https://www.beliani.dk/belysning/alle+produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_23.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_23.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHTBottom">
                                    <a
                                        href="https://www.beliani.dk/gulvtepper/alle+produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_24.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_24.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5142,7 +5142,7 @@ export default {
           </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -5170,7 +5170,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.instagram.com/beliani.danmark/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Instagram"    >
                                                    </a>
@@ -5178,7 +5178,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.facebook.com/beliani.dk?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Facebook"    >
                                                    </a>
@@ -5186,7 +5186,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                            width="100%" border="0" style="display:block;" alt="YouTube"
                                                               >
                                                    </a>
@@ -5194,7 +5194,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.pinterest.com/belianidanmark/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Pinterest"    >
                                                    </a>
@@ -5210,7 +5210,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <!-- ADVANTAGES -->
@@ -5222,7 +5222,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.dk/content/levering/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_28.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_28.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5231,7 +5231,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.dk/content/om-os/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_29.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_29.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5240,7 +5240,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.dk/content/hjaelp/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_30.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_30.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5249,7 +5249,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.dk/content/vilkar-og-betingelser/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_31.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_31.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5260,7 +5260,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -5318,14 +5318,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.dk/sofaer/">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_08.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_08.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.dk/senge/">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_10.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_10.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5334,14 +5334,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.dk/borde/sofaborde/looks/">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_14.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_14.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.dk/stuemobler/stole/alle+produkter/">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_15.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_15.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5350,14 +5350,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.dk/lenestole/">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_19.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_19.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.dk/opbevaring/skaenke/">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_20.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_20.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5366,14 +5366,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFTBottom">
                                    <a
                                        href="https://www.beliani.dk/belysning/">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_23.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_23.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHTBottom">
                                    <a
                                        href="https://www.beliani.dk/gulvtepper/">
-                                       <img src="https://beliani.info/newsletter/2022/ESfooter2023dk_24.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/ESfooter2023dk_24.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5391,7 +5391,7 @@ export default {
           </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -5419,7 +5419,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.instagram.com/beliani.danmark/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Instagram"    >
                                                    </a>
@@ -5427,7 +5427,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.facebook.com/beliani.dk">
-                                                       <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Facebook"    >
                                                    </a>
@@ -5435,7 +5435,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                            width="100%" border="0" style="display:block;" alt="YouTube"
                                                               >
                                                    </a>
@@ -5443,7 +5443,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.pinterest.com/belianidanmark/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Pinterest"    >
                                                    </a>
@@ -5459,7 +5459,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -5728,14 +5728,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.fi/sohvat/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_06.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_06.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.fi/sangyt/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_08.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_08.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5744,14 +5744,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.fi/poydat/sohvapoydat/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_11.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_11.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.fi/tuolit/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_12.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_12.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5760,14 +5760,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.fi/nojatuolit/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_15.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_15.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.fi/olohuoneen-kalusteet/sailytys/senkit/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_16.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_16.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5776,14 +5776,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFTBottom">
                                    <a
                                        href="https://www.beliani.fi/valaisimet/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_20.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_20.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHTBottom">
                                    <a
                                        href="https://www.beliani.fi/matot/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_21.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_21.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5801,7 +5801,7 @@ export default {
           </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -5829,7 +5829,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.instagram.com/beliani_suomi/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Instagram"    >
                                                    </a>
@@ -5837,7 +5837,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.facebook.com/belianisuomi/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Facebook"    >
                                                    </a>
@@ -5845,7 +5845,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                            width="100%" border="0" style="display:block;" alt="YouTube"
                                                               >
                                                    </a>
@@ -5853,7 +5853,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.pinterest.com/belianisuomi/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                       <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Pinterest"    >
                                                    </a>
@@ -5869,7 +5869,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <!-- ADVANTAGES -->
@@ -5881,7 +5881,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.fi/content/toimitus/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_24.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_24.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5890,7 +5890,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.fi/content/tietoja-meista/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_25.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_25.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5899,7 +5899,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.fi/content/ohjekeskus/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_27.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_27.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5908,7 +5908,7 @@ export default {
                                <td>
                                    <a
                                        href="https://www.beliani.fi/content/kayttoehdot/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_28.jpg"
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_28.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5919,7 +5919,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -5977,14 +5977,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.fi/sohvat">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_06.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_06.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.fi/sangyt">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_08.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_08.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -5993,14 +5993,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.fi/poydat/sohvapoydat">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_11.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_11.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.fi/tuolit">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_12.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_12.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -6009,14 +6009,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFT">
                                    <a
                                        href="https://www.beliani.fi/nojatuolit">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_15.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_15.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHT">
                                    <a
                                        href="https://www.beliani.fi/olohuoneen-kalusteet/sailytys/senkit">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_16.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_16.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -6025,14 +6025,14 @@ export default {
                                <td class="newsletterFooterCategoryLEFTBottom">
                                    <a
                                        href="https://www.beliani.fi/valaisimet">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_20.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_20.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
                                <td class="newsletterFooterCategoryRIGHTBottom">
                                    <a
                                        href="https://www.beliani.fi/matot">
-                                       <img src="https://beliani.info/newsletter/2022/footer2023fi_21.jpg" alt=""
+                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023fi_21.jpg" alt=""
                                            style="display:block" width="100%" border="0" />
                                    </a>
                                </td>
@@ -6050,7 +6050,7 @@ export default {
           </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -6078,7 +6078,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.instagram.com/beliani_suomi/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Instagram"    >
                                                    </a>
@@ -6086,7 +6086,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.facebook.com/belianisuomi/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Facebook"    >
                                                    </a>
@@ -6094,7 +6094,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                            width="100%" border="0" style="display:block;" alt="YouTube"
                                                               >
                                                    </a>
@@ -6102,7 +6102,7 @@ export default {
                                                <td class="newsletterSocialIcon">
                                                    <a
                                                        href="https://www.pinterest.com/belianisuomi/">
-                                                       <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Pinterest"    >
                                                    </a>
@@ -6118,7 +6118,7 @@ export default {
            </tr>
            <tr>
                <td>
-                   <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
                </td>
            </tr>
            <tr>
@@ -6165,14 +6165,14 @@ export default {
                              <td class="newsletterFooterCategoryLEFT">
                                  <a
                                      href="https://www.beliani.no/sofaer/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_08.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_08.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
                              <td class="newsletterFooterCategoryRIGHT">
                                  <a
                                      href="https://www.beliani.no/senger/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_10.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_10.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
@@ -6181,14 +6181,14 @@ export default {
                              <td class="newsletterFooterCategoryLEFT">
                                  <a
                                      href="https://www.beliani.no/bord/sofabord/looks/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_14.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_14.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
                              <td class="newsletterFooterCategoryRIGHT">
                                  <a
                                      href="https://www.beliani.no/stoler/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_15.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_15.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
@@ -6197,14 +6197,14 @@ export default {
                              <td class="newsletterFooterCategoryLEFT">
                                  <a
                                      href="https://www.beliani.no/lenestoler/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_19.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_19.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
                              <td class="newsletterFooterCategoryRIGHT">
                                  <a
                                      href="https://www.beliani.no/oppbevaring/skjenker/looks/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_20.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_20.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
@@ -6213,14 +6213,14 @@ export default {
                              <td class="newsletterFooterCategoryLEFTBottom">
                                  <a
                                      href="https://www.beliani.no/belysning/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_23.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_23.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
                              <td class="newsletterFooterCategoryRIGHTBottom">
                                  <a
                                      href="https://www.beliani.no/tepper/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_24.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_24.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
@@ -6238,7 +6238,7 @@ export default {
           </tr>
          <tr>
              <td>
-                 <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                 <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
              </td>
          </tr>
          <tr>
@@ -6266,7 +6266,7 @@ export default {
                                              <td class="newsletterSocialIcon">
                                                  <a
                                                      href="https://www.instagram.com/beliani_norge/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                     <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                          width="100%" border="0" style="display:block;"
                                                          alt="Instagram"    >
                                                  </a>
@@ -6274,7 +6274,7 @@ export default {
                                              <td class="newsletterSocialIcon">
                                                  <a
                                                      href="https://www.facebook.com/BelianiNorge?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                     <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                          width="100%" border="0" style="display:block;"
                                                          alt="Facebook"    >
                                                  </a>
@@ -6282,7 +6282,7 @@ export default {
                                              <td class="newsletterSocialIcon">
                                                  <a
                                                      href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                     <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                          width="100%" border="0" style="display:block;" alt="YouTube"
                                                             >
                                                  </a>
@@ -6290,7 +6290,7 @@ export default {
                                              <td class="newsletterSocialIcon">
                                                  <a
                                                      href="https://www.pinterest.com/beliani_norge/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                                     <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                          width="100%" border="0" style="display:block;"
                                                          alt="Pinterest"    >
                                                  </a>
@@ -6306,7 +6306,7 @@ export default {
          </tr>
          <tr>
              <td>
-                 <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                 <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
              </td>
          </tr>
          <!-- ADVANTAGES -->
@@ -6318,7 +6318,7 @@ export default {
                              <td>
                                  <a
                                      href="https://www.beliani.no/content/levering/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_28.jpg"
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_28.jpg"
                                          alt="" style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
@@ -6327,7 +6327,7 @@ export default {
                              <td>
                                  <a
                                      href="https://www.beliani.no/content/om-oss/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_29.jpg"
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_29.jpg"
                                          alt="" style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
@@ -6336,7 +6336,7 @@ export default {
                              <td>
                                  <a
                                      href="https://www.beliani.no/content/hjelpesenter_norwegian/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_30.jpg"
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_30.jpg"
                                          alt="" style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
@@ -6345,7 +6345,7 @@ export default {
                              <td>
                                  <a
                                      href="https://www.beliani.no/content/vilkar-og-betingelser/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_31.jpg"
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_31.jpg"
                                          alt="" style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
@@ -6356,7 +6356,7 @@ export default {
          </tr>
          <tr>
              <td>
-                 <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                 <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
              </td>
          </tr>
          <tr>
@@ -6415,14 +6415,14 @@ export default {
                              <td class="newsletterFooterCategoryLEFT">
                                  <a
                                      href="https://www.beliani.no/sofaer/">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_08.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_08.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
                              <td class="newsletterFooterCategoryRIGHT">
                                  <a
                                      href="https://www.beliani.no/senger/">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_10.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_10.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
@@ -6431,14 +6431,14 @@ export default {
                              <td class="newsletterFooterCategoryLEFT">
                                  <a
                                      href="https://www.beliani.no/bord/sofabord/looks/">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_14.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_14.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
                              <td class="newsletterFooterCategoryRIGHT">
                                  <a
                                      href="https://www.beliani.no/stoler/">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_15.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_15.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
@@ -6447,14 +6447,14 @@ export default {
                              <td class="newsletterFooterCategoryLEFT">
                                  <a
                                      href="https://www.beliani.no/lenestoler/">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_19.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_19.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
                              <td class="newsletterFooterCategoryRIGHT">
                                  <a
                                      href="https://www.beliani.no/oppbevaring/skjenker/looks/">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_20.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_20.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
@@ -6463,14 +6463,14 @@ export default {
                              <td class="newsletterFooterCategoryLEFTBottom">
                                  <a
                                      href="https://www.beliani.no/belysning/">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_23.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_23.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
                              <td class="newsletterFooterCategoryRIGHTBottom">
                                  <a
                                      href="https://www.beliani.no/tepper/">
-                                     <img src="https://beliani.info/newsletter/2022/NO2023no_24.jpg" alt=""
+                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/NO2023no_24.jpg" alt=""
                                          style="display:block" width="100%" border="0" />
                                  </a>
                              </td>
@@ -6488,7 +6488,7 @@ export default {
           </tr>
          <tr>
              <td>
-                 <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                 <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
              </td>
          </tr>
          <tr>
@@ -6516,7 +6516,7 @@ export default {
                                              <td class="newsletterSocialIcon">
                                                  <a
                                                      href="https://www.instagram.com/beliani_norge/">
-                                                     <img src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
+                                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                          width="100%" border="0" style="display:block;"
                                                          alt="Instagram"    >
                                                  </a>
@@ -6524,7 +6524,7 @@ export default {
                                              <td class="newsletterSocialIcon">
                                                  <a
                                                      href="https://www.facebook.com/BelianiNorge">
-                                                     <img src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
+                                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                                                          width="100%" border="0" style="display:block;"
                                                          alt="Facebook"    >
                                                  </a>
@@ -6532,7 +6532,7 @@ export default {
                                              <td class="newsletterSocialIcon">
                                                  <a
                                                      href="https://www.youtube.com/c/BelianiGmbH/featured/">
-                                                     <img src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
+                                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg"
                                                          width="100%" border="0" style="display:block;" alt="YouTube"
                                                             >
                                                  </a>
@@ -6540,7 +6540,7 @@ export default {
                                              <td class="newsletterSocialIcon">
                                                  <a
                                                      href="https://www.pinterest.com/beliani_norge/">
-                                                     <img src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
+                                                     <img loading="lazy" src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                                                          width="100%" border="0" style="display:block;"
                                                          alt="Pinterest"    >
                                                  </a>
@@ -6556,7 +6556,7 @@ export default {
          </tr>
          <tr>
              <td>
-                 <img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                 <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
              </td>
          </tr>
          <tr>
