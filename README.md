@@ -1,12 +1,12 @@
 # Available configuration options:
-## countriesColumns: OPTIONAL (REQUIRED if you want get translations from spreadsheet)
-In translation spreadsheet each country has its own column. By specifying a letter for specific country you can change column, from where data will be returned to the constructor.
 
 ## productsOrder: OPTIONAL
 It is array of objects. Each object represents a product with mainId and src. MainId it is id from CHDE shop.
 In order to modify the order of products you need to specify the  order of id's by writing it in the order you want to get them.
 
 ## tableColumns: REQUIRED
+![image](https://github.com/demczenko/Constructor/assets/134509169/bcb902d3-2938-4e6a-b51f-c1092eae2c20)
+
 Should be added if you want to make request to spreadsheet.
 {
     UK: "F",
@@ -134,6 +134,8 @@ example:
    );
 
 ## tableQueries: OPTIONAL if not provided translations data will be used from data/text.js
+![image](https://github.com/demczenko/Constructor/assets/134509169/bb97d0ea-a4f5-44f8-b76e-0fb43973296a)
+
 If you want get translations form spreadsheets.
 Object keys: tableId, tableName, tableRange, name is **REQUIRED** name of these keys **cannot** be changed.
 Example:
