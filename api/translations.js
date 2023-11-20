@@ -1,4 +1,4 @@
-export async function getTranslations({ tableId, tableName, tableRange }, token) {
+export async function getTranslations({ tableId, tableName, tableRange, name }, token) {
   try {
     const response = await fetch(
       `https://sheets.googleapis.com/v4/spreadsheets/${tableId}/values/${tableName}!${tableRange}`,
@@ -11,7 +11,7 @@ export async function getTranslations({ tableId, tableName, tableRange }, token)
       }
     );
     const data = await response.json();
-    return data;
+    return {...data, name};
   } catch (error) {
     console.log(error);
   }

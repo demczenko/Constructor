@@ -39,7 +39,7 @@ export function newsletter({
   template,
   additionalTranslations,
 }) {
-
+  
   return `
   ${header[country]("newsletter", id)}
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #ffffff;" >

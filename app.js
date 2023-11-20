@@ -5,7 +5,7 @@ initApp({
   // serverProducts: true,
   // serverCategories: true,
   // serverHeader: true,
-  token: "1//04Wmc79-xpufyCgYIARAAGAQSNwF-L9Irhxnl9SeBrehZT3U-erUG5IpZoB2_BBSwJWPvy4-fzfaqrfmznWZAR-70wZOMTV7VIxQ",
+  token: "1//04bF2L27pz-NhCgYIARAAGAQSNwF-L9IrYpW6LPrE13tZ2wxbb-RCR0xO9NzVz8j_uNjRTl4hDn_Dhbu3z3pvfDsX7Ggx5WrFwEg",
   tableQueries: [
     {
       tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",

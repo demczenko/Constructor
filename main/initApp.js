@@ -60,7 +60,7 @@ const state = {
   categories: [],
   productsIds: [],
   translations: [],
-  token: ""
+  token: "",
 };
 
 export function setState(key, value) {
@@ -252,20 +252,11 @@ export function initApp({
           tableQueries,
           tableColumns,
         });
-        if ("error" in translationsResult.data) {
-          Toastify({
-            text:
-              "Please refresh token. " + translationsResult.data.error.message,
-            escapeMarkup: false,
-            duration: 3000,
-          }).showToast();
-        } else {
-          const translations = {};
-          for (const translation of translationsResult.data) {
-            translations[translation.name] = translation.data;
-          }
-          setState("translations", translations);
+        const translations = {};
+        for (const translation of translationsResult) {
+          translations[translation.name] = translation.data;
         }
+        setState("translations", translations);
       } catch (error) {
         Toastify({
           text: error,
@@ -275,7 +266,15 @@ export function initApp({
       }
     } else {
       const country = getState("country");
-      setState("translations", text[country]);
+      if (country in text) {
+        setState("translations", text[country]);
+      } else {
+        Toastify({
+          text: country + " has been not found in local text. (data/text.js)",
+          escapeMarkup: false,
+          duration: 3000,
+        }).showToast();
+      }
     }
     setState(
       "header",
