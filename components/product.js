@@ -11,7 +11,7 @@ export function Product({ product }) {
         <tr>
           <td align="center" ${product.className ? `class=${product.className}` : ""} >
           <a href=${product.href}>
-            <img src=${product.src} style="display: block; max-width: 100%" >
+            <img loading="lazy" src=${product.src} style="display: block; max-width: 100%" >
           </a>
             ${
               product.type === 'image'
@@ -23,7 +23,7 @@ export function Product({ product }) {
                 <tbody>
                   <tr>
                       <td align=${ product.align }>
-                        <span class="newsletterProductTitle" style="line-height: 1">${ product.name }</span>
+                        <span class="newsletterProductTitle">${ product.name }</span>
                       </td>
                   </tr>
                   ${

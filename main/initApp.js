@@ -46,6 +46,7 @@ import {
   setProductandFixOrdering,
 } from "../api/fetch/fetch.js";
 import { addParams } from "../helpers/addQueryParams.js";
+import origins from "../data/templates/origins.js";
 
 const root = document.querySelector("#app");
 const state = {
@@ -59,8 +60,7 @@ const state = {
   categories: [],
   productsIds: [],
   translations: [],
-  token:
-    "ya29.a0AfB_byA9Y_b_6bzhbKYYZlxzt-vrtipPzyLueu0CLKTgeRcXSQQAg08vsRsUK-H6-tGHK7Z4YVZC5om_a_q3m4UOAnNBJo0PxjW51JwTZLZLp9iunKl4-FJ6I1fSSnQdRryRT50vTPdotXAj1fbuO2S2pHLbfXgZF31xaCgYKAdoSARMSFQGOcNnCItHUlPBQ4qPAIfN_hHuUsw0171",
+  token: ""
 };
 
 export function setState(key, value) {
@@ -358,7 +358,7 @@ export function initApp({
       if (!acceptedLocationHash.includes(country)) {
         state.country = "DE";
         window.location.hash = "country=DE&template=newsletter";
-        return 
+        return;
       }
 
       if (!template?.includes("newsletter") && !template?.includes("landing")) {
@@ -395,28 +395,25 @@ export function initApp({
   function getTemplate() {
     const country = getState("country");
     const template = getState("template");
+    const ids = getState("ids");
     return templates[template]({
-      text: {
-        shopAll: shopAll[country],
-        shopNow: shopNow[country],
-        getCode: getCode[country],
-        getCodes: getCodes[country],
-        chooseFrom: chooseFrom[country],
-        watchNow: watchNow[country],
-        from: fromm[country],
-        free: free[country],
-        code: codes[country],
-        influencersChoice: InfluencersChoice[country],
-        thisMayAlsoInterestYou: ThisMayAlsoInterestYou[country],
-        youMayBeAlsoInterestedIn: YouMayBeAlsoInterestedIn[country],
-        soonEnding: soonEndingCampaigns[country],
-      },
-      ...state,
-
-      id: state.ids[country],
+      shopAll: shopAll[country],
+      shopNow: shopNow[country],
+      getCode: getCode[country],
+      getCodes: getCodes[country],
+      chooseFrom: chooseFrom[country],
+      watchNow: watchNow[country],
+      from: fromm[country],
+      free: free[country],
+      code: codes[country],
+      origin: origins[country],
+      influencersChoice: InfluencersChoice[country],
+      thisMayAlsoInterestYou: ThisMayAlsoInterestYou[country],
+      youMayBeAlsoInterestedIn: YouMayBeAlsoInterestedIn[country],
+      soonEnding: soonEndingCampaigns[country],
+      id: ids[country],
       save: save[country],
-      country: country,
-      type: template,
+      ...state,
     });
   }
 }

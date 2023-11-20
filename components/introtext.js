@@ -13,6 +13,110 @@ export function IntroText({
     ...style,
   };
 
+  function newsletterIntro(item, i) {
+    return `
+    ${
+      "title" in item
+        ? `
+        <tr>
+            <td align="center">
+                <span class="newsletterTitleBlackWeek" style="color: ${style.textColor};">
+                    ${item.title}
+                </span>
+            </td>
+        </tr>
+        `
+        : ""
+    }
+    ${
+      "paragraph" in item
+        ? `
+        <tr>
+            <td align="center" ${
+              offerParts.length - 1 !== i ? 'class="newsletterIntroSectionItem"' : ""
+            }>
+                <span class="newsletterParagraph" style="color: ${
+                  style.textColor
+                }; line-height: 1.25">
+                    ${item.paragraph}
+                </span>
+            </td>
+        </tr>
+        `
+        : ""
+    }
+    ${
+      "code" in item
+        ? `
+        <tr>
+            <td align="center" ${
+              offerParts.length - 1 !== i
+                ? 'class="newsletterCodesPadding"'
+                : 'class="newsletterIntroSectionItem"'
+            } >
+                <span class="newsletterParagraph" style="color: ${
+                  style.textColor
+                }; line-height: 1.25">
+                    ${item.code}
+                </span>
+            </td>
+        </tr>
+        `
+        : ""
+    }
+    `;
+  }
+
+  function landingIntro(item, i) {
+    return `
+    ${
+      "title" in item
+        ? `
+        <tr>
+            <td align="center">
+                <span class="newsletterTitleBlackWeek" style="color: ${style.textColor};">
+                    ${item.title}
+                </span>
+            </td>
+        </tr>
+        `
+        : ""
+    }
+    ${
+      "paragraph" in item
+        ? `
+        <tr>
+            <td align="center" class="newsletterBottom20px">
+                <span class="newsletterParagraph" style="color: ${style.textColor}; line-height: 1.25">
+                    ${item.paragraph}
+                </span>
+            </td>
+        </tr>
+        `
+        : ""
+    }
+    ${
+      "code" in item
+        ? `
+        <tr>
+            <td align="center" ${
+              offerParts.length - 1 !== i
+                ? 'class="newsletterCodesPadding"'
+                : 'class="newsletterIntroSectionItem"'
+            } >
+                <span class="newsletterParagraph" style="color: ${
+                  style.textColor
+                }; line-height: 1.25">
+                    ${item.code}
+                </span>
+            </td>
+        </tr>
+        `
+        : ""
+    }
+    `;
+  }
+
   return `
     <tr>
         <td class="newsletterIntroSection" style="background-color: ${
@@ -29,53 +133,13 @@ export function IntroText({
                                     ? `
                                     ${offerParts
                                       .map((item, i) => {
-                                        return `
-                                              <tr>
-                                                  <td align="center">
-                                                      <span class="newsletterTitleBlackWeek" style="color: ${
-                                                        style.textColor
-                                                      };">
-                                                          ${item.title}
-                                                      </span>
-                                                  </td>
-                                              </tr>
-                                              ${
-                                                "paragraph" in item
-                                                  ? `
-                                                  <tr>
-                                                      <td align="center" style="padding-bottom: 4px">
-                                                          <span class="newsletterParagraph" style="color: ${
-                                                            style.textColor
-                                                          }; line-height: 1.25">
-                                                              ${item.paragraph}
-                                                          </span>
-                                                      </td>
-                                                  </tr>
-                                                  `
-                                                  : ""
-                                              }
-                                              ${
-                                                "code" in item
-                                                  ? `
-                                                  <tr>
-                                                      <td align="center" ${
-                                                        offerParts.length -
-                                                          1 !==
-                                                        i
-                                                          ? 'class="newsletterCodesPadding"'
-                                                          : ""
-                                                      } >
-                                                          <span class="newsletterParagraph" style="color: ${
-                                                            style.textColor
-                                                          }; line-height: 1.25">
-                                                              ${item.code}
-                                                          </span>
-                                                      </td>
-                                                  </tr>
-                                                  `
-                                                  : ""
-                                              }
-                                              `;
+                                        if (type === "newsletter") {
+                                          return newsletterIntro(item, i);
+                                        }
+
+                                        if (type === "landing") {
+                                          return landingIntro(item, i);
+                                        }
                                       })
                                       .join("")}
                                     `

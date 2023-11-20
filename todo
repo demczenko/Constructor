@@ -1,3 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Beliani</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic-ext,latin-ext" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+    table {
+      table-layout: fixed;
+    }
+
+    .title-advantages {
+      text-align: center;
+      font-size: 11px;
+      color: #8c8278;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      margin: 0;
+    }
+
+    .title-advantages-item {
+      margin-left: 4px;
+    }
+
+    .newsletterBlackWeekCode {
+      padding-top: 54px !important;
+      padding-bottom: 60px !important;
+    }
+
+    .newsletterCounter {
+      padding-left: 140px !important;
+      padding-right: 140px !important;
+    }
+
+    .newsletterTop35px {
+      padding-top: 35px !important;
+    }
+
+    .newsletterBottom35px {
+      padding-bottom: 35px !important;
+    }
+
+    .newsletterBottom30px {
+      padding-bottom: 30px !important;
+    }
+
+    .newsletterBottom80px {
+      padding-bottom: 80px !important;
+    }
+
+    .newsletterRecommendationHeader {
+      text-align: center;
+      font-size: 11px;
+      color: #8c8278;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .newsletterIntroSection {
+      padding-top: 35px !important;
+      padding-left: 35px !important;
+      padding-right: 35px !important;
+    }
+
+    .newsletterIntroSectionItem {
+      padding-bottom: 35px !important;
+    }
+
+    .newsletterCategories {
+      padding-top: 35px !important;
+      padding-bottom: 35px !important;
+      padding-left: 35px !important;
+      padding-right: 35px !important;
+    }
+
+    .newsletterCategoryContainer {
+      padding-bottom: 5px;
+    }
+
+    .newsletterCategory {
+      border: 2px solid #ff6f4d;
+      padding: 6px 0px !important;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    .newsletterLine {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    .newsletterCategoryColumnLeft {
+      padding-right: 5px !important;
+      width: 50% !important;
+    }
+
+    .newsletterCategoryColumnRight {
+      padding-left: 5px !important;
+      width: 50% !important;
+    }
+
+    .newsletterGif {
+      background-color: #ff6f4d;
+      padding-left: 35px !important;
+      padding-right: 35px !important;
+      padding-top: 35px !important;
+    }
+
+    .newsletterFooter {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    .newsletterConditions {
+      color: black;
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+    }
+
+    .newsletterFooterCompanyDetails {
+      vertical-align: middle;
+      padding-top: 20px;
+      padding-right: 0px;
+      padding-bottom: 20px;
+      font-size: 11px;
+      font-family: "Open Sans", sans-serif !important;
+      color: #000000;
+      background: #ececec;
+      width: 100%;
+    }
+
+    .newsletterFooterTitle {
+      text-align: left;
+      color: #000000;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+    }
+
+    .newsletterFooterCategories {
+      padding-bottom: 35px;
+    }
+
+    .newsletterFooterBanner {
+      padding-bottom: 20px !important;
+    }
+
+    .newsletterFooterCategoryLEFT {
+      padding-bottom: 20px !important;
+      padding-right: 10px !important;
+    }
+
+    .newsletterFooterCategoryRIGHT {
+      padding-bottom: 20px !important;
+      padding-left: 10px !important;
+    }
+
+    .newsletterFooterCategoryLEFTBottom {
+      padding-right: 10px !important;
+    }
+
+    .newsletterFooterCategoryRIGHTBottom {
+      padding-left: 10px !important;
+    }
+
+    .newsletterSocialIcon {
+      padding-left: 25px !important;
+    }
+
+    .newsletterTopBottomContainer {
+      padding-top: 35px !important;
+      padding-bottom: 35px !important;
+    }
+
+    .newsletterKlarnaBannerContainer {
+      padding-top: 35px !important;
+      padding-bottom: 35px !important;
+    }
+
+    .footer {
+      width: 50% !important;
+    }
+
+    .newsletterLineTop60 {
+      padding-top: 60px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .newsletterSoonEndingTitle {
+      color: #000000;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+    }
+
+    .newsletterSoonEndingBanner {
+      padding-bottom: 20px;
+    }
+
+    .newsletterSoonEndingContainer {
+      padding-top: 35px !important;
+      padding-bottom: 35px !important;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    .newsletterSoonEndingTitleContainer {
+      padding-bottom: 35px !important;
+    }
+
+    .newsletterGifContainer {
+      padding-top: 20px !important;
+      padding-bottom: 20px !important;
+    }
+
+    .newsletterProductContainer {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    .newsletterContainer {
+      padding-top: 35px !important;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    .newsletterContainerLeftRigth {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    .newsletterTitleContainer {
+      padding-top: 35px;
+      padding-bottom: 35px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .newsletterCtaContainer {
+      padding-bottom: 80px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .newsletterInterestYouContainer {
+      padding-bottom: 80px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+
+    .newsletterProductTitle {
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.25;
+      color: #000000;
+    }
+
+    .newsletterProductTitleContainer {
+      padding-top: 20px;
+    }
+
+    .newsletterProductLowPrice {
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.25;
+      color: #000000;
+      font-weight: 600;
+    }
+
+    .newsletterProductHightPrice {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.25;
+      color: #000000;
+      text-decoration: line-through;
+    }
+
+    .newsletterProductContainerLEFT {
+      width: 50% !important;
+      vertical-align: top;
+      padding-right: 10px !important;
+      padding-bottom: 35px !important;
+    }
+
+    .newsletterProductContainerRIGHT {
+      width: 50% !important;
+      vertical-align: top;
+      padding-left: 10px !important;
+      padding-bottom: 35px !important;
+    }
+
+    .newsletterParagraph {
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.25;
+      color: #000000;
+    }
+
+    .newsletterInfluencersChoiceText {
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.25;
+      color: #000000;
+    }
+
+    .newsletterSummerSale {
+      font-size: 30px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.25;
+    }
+
+    .newsletterTitle {
+      font-size: 30px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.25;
+      color: #000000;
+    }
+
+    .newsletterTitleBlackWeek {
+      font-size: 30px;
+      font-family: "Open Sans", sans-serif;
+      line-height: 1.25;
+      color: #000000;
+    }
+
+    .newsletterCta {
+      font-size: 20px;
+      line-height: 1.25;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: underline !important;
+    }
+
+    .newsletterInterestYouCta {
+      font-size: 25px;
+      line-height: 1.25;
+      font-family: "Open Sans", sans-serif;
+      text-decoration: underline;
+    }
+
+    .newsletterFreeProduct {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .newsletterFreebies {
+      padding-top: 35px !important;
+      padding-bottom: 70px !important;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    .newsletterFreebieTopLeft {
+      padding-left: 80px !important;
+    }
+
+    .newsletterFreebieTopRight {
+      padding-right: 80px !important;
+    }
+
+    .newsletterIFrame {
+      margin-bottom: 35px !important;
+    }
+
+    .newsletterFreebieBottomLeft {
+      padding-right: 40px !important;
+    }
+
+    .newsletterBottomFreebieMiddle {
+      padding-right: 50px !important;
+      padding-left: 50px !important;
+    }
+
+    .newsletterFreebieBottomRight {
+      padding-left: 40px !important;
+    }
+
+    @media only screen and (max-width:680px) {
+
+      .newsletterCategoryColumnLeft,
+      .newsletterCategoryColumnRight {
+        display: block;
+        padding: 0 !important;
+        width: 100% !important;
+        margin-bottom: 5px !important;
+      }
+
+      .newsletterBlackWeekCode {
+        padding-top: 34px !important;
+        padding-bottom: 40px !important;
+      }
+
+      .newsletterCounter {
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+      }
+
+      .newsletterInfluencersChoice {
+        width: 100% !important;
+      }
+
+      .newsletterProductTitle {
+        font-size: 18px !important;
+      }
+
+      .newsletterProductLowPrice {
+        font-size: 16px !important;
+      }
+    }
+
+    @media only screen and (max-width:480px) {
+      .newsletterSummerSale {
+        font-size: 20px !important;
+      }
+
+      .newsletterFreebieTopLeft {
+        padding-left: 30px !important;
+      }
+
+      .newsletterFreebieTopRight {
+        padding-right: 30px !important;
+      }
+
+      .newsletterInterestYouContainer {
+        vertical-align: top;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .newsletterInterestYouCta {
+        font-size: 20px;
+        line-height: 1.25;
+        font-family: "Open Sans", sans-serif;
+        text-decoration: underline;
+      }
+
+      .newsletterIFrame {
+        margin-bottom: 20px !important;
+      }
+
+      .newsletterBottomFreebieMiddle {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+      }
+
+      .newsletterFreebieBottomLeft {
+        padding-right: 10px !important;
+      }
+
+      .newsletterFreebieBottomRight {
+        padding-left: 10px !important;
+      }
+
+      .newsletterSocialIcon {
+        padding-left: 13px !important;
+      }
+
+      .newsletterFooterCategoryLEFT {
+        padding-bottom: 10px !important;
+        padding-right: 5px !important;
+      }
+
+      .newsletterFooterCategoryRIGHT {
+        padding-bottom: 10px !important;
+        padding-left: 5px !important;
+      }
+
+      .newsletterFooterCategoryLEFTBottom {
+        padding-right: 5px !important;
+      }
+
+      .newsletterFooterCategoryRIGHTBottom {
+        padding-left: 5px !important;
+      }
+
+      .newsletterFooter {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .newsletterFooterCategories {
+        padding-bottom: 20px !important;
+      }
+
+      .newsletterFooterBanner {
+        padding-bottom: 10px !important;
+      }
+
+      .newsletterFooterTitle {
+        font-size: 18px !important;
+      }
+
+      .newsletterTopBottomContainer {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+      }
+
+      .footer {
+        width: 50% !important;
+      }
+
+      .newsletterKlarnaBannerContainer {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+      }
+
+      .newsletterLine {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .newsletterLineTop60 {
+        padding-top: 30px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .newsletterSoonEndingContainer {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .newsletterSoonEndingTitleContainer {
+        padding-bottom: 20px !important;
+      }
+
+      .newsletterSoonEndingBanner {
+        padding-bottom: 20px !important;
+      }
+
+      .newsletterSoonEndingTitle {
+        font-size: 18px !important;
+      }
+
+      .newsletterContainer {
+        padding-top: 20px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .newsletterContainerLeftRigth {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .newsletterTitleContainer {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 10px !important;
+      }
+
+      .newsletterCtaContainer {
+        padding-bottom: 50px !important;
+      }
+
+      .newsletterProductTitleContainer {
+        padding-top: 10px !important;
+      }
+
+      .newsletterProductContainerRIGHT {
+        padding-bottom: 20px !important;
+        padding-left: 5px !important;
+      }
+
+      .newsletterProductContainerLEFT {
+        padding-bottom: 20px !important;
+        padding-right: 5px !important;
+      }
+
+      .newsletterProductContainer {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .newsletterBottom35px {
+        padding-bottom: 20px !important;
+      }
+
+      .newsletterBottom80px {
+        padding-bottom: 35px !important;
+      }
+
+      .newsletterFreebies {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .newsletterFreebieInsidePaddings {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .newsletterProductHightPrice {
+        display: block;
+      }
+
+      .newsletterIntroSection {
+        padding-top: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
+      .newsletterIntroSectionItem {
+        padding-bottom: 20px !important;
+      }
+
+      .newsletterTop35px {
+        padding-top: 20px !important;
+      }
+
+      .newsletterCategories {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
+      .newsletterCategory {
+        font-size: 22px !important;
+      }
+
+      .newsletterParagraph {
+        font-size: 16px !important;
+      }
+
+      .newsletterTitle {
+        font-size: 25px !important;
+      }
+
+      .newsletterTitleBlackWeek {
+        font-size: 20px;
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.25;
+        color: #000000;
+      }
+
+      .newsletterGif {
+        padding-top: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+    }
+
+    @media only screen and (max-width:410px) {
+      .newsletterInfluencersChoiceText {
+        font-size: 10px !important;
+      }
+
+      .newsletterCategories {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      .newsletterIntroSection {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      .newsletterCategory {
+        font-size: 20px !important;
+      }
+
+      .newsletterInterestYouCta {
+        font-size: 18px;
+        line-height: 1.25;
+        font-family: "Open Sans", sans-serif;
+        text-decoration: underline;
+      }
+    }
+  </style>
+  <!--[if gte mso 9]><v:background xmlns:v="urn:schemas-microsoft-com:vml"fill="t"><v:fill type="tile"color="#ececec"></v:background><![endif]-->
+</head>
+
+<body class="body"
+  style="width:100% !important;padding:0 !important;margin:0 auto !important;font-family:'Open Sans', sans-serif!important;font-size:13px;color:#000000;text-align:left;background-color:#ececec;"
+  width="100%">
   <!--[if gte mso 9]><v:background xmlns:v="urn:schemas-microsoft-com:vml"fill="t"><v:fill type="tile"color="#ececec"></v:background><![endif]-->
   <p class="title-advantages"><span class="title-advantages-item">✔️ Free Delivery & Return</span><span
       class="title-advantages-item">✔️ Best Selection</span></p>
@@ -9,7 +692,7 @@
     style=" margin:0 auto;background-color:#ffffff;padding-top:0em;padding-bottom:0em;">
     <tbody>
       <tr>
-        <th><a href="https://www.beliani.co.uk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
+        <th><a href="https://www.beliani.co.uk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
               alt="Beliani" border="0" src="https://beliani.info/newsletter/2022/header_2023_final.jpg"
               style="display:block" width="100%" /></a></th>
       </tr>
@@ -20,27 +703,22 @@
     <tbody>
       <tr>
         <th><a
-            href="https://www.beliani.co.uk/living-room-furniture/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
+            href="https://www.beliani.co.uk/living-room-furniture/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
               alt="Furniture" border="0" src="https://beliani.info/newsletter/2022/header_uk_02.jpg"
               style="display:block" width="100%" /></a></th>
         <th><a
-            href="https://www.beliani.co.uk/home-accessories/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
+            href="https://www.beliani.co.uk/home-accessories/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
               alt="Accessories" border="0" src="https://beliani.info/newsletter/2022/header_uk_03.jpg"
               style="display:block" width="100%" /></a></th>
         <th><a
-            href="https://www.beliani.co.uk/garden-furniture/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
+            href="https://www.beliani.co.uk/garden-furniture/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
               alt="Garden" border="0" src="https://beliani.info/newsletter/2022/header_uk_04.jpg" style="display:block"
               width="100%" /></a></th>
       </tr>
     </tbody>
   </table>
-
-
-
-
-
   <table align="center" border="0" cellpadding="0" cellspacing="0"
-    style="margin:0 auto;max-width:650px;width:100%;background-color:#f1e4e4;" width="100%">
+    style="margin:0 auto;max-width:650px;width:100%;background-color:#ffffff;" width="100%">
     <tbody>
       <tr>
         <td align="center">
@@ -48,8 +726,8 @@
             <tbody>
               <tr>
                 <td align="center"><a
-                    href="https://www.beliani.co.uk/content/lp23-10-23?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      src="https://beliani.info/newsletter/2022/uk231023_01.jpg" style="display:block;"
+                    href="https://www.beliani.co.uk/content/lp23-11-20?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      loading="lazy" src="https://beliani.info/newsletter/2022/uk231120_01.jpg" style="display:block;"
                       width="100%" /></a></td>
               </tr>
             </tbody>
@@ -62,8 +740,8 @@
             <tbody>
               <tr>
                 <td align="center"><a
-                    href="https://www.beliani.co.uk/content/lp23-10-23?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      src="https://upload.pictureserver.net/static/231023gif.gif" style="display:block;"
+                    href="https://www.beliani.co.uk/content/lp23-11-20?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      loading="lazy" src="https://upload.pictureserver.net/static/231120gif.gif" style="display:block;"
                       width="100%" /></a></td>
               </tr>
             </tbody>
@@ -71,301 +749,74 @@
         </td>
       </tr>
       <tr>
-        <td class="newsletterIntroSection" style="background-color:#f1e4e4;">
+        <td class="newsletterIntroSection" style="background-color:#ffffff;">
           <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
             <tbody>
-              <tr>
-                <td align="center" class="newsletterIntroSectionItem"><span class="newsletterParagraph"
-                    style="color:#000000;">Shop for min. £190 and get a towel set of your choice for FREE.</span></td>
-              </tr>
-              <tr>
-                <td align="center" class="newsletterIntroSectionItem"><span class="newsletterParagraph"
-                    style="color:#000000;">Add a promo code at the end of the check out to get your gift. </span></td>
-              </tr>
-              <tr>
-                <td align="center" class="newsletterIntroSectionItem" style="background-color:#f1e4e4;">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center" style="background-color:#f1e4e4;"><a class="newsletterCta"
-                            href="https://www.beliani.co.uk/content/lp23-10-23?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"
-                            style="color:#000000;">Get the code </a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" class="newsletterIntroSectionItem"><span class="newsletterParagraph"
-                    style="color:#000000;">The offer is valid until the 5th of November </span></td>
-              </tr>
-              <tr>
-                <td align="center"><span class="newsletterParagraph">Choose from: </span></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td class="newsletterBottom35px" style="background-color:#f1e4e4">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td style="vertical-align:top;">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.co.uk/set-of-4-cotton-towels-grey-areora.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                              src="https://beliani.info/newsletter/2022/uk231023Freebie1.jpg"
-                              style="display:block;max-width:100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-                <td style="vertical-align:top;">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.co.uk/set-of-4-cotton-towels-blue-areora.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                              src="https://beliani.info/newsletter/2022/uk231023Freebie2.jpg"
-                              style="display:block;max-width:100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="vertical-align:top;">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.co.uk/set-of-4-cotton-towels-pink-atai.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                              src="https://beliani.info/newsletter/2022/uk231023Freebie3.jpg"
-                              style="display:block;max-width:100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-                <td style="vertical-align:top;">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.co.uk/set-of-4-cotton-towels-white-areora.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                              src="https://beliani.info/newsletter/2022/uk231023Freebie4.jpg"
-                              style="display:block;max-width:100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td class="newsletterLine">
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
-                    width="100%" /></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td align="left" class="newsletterContainer" style="background-color:#f1e4e4">
-          <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Transform your
-                    bathroom</span></td>
-              </tr>
-            </tbody>
-          </table>
-          <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="newsletterBottom35px"><span class="newsletterParagraph">From luxurious bathtubs
-                    to invigorating showers and everything in between, we've got you covered. Dive into our curated
-                    selection and create your perfect bathroom retreat today.</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" style="background-color:#f1e4e4">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="newsletterContainer" style="background-color:#f1e4e4">
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Bathtubs </span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
               <tr>
                 <td align="center">
                   <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tbody>
                       <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.co.uk/bathtubs-hot-tubs/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                              src="https://beliani.info/newsletter/2022/231023Category1.png" style="display:block;"
-                              width="100%" /></a></td>
+                        <td align="center"><span class="newsletterTitleBlackWeek" style="color:#000000;">Additional 5%
+                            off everything </span></td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="newsletterIntroSectionItem" style="padding-bottom:4px"><span
+                            class="newsletterParagraph" style="color:#000000;line-height:1.25">when you spend min. £220
+                          </span></td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding-bottom:4px; border-radius: 12px; background-color: #000000;"><span
+                            class="newsletterParagraph" style="color:#000000;line-height:1.25">when you spend min. £220
+                          </span></td>
+                      </tr>
+                      <tr>
+                        <td align="center"><span class="newsletterTitleBlackWeek" style="color:#000000;">Additional 10%
+                            off everything </span></td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="newsletterIntroSectionItem" style="padding-bottom:4px"><span
+                            class="newsletterParagraph" style="color:#000000;line-height:1.25">when you spend min. £450
+                          </span></td>
+                      </tr>
+                      <tr>
+                        <td align="center"><span class="newsletterTitleBlackWeek" style="color:#000000;">Additional 15%
+                            off everything </span></td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="newsletterIntroSectionItem" style="padding-bottom:4px"><span
+                            class="newsletterParagraph" style="color:#000000;line-height:1.25">when you spend min. £900
+                          </span></td>
+                      </tr>
+                      <tr>
+                        <td align="center"><span class="newsletterTitleBlackWeek" style="color:#000000;">Additional 20%
+                            off everything </span></td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="padding-bottom:4px"><span class="newsletterParagraph"
+                            style="color:#000000;line-height:1.25">when you spend min. £2,200 </span></td>
                       </tr>
                     </tbody>
                   </table>
                 </td>
               </tr>
               <tr>
-                <td align="center" style="background-color:#f1e4e4">
+                <td align="center" class="newsletterBlackWeekCode" style="background-color:#ffffff;">
                   <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tbody>
                       <tr>
-                        <td align="center" class="newsletterProductContainer">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.co.uk/whirlpool-corner-bath-1350-x-1350-mm-white-cantalla.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category11.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">CANTALLA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£1,269.99
-                                                  </span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.co.uk/freestanding-bath-1600-x-800-mm-black-havana.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category12.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">HAVANA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£699.99
-                                                  </span><span class="newsletterProductHightPrice">£979.99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.co.uk/left-hand-whirpool-corner-bathtub-with-led-white-pelican.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category13.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">PELICAN</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£1,439.99
-                                                  </span><span class="newsletterProductHightPrice">£1,509.99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.co.uk/freestanding-bath-1700-x-810-mm-red-rios.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category14.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">RIOS</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£929.99 </span>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterCtaContainer" style="text-align:center;"><a
-                                    class="newsletterCta"
-                                    href="https://www.beliani.co.uk/bathtubs-hot-tubs/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"
-                                    style="color:#000000;text-decoration:underline;">Shop now</a></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
+                        <td align="center" style="background-color:#ffffff;"><a
+                            href="https://www.beliani.co.uk/content/lp23-11-20?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"
+                            style="color:#000000;text-decoration:underline!important;"><span class="newsletterTitle">Get
+                              the codes</span></a></td>
                       </tr>
                     </tbody>
                   </table>
                 </td>
+              </tr>
+              <tr>
+                <td align="center" class="newsletterBottom30px"><span class="newsletterParagraph"
+                    style="color:#000000;">The offer is valid until the 26th of November</span></td>
               </tr>
             </tbody>
           </table>
@@ -384,382 +835,15 @@
         </td>
       </tr>
       <tr>
-        <td align="center" style="background-color:#f1e4e4">
+        <td align="center" style="background-color:#ffffff">
           <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
             <tbody>
               <tr>
-                <td align="left" class="newsletterContainer" style="background-color:#f1e4e4">
+                <td align="left" class="newsletterContainer" style="background-color:#ffffff">
                   <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tbody>
                       <tr>
-                        <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Showers </span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.co.uk/bathroom-furniture/showers/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                              src="https://beliani.info/newsletter/2022/231023Category2.png" style="display:block;"
-                              width="100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" style="background-color:#f1e4e4">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center" class="newsletterProductContainer">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.co.uk/tempered-glass-shower-screen-80-x-190-cm-ahaus.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category21.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">AHAUS</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£159.99 </span>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.co.uk/tempered-glass-shower-bath-screen-140-x-100-cm-tuapi.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category22.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">TUAPI</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£169.99
-                                                  </span><span class="newsletterProductHightPrice">£179.99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.co.uk/tempered-glass-shower-enclosure-80-x-100-x-185-cm-silver-yoro.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category23.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">YORO</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£249.99 </span>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.co.uk/shower-tray-90-x-90-x-7-cm-white-siuna.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category24.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">SIUNA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£139.99
-                                                  </span><span class="newsletterProductHightPrice">£159.99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterCtaContainer" style="text-align:center;"><a
-                                    class="newsletterCta"
-                                    href="https://www.beliani.co.uk/bathroom-furniture/showers/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"
-                                    style="color:#000000;text-decoration:underline;">Shop now</a></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td class="newsletterLine">
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
-                    width="100%" /></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" style="background-color:#f1e4e4">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="newsletterContainer" style="background-color:#f1e4e4">
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Fittings </span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.co.uk/bathroom-furniture/bathroom-fittings/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                              src="https://beliani.info/newsletter/2022/231023Category3.png" style="display:block;"
-                              width="100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" style="background-color:#f1e4e4">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center" class="newsletterProductContainer">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.co.uk/freestanding-bath-mixer-tap-gold-boyoma.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category31.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">BOYOMA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£369.99
-                                                  </span><span class="newsletterProductHightPrice">£379.99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.co.uk/mixer-shower-set-black-with-gold-gurara.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category32.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">GURARA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£239.99 </span>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.co.uk/3-hole-bathroom-basin-tap-kagera.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category33.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">KAGERA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£119.99 </span>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.co.uk/freestanding-bath-mixer-tap-copper-victoria.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category34.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">VICTORIA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£249.99
-                                                  </span><span class="newsletterProductHightPrice">£319.99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterCtaContainer" style="text-align:center;"><a
-                                    class="newsletterCta"
-                                    href="https://www.beliani.co.uk/bathroom-furniture/bathroom-fittings/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"
-                                    style="color:#000000;text-decoration:underline;">Shop now</a></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td class="newsletterLine">
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
-                    width="100%" /></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" style="background-color:#f1e4e4">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="newsletterContainer" style="background-color:#f1e4e4">
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Bathroom Accessories
+                        <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Dining Tables
                           </span></td>
                       </tr>
                     </tbody>
@@ -772,67 +856,68 @@
                     <tbody>
                       <tr>
                         <td align="center"><a
-                            href="https://www.beliani.co.uk/bathroom-furniture/bathroom-accessories/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                              src="https://beliani.info/newsletter/2022/231023Category4.png" style="display:block;"
-                              width="100%" /></a></td>
+                            href="https://www.beliani.co.uk/tables/dining-tables/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                              loading="lazy" src="https://beliani.info/newsletter/2022/231120Category1.png"
+                              style="display:block;" width="100%" /></a></td>
                       </tr>
                     </tbody>
                   </table>
                 </td>
               </tr>
               <tr>
-                <td align="center" style="background-color:#f1e4e4">
+                <td align="left" class="newsletterContainer" style="background-color:#ffffff">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="left" class="newsletterBottom35px"><span class="newsletterParagraph">Gain not only a
+                            splendid setting for your gatherings but also save by investing in quality.</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="background-color:#ffffff">
                   <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tbody>
                       <tr>
                         <td align="center" class="newsletterProductContainer">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tbody>
                               <tr>
                                 <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
                                     <tbody>
                                       <tr>
                                         <td align="center"><a
-                                            href="https://www.beliani.co.uk/towel-stand-45-x-86-cm-black-selva.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category41.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">SELVA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£59.99 </span>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
+                                            href="https://www.beliani.co.uk/round-dining-table-o-110-cm-marble-effect-with-black-mosby.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category11.png"
+                                              style="display:block;max-width:100%" /></a></td>
                                       </tr>
                                     </tbody>
                                   </table>
                                 </td>
                                 <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
                                     <tbody>
                                       <tr>
                                         <td align="center"><a
-                                            href="https://www.beliani.co.uk/cotton-basket-light-beige-silopi.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category42.png"
+                                            href="https://www.beliani.co.uk/round-dining-table-o-110-cm-marble-effect-with-black-mosby.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category12.jpg"
                                               style="display:block;max-width:100%" /></a>
                                           <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
+                                            style="background-color:#ffffff;" width="100%">
                                             <tbody>
                                               <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">SILOPI</span></td>
+                                                <td align="left"><span class="newsletterProductTitle">MOSBY</span></td>
                                               </tr>
                                               <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£79.99
-                                                  </span><span class="newsletterProductHightPrice">£84.99</span></td>
+                                                <td align="left"><span class="newsletterProductLowPrice"
+                                                    style="line-height:0.8">£219.99 </span></td>
                                               </tr>
                                             </tbody>
                                           </table>
@@ -844,23 +929,24 @@
                               </tr>
                               <tr>
                                 <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
                                     <tbody>
                                       <tr>
                                         <td align="center"><a
-                                            href="https://www.beliani.co.uk/metal-bathroom-hanging-shelf-black-tayasu.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category43.png"
+                                            href="https://www.beliani.co.uk/dining-table-180-x-90-cm-light-wood-with-black-ivorie.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category13.jpg"
                                               style="display:block;max-width:100%" /></a>
                                           <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
+                                            style="background-color:#ffffff;" width="100%">
                                             <tbody>
                                               <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">TAYASU</span></td>
+                                                <td align="left"><span class="newsletterProductTitle">IVORIE</span></td>
                                               </tr>
                                               <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£69.99 </span>
-                                                </td>
+                                                <td align="left"><span class="newsletterProductLowPrice"
+                                                    style="line-height:0.8">£419.99 </span></td>
                                               </tr>
                                             </tbody>
                                           </table>
@@ -870,27 +956,15 @@
                                   </table>
                                 </td>
                                 <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
                                     <tbody>
                                       <tr>
                                         <td align="center"><a
-                                            href="https://www.beliani.co.uk/3-piece-bathroom-accessories-set-red-belem.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category44.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">BELEM</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">£37.99 </span>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
+                                            href="https://www.beliani.co.uk/dining-table-180-x-90-cm-light-wood-with-black-ivorie.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category14.png"
+                                              style="display:block;max-width:100%" /></a></td>
                                       </tr>
                                     </tbody>
                                   </table>
@@ -907,7 +981,537 @@
                               <tr>
                                 <td align="center" class="newsletterCtaContainer" style="text-align:center;"><a
                                     class="newsletterCta"
-                                    href="https://www.beliani.co.uk/bathroom-furniture/bathroom-accessories/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"
+                                    href="https://www.beliani.co.uk/tables/dining-tables/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"
+                                    style="color:#000000;text-decoration:underline;">Shop now</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="newsletterLine">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
+                    width="100%" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="background-color:#ffffff">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td align="left" class="newsletterContainer" style="background-color:#ffffff">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Coffee Tables
+                          </span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="center"><a
+                            href="https://www.beliani.co.uk/tables/coffee-tables/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                              loading="lazy" src="https://beliani.info/newsletter/2022/231120Category2.png"
+                              style="display:block;" width="100%" /></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" class="newsletterContainer" style="background-color:#ffffff">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="left" class="newsletterBottom35px"><span class="newsletterParagraph">Benefit from
+                            practical solutions for your space with a large array of coffee tables accessible at
+                            unbelievable prices. </span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="background-color:#ffffff">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="center" class="newsletterProductContainer">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"><a
+                                            href="https://www.beliani.co.uk/marble-effect-coffee-table-black-delano.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category21.png"
+                                              style="display:block;max-width:100%" /></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"><a
+                                            href="https://www.beliani.co.uk/marble-effect-coffee-table-black-delano.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category22.jpg"
+                                              style="display:block;max-width:100%" /></a>
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            style="background-color:#ffffff;" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left"><span class="newsletterProductTitle">DELANO</span></td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left"><span class="newsletterProductLowPrice"
+                                                    style="line-height:0.8">£179.99 </span><span
+                                                    class="newsletterProductHightPrice"
+                                                    style="line-height:0.8">£209.99</span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"><a
+                                            href="https://www.beliani.co.uk/coffee-table-brown-adena.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category23.jpg"
+                                              style="display:block;max-width:100%" /></a>
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            style="background-color:#ffffff;" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left"><span class="newsletterProductTitle">ADENA</span></td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left"><span class="newsletterProductLowPrice"
+                                                    style="line-height:0.8">£189.99 </span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"><a
+                                            href="https://www.beliani.co.uk/coffee-table-brown-adena.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category24.png"
+                                              style="display:block;max-width:100%" /></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="center" class="newsletterCtaContainer" style="text-align:center;"><a
+                                    class="newsletterCta"
+                                    href="https://www.beliani.co.uk/tables/coffee-tables/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"
+                                    style="color:#000000;text-decoration:underline;">Shop now</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="newsletterLine">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
+                    width="100%" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="background-color:#ffffff">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td align="left" class="newsletterContainer" style="background-color:#ffffff">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Extending Tables
+                          </span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="center"><a
+                            href="https://www.beliani.co.uk/tables/extending-tables/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                              loading="lazy" src="https://beliani.info/newsletter/2022/231120Category3.png"
+                              style="display:block;" width="100%" /></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" class="newsletterContainer" style="background-color:#ffffff">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="left" class="newsletterBottom35px"><span class="newsletterParagraph">Save space and
+                            money with our versatile collection of extendable tables, available in a variety of finishes
+                            and colours. </span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="background-color:#ffffff">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="center" class="newsletterProductContainer">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"><a
+                                            href="https://www.beliani.co.uk/dining-table-kitchen-table-extending-table-120-150x75-cm-brown-madox.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category31.png"
+                                              style="display:block;max-width:100%" /></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"><a
+                                            href="https://www.beliani.co.uk/dining-table-kitchen-table-extending-table-120-150x75-cm-brown-madox.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category32.jpg"
+                                              style="display:block;max-width:100%" /></a>
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            style="background-color:#ffffff;" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left"><span class="newsletterProductTitle">MADOX</span></td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left"><span class="newsletterProductLowPrice"
+                                                    style="line-height:0.8">£349.99 </span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"><a
+                                            href="https://www.beliani.co.uk/extending-dining-table-160-200-x-90-cm-marble-effect-with-gold-mosby.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category33.jpg"
+                                              style="display:block;max-width:100%" /></a>
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            style="background-color:#ffffff;" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left"><span class="newsletterProductTitle">MOSBY</span></td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left"><span class="newsletterProductLowPrice"
+                                                    style="line-height:0.8">£369.99 </span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"><a
+                                            href="https://www.beliani.co.uk/extending-dining-table-160-200-x-90-cm-marble-effect-with-gold-mosby.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category34.png"
+                                              style="display:block;max-width:100%" /></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="center" class="newsletterCtaContainer" style="text-align:center;"><a
+                                    class="newsletterCta"
+                                    href="https://www.beliani.co.uk/tables/extending-tables/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"
+                                    style="color:#000000;text-decoration:underline;">Shop now</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="newsletterLine">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
+                    width="100%" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" style="background-color:#ffffff">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td align="left" class="newsletterContainer" style="background-color:#ffffff">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Console Tables
+                          </span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="center"><a
+                            href="https://www.beliani.co.uk/tables/console-tables/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                              loading="lazy" src="https://beliani.info/newsletter/2022/231120Category4.png"
+                              style="display:block;" width="100%" /></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="left" class="newsletterContainer" style="background-color:#ffffff">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="left" class="newsletterBottom35px"><span class="newsletterParagraph">With incredible
+                            discounts, you can craft an elegant area without exceeding your budget. </span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="background-color:#ffffff">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="center" class="newsletterProductContainer">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"><a
+                                            href="https://www.beliani.co.uk/rattan-2-drawer-console-table-light-wood-odell.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category41.png"
+                                              style="display:block;max-width:100%" /></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"><a
+                                            href="https://www.beliani.co.uk/rattan-2-drawer-console-table-light-wood-odell.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category42.jpg"
+                                              style="display:block;max-width:100%" /></a>
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            style="background-color:#ffffff;" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left"><span class="newsletterProductTitle">ODELL</span></td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left"><span class="newsletterProductLowPrice"
+                                                    style="line-height:0.8">£119.99 </span><span
+                                                    class="newsletterProductHightPrice"
+                                                    style="line-height:0.8">£129.99</span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"><a
+                                            href="https://www.beliani.co.uk/glass-top-console-table-marble-effect-white-with-silver-plano.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category43.jpg"
+                                              style="display:block;max-width:100%" /></a>
+                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            style="background-color:#ffffff;" width="100%">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left"><span class="newsletterProductTitle">PLANO</span></td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left"><span class="newsletterProductLowPrice"
+                                                    style="line-height:0.8">£139.99 </span><span
+                                                    class="newsletterProductHightPrice"
+                                                    style="line-height:0.8">£219.99</span></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%"
+                                    width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center"><a
+                                            href="https://www.beliani.co.uk/glass-top-console-table-marble-effect-white-with-silver-plano.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                                              loading="lazy"
+                                              src="https://beliani.info/newsletter/2022/231120Category44.png"
+                                              style="display:block;max-width:100%" /></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center">
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="center" class="newsletterCtaContainer" style="text-align:center;"><a
+                                    class="newsletterCta"
+                                    href="https://www.beliani.co.uk/tables/console-tables/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"
                                     style="color:#000000;text-decoration:underline;">Shop now</a></td>
                               </tr>
                             </tbody>
@@ -950,15 +1554,15 @@
               </tr>
               <tr>
                 <td align="left" class="newsletterSoonEndingBanner"><a
-                    href="https://www.beliani.co.uk/content/lp23-10-16?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      src="https://beliani.info/newsletter/2022/uk231016.png" style="display:block;" width="100%" /></a>
-                </td>
+                    href="https://www.beliani.co.uk/content/lp23-11-13?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      loading="lazy" src="https://beliani.info/newsletter/2022/uk231113.png" style="display:block;"
+                      width="100%" /></a></td>
               </tr>
               <tr>
                 <td align="left"><a
-                    href="https://www.beliani.co.uk/content/lp23-10-13?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      src="https://beliani.info/newsletter/2022/uk231013.png" style="display:block;" width="100%" /></a>
-                </td>
+                    href="https://www.beliani.co.uk/content/lp23-11-09?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      loading="lazy" src="https://beliani.info/newsletter/2022/uk231109.png" style="display:block;"
+                      width="100%" /></a></td>
               </tr>
             </tbody>
           </table>
@@ -966,13 +1570,6 @@
       </tr>
     </tbody>
   </table>
-
-
-
-
-
-
-
   <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterFooter"
     style="max-width:650px;background-color:#ffffff;display:block;">
     <tbody>
@@ -988,43 +1585,43 @@
             <tbody>
               <tr>
                 <td class="newsletterFooterCategoryLEFT"><a
-                    href="https://www.beliani.co.uk/sofas/all+products/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/uk2023uk_08.jpg" style="display:block"
-                      width="100%" /></a></td>
+                    href="https://www.beliani.co.uk/sofas/all+products/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      alt="" border="0" loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_08.jpg"
+                      style="display:block" width="100%" /></a></td>
                 <td class="newsletterFooterCategoryRIGHT"><a
-                    href="https://www.beliani.co.uk/beds/all+products/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/uk2023uk_10.jpg" style="display:block"
-                      width="100%" /></a></td>
+                    href="https://www.beliani.co.uk/beds/all+products/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      alt="" border="0" loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_10.jpg"
+                      style="display:block" width="100%" /></a></td>
               </tr>
               <tr>
                 <td class="newsletterFooterCategoryLEFT"><a
-                    href="https://www.beliani.co.uk/tables/coffee-tables/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/uk2023uk_14.jpg" style="display:block"
-                      width="100%" /></a></td>
+                    href="https://www.beliani.co.uk/tables/coffee-tables/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      alt="" border="0" loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_14.jpg"
+                      style="display:block" width="100%" /></a></td>
                 <td class="newsletterFooterCategoryRIGHT"><a
-                    href="https://www.beliani.co.uk/chairs/all+products/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/uk2023uk_15.jpg" style="display:block"
-                      width="100%" /></a></td>
+                    href="https://www.beliani.co.uk/chairs/all+products/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      alt="" border="0" loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_15.jpg"
+                      style="display:block" width="100%" /></a></td>
               </tr>
               <tr>
                 <td class="newsletterFooterCategoryLEFT"><a
-                    href="https://www.beliani.co.uk/armchairs/all+products/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/uk2023uk_18.jpg" style="display:block"
-                      width="100%" /></a></td>
+                    href="https://www.beliani.co.uk/armchairs/all+products/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      alt="" border="0" loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_18.jpg"
+                      style="display:block" width="100%" /></a></td>
                 <td class="newsletterFooterCategoryRIGHT"><a
-                    href="https://www.beliani.co.uk/storage/sideboards/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/uk2023uk_19.jpg" style="display:block"
-                      width="100%" /></a></td>
+                    href="https://www.beliani.co.uk/storage/sideboards/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      alt="" border="0" loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_19.jpg"
+                      style="display:block" width="100%" /></a></td>
               </tr>
               <tr>
                 <td class="newsletterFooterCategoryLEFTBottom"><a
-                    href="https://www.beliani.co.uk/lighting/all+products/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/uk2023uk_22.jpg" style="display:block"
-                      width="100%" /></a></td>
+                    href="https://www.beliani.co.uk/lighting/all+products/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      alt="" border="0" loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_22.jpg"
+                      style="display:block" width="100%" /></a></td>
                 <td class="newsletterFooterCategoryRIGHTBottom"><a
-                    href="https://www.beliani.co.uk/rugs/all+products/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/uk2023uk_23.jpg" style="display:block"
-                      width="100%" /></a></td>
+                    href="https://www.beliani.co.uk/rugs/all+products/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      alt="" border="0" loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_23.jpg"
+                      style="display:block" width="100%" /></a></td>
               </tr>
             </tbody>
           </table>
@@ -1035,12 +1632,13 @@
       </tr>
       <tr>
         <td class="newsletterKlarnaBannerContainer"><a
-            href="https://www.beliani.co.uk/content/klarna-uk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
+            href="https://www.beliani.co.uk/content/klarna-uk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
               alt="" border="0" src="https://beliani.info/newsletter/2022/NsltBanner_uk.png" style="display:block"
               width="100%" /></a></td>
       </tr>
       <tr>
-        <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
+        <td><img alt="" loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
+            width="100%" /></td>
       </tr>
       <tr>
         <td align="center">
@@ -1062,23 +1660,23 @@
                     <tbody>
                       <tr>
                         <td class="newsletterSocialIcon"><a
-                            href="https://instagram.com/beliani_uk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                              alt="Instagram" border="0"
+                            href="https://instagram.com/beliani_uk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                              alt="Instagram" border="0" loading="lazy"
                               src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                               style="display:block;" width="100%" /></a></td>
                         <td class="newsletterSocialIcon"><a
-                            href="https://www.facebook.com/beliani.co.uk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                              alt="Facebook" border="0"
+                            href="https://www.facebook.com/beliani.co.uk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                              alt="Facebook" border="0" loading="lazy"
                               src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
                               style="display:block;" width="100%" /></a></td>
                         <td class="newsletterSocialIcon"><a
-                            href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                              alt="YouTube" border="0"
+                            href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                              alt="YouTube" border="0" loading="lazy"
                               src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg" style="display:block;"
                               width="100%" /></a></td>
                         <td class="newsletterSocialIcon"><a
-                            href="https://www.pinterest.co.uk/belianiuk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                              alt="Pinterest" border="0"
+                            href="https://www.pinterest.co.uk/belianiuk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                              alt="Pinterest" border="0" loading="lazy"
                               src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
                               style="display:block;" width="100%" /></a></td>
                       </tr>
@@ -1091,7 +1689,8 @@
         </td>
       </tr>
       <tr>
-        <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
+        <td><img alt="" loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
+            width="100%" /></td>
       </tr>
       <tr>
         <td class="newsletterTopBottomContainer">
@@ -1099,45 +1698,46 @@
             <tbody>
               <tr>
                 <td><a
-                    href="https://www.beliani.co.uk/content/delivery/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/uk2023uk_27.jpg" style="display:block"
-                      width="100%" /></a></td>
+                    href="https://www.beliani.co.uk/content/delivery/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      alt="" border="0" loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_27.jpg"
+                      style="display:block" width="100%" /></a></td>
               </tr>
               <tr>
                 <td><a
-                    href="https://www.beliani.co.uk/content/about-us/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/uk2023uk_28.jpg" style="display:block"
-                      width="100%" /></a></td>
+                    href="https://www.beliani.co.uk/content/about-us/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      alt="" border="0" loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_28.jpg"
+                      style="display:block" width="100%" /></a></td>
               </tr>
               <tr>
                 <td><a
-                    href="https://www.beliani.co.uk/content/faq-en/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/uk2023uk_29.jpg" style="display:block"
-                      width="100%" /></a></td>
+                    href="https://www.beliani.co.uk/content/faq-en/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      alt="" border="0" loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_29.jpg"
+                      style="display:block" width="100%" /></a></td>
               </tr>
               <tr>
                 <td><a
-                    href="https://www.beliani.co.uk/content/terms-and-conditions/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19039"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/uk2023uk_30.jpg" style="display:block"
-                      width="100%" /></a></td>
+                    href="https://www.beliani.co.uk/content/terms-and-conditions/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19713"><img
+                      alt="" border="0" loading="lazy" src="https://beliani.info/newsletter/2022/uk2023uk_30.jpg"
+                      style="display:block" width="100%" /></a></td>
               </tr>
             </tbody>
           </table>
         </td>
       </tr>
       <tr>
-        <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
+        <td><img alt="" loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
+            width="100%" /></td>
       </tr>
       <tr>
         <td align="left" class="newsletterTopBottomContainer"><span class="newsletterConditions"
-            style="color:#000000;">*Conditions: Get a towel set in one of 4 options for free with every purchase above
-            £190 using the code freetowel23. Choose from towel sets AREORA in white, blue or grey, or ATAI set in pink.
-            After the customer has entered the voucher code (step 3) a pop-up will appear with products to choose from.
-            After completing the purchase, you'll receive the free product of your choice with your order. In case of
-            returning products from the order, the customer is obliged to return the free item as well. The voucher is
-            not refundable. Only one voucher is redeemable per person and order. It cannot be combined with other
-            discounts. This voucher is valid until 05/11/23 or till stocks last, only on beliani.co.uk. The voucher
-            cannot be used for existing orders. This offer is not valid for resellers, only for individual clients. All
+            style="color:#000000;">*Conditions: Place an order on www.beliani.co.uk and use the code bw23uk5 at the
+            checkout and get the 5 % discount on your order. The minimum order amount is £220. Use the code bw23uk10 at
+            the checkout and get the 10% discount on your order. The minimum order amount is £450. Use the code bw23uk15
+            at the checkout and get the 15% discount on your order. The minimum order amount is £900. Use the code
+            bw23uk20 at the checkout and get the 20% discount on your order. The minimum order amount is £2,200. Only
+            one voucher is redeemable per person and order. This voucher cannot be exchanged for cash and cannot be
+            combined with other discounts. This offer is valid until 26/11/2023 or till stocks last, only on
+            beliani.co.uk. This voucher cannot be used for pending orders. This offer is not valid for resellers. All
             items are subject to availability. All prices are subject to change without notification.</span></td>
       </tr>
       <tr>
@@ -1162,1173 +1762,6 @@
       </tr>
     </tbody>
   </table>
+</body>
 
-
-  <!--[if gte mso 9]><v:background xmlns:v="urn:schemas-microsoft-com:vml"fill="t"><v:fill type="tile"color="#ececec"></v:background><![endif]-->
-  <p class="title-advantages"><span class="title-advantages-item">✔️ Darmowa dostawa i zwroty</span><span
-      class="title-advantages-item">✔️ Najlepszy wybór</span></p>
-  <p class="newsletterRecommendationHeader">Przejdź do naszej <a class="newsletterRecommendationHeaderLink"
-      href="[[newsshowurl]]" style="color:#000000;">wersji online.</a> Dodaj Beliani do <a
-      class="newsletterRecommendationHeaderLink" href="https://www.beliani.pl/content/whitelist-emails-pl/"
-      style="color:#000000;">zaufanych maili.</a></p>
-  <table align="center" border="0" cellpadding="0" cellspacing="0"
-    style=" margin:0 auto;background-color:#ffffff;padding-top:0em;padding-bottom:0em;">
-    <tbody>
-      <tr>
-        <th><a href="https://www.beliani.pl/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-              alt="Beliani" border="0" src="https://beliani.info/newsletter/2022/header_2023_final.jpg"
-              style="display:block" width="100%" /></a></th>
-      </tr>
-    </tbody>
-  </table>
-  <table align="center" border="0" cellpadding="0" cellspacing="0"
-    style=" margin:0 auto;background-color:#ffffff;padding-top:0em;padding-bottom:0em;">
-    <tbody>
-      <tr>
-        <th><a
-            href="https://www.beliani.pl/meble-do-salonu/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-              alt="Meble" border="0" src="https://beliani.info/newsletter/2022/header_pl_02.jpg" style="display:block"
-              width="100%" /></a></th>
-        <th><a
-            href="https://www.beliani.pl/dodatki/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-              alt="Akcesoria" border="0" src="https://beliani.info/newsletter/2022/header_pl_03.jpg"
-              style="display:block" width="100%" /></a></th>
-        <th><a
-            href="https://www.beliani.pl/ogrod/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-              alt="Ogród" border="0" src="https://beliani.info/newsletter/2022/header_pl_04.jpg" style="display:block"
-              width="100%" /></a></th>
-      </tr>
-    </tbody>
-  </table>
-
-
-
-  <table align="center" border="0" cellpadding="0" cellspacing="0"
-    style="margin:0 auto;max-width:650px;width:100%;background-color:#f1e4e4;" width="100%">
-    <tbody>
-      <tr>
-        <td align="center">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="center"><a
-                    href="https://www.beliani.pl/content/lp23-10-23?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      src="https://beliani.info/newsletter/2022/pl231023_01.jpg" style="display:block;"
-                      width="100%" /></a></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td align="center">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="center"><a
-                    href="https://www.beliani.pl/content/lp23-10-23?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      src="https://upload.pictureserver.net/static/231023gif.gif" style="display:block;"
-                      width="100%" /></a></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td class="newsletterIntroSection" style="background-color:#f1e4e4;">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="center" class="newsletterIntroSectionItem"><span class="newsletterParagraph"
-                    style="color:#000000;">Złóż zamówienie za min. 670 zł i otrzymaj wybrany zestaw ręczników ZA DARMO.
-                  </span></td>
-              </tr>
-              <tr>
-                <td align="center" class="newsletterIntroSectionItem"><span class="newsletterParagraph"
-                    style="color:#000000;">Wpisz kod promocyjny w koszyku, aby otrzymać produkt gratis. </span></td>
-              </tr>
-              <tr>
-                <td align="center" class="newsletterIntroSectionItem" style="background-color:#f1e4e4;">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center" style="background-color:#f1e4e4;"><a class="newsletterCta"
-                            href="https://www.beliani.pl/content/lp23-10-23?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"
-                            style="color:#000000;">Odbierz kod </a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" class="newsletterIntroSectionItem"><span class="newsletterParagraph"
-                    style="color:#000000;">Oferta obowiązuje do 05.11.2023</span></td>
-              </tr>
-              <tr>
-                <td align="center"><span class="newsletterParagraph">Wybierz spośród: </span></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td class="newsletterBottom35px" style="background-color:#f1e4e4">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td style="vertical-align:top;">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.pl/komplet-4-recznikow-bawelniany-szary-areora.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                              src="https://beliani.info/newsletter/2022/pl231023Freebie1.jpg"
-                              style="display:block;max-width:100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-                <td style="vertical-align:top;">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.pl/komplet-4-recznikow-bawelniany-niebieski-areora.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                              src="https://beliani.info/newsletter/2022/pl231023Freebie2.jpg"
-                              style="display:block;max-width:100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td style="vertical-align:top;">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.pl/komplet-4-recznikow-bawelnianych-frotte-rozowy-atai.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                              src="https://beliani.info/newsletter/2022/pl231023Freebie3.jpg"
-                              style="display:block;max-width:100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-                <td style="vertical-align:top;">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.pl/komplet-4-recznikow-bawelniany-bialy-areora.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                              src="https://beliani.info/newsletter/2022/pl231023Freebie4.jpg"
-                              style="display:block;max-width:100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td class="newsletterLine">
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
-                    width="100%" /></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td align="left" class="newsletterContainer" style="background-color:#f1e4e4">
-          <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Odśwież swoją
-                    łazienkę</span></td>
-              </tr>
-            </tbody>
-          </table>
-          <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="newsletterBottom35px"><span class="newsletterParagraph">Bez względu na to, czy
-                    szukasz stylowej wanny, odprężającego prysznica, baterii lub akcesoriów łazienkowych, na pewno
-                    znajdziesz je tutaj. Sprawdź nasze starannie wybrane kolekcje, które pomogą Ci w stworzeniu
-                    idealnej, relaksującej łazienki.</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" style="background-color:#f1e4e4">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="newsletterContainer" style="background-color:#f1e4e4">
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Wanny </span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.pl/wanny-i-wanny-z-hydromasazem/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                              src="https://beliani.info/newsletter/2022/231023Category1.png" style="display:block;"
-                              width="100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" style="background-color:#f1e4e4">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center" class="newsletterProductContainer">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/wanna-narozna-z-hydromasazem-135-x-135-cm-biala-cantalla.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category11.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">CANTALLA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">5 329,99
-                                                  </span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/wanna-wolnostojaca-160-x-80-cm-czarna-havana.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category12.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">HAVANA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">2 889,99
-                                                  </span><span class="newsletterProductHightPrice">4 209,99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/wanna-narozna-led-z-hydromasazem-165-x-148-cm-biala-pelican.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category13.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">PELICAN</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">5 639,99
-                                                  </span><span class="newsletterProductHightPrice">5 889,99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/wanna-wolnostojaca-170-x-81-cm-czerwona-rios.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category14.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">RIOS</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">3 689,99
-                                                  </span><span class="newsletterProductHightPrice">3 769,99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterCtaContainer" style="text-align:center;"><a
-                                    class="newsletterCta"
-                                    href="https://www.beliani.pl/wanny-i-wanny-z-hydromasazem/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"
-                                    style="color:#000000;text-decoration:underline;">Kup teraz</a></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td class="newsletterLine">
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
-                    width="100%" /></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" style="background-color:#f1e4e4">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="newsletterContainer" style="background-color:#f1e4e4">
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Prysznice </span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.pl/meble-lazienkowe/prysznice/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                              src="https://beliani.info/newsletter/2022/231023Category2.png" style="display:block;"
-                              width="100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" style="background-color:#f1e4e4">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center" class="newsletterProductContainer">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/scianka-prysznicowa-szklo-hartowane-80-x-190-cm-ahaus.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category21.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">AHAUS</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">489,99
-                                                  </span><span class="newsletterProductHightPrice">669,99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/parawan-nawannowy-szklo-hartowane-140-x-100-cm-tuapi.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category22.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">TUAPI</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">579,99
-                                                  </span><span class="newsletterProductHightPrice">759,99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/kabina-prysznicowa-szklo-hartowane-80-x-100-x-185-cm-srebrna-yoro.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category23.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">YORO</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">999,99
-                                                  </span><span class="newsletterProductHightPrice">1 119,99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/brodzik-prysznicowy-90-x-90-x-7-cm-bialy-siuna.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category24.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">SIUNA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">389,99
-                                                  </span><span class="newsletterProductHightPrice">529,99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterCtaContainer" style="text-align:center;"><a
-                                    class="newsletterCta"
-                                    href="https://www.beliani.pl/meble-lazienkowe/prysznice/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"
-                                    style="color:#000000;text-decoration:underline;">Kup teraz</a></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td class="newsletterLine">
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
-                    width="100%" /></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" style="background-color:#f1e4e4">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="newsletterContainer" style="background-color:#f1e4e4">
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Baterie łazienkowe
-                          </span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.pl/meble-lazienkowe/baterie-lazienkowe/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                              src="https://beliani.info/newsletter/2022/231023Category3.png" style="display:block;"
-                              width="100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" style="background-color:#f1e4e4">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center" class="newsletterProductContainer">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/bateria-wannowa-wolnostojaca-zlota-boyoma.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category31.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">BOYOMA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">1 619,99
-                                                  </span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/kolumna-prysznicowa-z-deszczownica-czarno-zlota-gurara.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category32.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">GURARA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">969,99 </span>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/bateria-umywalkowa-srebrna-kagera.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category33.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">KAGERA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">459,99 </span>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/bateria-wannowa-wolnostojaca-miedziana-victoria.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category34.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">VICTORIA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">1 099,99
-                                                  </span><span class="newsletterProductHightPrice">1 349,99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterCtaContainer" style="text-align:center;"><a
-                                    class="newsletterCta"
-                                    href="https://www.beliani.pl/meble-lazienkowe/baterie-lazienkowe/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"
-                                    style="color:#000000;text-decoration:underline;">Kup teraz</a></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td class="newsletterLine">
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
-                    width="100%" /></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td align="center" style="background-color:#f1e4e4">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="newsletterContainer" style="background-color:#f1e4e4">
-                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="left" class="newsletterBottom35px"><span class="newsletterTitle">Akcesoria łazienkowe
-                          </span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a
-                            href="https://www.beliani.pl/meble-lazienkowe/akcesoria-lazienkowe/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                              src="https://beliani.info/newsletter/2022/231023Category4.png" style="display:block;"
-                              width="100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center" style="background-color:#f1e4e4">
-                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tbody>
-                      <tr>
-                        <td align="center" class="newsletterProductContainer">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/stojak-na-reczniki-45-x-86-cm-czarny-selva.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category41.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">SELVA</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">139,99 </span>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/kosz-bawelniany-jasnobezowy-silopi.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category42.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">SILOPI</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">204,99 </span>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td align="center" class="newsletterProductContainerLEFT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/polka-wiszaca-lazienkowa-metalowa-czarna-tayasu.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category43.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">TAYASU</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">249,99 </span>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                                <td align="center" class="newsletterProductContainerRIGHT" width="50%">
-                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tbody>
-                                      <tr>
-                                        <td align="center"><a
-                                            href="https://www.beliani.pl/3-czesciowy-zestaw-akcesoriow-lazienkowych-czerwony-belem.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                                              src="https://beliani.info/newsletter/2022/231023Category44.png"
-                                              style="display:block;max-width:100%" /></a>
-                                          <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                            style="background-color:#f1e4e4;" width="100%">
-                                            <tbody>
-                                              <tr>
-                                                <td align="left" class="newsletterProductTitleContainer"><span
-                                                    class="newsletterProductTitle">BELEM</span></td>
-                                              </tr>
-                                              <tr>
-                                                <td align="left"><span class="newsletterProductLowPrice">111,99
-                                                  </span><span class="newsletterProductHightPrice">115,99</span></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center">
-                          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tbody>
-                              <tr>
-                                <td align="center" class="newsletterCtaContainer" style="text-align:center;"><a
-                                    class="newsletterCta"
-                                    href="https://www.beliani.pl/meble-lazienkowe/akcesoria-lazienkowe/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"
-                                    style="color:#000000;text-decoration:underline;">Kup teraz</a></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td class="newsletterLine">
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block"
-                    width="100%" /></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-    <tbody></tbody>
-  </table>
-  <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterSoonEndingTable"
-    style="margin:0 auto;max-width:650px;color:#000000;background-color:#ffffff;">
-    <tbody>
-      <tr>
-        <td align="left" class="newsletterSoonEndingContainer">
-          <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="newsletterSoonEndingTitleContainer"><span
-                    class="newsletterSoonEndingTitle">Wkrótce kończące się kampanie</span></td>
-              </tr>
-              <tr>
-                <td align="left" class="newsletterSoonEndingBanner"><a
-                    href="https://www.beliani.pl/content/lp23-10-16?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      src="https://beliani.info/newsletter/2022/pl231016.png" style="display:block;" width="100%" /></a>
-                </td>
-              </tr>
-              <tr>
-                <td align="left"><a
-                    href="https://www.beliani.pl/content/lp23-10-13?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      src="https://beliani.info/newsletter/2022/pl231013.png" style="display:block;" width="100%" /></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterFooter"
-    style="max-width:650px;background-color:#ffffff;display:block;">
-    <tbody>
-      <tr>
-        <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
-      </tr>
-      <tr>
-        <td class="newsletterTopBottomContainer"><span class="newsletterFooterTitle">Zobacz jeszcze więcej </span></td>
-      </tr>
-      <tr>
-        <td class="newsletterFooterCategories">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td class="newsletterFooterCategoryLEFT"><a
-                    href="https://www.beliani.pl/sofy/wszystkie+produkty/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/pl2023pl_08.jpg" style="display:block"
-                      width="100%" /></a></td>
-                <td class="newsletterFooterCategoryRIGHT"><a
-                    href="https://www.beliani.pl/lozka/wszystkie+produkty/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/pl2023pl_10.jpg" style="display:block"
-                      width="100%" /></a></td>
-              </tr>
-              <tr>
-                <td class="newsletterFooterCategoryLEFT"><a
-                    href="https://www.beliani.pl/stoly/stoliki-kawowe/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/pl2023pl_14.jpg" style="display:block"
-                      width="100%" /></a></td>
-                <td class="newsletterFooterCategoryRIGHT"><a
-                    href="https://www.beliani.pl/krzesla/wszystkie+produkty/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/pl2023pl_15.jpg" style="display:block"
-                      width="100%" /></a></td>
-              </tr>
-              <tr>
-                <td class="newsletterFooterCategoryLEFT"><a
-                    href="https://www.beliani.pl/fotele/wszystkie+produkty/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/pl2023pl_18.jpg" style="display:block"
-                      width="100%" /></a></td>
-                <td class="newsletterFooterCategoryRIGHT"><a
-                    href="https://www.beliani.pl/przechowywanie/komody/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/pl2023pl_19.jpg" style="display:block"
-                      width="100%" /></a></td>
-              </tr>
-              <tr>
-                <td class="newsletterFooterCategoryLEFTBottom"><a
-                    href="https://www.beliani.pl/oswietlenie/wszystkie+produkty/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/pl2023pl_22.jpg" style="display:block"
-                      width="100%" /></a></td>
-                <td class="newsletterFooterCategoryRIGHTBottom"><a
-                    href="https://www.beliani.pl/dywany/wszystkie+produkty/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/pl2023pl_23.jpg" style="display:block"
-                      width="100%" /></a></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
-      </tr>
-      <tr>
-        <td class="newsletterKlarnaBannerContainer"><a
-            href="https://www.beliani.pl/content/platnosc/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-              alt="" border="0" src="https://beliani.info/newsletter/2022/NsltBanner_pl.png" style="display:block"
-              width="100%" /></a></td>
-      </tr>
-      <tr>
-        <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
-      </tr>
-      <tr>
-        <td align="center">
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="left" class="footer">
-                  <table border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                      <tr>
-                        <td class="newsletterTopBottomContainer"><span class="newsletterFooterTitle">Znajdź nas </span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-                <td align="right" class="footer" style="padding-right:5px;vertical-align:middle;">
-                  <table border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                      <tr>
-                        <td class="newsletterSocialIcon"><a
-                            href="https://www.instagram.com/beliani_polska/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                              alt="Instagram" border="0"
-                              src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
-                              style="display:block;" width="100%" /></a></td>
-                        <td class="newsletterSocialIcon"><a
-                            href="https://www.facebook.com/BelianiPolska/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                              alt="Facebook" border="0"
-                              src="https://beliani.info/newsletter/2022/footerFacebook2022New.jpg"
-                              style="display:block;" width="100%" /></a></td>
-                        <td class="newsletterSocialIcon"><a
-                            href="https://www.youtube.com/c/BelianiGmbH/featured/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                              alt="YouTube" border="0"
-                              src="https://beliani.info/newsletter/2022/footerYoutube2022New.jpg" style="display:block;"
-                              width="100%" /></a></td>
-                        <td class="newsletterSocialIcon"><a
-                            href="https://www.pinterest.com/belianipl/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                              alt="Pinterest" border="0"
-                              src="https://beliani.info/newsletter/2022/footerPinterest2022New.jpg"
-                              style="display:block;" width="100%" /></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
-      </tr>
-      <tr>
-        <td class="newsletterKlarnaBannerContainer"><a
-            href="https://www.facebook.com/BelianiAtWork/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-              alt="" border="0" src="https://beliani.info/newsletter/2022/WorkBanner_PL.png" style="display:block"
-              width="100%" /></a></td>
-      </tr>
-      <tr>
-        <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
-      </tr>
-      <tr>
-        <td class="newsletterTopBottomContainer">
-          <table border="0" cellpadding="0" cellspacing="0" style="background-color:#f5f5f5;" width="100%">
-            <tbody>
-              <tr>
-                <td><a
-                    href="https://www.beliani.pl/content/dostawa/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/pl2023pl_27.jpg" style="display:block"
-                      width="100%" /></a></td>
-              </tr>
-              <tr>
-                <td><a
-                    href="https://www.beliani.pl/content/o-nas/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/pl2023pl_28.jpg" style="display:block"
-                      width="100%" /></a></td>
-              </tr>
-              <tr>
-                <td><a
-                    href="https://www.beliani.pl/content/najczesciej-zadawane-pytania/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/pl2023pl_29.jpg" style="display:block"
-                      width="100%" /></a></td>
-              </tr>
-              <tr>
-                <td><a
-                    href="https://www.beliani.pl/content/ogolne-warunki-handlowe/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=19034"><img
-                      alt="" border="0" src="https://beliani.info/newsletter/2022/pl2023pl_30.jpg" style="display:block"
-                      width="100%" /></a></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
-      </tr>
-      <tr>
-        <td align="left" class="newsletterTopBottomContainer"><span class="newsletterConditions"
-            style="color:#000000;">*Warunki: Otrzymaj jeden ręcznik za darmo do każdego zamówienia powyżej 670 zł.
-            Wybierz spośród zestawów AREORA w białym, niebieskim lub szarym kolorze, albo zestawu ATAI w różowym kolorze
-            Po wpisaniu kodu rabatowego recznikfree23 w zakładce metody płatności pojawi się okno z dostępnymi
-            produktami gratis. W przypadku zwrotu zamówionych przedmiotów należy również zwrócić darmowe produkty. Kupon
-            nie może być zamieniony na gotówkę ani łączony z innymi kuponami; może być użyty tylko raz, do jednego
-            zamówienia. Promocja jest ważna do 05.11.2023 lub do wyczerpania zapasów, tylko na beliani.pl. Oferta nie
-            dotyczy zamówień oczekujących i mogą z niej skorzystać jedynie klienci indywidualni. Zastrzegamy sobie prawo
-            do zmiany cen. </span></td>
-      </tr>
-      <tr>
-        <td
-          style="vertical-align:middle;text-align:center;font-size:14px;font-family:'Open Sans', sans-serif!important;color:#000000;">
-          <p><a href="[[newsunassignurl]]" style="text-decoration:underline;color:#000000;">Wypisz się z newslettera</a>
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <table align="center" border="0" cellpadding="0" cellspacing="0">
-    <tbody>
-      <tr>
-        <td align="center" class="newsletterFooterCompanyDetails"><span
-            style="color:#000000;text-align:center;font-size:11px;"><b>
-              <font style="font-size:10px;">Dane Firmy</font>
-            </b><br />
-            Beliani (DE) GmbH CH 6340 Baar Szwajcaria<br />
-            Telefon: +48 91 350 83 60; E-mail: <a href="mailto:mail@beliani.pl">mail@beliani.pl</a><br />
-            Rejestr handlowy: Rejestr handlowy kantonu Zug, CH-170.4.008.869-6<br />
-            NIP: CHE-114.825.869 VAT </span></td>
-      </tr>
-    </tbody>
-  </table>
+</html>
