@@ -280,7 +280,8 @@ export function initApp({
       "header",
       headerHtmlTemplate?.header !== undefined ? headerHtmlTemplate.header : ""
     );
-    setState("links", addParams(parseLinks({ newsletterLinks, landingLinks })));
+    const links = addParams(parseLinks({ newsletterLinks, landingLinks }))
+    setState("links", links.map(link => typeof link === "object" ? link.value(country.toLowerCase()) : link));
     setState("loading", false);
 
     try {

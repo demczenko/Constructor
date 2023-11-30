@@ -84,9 +84,7 @@ export const fetchCategories = async ({ categories }) => {
 };
 
 export const parseLinks = ({ newsletterLinks, landingLinks }) => {
-  const country = getState("country");
   const template = getState("template");
 
-  const links = template === "newsletter" ? newsletterLinks : landingLinks;
-  return parseTemplate(links, country);
+  return template === "newsletter" ? newsletterLinks : landingLinks;
 };

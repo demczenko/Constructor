@@ -5,24 +5,25 @@ initApp({
   // serverProducts: true,
   // serverCategories: true,
   // serverHeader: true,
-  token: "1//04bF2L27pz-NhCgYIARAAGAQSNwF-L9IrYpW6LPrE13tZ2wxbb-RCR0xO9NzVz8j_uNjRTl4hDn_Dhbu3z3pvfDsX7Ggx5WrFwEg",
+  token:
+    "1//04Gy_s8ZYSeweCgYIARAAGAQSNwF-L9IruXVczHsL893Pu1N6dW0idwAtjr37flzjosVZ7Xx757HrEoLeMYH6lmPgFgQGBmgtKUg",
   tableQueries: [
     {
-      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
-      tableName: "Voucher - 20.11.23 - Tables",
-      tableRange: "15:33",
+      tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+      tableName: "Voucher - 08.01.24 - Winter sale start",
+      tableRange: "27:36",
       name: "tables",
     },
     {
-      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
-      tableName: "Voucher - 20.11.23 - Tables",
-      tableRange: "25",
+      tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+      tableName: "Voucher - 08.01.24 - Winter sale start",
+      tableRange: "39:42",
       name: "code",
     },
     {
-      tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
-      tableName: "Voucher - 20.11.23 - Tables",
-      tableRange: "38",
+      tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
+      tableName: "Voucher - 08.01.24 - Winter sale start",
+      tableRange: "75",
       name: "condition",
     },
   ],
@@ -48,105 +49,66 @@ initApp({
   },
   newsletterLinks: [
     {
-      value: "lp23-11-20",
-      addContentOrigin: true,
+      value: (origin) => origin + "lp24-01-08",
+      query: true
     },
     {
-      value: "231120_01.jpg",
-      addServer: true,
+      value: (country) => `https://beliani.info/newsletter/2022/${country}240108_01.png`,
     },
     {
-      value: "lp23-11-20",
-      addContentOrigin: true,
+      value: (origin) => origin + "lp24-01-08",
+      query: true
     },
     {
-      value: "https://upload.pictureserver.net/static/231120gif.gif",
+      value: () => "https://upload.pictureserver.net/static/240108gif.gif",
     },
     {
-      value: "lp23-11-13",
-      addContentOrigin: true,
+      value: (origin) => origin + "lp24-01-01",
+      query: true
     },
     {
-      value: "231113.png",
-      addServer: true,
+      value: (country) => `https://beliani.info/newsletter/2022/${country}240101.png`,
     },
     {
-      value: "lp23-11-09",
-      addContentOrigin: true,
+      value: (origin) => origin + "lp23-12-29",
+      query: true
     },
     {
-      value: "231109.png",
-      addServer: true,
+      value: (country) => `https://beliani.info/newsletter/2022/${country}231229.png`,
     },
   ],
   landingLinks: [
     {
-      value: "lp23-11-20",
+      value: "lp24-01-08",
       addContentOrigin: true,
     },
     {
-      value: "231120_01.jpg",
+      value: "240108_01.png",
       addServer: true,
     },
     {
-      value: "lp23-11-20",
+      value: "lp24-01-08",
       addContentOrigin: true,
     },
     {
-      value: "https://upload.pictureserver.net/static/231120gif.gif",
+      value: "https://upload.pictureserver.net/static/240108gif.gif",
     },
     {
-      value: "lp23-11-13",
+      value: "lp24-01-01",
       addContentOrigin: true,
     },
     {
-      value: "231113.png",
+      value: "240101.png",
       addServer: true,
     },
     {
-      value: "lp23-11-09",
+      value: "lp23-12-29",
       addContentOrigin: true,
     },
     {
-      value: "231109.png",
+      value: "231229.png",
       addServer: true,
     },
   ],
-  productsOrder: [
-    {
-      id: "167484",
-      src: "https://beliani.info/newsletter/2022/231120Category12.jpg",
-    },
-    {
-      id: "344543",
-      src: "https://beliani.info/newsletter/2022/231120Category13.jpg",
-    },
-
-    {
-      id: "172499",
-      src: "https://beliani.info/newsletter/2022/231120Category22.jpg",
-    },
-    {
-      id: "72208",
-      src: "https://beliani.info/newsletter/2022/231120Category23.jpg",
-    },
-
-    {
-      id: "28028",
-      src: "https://beliani.info/newsletter/2022/231120Category32.jpg",
-    },
-    {
-      id: "243851",
-      src: "https://beliani.info/newsletter/2022/231120Category33.jpg",
-    },
-
-    {
-      id: "369187",
-      src: "https://beliani.info/newsletter/2022/231120Category42.jpg",
-    },
-    {
-      id: "317450",
-      src: "https://beliani.info/newsletter/2022/231120Category43.jpg",
-    },
-  ],
+  productsOrder: [],
 });

@@ -1,12 +1,12 @@
 import { getState, setState } from "../main/initApp.js";
+import origins from "../data/templates/origins.js";
 
 export function addParams(arr) {
+  const country = getState("country");
 
   return arr.map((link) => {
-    if (!link.includes("https://beliani.info/newsletter/2022/")) {
-      if (!link.includes("https://upload.pictureserver.net/static/")) {
-        return getQueryLink({ href: link });
-      }
+    if ("query" in link) {
+      return getQueryLink({ href: link.value(origins[country]) });
     }
     return link;
   });

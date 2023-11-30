@@ -39,7 +39,7 @@ export function newsletter({
   template,
   additionalTranslations,
 }) {
-  
+  console.log(links);
   return `
   ${header[country]("newsletter", id)}
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #ffffff;" >
@@ -74,145 +74,62 @@ export function newsletter({
                         </table>
                     </td>
                 </tr>
+                <tr>
+                  <td align="center" style="background-color: #ffe8df" class="newsletterContainer">
+                      <span class="newsletterParagraph">
+                          ${translations.tables[0]}
+                      </span>
+                  </td>
+                </tr>
                 ${IntroText({
                   code: true,
                   offerParts: [
                     {
-                      title: translations.tables[0],
-                      paragraph: translations.tables[1],
+                      title: translations.tables[1],
+                      paragraph: translations.tables[2],
                     },
                     {
-                      title: translations.tables[2],
-                      paragraph: translations.tables[3],
+                      title: translations.tables[3],
+                      paragraph: translations.tables[4],
                     },
                     {
-                      title: translations.tables[4],
-                      paragraph: translations.tables[5],
+                      title: translations.tables[5],
+                      paragraph: translations.tables[6],
                     },
                     {
-                      title: translations.tables[6],
-                      paragraph: translations.tables[7],
+                      title: translations.tables[7],
+                      paragraph: translations.tables[8],
                     },
                   ],
-                  offerValid: translations.tables[8],
+                  offerValid: translations.tables[9],
                   getCode: {
                     link: links[0],
                     text: getCodes,
                   },
                   style: {
-                    bgColor: "#ffffff",
+                    bgColor: "#ffe8df",
                   },
                   type: template,
                 })}
-                ${Line(undefined, true)}
-                ${Category({
-                  category: {
-                    ...categories[0],
-                    name: translations.tables[11],
-                    paragraph: translations.tables[12],
-                  },
-                  products: [
-                    {
-                      ...products[0],
-                      src: "https://beliani.info/newsletter/2022/231120Category11.png",
-                      type: "image",
-                    },
-                    products[0],
-                    products[1],
-                    {
-                      ...products[1],
-                      src: "https://beliani.info/newsletter/2022/231120Category14.png",
-                      type: "image",
-                    },
-                  ],
-                  cta: shopNow,
-                  type: "monday",
-                  style: {
-                    bgColor: "#ffffff",
-                  },
-                })}
-                ${Line(undefined, true)}
-                ${Category({
-                  category: {
-                    ...categories[1],
-                    name: translations.tables[13],
-                    paragraph: translations.tables[14],
-                  },
-                  products: [
-                    {
-                      ...products[2],
-                      type: "image",
-                      src: "https://beliani.info/newsletter/2022/231120Category21.png",
-                    },
-                    products[2],
-                    products[3],
-                    {
-                      ...products[3],
-                      type: "image",
-                      src: "https://beliani.info/newsletter/2022/231120Category24.png",
-                    },
-                  ],
-                  cta: shopNow,
-                  type: "monday",
-                  style: {
-                    bgColor: "#ffffff",
-                  },
-                })}
-                ${Line(undefined, true)}
-                ${Category({
-                  category: {
-                    ...categories[2],
-
-                    name: translations.tables[15],
-                    paragraph: translations.tables[16],
-                  },
-                  products: [
-                    {
-                      ...products[4],
-                      type: "image",
-                      src: "https://beliani.info/newsletter/2022/231120Category31.png",
-                    },
-                    products[4],
-                    products[5],
-                    {
-                      ...products[5],
-                      type: "image",
-                      src: "https://beliani.info/newsletter/2022/231120Category34.png",
-                    },
-                  ],
-                  cta: shopNow,
-                  type: "monday",
-                  style: {
-                    bgColor: "#ffffff",
-                  },
-                })}
-                ${Line(undefined, true)}
-                ${Category({
-                  category: {
-                    ...categories[3],
-                    name: translations.tables[17],
-                    paragraph: translations.tables[18],
-                  },
-                  products: [
-                    {
-                      ...products[6],
-                      type: "image",
-                      src: "https://beliani.info/newsletter/2022/231120Category41.png",
-                    },
-                    products[6],
-                    products[7],
-                    {
-                      ...products[7],
-                      type: "image",
-                      src: "https://beliani.info/newsletter/2022/231120Category44.png",
-                    },
-                  ],
-                  cta: shopNow,
-                  type: "monday",
-                  style: {
-                    bgColor: "#ffffff",
-                  },
-                })}
+                ${
+                  categories.map(category => {
+                    return `
+                    <tr>
+                      <td align="center">
+                          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                              <tr>
+                                  <td align="center">
+                                      <a href=${category.href}>
+                                          <img loading="lazy" width="100%" src=${category.src(country.toLowerCase())} style="display: block;">
+                                      </a>
+                                  </td>
+                              </tr>
+                          </table>
+                      </td>
+                    </tr>
+                    `
+                  }).join(" ")
+                }
                 ${Line(undefined, true)}
             <tbody>
         </table>

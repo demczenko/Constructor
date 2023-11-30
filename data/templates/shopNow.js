@@ -12,9 +12,9 @@ export default {
   IT: "Acquista ora",
   DK: "Køb nu",
   NO: "Kjøp nå",
-  FI: "Tilaa nyt",
+  FI: "Katso lisää",
   SE: "Handla nu",
   CZ: "Do obchodu",
   SK: "Do obchodu",
-  HU: "Fedezd fel",
+  HU: "Rendelj most",
 };
