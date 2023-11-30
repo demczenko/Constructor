@@ -7,6 +7,7 @@ import {
   IntroText,
   Product,
   Timer,
+  GetCode,
 } from "../components/index.js";
 import { priceFrom, priceFree } from "../helpers/index.js";
 import { footer, header } from "../templates/index.js";
@@ -42,7 +43,7 @@ export function newsletter({
   console.log(links);
   return `
   ${header[country]("newsletter", id)}
-        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #ffffff;" >
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #ffe8df;" >
             <tbody>
                 <tr>
                     <td align="center">
@@ -82,7 +83,6 @@ export function newsletter({
                   </td>
                 </tr>
                 ${IntroText({
-                  code: true,
                   offerParts: [
                     {
                       title: translations.tables[1],
@@ -101,18 +101,25 @@ export function newsletter({
                       paragraph: translations.tables[8],
                     },
                   ],
-                  offerValid: translations.tables[9],
-                  getCode: {
-                    link: links[0],
-                    text: getCodes,
-                  },
                   style: {
-                    bgColor: "#ffe8df",
+                    container: "background-color: #ffe8df",
                   },
                   type: template,
                 })}
-                ${
-                  categories.map(category => {
+                ${GetCode({
+                  code: getCodes,
+                  link: links[0],
+                  type: template,
+                })}
+                <tr>
+                    <td align="center" class="newsletterBottom30px">
+                        <span class="newsletterParagraph">
+                            ${translations.tables[9]}
+                        </span>
+                    </td>
+                </tr>
+                ${categories
+                  .map((category) => {
                     return `
                     <tr>
                       <td align="center">
@@ -120,16 +127,18 @@ export function newsletter({
                               <tr>
                                   <td align="center">
                                       <a href=${category.href}>
-                                          <img loading="lazy" width="100%" src=${category.src(country.toLowerCase())} style="display: block;">
+                                          <img loading="lazy" width="100%" src=${category.src(
+                                            country.toLowerCase()
+                                          )} style="display: block;">
                                       </a>
                                   </td>
                               </tr>
                           </table>
                       </td>
                     </tr>
-                    `
-                  }).join(" ")
-                }
+                    `;
+                  })
+                  .join(" ")}
                 ${Line(undefined, true)}
             <tbody>
         </table>

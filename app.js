@@ -1,7 +1,7 @@
 import { initApp } from "./main/initApp.js";
 
 initApp({
-  startId: "19696",
+  startId: "20017",
   // serverProducts: true,
   // serverCategories: true,
   // serverHeader: true,
@@ -79,35 +79,32 @@ initApp({
   ],
   landingLinks: [
     {
-      value: "lp24-01-08",
-      addContentOrigin: true,
+      value: (origin) => origin + "lp24-01-08",
+      query: true
     },
     {
-      value: "240108_01.png",
-      addServer: true,
+      value: (country) => `https://beliani.info/newsletter/2022/${country}240108_01.png`,
     },
     {
-      value: "lp24-01-08",
-      addContentOrigin: true,
+      value: (origin) => origin + "lp24-01-08",
+      query: true
     },
     {
-      value: "https://upload.pictureserver.net/static/240108gif.gif",
+      value: () => "https://upload.pictureserver.net/static/240108gif.gif",
     },
     {
-      value: "lp24-01-01",
-      addContentOrigin: true,
+      value: (origin) => origin + "lp24-01-01",
+      query: true
     },
     {
-      value: "240101.png",
-      addServer: true,
+      value: (country) => `https://beliani.info/newsletter/2022/${country}240101.png`,
     },
     {
-      value: "lp23-12-29",
-      addContentOrigin: true,
+      value: (origin) => origin + "lp23-12-29",
+      query: true
     },
     {
-      value: "231229.png",
-      addServer: true,
+      value: (country) => `https://beliani.info/newsletter/2022/${country}231229.png`,
     },
   ],
   productsOrder: [],

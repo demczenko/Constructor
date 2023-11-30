@@ -6,8 +6,10 @@ import { IntroText } from "./introtext.js";
 import { Line } from "./Line.js";
 import { Product } from "./product.js";
 import { Timer } from "./timer.js";
+import { GetCode } from "./getCode.js";
 
 export {
+  GetCode,
   Category,
   Freebies,
   ThisMayInterestYou,

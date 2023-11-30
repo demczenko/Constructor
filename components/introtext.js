@@ -1,18 +1,4 @@
-export function IntroText({
-  offerParts,
-  getCode,
-  offerValid,
-  chooseFrom,
-  code = false,
-  type,
-  style = { bgColor: "#ffffff", textColor: "#000000" },
-}) {
-  style = {
-    bgColor: "#ffffff",
-    textColor: "#000000",
-    ...style,
-  };
-
+export function IntroText({ offerParts, type, style = {} }) {
   function newsletterIntro(item, i) {
     return `
     ${
@@ -20,7 +6,7 @@ export function IntroText({
         ? `
         <tr>
             <td align="center">
-                <span class="newsletterTitleBlackWeek" style="color: ${style.textColor};">
+                <span class="newsletterTitleBlackWeek">
                     ${item.title}
                 </span>
             </td>
@@ -33,11 +19,11 @@ export function IntroText({
         ? `
         <tr>
             <td align="center" ${
-              offerParts.length - 1 !== i ? 'class="newsletterIntroSectionItem"' : ""
+              offerParts.length - 1 !== i
+                ? 'class="newsletterIntroSectionItem"'
+                : ""
             }>
-                <span class="newsletterParagraph" style="color: ${
-                  style.textColor
-                }; line-height: 1.25">
+                <span class="newsletterParagraph">
                     ${item.paragraph}
                 </span>
             </td>
@@ -74,7 +60,7 @@ export function IntroText({
         ? `
         <tr>
             <td align="center">
-                <span class="newsletterTitleBlackWeek" style="color: ${style.textColor};">
+                <span class="newsletterTitleBlackWeek" >
                     ${item.title}
                 </span>
             </td>
@@ -87,7 +73,7 @@ export function IntroText({
         ? `
         <tr>
             <td align="center" class="newsletterBottom20px">
-                <span class="newsletterParagraph" style="color: ${style.textColor}; line-height: 1.25">
+                <span class="newsletterParagraph">
                     ${item.paragraph}
                 </span>
             </td>
@@ -104,9 +90,7 @@ export function IntroText({
                 ? 'class="newsletterCodesPadding"'
                 : 'class="newsletterIntroSectionItem"'
             } >
-                <span class="newsletterParagraph" style="color: ${
-                  style.textColor
-                }; line-height: 1.25">
+                <span class="newsletterParagraph">
                     ${item.code}
                 </span>
             </td>
@@ -119,98 +103,28 @@ export function IntroText({
 
   return `
     <tr>
-        <td class="newsletterIntroSection" style="background-color: ${
-          style.bgColor
-        };">
+        <td class="newsletterIntroSection" ${
+          "container" in style ? 'style="${style?.container}"' : ""
+        }>
             <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tbody>
-                    <tr>
-                        <td align="center">
-                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                <tbody>
-                                ${
-                                  offerParts
-                                    ? `
-                                    ${offerParts
-                                      .map((item, i) => {
-                                        if (type === "newsletter") {
-                                          return newsletterIntro(item, i);
-                                        }
-
-                                        if (type === "landing") {
-                                          return landingIntro(item, i);
-                                        }
-                                      })
-                                      .join("")}
-                                    `
-                                    : ""
-                                }
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                    ${
-                      code
-                        ? `
-                        ${
-                          type === "newsletter"
-                            ? `
-                              <tr>
-                                  <td align="center" class="newsletterBlackWeekCode" style="background-color: ${style.bgColor};">
-                                      <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                          <tbody>
-                                              <tr>
-                                                  <td align="center" style="background-color: ${style.bgColor}; ">
-                                                      <a href=${getCode.link} style="color: ${style.textColor}; text-decoration:underline!important;">
-                                                          <span class="newsletterTitle">${getCode.text}</span>
-                                                      </a>
-                                                  </td>
-                                              </tr>
-                                          </tbody>
-                                      </table>
-                                  </td>
-                              </tr>
-                              `
-                            : `
-                              <tr>
-                                  <td align="center" class="newsletterIntroSectionItem">
-                                      <span class="newsletterParagraph" style="font-size: 20px; color: ${style.textColor};">
-                                          ${getCode.text}
-                                      </span>
-                                  </td>
-                              </tr>
-                              `
+                ${
+                  offerParts
+                    ? `
+                    ${offerParts
+                      .map((item, i) => {
+                        if (type === "newsletter") {
+                          return newsletterIntro(item, i);
                         }
-                          `
-                        : ""
-                    }
 
-                    ${
-                      offerValid
-                        ? `
-                        <tr>
-                            <td align="center" class="newsletterBottom30px">
-                                <span class="newsletterParagraph" style="color: ${style.textColor};">
-                                    ${offerValid}
-                                </span>
-                            </td>
-                        </tr>
-                        `
-                        : ""
-                    }
-                    ${
-                      chooseFrom
-                        ? `
-                        <tr>
-                            <td align="center">
-                                <span class="newsletterParagraph">
-                                    ${chooseFrom}
-                                </span>
-                            </td>
-                        </tr>
-                        `
-                        : ""
-                    }
+                        if (type === "landing") {
+                          return landingIntro(item, i);
+                        }
+                      })
+                      .join("")}
+                    `
+                    : ""
+                }
                 </tbody>
             </table>
         </td>
