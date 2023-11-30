@@ -1,4 +1,4 @@
-import { parseShopId, parseTemplate } from "../../helpers/index.js";
+import { parseShopId } from "../../helpers/index.js";
 import { productsXLS } from "../../helpers/productsXLS.js";
 import { sort } from "../../helpers/sort.js";
 import { getState, setState } from "../../main/initApp.js";
