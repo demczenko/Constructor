@@ -1,7 +1,5 @@
 import { parseShopId } from "../../helpers/index.js";
-import { productsXLS } from "../../helpers/productsXLS.js";
-import { sort } from "../../helpers/sort.js";
-import { getState, setState } from "../../main/initApp.js";
+import { getState } from "../../main/initApp.js";
 import { utils } from "../../utils/index.js";
 import { getCategory } from "../category.js";
 import { getIds } from "../product.js";
@@ -53,14 +51,8 @@ export const fetchTranslations = async ({ tableQueries, tableColumns }) => {
   return computedPromise;
 };
 
-export const setProductandFixOrdering = async (productsOrder) => {
-  let productsXls = await productsXLS();
-  productsXls = sort(productsXls, productsOrder);
-  setState("XLSProducts", productsXls);
-};
-
 export const fetchProductsShopIds = async () => {
-  const XLSProducts = getState("XLSProducts");
+  const XLSProducts = getState("products_main_id");
 
   const shopsIDs = await getIds(XLSProducts);
   const parsedShopIds = parseShopId(XLSProducts, shopsIDs);

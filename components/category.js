@@ -3,7 +3,7 @@ import { Product } from "./product.js";
 
 
 
-export function Category({ category, products, align = "center", cta, style = { bgColor: "#ffffff" }, type, country, revert = false }) {
+export function Category({ name, href, src, products, paragraph, align = "center", cta ="CTA", style = { bgColor: "#ffffff" }, type = "monday", country, revert = false }) {
 
     style = {
         bgColor: "#ffffff",
@@ -25,7 +25,7 @@ export function Category({ category, products, align = "center", cta, style = { 
                                 <tr>
                                     <td align="left" class="newsletterBottom35px" >
                                         <span class="newsletterTitle">
-                                            ${category.name}
+                                            ${name}
                                         </span>
                                     </td>
                                 </tr>
@@ -37,8 +37,8 @@ export function Category({ category, products, align = "center", cta, style = { 
                             <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
                                 <tr>
                                     <td align="${align}">
-                                        <a href=${category.href}>
-                                            <img loading="lazy" width="100%" src=${category.src} style="display: block;">
+                                        <a href=${href}>
+                                            <img loading="lazy" width="100%" src=${src()} style="display: block;">
                                         </a>
                                     </td>
                                 </tr>
@@ -46,7 +46,7 @@ export function Category({ category, products, align = "center", cta, style = { 
                         </td>
                     </tr>
                     ${
-                        "paragraph" in category
+                        paragraph
                         ?
                         `
                         <tr>
@@ -55,7 +55,7 @@ export function Category({ category, products, align = "center", cta, style = { 
                                     <tr>
                                         <td align="left" class="newsletterBottom35px" >
                                             <span class="newsletterParagraph">
-                                                ${category.paragraph}
+                                                ${paragraph}
                                             </span>
                                         </td>
                                     </tr>
@@ -104,7 +104,7 @@ export function Category({ category, products, align = "center", cta, style = { 
                                         <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
                                             <tr>
                                                 <td align="${align}" class="newsletterCtaContainer" style="text-align: center;">
-                                                    <a href=${category.href} style="color: #000000; text-decoration: underline;" class="newsletterCta">${cta}</a>
+                                                    <a href=${href} style="color: #000000; text-decoration: underline;" class="newsletterCta">${cta}</a>
                                                 </td>
                                             </tr>
                                         </table>

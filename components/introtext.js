@@ -40,9 +40,7 @@ export function IntroText({ offerParts, type, style = {} }) {
                 ? 'class="newsletterCodesPadding"'
                 : 'class="newsletterIntroSectionItem"'
             } >
-                <span class="newsletterParagraph" style="color: ${
-                  style.textColor
-                }; line-height: 1.25">
+                <span class="newsletterParagraph">
                     ${item.code}
                 </span>
             </td>
@@ -108,23 +106,17 @@ export function IntroText({ offerParts, type, style = {} }) {
         }>
             <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tbody>
-                ${
-                  offerParts
-                    ? `
-                    ${offerParts
-                      .map((item, i) => {
-                        if (type === "newsletter") {
-                          return newsletterIntro(item, i);
-                        }
+                  ${offerParts
+                    .map((item, i) => {
+                      if (type === "newsletter") {
+                        return newsletterIntro(item, i);
+                      }
 
-                        if (type === "landing") {
-                          return landingIntro(item, i);
-                        }
-                      })
-                      .join("")}
-                    `
-                    : ""
-                }
+                      if (type === "landing") {
+                        return landingIntro(item, i);
+                      }
+                    })
+                    .join("")}
                 </tbody>
             </table>
         </td>

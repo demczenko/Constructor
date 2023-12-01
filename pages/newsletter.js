@@ -29,7 +29,7 @@ export function newsletter({
   youMayBeAlsoInterestedIn,
 
   links,
-  products,
+  getProduct,
   categories,
   translations,
   // header,
@@ -40,10 +40,10 @@ export function newsletter({
   template,
   additionalTranslations,
 }) {
-  console.log(links);
+
   return `
   ${header[country]("newsletter", id)}
-        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #ffe8df;" >
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #fff0e6;" >
             <tbody>
                 <tr>
                     <td align="center">
@@ -76,69 +76,126 @@ export function newsletter({
                     </td>
                 </tr>
                 <tr>
-                  <td align="center" style="background-color: #ffe8df" class="newsletterContainer">
-                      <span class="newsletterParagraph">
-                          ${translations.tables[0]}
-                      </span>
-                  </td>
+                    <td align="center" style="background-color: #fff0e6;" class="newsletterBottom30px">
+                        <span class="newsletterParagraph">
+                            ${translations.tables[0]}
+                        </span>
+                    </td>
                 </tr>
-                ${IntroText({
-                  offerParts: [
-                    {
-                      title: translations.tables[1],
-                      paragraph: translations.tables[2],
-                    },
-                    {
-                      title: translations.tables[3],
-                      paragraph: translations.tables[4],
-                    },
-                    {
-                      title: translations.tables[5],
-                      paragraph: translations.tables[6],
-                    },
-                    {
-                      title: translations.tables[7],
-                      paragraph: translations.tables[8],
-                    },
-                  ],
-                  style: {
-                    container: "background-color: #ffe8df",
-                  },
-                  type: template,
-                })}
+                <tr>
+                    <td align="center" style="background-color: #fff0e6;" class="newsletterBottom30px">
+                        <span class="newsletterParagraph">
+                            ${translations.tables[1]}
+                        </span>
+                    </td>
+                </tr>
                 ${GetCode({
                   code: getCodes,
                   link: links[0],
                   type: template,
+                  style: {
+                    bgColor: "#fff0e6",
+                  },
                 })}
                 <tr>
-                    <td align="center" class="newsletterBottom30px">
+                    <td align="center" style="background-color: #fff0e6;" class="newsletterBottom30px">
                         <span class="newsletterParagraph">
-                            ${translations.tables[9]}
+                            ${translations.tables[2]}
                         </span>
                     </td>
                 </tr>
-                ${categories
-                  .map((category) => {
-                    return `
-                    <tr>
-                      <td align="center">
-                          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                              <tr>
-                                  <td align="center">
-                                      <a href=${category.href}>
-                                          <img loading="lazy" width="100%" src=${category.src(
-                                            country.toLowerCase()
-                                          )} style="display: block;">
-                                      </a>
-                                  </td>
-                              </tr>
-                          </table>
-                      </td>
-                    </tr>
-                    `;
-                  })
-                  .join(" ")}
+                <tr>
+                    <td align="center" style="background-color: #fff0e6;" class="newsletterBottom30px">
+                        <span class="newsletterParagraph">
+                            ${chooseFrom}
+                        </span>
+                    </td>
+                </tr>
+                ${Freebies({
+                  products: [
+                    priceFree({...getProduct("SONORA"), align: 'center'}),
+                    priceFree({...getProduct("TELMA"), align: 'center'}),
+                    priceFree({...getProduct("AMARGA"), align: 'center'}),
+                    priceFree({...getProduct("ROANA"), align: 'center'}),
+                    priceFree({...getProduct("BARINAS"), align: 'center'}),
+                    priceFree({...getProduct("RENGO"), align: 'center'})
+                  ],
+                  size: {
+                    col: 3,
+                    row: 2,
+                  },
+                  style: {
+                    bgColor: "#fff0e6",
+                  },
+                  className: "newsletterFreebies"
+                })}
+                ${Line(undefined, true)}
+                ${Intro({
+                  title: translations.tables[3],
+                  paragraph: translations.tables[4],
+                  style: {
+                    bgColor: "#fff0e6",
+                  },
+                })}
+                ${Category({
+                  name: translations.tables[5],
+                  ...categories[0],
+                  products: [
+                    getProduct("NEIVA"),
+                    getProduct("NEVIS"),
+                    getProduct("CARRERA"),
+                    getProduct("IBIZA"),
+                  ],
+                  style: {
+                    bgColor: "#fff0e6",
+                  },
+                  cta: shopNow
+                })}
+                ${Line(undefined, true)}
+                ${Category({
+                  name: translations.tables[6],
+                  ...categories[1],
+                  products: [
+                    getProduct("DELLA"),
+                    getProduct("KAGERA"),
+                    getProduct("GURARA"),
+                    getProduct("VICTORIA"),
+                  ],
+                  style: {
+                    bgColor: "#fff0e6",
+                  },
+                  cta: shopNow
+                })}
+                ${Line(undefined, true)}
+                ${Category({
+                  name: translations.tables[7],
+                  ...categories[2],
+                  products: [
+                    getProduct("TALPE"),
+                    getProduct("KALUTARA"),
+                    getProduct("ORNACH"),
+                    getProduct("TAYASU"),
+                  ],
+                  style: {
+                    bgColor: "#fff0e6",
+                  },
+                  cta: shopNow
+                })}
+                ${Line(undefined, true)}
+                ${Category({
+                  name: translations.tables[8],
+                  ...categories[3],
+                  products: [
+                    getProduct("YVELINES"),
+                    getProduct("CHATEAUROUX"),
+                    getProduct("MARTINET"),
+                    getProduct("VIRIAT"),
+                  ],
+                  style: {
+                    bgColor: "#fff0e6",
+                  },
+                  cta: shopNow
+                })}
                 ${Line(undefined, true)}
             <tbody>
         </table>

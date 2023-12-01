@@ -1,8 +1,12 @@
 # Available configuration options:
 
 ## productsOrder: OPTIONAL
-It is array of objects. Each object represents a product with mainId and src. MainId it is id from CHDE shop.
+It is array of objects. Each object represents a product with main_id and src. MainId it is id from CHDE shop.
 In order to modify the order of products you need to specify the  order of id's by writing it in the order you want to get them.
+{
+  mainId: "320503",
+  src: "https://beliani.info/newsletter/2022/231218Freebie1.jpg"
+},
 
 ## tableColumns: REQUIRED
 ![image](https://github.com/demczenko/Constructor/assets/134509169/bcb902d3-2938-4e6a-b51f-c1092eae2c20)

@@ -43,7 +43,6 @@ import {
   fetchProductsShopIds,
   fetchTranslations,
   parseLinks,
-  setProductandFixOrdering,
 } from "../api/fetch/fetch.js";
 import { addParams } from "../helpers/addQueryParams.js";
 import origins from "../data/templates/origins.js";
@@ -91,12 +90,12 @@ export function getState(key) {
 }
 
 export function initApp({
+  productsImages,
   tableQueries,
   tableColumns,
   productsOrder,
   startId,
   countries,
-  xlsPath,
   newsletterLinks,
   landingLinks,
   serverProducts,
@@ -145,7 +144,13 @@ export function initApp({
     }
 
     if (productsOrder) {
-      await setProductandFixOrdering(productsOrder);
+      setState(
+        "products_main_id",
+        productsOrder.map((product) => ({
+          main_id: product["SA#"],
+          name: product["SA Name"],
+        }))
+      );
       if (serverProducts) {
         const ids = await fetchProductsShopIds();
         setState("productsIds", ids);
@@ -228,10 +233,7 @@ export function initApp({
         const country = getState("country");
         setState(
           "products",
-          utils.addImageToProducts(
-            products.filter((item) => item.country === country),
-            productsOrder
-          )
+          products.filter((item) => item.country === country)
         );
         handleProducts();
       }
@@ -280,10 +282,22 @@ export function initApp({
       "header",
       headerHtmlTemplate?.header !== undefined ? headerHtmlTemplate.header : ""
     );
-    const links = addParams(parseLinks({ newsletterLinks, landingLinks }))
-    setState("links", links.map(link => typeof link === "object" ? link.value(country.toLowerCase()) : link));
+    const links = addParams(parseLinks({ newsletterLinks, landingLinks }));
+    setState(
+      "links",
+      links.map((link) =>
+        typeof link === "object" ? link.value(country.toLowerCase()) : link
+      )
+    );
     setState("loading", false);
 
+    if (state.products.length < productsOrder.length) {
+      return Toastify({
+        text: "Products not found.",
+        escapeMarkup: false,
+        duration: 3000,
+      }).showToast();
+    }
     try {
       const html = getTemplate();
       if (html.includes("undefined")) {
@@ -323,7 +337,7 @@ export function initApp({
       openCampaignHandler(state.ids[state.country])
     );
     copyFormula.addEventListener("click", (e) =>
-      copyHandlerFormula(e, copyFormula, state)
+      copyHandlerFormula(e, copyFormula)
     );
     tabsParent.addEventListener("click", (e) =>
       tabsChildNodes.forEach((node) => setCountry(node, e.target))
@@ -395,6 +409,7 @@ export function initApp({
   function getTemplate() {
     const country = getState("country");
     const template = getState("template");
+    const products = getState("products");
     const ids = getState("ids");
     return templates[template]({
       shopAll: shopAll[country],
@@ -413,6 +428,12 @@ export function initApp({
       soonEnding: soonEndingCampaigns[country],
       id: ids[country],
       save: save[country],
+      getProduct: ((products, productsImages) => {
+        return (productName) => {
+          const product = products.find(product => product.name === productName)
+          return {...product, src: productsImages[product.main_id]} || {name: "Product not found"}
+        }
+      })(products, productsImages),
       ...state,
     });
   }
