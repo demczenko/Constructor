@@ -31,10 +31,6 @@ input {
   padding-left: 6px;
 }
 
-#app {
-  height: 100%;
-}
-
 :focus {
   outline: none;
 }

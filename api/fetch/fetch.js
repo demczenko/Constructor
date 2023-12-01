@@ -35,8 +35,7 @@ export const fetchTranslations = async ({ tableQueries, tableColumns }) => {
       });
       continue
     }
-
-    if (value.values.length > 0) {
+    if ("values" in value && value.values.length > 0) {
       computedPromise.push({
         data: utils.normalizeTranslations(value.values),
         name: value.name,

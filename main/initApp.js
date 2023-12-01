@@ -261,7 +261,7 @@ export function initApp({
         setState("translations", translations);
       } catch (error) {
         Toastify({
-          text: error,
+          text: "Translations failed." + error,
           escapeMarkup: false,
           duration: 3000,
         }).showToast();
