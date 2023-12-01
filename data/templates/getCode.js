@@ -12,7 +12,7 @@ export default {
   IT: "Ottieni Codice Sconto",
   DK: "Få koden",
   NO: "Få kode",
-  FI: "Hanki koodi",
+  FI: "Koodi täältä",
   SE: "Hämta kod",
   CZ: "Získat kód",
   SK: "Získať kód",
