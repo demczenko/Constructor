@@ -24,8 +24,10 @@ export function GetCode({ type, style = {}, code, link } ) {
       : `
         <tr>
             <td align="center" class="newsletterIntroSectionItem">
-                <span class="newsletterParagraph" style="font-size: 20px;">
-                    ${text}
+                <span class="newsletterParagraph" style="font-size: 20px; text-decoration:underline!important; color: #000">
+                    <a href=${link} style="text-decoration:underline!important; color: #000">
+                        ${code}
+                    </a>
                 </span>
             </td>
         </tr>

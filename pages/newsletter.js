@@ -76,23 +76,29 @@ export function newsletter({
                     </td>
                 </tr>
                 <tr>
-                    <td align="center" style="background-color: #fff0e6;" class="newsletterBottom30px">
-                        <span class="newsletterParagraph">
-                            ${translations.tables[0]}
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center" style="background-color: #fff0e6;" class="newsletterBottom30px">
-                        <span class="newsletterParagraph">
-                            ${translations.tables[1]}
-                        </span>
+                    <td align="center" style="background-color: #fff0e6;" class="newsletterContainer">
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                          <tr>
+                              <td align="center" class="newsletterBottom30px">
+                                <span class="newsletterParagraph">
+                                    ${translations.tables[0]}
+                                </span>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td align="center" class="newsletterBottom30px">
+                                  <span class="newsletterParagraph">
+                                      ${translations.tables[1]}
+                                  </span>
+                              </td>
+                          </tr>
+                        </table>
                     </td>
                 </tr>
                 ${GetCode({
-                  code: getCodes,
+                  code: getCode,
                   link: links[0],
-                  type: template,
+                  type: "landing",
                   style: {
                     bgColor: "#fff0e6",
                   },
@@ -105,7 +111,7 @@ export function newsletter({
                     </td>
                 </tr>
                 <tr>
-                    <td align="center" style="background-color: #fff0e6;" class="newsletterBottom30px">
+                    <td align="center" style="background-color: #fff0e6;">
                         <span class="newsletterParagraph">
                             ${chooseFrom}
                         </span>
