@@ -123,14 +123,14 @@ const formatPrice = {
     },
     PL: (price) => {
 
-        price = price.replace(".00", ",00")
-        price = price.replace(".99", ",99")
+        price = price.replace(".00", "")
+        price = price.replace(".99", "")
 
-        if (price.length === 8) {
+        if (price.length === 5) {
             price = price.split("").toSpliced(2, 0, " ").join("")
         }
 
-        if (price.length === 7) {
+        if (price.length === 4) {
             price = price.split("").toSpliced(1, 0, " ").join("")
         }
 

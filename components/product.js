@@ -22,7 +22,7 @@ export function Product({ product }) {
               <table align=${product.align} cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: ${ product.style.bgColor };">
                 <tbody>
                   <tr>
-                      <td align=${ product.align }>
+                      <td align=${ product.align } class="newsletterProductTitleContainer">
                         <span class="newsletterProductTitle">${ product.name }</span>
                       </td>
                   </tr>
