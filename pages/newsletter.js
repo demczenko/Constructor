@@ -29,7 +29,8 @@ export function newsletter({
   youMayBeAlsoInterestedIn,
 
   links,
-  getProduct,
+  getProductByName,
+  getProductById,
   categories,
   translations,
   // header,
@@ -119,12 +120,12 @@ export function newsletter({
                 </tr>
                 ${Freebies({
                   products: [
-                    priceFree({...getProduct("SONORA"), align: 'center'}),
-                    priceFree({...getProduct("TELMA"), align: 'center'}),
-                    priceFree({...getProduct("AMARGA"), align: 'center'}),
-                    priceFree({...getProduct("ROANA"), align: 'center'}),
-                    priceFree({...getProduct("BARINAS"), align: 'center'}),
-                    priceFree({...getProduct("RENGO"), align: 'center'})
+                    priceFree({...getProductByName("SONORA"), align: 'center'}),
+                    priceFree({...getProductByName("TELMA"), align: 'center'}),
+                    priceFree({...getProductByName("AMARGA"), align: 'center'}),
+                    priceFree({...getProductByName("ROANA"), align: 'center'}),
+                    priceFree({...getProductByName("BARINAS"), align: 'center'}),
+                    priceFree({...getProductByName("RENGO"), align: 'center'})
                   ],
                   size: {
                     col: 3,
@@ -147,10 +148,10 @@ export function newsletter({
                   name: translations.tables[5],
                   ...categories[0],
                   products: [
-                    getProduct("NEIVA"),
-                    getProduct("NEVIS"),
-                    getProduct("CARRERA"),
-                    getProduct("IBIZA"),
+                    getProductById("232789"),
+                    getProductByName("NEVIS"),
+                    getProductByName("CARRERA"),
+                    getProductByName("IBIZA"),
                   ],
                   style: {
                     bgColor: "#fff0e6",
@@ -162,10 +163,10 @@ export function newsletter({
                   name: translations.tables[6],
                   ...categories[1],
                   products: [
-                    getProduct("DELLA"),
-                    getProduct("KAGERA"),
-                    getProduct("GURARA"),
-                    getProduct("VICTORIA"),
+                    getProductByName("DELLA"),
+                    getProductByName("KAGERA"),
+                    getProductByName("GURARA"),
+                    getProductByName("VICTORIA"),
                   ],
                   style: {
                     bgColor: "#fff0e6",
@@ -177,10 +178,10 @@ export function newsletter({
                   name: translations.tables[7],
                   ...categories[2],
                   products: [
-                    getProduct("TALPE"),
-                    getProduct("KALUTARA"),
-                    getProduct("ORNACH"),
-                    getProduct("TAYASU"),
+                    getProductByName("TALPE"),
+                    getProductByName("KALUTARA"),
+                    getProductByName("ORNACH"),
+                    getProductByName("TAYASU"),
                   ],
                   style: {
                     bgColor: "#fff0e6",
@@ -192,10 +193,10 @@ export function newsletter({
                   name: translations.tables[8],
                   ...categories[3],
                   products: [
-                    getProduct("YVELINES"),
-                    getProduct("CHATEAUROUX"),
-                    getProduct("MARTINET"),
-                    getProduct("VIRIAT"),
+                    getProductByName("YVELINES"),
+                    getProductByName("CHATEAUROUX"),
+                    getProductByName("MARTINET"),
+                    getProductByName("VIRIAT"),
                   ],
                   style: {
                     bgColor: "#fff0e6",

@@ -428,9 +428,15 @@ export function initApp({
       soonEnding: soonEndingCampaigns[country],
       id: ids[country],
       save: save[country],
-      getProduct: ((products, productsImages) => {
+      getProductByName: ((products, productsImages) => {
         return (productName) => {
           const product = products.find(product => product.name === productName)
+          return {...product, src: productsImages[product.main_id]} || {name: "Product not found"}
+        }
+      })(products, productsImages),
+      getProductById: ((products, productsImages) => {
+        return (productId) => {
+          const product = products.find(product => product.main_id === productId)
           return {...product, src: productsImages[product.main_id]} || {name: "Product not found"}
         }
       })(products, productsImages),
