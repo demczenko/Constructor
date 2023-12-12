@@ -233,7 +233,9 @@ export function initApp({
         const country = getState("country");
         setState(
           "products",
-          products.filter((item) => item.country === country)
+          products.filter(
+            (item) => item.country.toLowerCase() === country.toLowerCase()
+          )
         );
         handleProducts();
       }
@@ -430,15 +432,27 @@ export function initApp({
       save: save[country],
       getProductByName: ((products, productsImages) => {
         return (productName) => {
-          const product = products.find(product => product.name === productName)
-          return {...product, src: productsImages[product.main_id]} || {name: "Product not found"}
-        }
+          const product = products.find(
+            (product) => product.name === productName
+          );
+          return (
+            { ...product, src: productsImages[product.main_id] } || {
+              name: "Product not found",
+            }
+          );
+        };
       })(products, productsImages),
       getProductById: ((products, productsImages) => {
         return (productId) => {
-          const product = products.find(product => product.main_id === productId)
-          return {...product, src: productsImages[product.main_id]} || {name: "Product not found"}
-        }
+          const product = products.find(
+            (product) => product.main_id === productId
+          );
+          return (
+            { ...product, src: productsImages[product.main_id] } || {
+              name: "Product not found",
+            }
+          );
+        };
       })(products, productsImages),
       ...state,
     });

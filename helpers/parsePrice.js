@@ -10,7 +10,7 @@ export function parsePrice() {
       lowPrice: priceFormats[product.country](product.lowPrice),
       highPrice:
         product.highPrice !== null
-          ? priceFormats[product.country](product.highPrice)
+          ? priceFormats[product.country](product.country === "PL" ? Math.ceil(product.highPrice).toString() : product.highPrice)
           : "",
     };
   });
