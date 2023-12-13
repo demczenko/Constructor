@@ -284,13 +284,9 @@ export function initApp({
       "header",
       headerHtmlTemplate?.header !== undefined ? headerHtmlTemplate.header : ""
     );
+    // addParams check the link on "query" key and execute with origin.
     const links = addParams(parseLinks({ newsletterLinks, landingLinks }));
-    setState(
-      "links",
-      links.map((link) =>
-        typeof link === "object" ? link.value(country.toLowerCase()) : link
-      )
-    );
+    setState("links", links);
     setState("loading", false);
 
     if (state.products.length < productsOrder.length) {
@@ -436,7 +432,7 @@ export function initApp({
             (product) => product.name === productName
           );
           return (
-            { ...product, src: productsImages[product.main_id] } || {
+            { ...product, src: productsImages[product.main_id] || "" } || {
               name: "Product not found",
             }
           );
@@ -448,7 +444,7 @@ export function initApp({
             (product) => product.main_id === productId
           );
           return (
-            { ...product, src: productsImages[product.main_id] } || {
+            { ...product, src: productsImages[product.main_id] || "" } || {
               name: "Product not found",
             }
           );

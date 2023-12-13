@@ -17,7 +17,14 @@ export function parseCategory() {
       }
     });
 
-    newCategories.push({ ...category, href: collectedCategory });
+    newCategories.push({
+      ...category,
+      src:
+        typeof category.src === "function"
+          ? category.src(country)
+          : category.src,
+      href: collectedCategory,
+    });
   }
   setState("categories", newCategories);
 }

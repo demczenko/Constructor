@@ -38,7 +38,7 @@ export function Category({ name, href, src, products, paragraph, align = "center
                                 <tr>
                                     <td align="${align}">
                                         <a href=${href}>
-                                            <img loading="lazy" width="100%" src=${src()} style="display: block;">
+                                            <img loading="lazy" width="100%" src=${src} style="display: block;">
                                         </a>
                                     </td>
                                 </tr>

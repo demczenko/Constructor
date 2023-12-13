@@ -6,7 +6,7 @@ initApp({
   // serverCategories: true,
   // serverHeader: true,
   token:
-    "1//04a37NM3wh-4JCgYIARAAGAQSNwF-L9IrZPOYfgWIBrSU8TWoYVqca0NYRtfIxrS6MNmhKr6lZuUqfzHrSSDO84h5zWuwg0JU6kk",
+    "1//040ElcPze-dB5CgYIARAAGAQSNwF-L9IrpIZFdbfyaSRXmpqzF7kZdh-zxNRQJAtLdIzzFCJUGIIbQ4_87lhoTsbjKAM1Axe7nEg",
   tableQueries: [
     {
       tableId: "15hF-nbul3ZtRqoMiIxI15Ez5lGhee1gUeM3njz5ixtE",
@@ -49,7 +49,7 @@ initApp({
   },
   newsletterLinks: [
     {
-      value: (origin) => origin + "lp23-12-18",
+      value: (origin) => origin + "content/lp23-12-18",
       query: true,
     },
     {
@@ -57,14 +57,14 @@ initApp({
         `https://beliani.info/newsletter/2022/${country}231218_01.jpg`,
     },
     {
-      value: (origin) => origin + "lp23-12-18",
+      value: (origin) => origin + "content/lp23-12-18",
       query: true,
     },
     {
       value: () => "https://upload.pictureserver.net/static/231218gif.gif",
     },
     {
-      value: (origin) => origin + "lp23-12-11",
+      value: (origin) => origin + "content/lp23-12-11",
       query: true,
     },
     {
@@ -72,7 +72,7 @@ initApp({
         `https://beliani.info/newsletter/2022/${country}231211.png`,
     },
     {
-      value: (origin) => origin + "lp23-12-08",
+      value: (origin) => origin + "content/lp23-12-08",
       query: true,
     },
     {
@@ -82,7 +82,7 @@ initApp({
   ],
   landingLinks: [
     {
-      value: (origin) => origin + "lp23-12-18",
+      value: (origin) => origin + "content/lp23-12-18",
       query: true,
     },
     {
@@ -90,14 +90,14 @@ initApp({
         `https://beliani.info/newsletter/2022/${country}231218_01.jpg`,
     },
     {
-      value: (origin) => origin + "lp23-12-18",
+      value: (origin) => origin + "content/lp23-12-18",
       query: true,
     },
     {
       value: () => "https://upload.pictureserver.net/static/231218gif.gif",
     },
     {
-      value: (origin) => origin + "lp23-12-11",
+      value: (origin) => origin + "content/lp23-12-11",
       query: true,
     },
     {
@@ -105,7 +105,7 @@ initApp({
         `https://beliani.info/newsletter/2022/${country}231211.png`,
     },
     {
-      value: (origin) => origin + "lp23-12-08",
+      value: (origin) => origin + "content/lp23-12-08",
       query: true,
     },
     {

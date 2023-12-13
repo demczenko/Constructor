@@ -8,7 +8,7 @@ export function addParams(arr) {
     if ("query" in link) {
       return getQueryLink({ href: link.value(origins[country]) });
     }
-    return link;
+    return typeof link === "object" ? link.value(country.toLowerCase()) : link;
   });
 }
 
@@ -42,6 +42,8 @@ function getQueryLink(item) {
   if (item.href === null) return undefined;
 
   const queryLink = new URL(item.href);
+
+  // Category query
   if (item.query) {
     const link = new URL(item.href + item.query);
     for (const [key, value] of link.searchParams.entries()) {

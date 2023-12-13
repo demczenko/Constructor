@@ -99,7 +99,7 @@ export function newsletter({
                 ${GetCode({
                   code: getCode,
                   link: links[0],
-                  type: "landing",
+                  type: template,
                   style: {
                     bgColor: "#fff0e6",
                   },
