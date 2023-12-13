@@ -7,6 +7,7 @@ import {
   IntroText,
   Product,
   Timer,
+  GetCode,
 } from "../components/index.js";
 import { priceFrom, priceFree } from "../helpers/index.js";
 import { footer, header } from "../templates/index.js";
@@ -28,17 +29,17 @@ export function landing({
   youMayBeAlsoInterestedIn,
 
   links,
-  products,
+  getProductByName,
+  getProductById,
   categories,
   translations,
   // header,
-
+  origin,
   country,
   save,
   id,
-  type,
+  template,
   additionalTranslations,
-  template
 }) {
 
   const codes = translations.code[0].split('<br />')

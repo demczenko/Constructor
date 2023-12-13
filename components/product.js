@@ -39,8 +39,8 @@ export function Product({ product }) {
                   }
                   <tr>
                     <td ${product.align === 'center' ? 'style="padding-bottom: 15px"' : ""} align=${product.align}>
-                        <span class="newsletterProductLowPrice" style="line-height: 0.8">${product.lowPrice} </span> 
-                        <span class="newsletterProductHightPrice" style="line-height: 0.8">${product.highPrice}</span>
+                        <span class="newsletterProductLowPrice" >${product.lowPrice} </span> 
+                        <span class="newsletterProductHightPrice" >${product.highPrice}</span>
                     </td>
                   </tr>
                 </tbody>
