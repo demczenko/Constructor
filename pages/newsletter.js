@@ -82,14 +82,14 @@ export function newsletter({
                           <tr>
                               <td align="center" class="newsletterBottom30px">
                                 <span class="newsletterParagraph">
-                                    ${translations.tables[0]}
+                                    ${translations.sheepskin[0]}
                                 </span>
                               </td>
                           </tr>
                           <tr>
                               <td align="center" class="newsletterBottom30px">
                                   <span class="newsletterParagraph">
-                                      ${translations.tables[1]}
+                                      ${translations.sheepskin[1]}
                                   </span>
                               </td>
                           </tr>
@@ -107,7 +107,7 @@ export function newsletter({
                 <tr>
                     <td align="center" style="background-color: #fff0e6;" class="newsletterBottom30px">
                         <span class="newsletterParagraph">
-                            ${translations.tables[2]}
+                            ${translations.sheepskin[2]}
                         </span>
                     </td>
                 </tr>
@@ -120,12 +120,12 @@ export function newsletter({
                 </tr>
                 ${Freebies({
                   products: [
-                    priceFree({...getProductByName("SONORA"), align: 'center'}),
-                    priceFree({...getProductByName("TELMA"), align: 'center'}),
-                    priceFree({...getProductByName("AMARGA"), align: 'center'}),
-                    priceFree({...getProductByName("ROANA"), align: 'center'}),
-                    priceFree({...getProductByName("BARINAS"), align: 'center'}),
-                    priceFree({...getProductByName("RENGO"), align: 'center'})
+                    priceFree({...getProductById("82891"), align: 'center'}),
+                    priceFree({...getProductById("82893"), align: 'center'}),
+                    priceFree({...getProductById("82884"), align: 'center'}),
+                    priceFree({...getProductById("82895"), align: 'center'}),
+                    priceFree({...getProductById("176749"), align: 'center'}),
+                    priceFree({...getProductById("259716"), align: 'center'})
                   ],
                   size: {
                     col: 3,
@@ -138,20 +138,20 @@ export function newsletter({
                 })}
                 ${Line(undefined, true)}
                 ${Intro({
-                  title: translations.tables[3],
-                  paragraph: translations.tables[4],
+                  title: translations.sheepskin[3],
+                  paragraph: translations.sheepskin[4],
                   style: {
                     bgColor: "#fff0e6",
                   },
                 })}
                 ${Category({
-                  name: translations.tables[5],
+                  name: translations.sheepskin[5],
                   ...categories[0],
                   products: [
-                    getProductById("232789"),
-                    getProductByName("NEVIS"),
-                    getProductByName("CARRERA"),
-                    getProductByName("IBIZA"),
+                    getProductById("158574"),
+                    getProductById("411277"),
+                    getProductById("385317"),
+                    getProductById("423221"),
                   ],
                   style: {
                     bgColor: "#fff0e6",
@@ -160,13 +160,13 @@ export function newsletter({
                 })}
                 ${Line(undefined, true)}
                 ${Category({
-                  name: translations.tables[6],
+                  name: translations.sheepskin[6],
                   ...categories[1],
                   products: [
-                    getProductByName("DELLA"),
-                    getProductByName("KAGERA"),
-                    getProductByName("GURARA"),
-                    getProductByName("VICTORIA"),
+                    getProductById("198537"),
+                    getProductById("418494"),
+                    getProductById("415176"),
+                    getProductById("419508"),
                   ],
                   style: {
                     bgColor: "#fff0e6",
@@ -175,13 +175,13 @@ export function newsletter({
                 })}
                 ${Line(undefined, true)}
                 ${Category({
-                  name: translations.tables[7],
+                  name: translations.sheepskin[7],
                   ...categories[2],
                   products: [
-                    getProductByName("TALPE"),
-                    getProductByName("KALUTARA"),
-                    getProductByName("ORNACH"),
-                    getProductByName("TAYASU"),
+                    getProductById("94520"),
+                    getProductById("392941"),
+                    getProductById("416731"),
+                    getProductById("354829"),
                   ],
                   style: {
                     bgColor: "#fff0e6",
@@ -190,13 +190,13 @@ export function newsletter({
                 })}
                 ${Line(undefined, true)}
                 ${Category({
-                  name: translations.tables[8],
+                  name: translations.sheepskin[8],
                   ...categories[3],
                   products: [
-                    getProductByName("YVELINES"),
-                    getProductByName("CHATEAUROUX"),
-                    getProductByName("MARTINET"),
-                    getProductByName("VIRIAT"),
+                    getProductById("103988"),
+                    getProductById("359399"),
+                    getProductById("374306"),
+                    getProductById("200061"),
                   ],
                   style: {
                     bgColor: "#fff0e6",

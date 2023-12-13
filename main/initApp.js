@@ -431,22 +431,30 @@ export function initApp({
           const product = products.find(
             (product) => product.name === productName
           );
-          return (
-            { ...product, src: productsImages[product.main_id] || "" } || {
+
+          if (!product) {
+            return {
               name: "Product not found",
             }
+          } 
+          return (
+            { ...product, src: productsImages[product.main_id] || "" }
           );
         };
       })(products, productsImages),
       getProductById: ((products, productsImages) => {
         return (productId) => {
           const product = products.find(
-            (product) => product.main_id === productId
+            (product) => Number(product.main_id) === Number(productId)
           );
-          return (
-            { ...product, src: productsImages[product.main_id] || "" } || {
+
+          if (!product) {
+            return {
               name: "Product not found",
             }
+          } 
+          return (
+            { ...product, src: productsImages[product.main_id] || "" }
           );
         };
       })(products, productsImages),

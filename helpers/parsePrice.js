@@ -7,10 +7,10 @@ export function parsePrice() {
   const newProducts = products.map((product) => {
     return {
       ...product,
-      lowPrice: priceFormats[product.country](product.lowPrice),
+      lowPrice: priceFormats[product.country.toUpperCase()](product.lowPrice),
       highPrice:
         product.highPrice !== null
-          ? priceFormats[product.country](product.country === "PL" ? Math.ceil(product.highPrice).toString() : product.highPrice)
+          ? priceFormats[product.country.toUpperCase()](product.country === "PL" ? Math.ceil(product.highPrice).toString() : product.highPrice)
           : "",
     };
   });
