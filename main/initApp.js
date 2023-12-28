@@ -361,6 +361,7 @@ export function initApp({
 
   function syncHash(tabs) {
     return () => {
+      tabs.map(tab => tab.setAttribute("disabled", true))
       const [, country, , template] = window.location.hash
         .replace("#", "")
         .split("=")
@@ -382,7 +383,8 @@ export function initApp({
       state.template = template;
 
       setActive(tabs);
-      render();
+      await render();
+      tabs.map(tab => tab.removeAttribute("disabled"))
     };
   }
 
