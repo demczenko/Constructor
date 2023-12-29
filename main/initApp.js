@@ -360,7 +360,7 @@ export function initApp({
   }
 
   function syncHash(tabs) {
-    return () => {
+    return async () => {
       tabs.map(tab => tab.setAttribute("disabled", true))
       const [, country, , template] = window.location.hash
         .replace("#", "")
