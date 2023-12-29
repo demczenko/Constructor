@@ -439,9 +439,13 @@ export function initApp({
               name: "Product not found",
             }
           } 
-          return (
-            { ...product, src: productsImages[product.main_id] || "" }
-          );
+          if (productsImages) {
+            return (
+              { ...product, src: productsImages[product.main_id] || "" }
+            );
+          } else {
+            return product
+          }
         };
       })(products, productsImages),
       getProductById: ((products, productsImages) => {
@@ -455,9 +459,13 @@ export function initApp({
               name: "Product not found",
             }
           } 
-          return (
-            { ...product, src: productsImages[product.main_id] || "" }
-          );
+          if (productsImages) {
+            return (
+              { ...product, src: productsImages[product.main_id] || "" }
+            );
+          } else {
+            return product
+          }
         };
       })(products, productsImages),
       ...state,
