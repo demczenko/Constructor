@@ -711,7 +711,7 @@ export default {
     </v:background>
     <![endif]-->
     <p class="title-advantages">
-        <span class="title-advantages-item">✔️ Gratis leverans och retur</span>
+        <span class="title-advantages-item">✔️ Fri leverans och retur</span>
         <span class="title-advantages-item">✔️ Bästa urvalet</span>
     </p>
     <p class="newsletterRecommendationHeader">
