@@ -2062,7 +2062,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.it/content/pagamento/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_it.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.it/content/klarna-it/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_it.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -2312,7 +2312,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.it/content/pagamento/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_it.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.it/content/klarna-it/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_it.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
