@@ -4698,7 +4698,7 @@ export default {
     link: "https://www.prologistics.info/shop_cat.php?id=0&cat_id=3331&shop_id=1",
     CZ: "rucniky",
     DK: "handklaeder",
-    NL: "handdoeken",
+    NL: "handdoeken-nl",
     UK: "towels",
     FI: "pyyhkeet",
     FR: "linge-de-bain",
