@@ -5,7 +5,7 @@ export default   {
     "CHFR": "Voir les offres à durée limitée",
     "FR": "Voir les offres à durée limitée",
     "IT": "Scopri le nostre offerte a tempo limitato",
-    "ES": "Ver ofertas por tiempo limitado",
+    "ES": "Consigue las ofertas por tiempo limitado",
     "PT": "Veja as nossas ofertas por tempo limitado",
     "NL": "Shop tijdelijke aanbiedingen",
     "DK": "Se vores tidsbegrænsede tilbud",
