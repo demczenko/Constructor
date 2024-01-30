@@ -4877,7 +4877,7 @@ export default {
     HU: "irodai-lampak",
     IT: "lampade-ufficio",
     NO: "arbeidslamper",
-    PL: "lampki-biurowe",
+    PL: "lampy-biurowe",
     PT: "iluminacao-de-escritorio",
     SK: "kancelarske-lampy",
     ES: "lamparas-de-oficina",
