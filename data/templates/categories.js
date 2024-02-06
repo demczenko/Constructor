@@ -1,4 +1,24 @@
 export default {
+ "weighted-blankets": {
+    CZ: "zatezove-prikryvky",
+    DK: "tyngdetapper",
+    NL: "verzwaarde-dekens",
+    UK: "weighted-blankets",
+    FI: "painopeitot",
+    FR: "couvertures-lestees",
+    DE: "gewichtsdecken",
+    AT: "gewichtsdecken",
+    CHDE: "gewichtsdecken",
+    CHFR: "couvertures-lestees",
+    HU: "sulyozott-takarok",
+    IT: "coperte-pesanti",
+    NO: "vekttepper",
+    PL: "koldry-obciazeniowe",
+    PT: "cobertores-pesados",
+    SK: "zatazove-prikryvky",
+    ES: "mantas-pesadas",
+    SE: "tyngdtacken"
+ },
  "scented-candles-and-diffusers": {
     CZ: "vonne-svicky-a-difuzery",
     DK: "duftlys",
