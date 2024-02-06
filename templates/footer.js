@@ -2902,7 +2902,7 @@ export default {
                               <tr>
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
-                                          href="https://www.beliani.es/sillones/??utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
+                                          href="https://www.beliani.es/sillones/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                           <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_19.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
