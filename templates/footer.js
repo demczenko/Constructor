@@ -1220,7 +1220,7 @@ export default {
                                            <tr>
                                                <td class="newsletterSocialIcon">
                                                    <a
-                                                       href="https://www.instagram.com/beliani_fr/?hl=fr?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
+                                                       href="https://www.instagram.com/beliani_fr/?hl=fr&utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Instagram"    >
