@@ -4,256 +4,253 @@ import {
   ThisMayInterestYou,
   Freebies,
   Intro,
-  IntroText,
   Product,
   Timer,
   GetCode,
+  Paragraph,
 } from "../components/index.js";
-import { priceFrom, priceFree } from "../helpers/index.js";
-import { footer, header } from "../templates/index.js";
+import { priceFree } from "../helpers/index.js";
+import { footer } from "../templates/index.js";
 
 export function landing({
-  shopAll,
-  getCode,
-  getCodes,
-  chooseFrom,
-  watchNow,
-  shopNow,
-  free,
-  code,
-  from,
-  conditions,
-  soonEnding,
-  influencersChoice,
-  thisMayAlsoInterestYou,
-  youMayBeAlsoInterestedIn,
-
   links,
   getProductByName,
   getProductById,
-  categories,
+  getCategory,
   translations,
-  // header,
+  id,
   origin,
   country,
-  save,
-  id,
   template,
-  additionalTranslations,
 }) {
-
-  const codes = translations.code[0].split('<br />')
-  console.log(codes);
   return `
-  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #ffffff;" id="newsletter">
-  <tbody>
-      <tr>
-          <td align="center">
-              <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                  <tr>
-                      <td align="center">
-                          <a href=${links[0]}>
-                              <img loading="lazy" width="100%" src=${
-                                links[1]
-                              } style="display: block;">
-                          </a>
-                      </td>
-                  </tr>
-              </table>
-          </td>
-      </tr>
-      <tr>
-          <td align="center">
-              <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                  <tr>
-                      <td align="center">
-                          <a href=${links[2]}>
-                              <img loading="lazy" width="100%" src=${
-                                links[3]
-                              } style="display: block;">
-                          </a>
-                      </td>
-                  </tr>
-              </table>
-          </td>
-      </tr>
-      ${IntroText({
-        offerParts: [
-          {
-            title: translations.tables[0],
-            paragraph: translations.tables[1],
-            code: codes[0]
-          },
-          {
-            title: translations.tables[2],
-            paragraph: translations.tables[3],
-            code: codes[1]
-          },
-          {
-            title: translations.tables[4],
-            paragraph: translations.tables[5],
-            code: codes[2]
-          },
-          {
-            title: translations.tables[6],
-            paragraph: translations.tables[7],
-            code: codes[3]
-          },
-        ],
-        offerValid: translations.tables[8],
-        style: {
-          bgColor: "#ffffff",
-        },
-        type: template,
-      })}
-      ${Line(undefined, true)}
-      ${Category({
-        category: {
-          ...categories[0],
-          name: translations.tables[11],
-          paragraph: translations.tables[12],
-        },
-        products: [
-          {
-            ...products[0],
-            src: "https://beliani.info/newsletter/2022/231120Category11.png",
-            type: "image",
-          },
-          products[0],
-          products[1],
-          {
-            ...products[1],
-            src: "https://beliani.info/newsletter/2022/231120Category14.png",
-            type: "image",
-          },
-        ],
-        cta: shopNow,
-        type: "monday",
-        style: {
-          bgColor: "#ffffff",
-        },
-      })}
-      ${Line(undefined, true)}
-      ${Category({
-        category: {
-          ...categories[1],
-          name: translations.tables[13],
-          paragraph: translations.tables[14],
-        },
-        products: [
-          {
-            ...products[2],
-            type: "image",
-            src: "https://beliani.info/newsletter/2022/231120Category21.png",
-          },
-          products[2],
-          products[3],
-          {
-            ...products[3],
-            type: "image",
-            src: "https://beliani.info/newsletter/2022/231120Category24.png",
-          },
-        ],
-        cta: shopNow,
-        type: "monday",
-        style: {
-          bgColor: "#ffffff",
-        },
-      })}
-      ${Line(undefined, true)}
-      ${Category({
-        category: {
-          ...categories[2],
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffccb7;" id="newsletter" >
+          <tbody>
+                <tr>
+                    <td align="center">
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                            <tr>
+                                <td align="center">
+                                    <a href=${links[0]}>
+                                        <img loading="lazy" width="100%" src=${
+                                          links[1]
+                                        } style="display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                            <tr>
+                                <td align="center" class="newsletterBottom35px">
+                                    <a href=${links[2]}>
+                                        <img loading="lazy" width="100%" src=${
+                                          links[3]
+                                        } style="display: block;">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="background-color: #ffccb7;" class="newsletterContainer">
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                          <tr>
+                              <td align="center" class="newsletterBottom35px">
+                                <span class="newsletterParagraph">
+                                    ${translations.offer[0]} 
+                                </span>
+                                <br />
+                                <span class="newsletterParagraph" style="font-weight: bold;">
+                                    ${translations.offer[1]} 
+                                </span>
+                                <span class="newsletterParagraph">
+                                    ${translations.offer[2]}
+                                </span>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td align="center" class="newsletterBottom35px">
+                                  <span class="newsletterParagraph">
+                                      ${translations.offer[3]}
+                                  </span>
+                              </td>
+                          </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                ${GetCode({
+                  code: translations.code,
+                  link: links[0],
+                  type: template,
+                })}
 
-          name: translations.tables[15],
-          paragraph: translations.tables[16],
-        },
-        products: [
-          {
-            ...products[4],
-            type: "image",
-            src: "https://beliani.info/newsletter/2022/231120Category31.png",
-          },
-          products[4],
-          products[5],
-          {
-            ...products[5],
-            type: "image",
-            src: "https://beliani.info/newsletter/2022/231120Category34.png",
-          },
-        ],
-        cta: shopNow,
-        type: "monday",
-        style: {
-          bgColor: "#ffffff",
-        },
-      })}
-      ${Line(undefined, true)}
-      ${Category({
-        category: {
-          ...categories[3],
-          name: translations.tables[17],
-          paragraph: translations.tables[18],
-        },
-        products: [
-          {
-            ...products[6],
-            type: "image",
-            src: "https://beliani.info/newsletter/2022/231120Category41.png",
-          },
-          products[6],
-          products[7],
-          {
-            ...products[7],
-            type: "image",
-            src: "https://beliani.info/newsletter/2022/231120Category44.png",
-          },
-        ],
-        cta: shopNow,
-        type: "monday",
-        style: {
-          bgColor: "#ffffff",
-        },
-      })}
-      ${Line(undefined, true)}
-  <tbody>
-</table>
+                <tr>
+                    <td align="center" style="background-color: #ffccb7;" class="newsletterContainer" >
+                      ${Paragraph(translations.offer[4], "center")}
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="background-color: #ffccb7;" class="newsletterContainer" >
+                      ${Paragraph(translations.offer[5], "center")}
+                    </td>
+                </tr>
+              <tr>
+                <td style="background-color: #ffccb7;" class="newsletterBottom80px">
+                </td>
+              </tr>
 
-<table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterSoonEndingTable" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
-  <tbody>
-      <tr>
-          <td align="left" class="newsletterSoonEndingContainer">
-              <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
-                  <tbody>
-                      <tr>
-                          <td align="left" class="newsletterSoonEndingTitleContainer">
-                              <span class="newsletterSoonEndingTitle">${soonEnding}</span>
-                          </td>
-                      </tr>
-                      <tr>
-                          <td align="left" class="newsletterSoonEndingBanner">
-                              <a href=${links[4]}>
-                                  <img loading="lazy" src=${
-                                    links[5]
-                                  } style="display: block;" width="100%">
-                              </a>
-                          </td>
-                      </tr>
-                      <tr>
-                          <td align="left">
-                              <a href=${links[6]}>
-                                  <img loading="lazy" src=${
-                                    links[7]
-                                  } style="display: block;" width="100%">
-                              </a>
-                          </td>
-                      </tr>
-                  </tbody>
-              </table>
-          </td>
-      </tr>
-  </tbody>
-</table>
+              <tr>
+                <td class="newsletterContainer" style="background-color: #fd9000;">
+                  ${Intro({
+                    data: translations.intro,
+                  })}
+                </td>
+              </tr>
+
+                <tr>
+                  <td class="newsletterBottom35px" style="background-color: #fd9000;">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="background-color: #fd9000;">
+                    ${Category({
+                      name: translations.category[0],
+                      src: "https://beliani.info/newsletter/2022/240212Category1.png",
+                      href: getCategory(
+                        "https://www.beliani.ch/sofas/all+products/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
+                      ),
+                      products: [
+                        getProductByName("SAVAR"),
+                        getProductByName("EKSJO"),
+                        getProductByName("LUCAN"),
+                        getProductByName("ABERDEEN"),
+                      ],
+                      cta: translations.shopNow,
+                    })}
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="newsletterBottom35px" style="background-color: #ffccb7;">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="background-color: #ffccb7;">
+                    ${Category({
+                      name: translations.category[1],
+                      src: "https://beliani.info/newsletter/2022/240212Category2.png",
+                      href: getCategory(
+                        "https://www.beliani.ch/beds/all+products/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
+                      ),
+                      products: [
+                        getProductByName("VION"),
+                        getProductByName("NOYERS"),
+                        getProductByName("MARVILLE"),
+                        getProductByName("FLAYAT"),
+                      ],
+                      cta: translations.shopNow,
+                    })}
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="newsletterBottom35px" style="background-color: #fd9000;">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="background-color: #fd9000;">
+                    ${Category({
+                      name: translations.category[2],
+                      src: "https://beliani.info/newsletter/2022/240212Category3.png",
+                      href: getCategory(
+                        "https://www.beliani.ch/rugs/all+products/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
+                      ),
+                      products: [
+                        getProductByName("NIGDE"),
+                        getProductByName("LORUT"),
+                        getProductByName("GESI II"),
+                        getProductByName("AKALAN"),
+                      ],
+                      style: "background-color: #fd9000;",
+                      cta: translations.shopNow,
+                    })}
+                  </td>
+                </tr>
+
+                <tr>
+                <td class="newsletterBottom35px" style="background-color: #ffccb7;">
+                </td>
+              </tr>
+                
+                <tr>
+                  <td style="background-color: #ffccb7;">
+                    ${Category({
+                      name: translations.category[3],
+                      src: "https://beliani.info/newsletter/2022/240212Category4.png",
+                      href: getCategory(
+                        "https://www.beliani.ch/home-accessories/accessories-decor/all+products/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
+                      ),
+                      products: [
+                        getProductByName("SCANDIUM"),
+                        getProductByName("DAPHNI"),
+                        getProductByName("THETIDIO"),
+                        getProductByName("KAMALIA"),
+                      ],
+                      style: "background-color: #ffccb7;",
+                      cta: translations.shopNow,
+                    })}
+                  </td>
+                </tr>
+            <tbody>
+        </table>
+
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
+            <tbody>
+                <tr>
+                    <td align="left">
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                              ${Line(undefined, false)}
+                                <tr>
+                                    <td align="left" class="newsletterBottom35px">
+                                        <span class="newsletterSoonEndingTitle">${
+                                          translations.soonEnding
+                                        }</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="newsletterBottom20px">
+                                        <a href=${links[4]}>
+                                            <img loading="lazy" src=${
+                                              links[5]
+                                            } style="display: block;" width="100%">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="newsletterBottom35px">
+                                        <a href=${links[6]}>
+                                            <img loading="lazy" src=${
+                                              links[7]
+                                            } style="display: block;" width="100%">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 ${footer[country](translations.condition, template, id)}
 `;
 }

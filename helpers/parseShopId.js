@@ -1,6 +1,22 @@
-import shopIds from "../data/templates/shopIds.js"
-
-
+const shopIds = {
+    "3": "DE",
+    "1": "CHDE",
+    "8": "AT",
+    "7": "FR",
+    "21": "IT",
+    "2": "UK",
+    "10": "ES",
+    "22": "PT",
+    "12": "PL",
+    "24": "HU",
+    "17": "NL",
+    "23": "SE",
+    "25": "DK",
+    "26": "CZ",
+    "27": "FI",
+    "28": "NO",
+    "29": "SK",
+};
 
 
 export function parseShopId(products, data) {

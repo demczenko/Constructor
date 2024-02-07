@@ -1,46 +1,42 @@
-export function Intro({
-  title,
-  paragraph,
-  style = { bgColor: "#ffffff" },
-  align = "left",
-}) {
-  style = {
-    bgColor: "#ffffff",
-    ...style,
-  };
-
+export function Intro({ title, paragraph, data, align = "left" }) {
   return `
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+  <tbody>
+  <tr>
+    <td class="newsletterBottom35px" style="background-color: #fd9000;">
+    </td>
+  </tr>
     <tr>
-        <td style="background-color: ${
-          style.bgColor
-        }" align="${align}" class="newsletterContainer">
-        ${
-          title
-            ? `
-            <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
-                <tr>
-                    <td align="${align}" class="newsletterBottom35px" >
-                        <span class="newsletterTitle">${title}</span>
-                    </td>
-                </tr>
-            </table>
-            `
-            : ""
-        }
-            ${
-                paragraph
-                ? `
-                <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
-                <tr>
-                    <td align="${align}" class="newsletterBottom35px" >
-                        <span class="newsletterParagraph">${paragraph}</span>
-                    </td>
-                </tr>
-            </table>
-                `
-                : ""
-            }
-        </td>
+      <td>
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+          <tbody>
+            <tr>
+              <td align="${align}" class="newsletterBottom35px">
+                <span class="newsletterTitle">
+                  ${data ? data[0] : title}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
     </tr>
+    <tr>
+      <td>
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+          <tbody>
+            <tr>
+              <td align="${align}" >
+                <span class="newsletterParagraph">
+                  ${data ? data[1] : paragraph}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
     `;
 }

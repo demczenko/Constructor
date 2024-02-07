@@ -1,10 +1,8 @@
-import { handleCategories } from "./handleCategories.js";
-import { handleProducts } from "./handleProducts.js";
+import { handleProduct } from "./handleProduct.js";
 import { handleLinks } from "./handleLinks.js";
 
 
 export {
-    handleCategories,
     handleLinks,
-    handleProducts
+    handleProduct
 }

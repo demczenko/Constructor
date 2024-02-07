@@ -4,48 +4,18 @@ import {
   copyHandlerTemplate,
   openCampaignHandler,
 } from "./events.js";
-import acceptedLocationHash from "../data/templates/acceptedHash.js";
 import { attachCss, incrementId } from "../helpers/index.js";
 import templates from "../pages/index.js";
 import { SpinnerInit } from "../helpers/spinner/spinerOptions.js";
-
-import {
-  InfluencersChoice,
-  free,
-  save,
-  fromm,
-  getCode,
-  getCodes,
-  chooseFrom,
-  watchNow,
-  soonEndingCampaigns,
-  shopNow,
-  shopAll,
-  YouMayBeAlsoInterestedIn,
-  ThisMayAlsoInterestYou,
-  products,
-  categories,
-  codes,
-  text,
-} from "../data/index.js";
-import {
-  fetchHeader,
-  fetchToken,
-  getLink,
-  getProductsPrice,
-} from "../api/index.js";
-import { utils } from "../utils/index.js";
-import { handleCategories, handleProducts } from "./handlers/index.js";
-import { parseLinkToCountry } from "../helpers/parseLinkToCountry.js";
-import { mainValidation } from "../validation/mainValidation.js";
-import {
-  fetchCategories,
-  fetchProductsShopIds,
-  fetchTranslations,
-  parseLinks,
-} from "../api/fetch/fetch.js";
-import { addParams } from "../helpers/addQueryParams.js";
 import origins from "../data/templates/origins.js";
+import products from "../data/products/data.js";
+import categories from "../data/categories/data.js";
+
+import { fetchToken } from "../api/index.js";
+import { handleProduct } from "./handlers/index.js";
+import { mainValidation } from "../validation/mainValidation.js";
+import { fetchTranslations, parseLinks } from "../api/fetch/fetch.js";
+import { addParams, getQueryLink } from "../helpers/getQueryLink.js";
 
 const root = document.querySelector("#app");
 const state = {
@@ -90,45 +60,28 @@ export function getState(key) {
 }
 
 export function initApp({
-  productsImages,
   tableQueries,
   tableColumns,
-  productsOrder,
   startId,
-  countries,
   newsletterLinks,
   landingLinks,
-  serverProducts,
-  serverCategories,
-  serverHeader,
   token,
 }) {
   mainValidation({
     tableQueries,
     tableColumns,
+    products,
     startId,
     newsletterLinks,
     landingLinks,
-    token,
   });
 
-  setState("ids", incrementId(startId, countries));
+  setState("ids", incrementId(startId));
   setEvents();
   attachCss(state);
+
   async function render() {
     setState("loading", true);
-    const country = getState("country");
-    const template = getState("template");
-    const countryRelativeToIds = getState("ids");
-
-    let headerHtmlTemplate;
-    if (serverHeader) {
-      headerHtmlTemplate = await fetchHeader({
-        type: template,
-        country: country,
-        id: countryRelativeToIds[country],
-      });
-    }
 
     if (token) {
       const tokenResponse = await fetchToken(token);
@@ -143,114 +96,7 @@ export function initApp({
       }
     }
 
-    if (productsOrder) {
-      setState(
-        "products_main_id",
-        productsOrder.map((product) => ({
-          main_id: product["SA#"],
-          name: product["SA Name"],
-        }))
-      );
-      if (serverProducts) {
-        const ids = await fetchProductsShopIds();
-        setState("productsIds", ids);
-        const country = getState("country");
-
-        //1. Получаю айдишники на которые мне нужны цены и ссылки
-        const XLSProducts = getState("XLSProducts");
-        const sortedRequestIds = XLSProducts.map((item) => {
-          return {
-            id: ids[item.main_id][country],
-            main_id: item.main_id,
-            name: item.name,
-          };
-        });
-
-        //2. Получаю цены на продукты
-        const productsPrices = await getProductsPrice(
-          sortedRequestIds.map((item) => item.id)
-        );
-        //3. Привожу данные в нужный вид
-        const normalizedProduct = [];
-        for (const sorted in sortedRequestIds) {
-          const sortedProducts = sortedRequestIds[sorted];
-
-          for (const productId in productsPrices) {
-            if (sortedProducts.id === productId) {
-              normalizedProduct.push({
-                id: productId,
-                name: sortedProducts.name,
-                main_id: sortedProducts.main_id,
-                lowPrice: productsPrices[productId].ShopPrice,
-                highPrice: productsPrices[productId].ShopHPrice,
-                country: country,
-              });
-            }
-          }
-        }
-        //4. Получаю ссылки на продукты
-        const links = [];
-        let isError = false;
-        for (const product of normalizedProduct) {
-          let response;
-          if (!isError) {
-            response = await getLink(product.main_id);
-          }
-          links.push({
-            id: product.id,
-            links: parseLinkToCountry(response),
-          });
-          if (response.status === "error") {
-            isError = true;
-            Toastify({
-              text:
-                `Product ${product.id} link fetch Error ` +
-                response.data.message,
-              escapeMarkup: false,
-              duration: 3000,
-            }).showToast();
-          }
-        }
-        // 5. Собираю продукты и ссылки вместе
-        const productsWithHref = [];
-        for (const product of normalizedProduct) {
-          for (const link of links) {
-            if (product.id === link.id) {
-              productsWithHref.push({
-                ...product,
-                href: link.links[product.country],
-              });
-            }
-          }
-        }
-
-        setState(
-          "products",
-          utils.addImageToProducts(productsWithHref, productsOrder)
-        );
-        handleProducts();
-      } else {
-        const country = getState("country");
-        setState(
-          "products",
-          products.filter(
-            (item) => item.country.toLowerCase() === country.toLowerCase()
-          )
-        );
-        handleProducts();
-      }
-    }
-
-    if (serverCategories) {
-      const getSeverCategories = await fetchCategories({ categories });
-      setState("categories", getSeverCategories);
-      handleCategories();
-    } else {
-      setState("categories", categories);
-      handleCategories();
-    }
-
-    if (tableQueries?.length > 0) {
+    if (tableQueries.length > 0) {
       try {
         const translationsResult = await fetchTranslations({
           tableQueries,
@@ -269,33 +115,18 @@ export function initApp({
         }).showToast();
       }
     } else {
-      const country = getState("country");
-      if (country in text) {
-        setState("translations", text[country]);
-      } else {
-        Toastify({
-          text: country + " has been not found in local text. (data/text.js)",
-          escapeMarkup: false,
-          duration: 3000,
-        }).showToast();
-      }
+      Toastify({
+        text: "Please set tableQueries.",
+        escapeMarkup: false,
+        duration: 3000,
+      }).showToast();
     }
-    setState(
-      "header",
-      headerHtmlTemplate?.header !== undefined ? headerHtmlTemplate.header : ""
-    );
+
     // addParams check the link on "query" key and execute with origin.
     const links = addParams(parseLinks({ newsletterLinks, landingLinks }));
     setState("links", links);
     setState("loading", false);
 
-    if (state.products.length < productsOrder.length) {
-      return Toastify({
-        text: "Products not found.",
-        escapeMarkup: false,
-        duration: 3000,
-      }).showToast();
-    }
     try {
       const html = getTemplate();
       if (html.includes("undefined")) {
@@ -361,14 +192,35 @@ export function initApp({
 
   function syncHash(tabs) {
     return async () => {
-      tabs.map(tab => tab.setAttribute("disabled", true))
+      tabs.map((tab) => tab.setAttribute("disabled", true));
       const [, country, , template] = window.location.hash
         .replace("#", "")
         .split("=")
         .map((item) => item.split("&"))
         .flat();
 
-      if (!acceptedLocationHash.includes(country)) {
+      if (
+        ![
+          "DE",
+          "CHDE",
+          "AT",
+          "FR",
+          "CHFR",
+          "IT",
+          "UK",
+          "ES",
+          "PT",
+          "PL",
+          "HU",
+          "NL",
+          "SE",
+          "DK",
+          "CZ",
+          "FI",
+          "NO",
+          "SK",
+        ].includes(country)
+      ) {
         state.country = "DE";
         window.location.hash = "country=DE&template=newsletter";
         return;
@@ -384,7 +236,7 @@ export function initApp({
 
       setActive(tabs);
       await render();
-      tabs.map(tab => tab.removeAttribute("disabled"))
+      tabs.map((tab) => tab.removeAttribute("disabled"));
     };
   }
 
@@ -409,66 +261,72 @@ export function initApp({
   function getTemplate() {
     const country = getState("country");
     const template = getState("template");
-    const products = getState("products");
     const ids = getState("ids");
     return templates[template]({
-      shopAll: shopAll[country],
-      shopNow: shopNow[country],
-      getCode: getCode[country],
-      getCodes: getCodes[country],
-      chooseFrom: chooseFrom[country],
-      watchNow: watchNow[country],
-      from: fromm[country],
-      free: free[country],
-      code: codes[country],
-      origin: origins[country],
-      influencersChoice: InfluencersChoice[country],
-      thisMayAlsoInterestYou: ThisMayAlsoInterestYou[country],
-      youMayBeAlsoInterestedIn: YouMayBeAlsoInterestedIn[country],
-      soonEnding: soonEndingCampaigns[country],
-      id: ids[country],
-      save: save[country],
-      getProductByName: ((products, productsImages) => {
-        return (productName) => {
-          const product = products.find(
-            (product) => product.name === productName
-          );
-
-          if (!product) {
-            return {
-              name: "Product not found",
-            }
-          } 
-          if (productsImages) {
-            return (
-              { ...product, src: productsImages[product.main_id] || "" }
-            );
-          } else {
-            return product
-          }
-        };
-      })(products, productsImages),
-      getProductById: ((products, productsImages) => {
-        return (productId) => {
-          const product = products.find(
-            (product) => Number(product.main_id) === Number(productId)
-          );
-
-          if (!product) {
-            return {
-              name: "Product not found",
-            }
-          } 
-          if (productsImages) {
-            return (
-              { ...product, src: productsImages[product.main_id] || "" }
-            );
-          } else {
-            return product
-          }
-        };
-      })(products, productsImages),
       ...state,
+      country,
+      origin: origins[country],
+      id: ids[country],
+      template: template,
+      getProductByName: (productName) => {
+        const country_products = products.filter(
+          (product) => product.country === country.toLowerCase()
+        );
+        const product = country_products.find(
+          (product) => product.name === productName
+        );
+
+        if (!product) {
+          return {
+            name: `Product ${productName} not found`,
+            lowPrice: "00.00",
+            highPrice: "00.00",
+          };
+        }
+        return handleProduct(product);
+      },
+      getProductById: (productId) => {
+        const country_products = products.filter(
+          (product) => product.country === country.toLowerCase()
+        );
+        const product = country_products.find(
+          (product) => Number(product.main_id) === Number(productId)
+        );
+
+        if (!product) {
+          return {
+            name: `Product ${productName} not found`,
+            lowPrice: "00.00",
+            highPrice: "00.00",
+          };
+        }
+        return handleProduct(product);
+      },
+      getCategory: (category) => {
+        let new_link = new URL(origins[country]);
+        const category_url = new URL(category);
+        for (const [key, value] of category_url.searchParams.entries()) {
+          new_link.searchParams.append(key, value);
+        }
+
+        const pathnames = category_url.pathname
+          .split("/")
+          .filter((pathname) => pathname.length > 0);
+
+        const country_categories = categories.find(
+          (category) => category.slug === country.toLowerCase()
+        );
+
+        const parsed_country_categories = [];
+        for (const category of pathnames) {
+          const categoryCandidate = country_categories[category];
+          if (categoryCandidate) {
+            parsed_country_categories.push(categoryCandidate);
+          }
+        }
+        new_link.pathname += parsed_country_categories.join("/");
+        return getQueryLink(new_link);
+      },
     });
   }
 }

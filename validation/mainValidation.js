@@ -6,8 +6,16 @@ export function mainValidation({
   newsletterLinks,
   landingLinks,
   tableColumns,
-  token,
+  products
 }) {
+  if (!products || products.length === 0) {
+    return Toastify({
+      text: "Please set products in data/products/data.js",
+      escapeMarkup: false,
+      duration: 3000,
+    }).showToast();
+  }
+
   if (!startId) {
     return Toastify({
       text: "Please set startId in app.js",
@@ -19,6 +27,14 @@ export function mainValidation({
   if (!newsletterLinks || !landingLinks) {
     return Toastify({
       text: "Please set newsletterLinks, landingLinks in app.js",
+      escapeMarkup: false,
+      duration: 3000,
+    }).showToast();
+  }
+
+  if (!tableQueries) {
+    return Toastify({
+      text: "Please set tableQueries in app.js",
       escapeMarkup: false,
       duration: 3000,
     }).showToast();
@@ -41,5 +57,4 @@ export function mainValidation({
       duration: 3000,
     }).showToast();
   }
-
 }

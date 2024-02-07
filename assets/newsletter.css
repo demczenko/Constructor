@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
-/* HEADER START */
-
-table {
-  table-layout: fixed;
-}
-
 .title-advantages {
   text-align: center;
   font-size: 11px;
@@ -18,32 +11,6 @@ table {
   margin-left: 4px;
 }
 
-.newsletterBlackWeekCode {
-  padding-top: 54px !important;
-  padding-bottom: 60px !important;
-}
-
-.newsletterCounter {
-  padding-left: 140px!important;
-  padding-right: 140px!important;
-}
-
-.newsletterTop35px {
-  padding-top: 35px !important;
-}
-
-.newsletterBottom35px {
-  padding-bottom: 35px !important;
-}
-
-.newsletterBottom30px {
-  padding-bottom: 30px !important;
-}
-
-.newsletterBottom80px {
-  padding-bottom: 80px !important;
-}
-
 .newsletterRecommendationHeader {
   text-align: center;
   font-size: 11px;
@@ -52,57 +19,83 @@ table {
   margin-top: 10px;
 }
 
-/* HEADER END */
+/* NEWSLETTER START */
 
-.newsletterIntroSection {
-  padding-top: 35px !important;
-  padding-left: 35px !important;
-  padding-right: 35px !important;
+.newsletterContainerFreebie {
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
-.newsletterIntroSectionItem {
-  padding-bottom: 35px !important;
+.newsletterBottom80px {
+  padding-bottom: 80px;
 }
 
-.newsletterCategories {
-  padding-top: 35px !important;
-  padding-bottom: 35px !important;
-  padding-left: 35px !important;
-  padding-right: 35px !important;
+.newsletterContainer {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.newsletterCategoryContainer {
-  padding-bottom: 5px;
+.newsletterCta {
+  color: #000;
+  font-size: 20px;
+  line-height: 1.25;
+  font-family: "Open Sans", sans-serif;
 }
 
-.newsletterCategory {
-  border: 2px solid #ff6f4d;
-  padding: 6px 0px !important;
-  text-align: center;
-  font-size: 22px;
+.newsletterBottom20px {
+  padding-bottom: 20px;
 }
 
-.newsletterLine {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+.newsletterBottom35px {
+  padding-bottom: 35px;
 }
 
-.newsletterCategoryColumnLeft {
-  padding-right: 5px !important;
-  width: 50% !important;
+.newsletterParagraph {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #000000;
 }
 
-.newsletterCategoryColumnRight {
-  padding-left: 5px !important;
-  width: 50% !important;
+.newsletterTitle {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #000000;
 }
 
-.newsletterGif {
-  background-color: #ff6f4d;
-  padding-left: 35px !important;
-  padding-right: 35px !important;
-  padding-top: 35px !important;
+.newsletterProductTitle {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #000000;
 }
+
+.newsletterProductLowPrice {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #000000;
+  font-weight: 600;
+}
+
+.newsletterProductHightPrice {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+  color: #000000;
+  text-decoration: line-through;
+}
+
+.newsletterRight10px {
+  padding-right: 10px;
+}
+
+.newsletterLeft10px {
+  padding-left: 10px;
+}
+
+/* NEWSLETTER END */
 
 .newsletterFooter {
   padding-left: 20px !important;
@@ -132,14 +125,6 @@ table {
   color: #000000;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
-}
-
-.newsletterFooterCategories {
-  padding-bottom: 35px;
-}
-
-.newsletterFooterBanner {
-  padding-bottom: 20px !important;
 }
 
 .newsletterFooterCategoryLEFT {
@@ -174,312 +159,21 @@ table {
   padding-bottom: 35px !important;
 }
 
-.footer {
-  width: 50% !important;
-}
-
-/* FOOTER END */
-
-/* NEWSLETTER LINE START */
-
-.newsletterLineTop60 {
-  padding-top: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* NEWSLETTER LINE END */
-
-/* SOONENDING START */
-
 .newsletterSoonEndingTitle {
   color: #000000;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
 }
 
-.newsletterSoonEndingBanner {
-  padding-bottom: 20px;
-}
-
-.newsletterSoonEndingContainer {
-  padding-top: 35px !important;
-  padding-bottom: 35px !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-}
-
-.newsletterSoonEndingTitleContainer {
-  padding-bottom: 35px !important;
-}
-
-/* SOONENDING END */
-
-/* CONTAINERS START */
-.newsletterGifContainer {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-}
-
-.newsletterProductContainer {
-  padding-top: 20px !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-}
-
-.newsletterContainer {
-  padding-top: 35px !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-}
-
-.newsletterContainerLeftRigth {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-}
-
-.newsletterTitleContainer {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.newsletterCtaContainer {
-  padding-bottom: 80px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.newsletterInterestYouContainer {
-  padding-bottom: 80px;
-  padding-left: 35px;
-  padding-right: 35px;
-}
-
-/* CONTAINERS END */
-
-/* PRODUCT START */
-
-.newsletterProductTitle {
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
-  color: #000000;
-}
-
-.newsletterProductTitleContainer {
-  padding-top: 20px;
-}
-
-.newsletterProductLowPrice {
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
-  color: #000000;
-  font-weight: 600;
-}
-
-.newsletterProductHightPrice {
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
-  color: #000000;
-  text-decoration: line-through;
-}
-
-.newsletterProductContainerLEFT {
-  width: 50% !important;
-  vertical-align: top;
-  padding-right: 10px !important;
-  padding-bottom: 35px !important;
-}
-
-.newsletterProductContainerRIGHT {
-  width: 50% !important;
-  vertical-align: top;
-  padding-left: 10px !important;
-  padding-bottom: 35px !important;
-}
-
-/* PRODUCT END */
-
-.newsletterParagraph {
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
-  color: #000000;
-}
-
-.newsletterInfluencersChoiceText {
-  font-size: 13px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
-  color: #000000;
-}
-
-.newsletterSummerSale {
-  font-size: 30px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
-}
-
-.newsletterTitle {
-  font-size: 30px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
-  color: #000000;
-}
-
-.newsletterTitleBlackWeek {
-  font-size: 30px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
-  color: #000000;
-}
-
-.newsletterCta {
-  font-size: 20px;
-  line-height: 1.25;
-  font-family: "Open Sans", sans-serif;
-  text-decoration: underline!important;
-}
-
-.newsletterInterestYouCta {
-  font-size: 25px;
-  line-height: 1.25;
-  font-family: "Open Sans", sans-serif;
-  text-decoration: underline;
-}
-
-.newsletterFreeProduct {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.newsletterFreebies {
-  padding-top: 35px !important;
-  padding-bottom: 70px !important;
-}
-
-.newsletterFreebieTopLeft {
-  padding-left: 80px !important;
-}
-
-.newsletterFreebieTopRight {
-  padding-right: 80px !important;
-}
-
-.newsletterIFrame {
-  margin-bottom: 35px !important;
-}
-
-.newsletterFreebieBottomLeft {
-  padding-right: 40px !important;
-}
-
-.newsletterBottomFreebieMiddle {
-  padding-right: 50px !important;
-  padding-left: 50px !important;
-}
-
-.newsletterFreebieBottomRight {
-  padding-left: 40px !important;
-}
-
-
-
-@media only screen and (max-width: 680px) {
-  .newsletterCategoryColumnLeft,
-  .newsletterCategoryColumnRight {
-    display: block;
-    padding: 0 !important;
-    width: 100% !important;
-    margin-bottom: 5px !important;
+@media screen and (max-width: 768px) {
+  .newsletterFooterCategoryLEFTBottom {
+    padding-right: 5px !important;
   }
 
-  .newsletterBlackWeekCode {
-    padding-top: 34px !important;
-    padding-bottom: 40px !important;
+  .newsletterFooterCategoryRIGHTBottom {
+    padding-left: 5px !important;
   }
-
-  .newsletterCounter {
-    padding-left: 35px!important;
-    padding-right: 35px!important;
-  }
-
-  .newsletterInfluencersChoice {
-    width: 100%!important;
-  }
-
-  .newsletterProductTitle {
-    font-size: 18px!important;
-  }
-
-  .newsletterProductLowPrice {
-    font-size: 16px !important;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  /* HEADER START */
-
-  /* .title-advantages-item {
-        display: block;
-    } */
-
-  /* HEADER END */
-
-  .newsletterSummerSale {
-    font-size: 20px!important;
-  }
-
-  .newsletterFreebieTopLeft {
-    padding-left: 30px !important;
-  }
-
-  .newsletterFreebieTopRight {
-    padding-right: 30px !important;
-  }
-
-  .newsletterInterestYouContainer {
-    vertical-align: top;
-    padding-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .newsletterInterestYouCta {
-    font-size: 20px;
-    line-height: 1.25;
-    font-family: "Open Sans", sans-serif;
-    text-decoration: underline;
-  }
-
-  .newsletterIFrame {
-    margin-bottom: 20px !important;
-  }
-
-
-
-  .newsletterBottomFreebieMiddle {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
-
-  .newsletterFreebieBottomLeft {
-    padding-right: 10px !important;
-  }
-
-  .newsletterFreebieBottomRight {
-    padding-left: 10px !important;
-  }
-
-  /* FOOTER START */
-  .newsletterSocialIcon {
-    padding-left: 13px !important;
-  }
-
+  
   .newsletterFooterCategoryLEFT {
     padding-bottom: 10px !important;
     padding-right: 5px !important;
@@ -490,29 +184,8 @@ table {
     padding-left: 5px !important;
   }
 
-  .newsletterFooterCategoryLEFTBottom {
-    padding-right: 5px !important;
-  }
-
-  .newsletterFooterCategoryRIGHTBottom {
-    padding-left: 5px !important;
-  }
-
-  .newsletterFooter {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
-  .newsletterFooterCategories {
-    padding-bottom: 20px !important;
-  }
-
-  .newsletterFooterBanner {
-    padding-bottom: 10px !important;
-  }
-
-  .newsletterFooterTitle {
-    font-size: 18px !important;
+  .newsletterSocialIcon {
+    padding-left: 13px !important;
   }
 
   .newsletterTopBottomContainer {
@@ -520,201 +193,56 @@ table {
     padding-bottom: 20px !important;
   }
 
-  .footer {
-    width: 50% !important;
+  .newsletterFooterTitle {
+    font-size: 18px;
   }
 
-  .newsletterKlarnaBannerContainer {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+  .newsletterProductTitle {
+    font-size: 18px;
   }
 
-  /* FOOTER END */
-
-  /* NEWSLETTER-LINE START */
-  .newsletterLine {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
-  .newsletterLineTop60 {
-    padding-top: 30px !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
-  /* NEWSLETTER-LINE END */
-
-  /* SOONENDING START */
-  .newsletterSoonEndingContainer {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
-  .newsletterSoonEndingTitleContainer {
-    padding-bottom: 20px !important;
-  }
-
-  .newsletterSoonEndingBanner {
-    padding-bottom: 20px !important;
-  }
-
-  .newsletterSoonEndingTitle {
-    font-size: 18px !important;
-  }
-
-  /* SOONENDING END */
-
-  /* CONTAINERS START */
-
-  .newsletterContainer {
-    padding-top: 20px !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
-  .newsletterContainerLeftRigth {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
-  .newsletterTitleContainer {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-    padding-left: 20px !important;
-    padding-right: 10px !important;
-  }
-
-  .newsletterCtaContainer {
-    padding-bottom: 50px !important;
-  }
-
-  /* CONTAINERS END */
-
-  /* PRODUCT START */
-
-  .newsletterProductTitleContainer {
-    padding-top: 10px !important;
-  }
-
-  .newsletterProductContainerRIGHT {
-    padding-bottom: 20px !important;
-    padding-left: 5px !important;
-  }
-
-  .newsletterProductContainerLEFT {
-    padding-bottom: 20px !important;
-    padding-right: 5px !important;
-  }
-
-  .newsletterProductContainer {
-    padding-top: 10px !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-
-  /* PRODUCT END */
-
-  .newsletterBottom35px {
-    padding-bottom: 20px !important;
-  }
-
-  .newsletterBottom30px {
-    padding-bottom: 20px !important;
-  }
-
-  .newsletterBottom80px {
-    padding-bottom: 35px !important;
-  }
-
-  .newsletterFreebies {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-  }
-
-  .newsletterFreebieInsidePaddings {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+  .newsletterProductLowPrice {
+    font-size: 16px;
   }
 
   .newsletterProductHightPrice {
     display: block;
   }
 
-
-
-  .newsletterIntroSection {
-    padding-top: 20px !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
-
-  .newsletterIntroSectionItem {
-    padding-bottom: 20px !important;
-  }
-
-  .newsletterTop35px {
-    padding-top: 20px !important;
-  }
-
-  .newsletterCategories {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
-
-  .newsletterCategory {
-    font-size: 22px !important;
-  }
-
-  .newsletterParagraph {
-    font-size: 16px !important;
+  .newsletterProductTitleContainer {
+    padding-top: 10px;
   }
 
   .newsletterTitle {
-    font-size: 25px !important;
+    font-size: 25px;
   }
 
-  .newsletterTitleBlackWeek {
-    font-size: 20px;
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.25;
-    color: #000000;
+  .newsletterContainer {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .newsletterGif {
-    padding-top: 20px !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+  .newsletterBottom35px {
+    padding-bottom: 20px;
   }
 
-}
-
-@media only screen and (max-width: 410px) {
-  .newsletterInfluencersChoiceText {
-    font-size: 10px!important;
-  }
-  
-  .newsletterCategories {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-  .newsletterIntroSection {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+  .newsletterParagraph {
+    font-size: 16px;
   }
 
-  .newsletterCategory {
-    font-size: 20px !important;
+  .newsletterLeft10px {
+    padding-left: 5px;
   }
 
-  .newsletterInterestYouCta {
-    font-size: 18px;
-    line-height: 1.25;
-    font-family: "Open Sans", sans-serif;
-    text-decoration: underline;
+  .newsletterRight10px {
+    padding-right: 5px;
+  }
+
+  .newsletterBottom20px {
+    padding-bottom: 10px;
+  }
+
+  .newsletterBottom80px {
+    padding-bottom: 50px;
   }
 }

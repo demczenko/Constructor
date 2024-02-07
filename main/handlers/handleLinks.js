@@ -1,4 +1,4 @@
-import { addParams } from "../../helpers/addQueryParams.js";
+import { addParams } from "../../helpers/getQueryLink.js";
 
 
 

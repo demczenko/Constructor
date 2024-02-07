@@ -1,122 +1,100 @@
-import { Product } from "./product.js";
+import { ImageWithLink, Product, Title } from "./index.js";
 
+export function Category({
+  name,
+  href,
+  src,
+  products,
+  cta = "CTA",
+  type = "monday",
+}) {
+  if (!type) {
+    return "Please specify type for category. Monday, Wednesday";
+  }
 
-
-
-export function Category({ name, href, src, products, paragraph, align = "center", cta ="CTA", style = { bgColor: "#ffffff" }, type = "monday", country, revert = false }) {
-
-    style = {
-        bgColor: "#ffffff",
-        ...style
-    }
-
-    if (!type) {
-        return "Please specify type for category. Monday, Wednesday"
-    }
-
-    if (type === "monday") {
-        return `
-        <tr>
-            <td align="${align}" style="background-color: ${style.bgColor}">
-                <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
-                    <tr>
-                        <td align="left" class="newsletterContainer" style="background-color: ${style.bgColor}">
-                            <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%">
-                                <tr>
-                                    <td align="left" class="newsletterBottom35px" >
-                                        <span class="newsletterTitle">
-                                            ${name}
-                                        </span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="${align}">
-                            <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
-                                <tr>
-                                    <td align="${align}">
-                                        <a href=${href}>
-                                            <img loading="lazy" width="100%" src=${src} style="display: block;">
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    ${
-                        paragraph
-                        ?
-                        `
-                        <tr>
-                            <td align="left" class="newsletterContainer" style="background-color: ${style.bgColor}">
-                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%">
-                                    <tr>
-                                        <td align="left" class="newsletterBottom35px" >
-                                            <span class="newsletterParagraph">
-                                                ${paragraph}
-                                            </span>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        `
-                        :
-                        ''
-                    }
-                    <tr>
-                        <td align="${align}" style="background-color: ${style.bgColor}">
-                            <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
-                                <tr>
-                                    <td align="${align}" class="newsletterProductContainer" >
-                                        <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
-                                            <tr>
-                                                <td align="${align}" class="newsletterProductContainerLEFT" width="50%">
-                                                    ${Product({
-                                                        product: {...products[0], style: { bgColor: style.bgColor }},
-                                                    })}
-                                                </td>
-                                                <td align="${align}" class="newsletterProductContainerRIGHT" width="50%">
-                                                    ${Product({
-                                                        product: {...products[1], style: { bgColor: style.bgColor }},
-                                                    })}
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="${align}" class="newsletterProductContainerLEFT" width="50%">
-                                                    ${Product({
-                                                        product: {...products[2], style: { bgColor: style.bgColor }},
-                                                    })}
-                                                </td>
-                                                <td align="${align}" class="newsletterProductContainerRIGHT" width="50%">
-                                                    ${Product({
-                                                        product: {...products[3], style: { bgColor: style.bgColor }},
-                                                    })}
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="${align}" >
-                                        <table cellspacing="0" cellpadding="0" border="0" align="${align}" width="100%">
-                                            <tr>
-                                                <td align="${align}" class="newsletterCtaContainer" style="text-align: center;">
-                                                    <a href=${href} style="color: #000000; text-decoration: underline;" class="newsletterCta">${cta}</a>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
+  if (type === "monday") {
+    return `
+  <table cellspacing="0" cellpadding="0" width="100%">
+    <thead>
+      <tr>
+        <td style="padding-top: 0px; padding-bottom: 0px;" class="newsletterContainer">
+          ${Title(name)}
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px;" class="newsletterBottom35px"></td>
+      </tr>
+      <tr>
+        <td style="padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;">
+          ${ImageWithLink(href, src)}
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px;" class="newsletterBottom35px"></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding-top: 0px; padding-bottom: 0px;" class="newsletterContainer">
+          <table cellspacing="0" cellpadding="0" style="width: 100%; ">
+            <tr>
+              <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px;" class="newsletterBottom20px">
+                <!-- 1-2 Products table -->
+                <table cellspacing="0" cellpadding="0" style="width: 100%; ">
+                  <tr>
+                    <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
+                    <td style="padding-top: 0px; padding-left: 0px; vertical-align: top; width: 50%" class="newsletterRight10px">
+                      ${Product(products[0])}
+                    </td>
+                    <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
+                    <td style="padding-top: 0px; padding-right: 0px; vertical-align: top; width: 50%" class="newsletterLeft10px">
+                      ${Product(products[1])}
+                    </td>
+                  </tr>
                 </table>
-            </td>
-        </tr>
-        `
-    }
-
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;">
+                <!-- 3-4 Products table -->
+                <table cellspacing="0" cellpadding="0" style="width: 100%; ">
+                  <tr>
+                    <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
+                    <td style="padding-top: 0px; padding-left: 0px; vertical-align: top; width: 50%" class="newsletterRight10px">
+                      ${Product(products[2])}
+                    </td>
+                    <!-- vertical align top added for reason when product have only 1 price on mobile product grid will differ for another one-->
+                    <td style="padding-top: 0px; padding-right: 0px; vertical-align: top; width: 50%" class="newsletterLeft10px">
+                      ${Product(products[3])}
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px;" class="newsletterBottom35px">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px;" class="newsletterBottom80px">
+          <table cellspacing="0" cellpadding="0" style="width: 100%; ">
+            <tbody>
+              <tr>
+                <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px; text-align: center;">
+                  <a href="${href}" style="color: #000;">
+                    <span class="newsletterCta">${cta}</span>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+        `;
+  }
 }

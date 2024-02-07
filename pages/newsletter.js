@@ -1,50 +1,22 @@
-import {
-  Line,
-  Category,
-  ThisMayInterestYou,
-  Freebies,
-  Intro,
-  IntroText,
-  Product,
-  Timer,
-  GetCode,
-} from "../components/index.js";
-import { priceFrom, priceFree } from "../helpers/index.js";
+import { Line, Category, GetCode, Intro, Paragraph } from "../components/index.js";
+import { priceFree } from "../helpers/index.js";
 import { footer, header } from "../templates/index.js";
 
 export function newsletter({
-  shopAll,
-  getCode,
-  getCodes,
-  chooseFrom,
-  watchNow,
-  shopNow,
-  free,
-  code,
-  from,
-  conditions,
-  soonEnding,
-  influencersChoice,
-  thisMayAlsoInterestYou,
-  youMayBeAlsoInterestedIn,
-
   links,
   getProductByName,
   getProductById,
-  categories,
+  getCategory,
   translations,
-  // header,
+  id,
   origin,
   country,
-  save,
-  id,
   template,
-  additionalTranslations,
 }) {
 
   return `
   ${header[country]("newsletter", id)}
-        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="margin: 0 auto; max-width: 650px; width: 100%; background-color: #fff0e6;" >
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffccb7;" >
             <tbody>
                 <tr>
                     <td align="center">
@@ -65,7 +37,7 @@ export function newsletter({
                     <td align="center">
                         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                             <tr>
-                                <td align="center">
+                                <td align="center" class="newsletterBottom35px">
                                     <a href=${links[2]}>
                                         <img loading="lazy" width="100%" src=${
                                           links[3]
@@ -77,149 +49,178 @@ export function newsletter({
                     </td>
                 </tr>
                 <tr>
-                    <td align="center" style="background-color: #fff0e6;" class="newsletterContainer">
+                    <td align="center" style="background-color: #ffccb7;" class="newsletterContainer">
                         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                           <tr>
-                              <td align="center" class="newsletterBottom30px">
+                              <td align="center" class="newsletterBottom35px">
                                 <span class="newsletterParagraph">
-                                    ${translations.sheepskin[0]}
+                                    ${translations.offer[0]} 
+                                </span>
+                                <br />
+                                <span class="newsletterParagraph" style="font-weight: bold;">
+                                    ${translations.offer[1]} 
+                                </span>
+                                <span class="newsletterParagraph">
+                                    ${translations.offer[2]}
                                 </span>
                               </td>
                           </tr>
                           <tr>
-                              <td align="center" class="newsletterBottom30px">
+                              <td align="center" class="newsletterBottom35px">
                                   <span class="newsletterParagraph">
-                                      ${translations.sheepskin[1]}
+                                      ${translations.offer[3]}
                                   </span>
                               </td>
                           </tr>
                         </table>
                     </td>
                 </tr>
+                
                 ${GetCode({
-                  code: getCode,
+                  code: translations.getCode,
                   link: links[0],
                   type: template,
-                  style: {
-                    bgColor: "#fff0e6",
-                  },
                 })}
+
                 <tr>
-                    <td align="center" style="background-color: #fff0e6;" class="newsletterBottom30px">
-                        <span class="newsletterParagraph">
-                            ${translations.sheepskin[2]}
-                        </span>
+                    <td align="center" style="background-color: #ffccb7;" class="newsletterContainer" >
+                      ${Paragraph(translations.offer[4], "center")}
                     </td>
                 </tr>
                 <tr>
-                    <td align="center" style="background-color: #fff0e6;">
-                        <span class="newsletterParagraph">
-                            ${chooseFrom}
-                        </span>
+                    <td align="center" style="background-color: #ffccb7;" class="newsletterContainer" >
+                      ${Paragraph(translations.offer[5], "center")}
                     </td>
                 </tr>
-                ${Freebies({
-                  products: [
-                    priceFree({...getProductById("82891"), align: 'center'}),
-                    priceFree({...getProductById("82893"), align: 'center'}),
-                    priceFree({...getProductById("82884"), align: 'center'}),
-                    priceFree({...getProductById("82895"), align: 'center'}),
-                    priceFree({...getProductById("176749"), align: 'center'}),
-                    priceFree({...getProductById("259716"), align: 'center'})
-                  ],
-                  size: {
-                    col: 3,
-                    row: 2,
-                  },
-                  style: {
-                    bgColor: "#fff0e6",
-                  },
-                  className: "newsletterFreebies"
-                })}
-                ${Line(undefined, true)}
-                ${Intro({
-                  title: translations.sheepskin[3],
-                  paragraph: translations.sheepskin[4],
-                  style: {
-                    bgColor: "#fff0e6",
-                  },
-                })}
-                ${Category({
-                  name: translations.sheepskin[5],
-                  ...categories[0],
-                  products: [
-                    getProductById("158574"),
-                    getProductById("411277"),
-                    getProductById("385317"),
-                    getProductById("423221"),
-                  ],
-                  style: {
-                    bgColor: "#fff0e6",
-                  },
-                  cta: shopNow
-                })}
-                ${Line(undefined, true)}
-                ${Category({
-                  name: translations.sheepskin[6],
-                  ...categories[1],
-                  products: [
-                    getProductById("198537"),
-                    getProductById("418494"),
-                    getProductById("415176"),
-                    getProductById("419508"),
-                  ],
-                  style: {
-                    bgColor: "#fff0e6",
-                  },
-                  cta: shopNow
-                })}
-                ${Line(undefined, true)}
-                ${Category({
-                  name: translations.sheepskin[7],
-                  ...categories[2],
-                  products: [
-                    getProductById("94520"),
-                    getProductById("392941"),
-                    getProductById("416731"),
-                    getProductById("354829"),
-                  ],
-                  style: {
-                    bgColor: "#fff0e6",
-                  },
-                  cta: shopNow
-                })}
-                ${Line(undefined, true)}
-                ${Category({
-                  name: translations.sheepskin[8],
-                  ...categories[3],
-                  products: [
-                    getProductById("103988"),
-                    getProductById("359399"),
-                    getProductById("374306"),
-                    getProductById("200061"),
-                  ],
-                  style: {
-                    bgColor: "#fff0e6",
-                  },
-                  cta: shopNow
-                })}
-                ${Line(undefined, true)}
+              <tr>
+                <td style="background-color: #ffccb7;" class="newsletterBottom80px">
+                </td>
+              </tr>
+
+              <tr>
+                <td class="newsletterContainer" style="background-color: #fd9000;">
+                  ${Intro({
+                    data: translations.intro,
+                  })}
+                </td>
+              </tr>
+
+                <tr>
+                  <td class="newsletterBottom35px" style="background-color: #fd9000;">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="background-color: #fd9000;">
+                    ${Category({
+                      name: translations.category[0],
+                      src: "https://beliani.info/newsletter/2022/240212Category1.png",
+                      href: getCategory(
+                        "https://www.beliani.ch/sofas/all+products/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
+                      ),
+                      products: [
+                        getProductByName("SAVAR"),
+                        getProductByName("EKSJO"),
+                        getProductByName("LUCAN"),
+                        getProductByName("ABERDEEN"),
+                      ],
+                      cta: translations.shopNow,
+                    })}
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="newsletterBottom35px" style="background-color: #ffccb7;">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="background-color: #ffccb7;">
+                    ${Category({
+                      name: translations.category[1],
+                      src: "https://beliani.info/newsletter/2022/240212Category2.png",
+                      href: getCategory(
+                        "https://www.beliani.ch/beds/all+products/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
+                      ),
+                      products: [
+                        getProductByName("VION"),
+                        getProductByName("NOYERS"),
+                        getProductByName("MARVILLE"),
+                        getProductByName("FLAYAT"),
+                      ],
+                      cta: translations.shopNow,
+                    })}
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="newsletterBottom35px" style="background-color: #fd9000;">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="background-color: #fd9000;">
+                    ${Category({
+                      name: translations.category[2],
+                      src: "https://beliani.info/newsletter/2022/240212Category3.png",
+                      href: getCategory(
+                        "https://www.beliani.ch/rugs/all+products/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
+                      ),
+                      products: [
+                        getProductByName("NIGDE"),
+                        getProductByName("LORUT"),
+                        getProductByName("GESI II"),
+                        getProductByName("AKALAN"),
+                      ],
+                      style: "background-color: #fd9000;",
+                      cta: translations.shopNow,
+                    })}
+                  </td>
+                </tr>
+
+                <tr>
+                <td class="newsletterBottom35px" style="background-color: #ffccb7;">
+                </td>
+              </tr>
+                
+                <tr>
+                  <td style="background-color: #ffccb7;">
+                    ${Category({
+                      name: translations.category[3],
+                      src: "https://beliani.info/newsletter/2022/240212Category4.png",
+                      href: getCategory(
+                        "https://www.beliani.ch/home-accessories/accessories-decor/all+products/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
+                      ),
+                      products: [
+                        getProductByName("SCANDIUM"),
+                        getProductByName("DAPHNI"),
+                        getProductByName("THETIDIO"),
+                        getProductByName("KAMALIA"),
+                      ],
+                      style: "background-color: #ffccb7;",
+                      cta: translations.shopNow,
+                    })}
+                  </td>
+                </tr>
             <tbody>
         </table>
 
-        <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterSoonEndingTable" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;">
             <tbody>
                 <tr>
-                    <td align="left" class="newsletterSoonEndingContainer">
+                    <td align="left">
                         <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tbody>
+                              ${Line(undefined, false)}
                                 <tr>
-                                    <td align="left" class="newsletterSoonEndingTitleContainer">
-                                        <span class="newsletterSoonEndingTitle">${soonEnding}</span>
+                                    <td align="left" class="newsletterBottom35px">
+                                        <span class="newsletterSoonEndingTitle">${
+                                          translations.soonEnding
+                                        }</span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="left" class="newsletterSoonEndingBanner">
+                                    <td align="left" class="newsletterBottom20px">
                                         <a href=${links[4]}>
                                             <img loading="lazy" src=${
                                               links[5]
@@ -228,7 +229,7 @@ export function newsletter({
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="left">
+                                    <td align="left" class="newsletterBottom35px">
                                         <a href=${links[6]}>
                                             <img loading="lazy" src=${
                                               links[7]
