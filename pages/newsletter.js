@@ -116,7 +116,7 @@ export function newsletter({
                       name: translations.category[0],
                       src: "https://beliani.info/newsletter/2022/240212Category1.png",
                       href: getCategory(
-                        "https://www.beliani.ch/sofas/all+products/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
+                        "https://www.beliani.ch/sofas/test/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
                       ),
                       products: [
                         getProductByName("SAVAR"),

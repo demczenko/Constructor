@@ -322,6 +322,12 @@ export function initApp({
           const categoryCandidate = country_categories[category];
           if (categoryCandidate) {
             parsed_country_categories.push(categoryCandidate);
+          } else {
+            Toastify({
+              text: `Category ${category} not found in data/categories/data.js`,
+              escapeMarkup: false,
+              duration: 3000,
+            }).showToast();
           }
         }
         new_link.pathname += parsed_country_categories.join("/");
