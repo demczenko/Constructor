@@ -1,6 +1,5 @@
 import {
   clickRenderBtnHandler,
-  copyHandlerFormula,
   copyHandlerTemplate,
   openCampaignHandler,
 } from "./events.js";
@@ -155,7 +154,6 @@ export function initApp({
 
     const tabsParent = document.querySelector("#tabs");
     const tabsChildNodes = Array.from(tabsParent.children);
-    const copyFormula = document.querySelector(".copyFormula");
     const copyTemplate = document.querySelector(".copyTemplate");
     const openCampaign = document.querySelector(".openCampaign");
     const renderTemplateBtn = document.querySelector(".renderTemplate");
@@ -164,9 +162,6 @@ export function initApp({
     window.addEventListener("popstate", () => sync());
     openCampaign.addEventListener("click", (e) =>
       openCampaignHandler(state.ids[state.country])
-    );
-    copyFormula.addEventListener("click", (e) =>
-      copyHandlerFormula(e, copyFormula)
     );
     tabsParent.addEventListener("click", (e) =>
       tabsChildNodes.forEach((node) => setCountry(node, e.target))
@@ -324,7 +319,7 @@ export function initApp({
             parsed_country_categories.push(categoryCandidate);
           } else {
             Toastify({
-              text: `Category ${category} not found in data/categories/data.js`,
+              text: `Category <a target="_blank" style="weight: semibold; color: white;" href="https://www.prologistics.info/shop_cats.php?shop_id=1">${category}</a> not found in <a href="https://docs.google.com/spreadsheets/d/1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8/edit#gid=0" target="_blank" style="weight: semibold; color: white;">data/categories/data.js</a>`,
               escapeMarkup: false,
               duration: 3000,
             }).showToast();

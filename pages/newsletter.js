@@ -1,4 +1,13 @@
-import { Line, Category, GetCode, Intro, Paragraph } from "../components/index.js";
+import {
+  Line,
+  Category,
+  GetCode,
+  Intro,
+  Paragraph,
+  ImageWithLink,
+  Space,
+  Freebies,
+} from "../components/index.js";
 import { priceFree } from "../helpers/index.js";
 import { footer, header } from "../templates/index.js";
 
@@ -13,191 +22,214 @@ export function newsletter({
   country,
   template,
 }) {
-
   return `
   ${header[country]("newsletter", id)}
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffccb7;" >
             <tbody>
                 <tr>
                     <td align="center">
-                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                            <tr>
-                                <td align="center">
-                                    <a href=${links[0]}>
-                                        <img loading="lazy" width="100%" src=${
-                                          links[1]
-                                        } style="display: block;">
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
+                      ${ImageWithLink(links[0], links[1])}
                     </td>
                 </tr>
                 <tr>
                     <td align="center">
-                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                            <tr>
-                                <td align="center" class="newsletterBottom35px">
-                                    <a href=${links[2]}>
-                                        <img loading="lazy" width="100%" src=${
-                                          links[3]
-                                        } style="display: block;">
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
+                      ${ImageWithLink(links[2], links[3])}
                     </td>
                 </tr>
                 <tr>
-                    <td align="center" style="background-color: #ffccb7;" class="newsletterContainer">
-                        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                          <tr>
-                              <td align="center" class="newsletterBottom35px">
-                                <span class="newsletterParagraph">
-                                    ${translations.offer[0]} 
-                                </span>
-                                <br />
-                                <span class="newsletterParagraph" style="font-weight: bold;">
-                                    ${translations.offer[1]} 
-                                </span>
-                                <span class="newsletterParagraph">
-                                    ${translations.offer[2]}
-                                </span>
-                              </td>
-                          </tr>
-                          <tr>
-                              <td align="center" class="newsletterBottom35px">
-                                  <span class="newsletterParagraph">
-                                      ${translations.offer[3]}
-                                  </span>
-                              </td>
-                          </tr>
-                        </table>
+                  <td>
+                    ${Space("newsletterBottom35px")}
+                  </td>
+                </tr>
+                <tr>
+                    <td align="center" class="newsletterContainer">
+                        ${Paragraph(translations.offer[0], "center")}
                     </td>
                 </tr>
-                
-                ${GetCode({
-                  code: translations.getCode,
-                  link: links[0],
-                  type: template,
-                })}
-
                 <tr>
-                    <td align="center" style="background-color: #ffccb7;" class="newsletterContainer" >
+                  <td>
+                    ${Space("newsletterBottom35px")}
+                  </td>
+                </tr>
+                <tr>
+                    <td align="center" class="newsletterContainer">
+                        ${Paragraph(translations.offer[1], "center")}
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                    ${Space("newsletterBottom35px")}
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" class="newsletterContainer" >
+                    ${GetCode({
+                      code: translations.offer[3],
+                      link: links[0],
+                      type: template,
+                    })}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    ${Space("newsletterBottom35px")}
+                  </td>
+                </tr>
+                <tr>
+                    <td align="center" class="newsletterContainer" >
+                      ${Paragraph(translations.offer[2], "center")}
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                    ${Space("newsletterBottom35px")}
+                  </td>
+                </tr>
+                <tr>
+                    <td align="center" class="newsletterContainer" >
                       ${Paragraph(translations.offer[4], "center")}
                     </td>
                 </tr>
+
                 <tr>
-                    <td align="center" style="background-color: #ffccb7;" class="newsletterContainer" >
-                      ${Paragraph(translations.offer[5], "center")}
-                    </td>
+                  <td>
+                    ${Space("newsletterBottom35px")}
+                  </td>
                 </tr>
-              <tr>
-                <td style="background-color: #ffccb7;" class="newsletterBottom80px">
-                </td>
-              </tr>
+
+                  
+                <tr>
+                  <td class="newsletterContainer" >
+                    ${Line()}
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    ${Space("newsletterBottom35px")}
+                  </td>
+                </tr>
 
               <tr>
-                <td class="newsletterContainer" style="background-color: #fd9000;">
+                <td class="newsletterContainer" >
                   ${Intro({
                     data: translations.intro,
                   })}
                 </td>
               </tr>
 
-                <tr>
-                  <td class="newsletterBottom35px" style="background-color: #fd9000;">
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="background-color: #fd9000;">
-                    ${Category({
-                      name: translations.category[0],
-                      src: "https://beliani.info/newsletter/2022/240212Category1.png",
-                      href: getCategory(
-                        "https://www.beliani.ch/sofas/test/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
-                      ),
-                      products: [
-                        getProductByName("SAVAR"),
-                        getProductByName("EKSJO"),
-                        getProductByName("LUCAN"),
-                        getProductByName("ABERDEEN"),
-                      ],
-                      cta: translations.shopNow,
-                    })}
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="newsletterBottom35px" style="background-color: #ffccb7;">
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="background-color: #ffccb7;">
-                    ${Category({
-                      name: translations.category[1],
-                      src: "https://beliani.info/newsletter/2022/240212Category2.png",
-                      href: getCategory(
-                        "https://www.beliani.ch/beds/all+products/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
-                      ),
-                      products: [
-                        getProductByName("VION"),
-                        getProductByName("NOYERS"),
-                        getProductByName("MARVILLE"),
-                        getProductByName("FLAYAT"),
-                      ],
-                      cta: translations.shopNow,
-                    })}
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="newsletterBottom35px" style="background-color: #fd9000;">
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="background-color: #fd9000;">
-                    ${Category({
-                      name: translations.category[2],
-                      src: "https://beliani.info/newsletter/2022/240212Category3.png",
-                      href: getCategory(
-                        "https://www.beliani.ch/rugs/all+products/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
-                      ),
-                      products: [
-                        getProductByName("NIGDE"),
-                        getProductByName("LORUT"),
-                        getProductByName("GESI II"),
-                        getProductByName("AKALAN"),
-                      ],
-                      style: "background-color: #fd9000;",
-                      cta: translations.shopNow,
-                    })}
-                  </td>
-                </tr>
-
-                <tr>
-                <td class="newsletterBottom35px" style="background-color: #ffccb7;">
+              <tr>
+                <td>
+                  ${Space("newsletterBottom80px")}
                 </td>
               </tr>
-                
+
                 <tr>
-                  <td style="background-color: #ffccb7;">
+                  <td >
                     ${Category({
-                      name: translations.category[3],
-                      src: "https://beliani.info/newsletter/2022/240212Category4.png",
+                      name: translations.category[0],
+                      src: "https://beliani.info/newsletter/2022/240219Category1.png",
                       href: getCategory(
-                        "https://www.beliani.ch/home-accessories/accessories-decor/all+products/?Colour=Red,Pink,Green,Orange,Yellow,Violet"
+                        "https://www.beliani.ch/children-room/kids-beds/"
                       ),
                       products: [
-                        getProductByName("SCANDIUM"),
-                        getProductByName("DAPHNI"),
-                        getProductByName("THETIDIO"),
-                        getProductByName("KAMALIA"),
+                        getProductById("422441"),
+                        getProductById("440578"),
+                        getProductById("422028"),
+                        getProductById("392610"),
                       ],
-                      style: "background-color: #ffccb7;",
+                      cta: translations.shopNow,
+                    })}
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td class="newsletterContainer" >
+                    ${Line()}
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="newsletterBottom35px" >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td >
+                    ${Category({
+                      name: translations.category[1],
+                      src: "https://beliani.info/newsletter/2022/240219Category2.png",
+                      href: getCategory(
+                        "https://www.beliani.ch/children-room/kids-chairs/"
+                      ),
+                      products: [
+                        getProductById("428726"),
+                        getProductById("428608"),
+                        getProductById("428692"),
+                        getProductById("428743"),
+                      ],
+                      cta: translations.shopNow,
+                    })}
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="newsletterContainer" >
+                    ${Line()}
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="newsletterBottom35px" >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td >
+                    ${Category({
+                      name: translations.category[2],
+                      src: "https://beliani.info/newsletter/2022/240219Category3.png",
+                      href: getCategory(
+                        "https://www.beliani.ch/children-room/kids-rugs/"
+                      ),
+                      products: [
+                        getProductById("333858"),
+                        getProductById("400222"),
+                        getProductById("395976"),
+                        getProductById("407758"),
+                      ],
+                      cta: translations.shopNow,
+                    })}
+                  </td>
+                </tr>
+
+                
+                <tr>
+                  <td class="newsletterContainer" >
+                    ${Line()}
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="newsletterBottom35px" >
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td >
+                    ${Category({
+                      name: translations.category[3],
+                      src: "https://beliani.info/newsletter/2022/240219Category4.png",
+                      href: getCategory(
+                        "https://www.beliani.ch/children-room/kids-decor/"
+                      ),
+                      products: [
+                        getProductById("368545"),
+                        getProductById("431976"),
+                        getProductById("345636"),
+                        getProductById("368601"),
+                      ],
                       cta: translations.shopNow,
                     })}
                   </td>

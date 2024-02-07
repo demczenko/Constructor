@@ -272,7 +272,7 @@ export default [
     "gold-accents": "zlate-doplnky",
     "new-lamps": "nove-lampy",
     "gift-guide-uk": "gift-guide-cz",
-    test: "asdasdas",
+    "kids-chairs": "detska-kresla",
   },
   {
     slug: "dk",
@@ -547,7 +547,7 @@ export default [
     "gold-accents": "guld-accenter",
     "new-lamps": "nye-lamper",
     "gift-guide-uk": "gift-guide-dk",
-    test: "",
+    "kids-chairs": "boerne-stole",
   },
   {
     slug: "nl",
@@ -822,7 +822,7 @@ export default [
     "gold-accents": "gouden-accenten",
     "new-lamps": "nieuwe-lampen",
     "gift-guide-uk": "gift-guide-nl",
-    test: "",
+    "kids-chairs": "kinderstoelen",
   },
   {
     slug: "uk",
@@ -1097,7 +1097,7 @@ export default [
     "gold-accents": "gold-accents",
     "new-lamps": "new-lamps",
     "gift-guide-uk": "gift-guide-uk",
-    test: "",
+    "kids-chairs": "kids-chairs",
   },
   {
     slug: "fi",
@@ -1372,7 +1372,7 @@ export default [
     "gold-accents": "maanlaheinen-kulta",
     "new-lamps": "uudet-lamput",
     "gift-guide-uk": "gift-guide-fi",
-    test: "",
+    "kids-chairs": "lasten-tuolit",
   },
   {
     slug: "fr",
@@ -1647,7 +1647,7 @@ export default [
     "gold-accents": "accents-dores",
     "new-lamps": "nouvelles-lampes",
     "gift-guide-uk": "gift-guide-fr",
-    test: "",
+    "kids-chairs": "chaises-enfants",
   },
   {
     slug: "de",
@@ -1922,7 +1922,7 @@ export default [
     "gold-accents": "goldene-akzente",
     "new-lamps": "neue-lampen",
     "gift-guide-uk": "gift-guide-ch",
-    test: "",
+    "kids-chairs": "kindersessel",
   },
   {
     slug: "at",
@@ -2197,7 +2197,7 @@ export default [
     "gold-accents": "goldene-akzente",
     "new-lamps": "neue-lampen",
     "gift-guide-uk": "gift-guide-ch",
-    test: "",
+    "kids-chairs": "kindersessel",
   },
   {
     slug: "chde",
@@ -2472,7 +2472,7 @@ export default [
     "gold-accents": "goldene-akzente",
     "new-lamps": "neue-lampen",
     "gift-guide-uk": "gift-guide-de",
-    test: "",
+    "kids-chairs": "kindersessel",
   },
   {
     slug: "chfr",
@@ -2747,7 +2747,7 @@ export default [
     "gold-accents": "accents-dores",
     "new-lamps": "nouvelles-lampes",
     "gift-guide-uk": "gift-guide-fr",
-    test: "",
+    "kids-chairs": "chaises-enfants",
   },
   {
     slug: "hu",
@@ -3022,7 +3022,7 @@ export default [
     "gold-accents": "arany-hangsulyos-termekek",
     "new-lamps": "uj-lampak",
     "gift-guide-uk": "gift-guide-hu",
-    test: "",
+    "kids-chairs": "gyerekszekek",
   },
   {
     slug: "it",
@@ -3297,7 +3297,7 @@ export default [
     "gold-accents": "accenti-dorati",
     "new-lamps": "nuove-lampade",
     "gift-guide-uk": "gift-guide-it",
-    test: "",
+    "kids-chairs": "sedie-per-bambini",
   },
   {
     slug: "no",
@@ -3572,7 +3572,7 @@ export default [
     "gold-accents": "gull-aksenter",
     "new-lamps": "nye-lamper-no",
     "gift-guide-uk": "gift-guide-no",
-    test: "",
+    "kids-chairs": "barne-stoler",
   },
   {
     slug: "pl",
@@ -3847,7 +3847,7 @@ export default [
     "gold-accents": "zlote-akcenty",
     "new-lamps": "nowe-lampy",
     "gift-guide-uk": "gift-guide-pl",
-    test: "",
+    "kids-chairs": "fotele-dzieciece",
   },
   {
     slug: "pt",
@@ -4122,7 +4122,7 @@ export default [
     "gold-accents": "pormenores-dourados",
     "new-lamps": "novos-candeeiros",
     "gift-guide-uk": "gift-guide-pt",
-    test: "",
+    "kids-chairs": "cadeiras-crianca",
   },
   {
     slug: "sk",
@@ -4397,7 +4397,7 @@ export default [
     "gold-accents": "zlate-doplnky",
     "new-lamps": "nove-lampy-sk",
     "gift-guide-uk": "gift-guide-sk",
-    test: "",
+    "kids-chairs": "detske-kresla",
   },
   {
     slug: "es",
@@ -4672,7 +4672,7 @@ export default [
     "gold-accents": "accesorios-dorados",
     "new-lamps": "lamparas-nuevas",
     "gift-guide-uk": "gift-guide-es",
-    test: "",
+    "kids-chairs": "sillas-infantiles",
   },
   {
     slug: "se",
@@ -4947,6 +4947,6 @@ export default [
     "gold-accents": "guld-accenter",
     "new-lamps": "nya-lampor",
     "gift-guide-uk": "gift-guide-se",
-    test: "",
+    "kids-chairs": "barnstolar",
   },
 ];

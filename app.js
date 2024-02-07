@@ -1,56 +1,50 @@
 import { initApp } from "./main/initApp.js";
 
 initApp({
-  startId: "21266",
+  startId: "21362",
   token:
-    "1//044Oh7LiV11ZyCgYIARAAGAQSNwF-L9IremJVAQepwtwvFj7qQxnVzwaR-_3PPvH2tieNpTMdbUv_vXjLdUNT1YAatBmAnbg_MCk",
+    "1//04PE8R7ALMaiICgYIARAAGAQSNwF-L9Ir6nA-Q-hYMSb3n6IOpXsqOaoJC5dyu5Nu0B3oOngMSk_Ipz5NCwZpc8yShk0iQukeGlQ",
   tableQueries: [
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "Voucher - 12.02.24 - Mardi Gras",
-      tableRange: "18:23",
+      tableName: "Voucher - 19.02.24 - Free beanbag cover",
+      tableRange: "18:22",
       name: "offer",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "Voucher - 12.02.24 - Mardi Gras",
-      tableRange: "24:25",
+      tableName: "Voucher - 19.02.24 - Free beanbag cover",
+      tableRange: "23:24",
       name: "intro",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "Voucher - 12.02.24 - Mardi Gras",
-      tableRange: "26:29",
+      tableName: "Voucher - 19.02.24 - Free beanbag cover",
+      tableRange: "25:28",
       name: "category",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "Voucher - 12.02.24 - Mardi Gras",
-      tableRange: "30",
+      tableName: "Voucher - 19.02.24 - Free beanbag cover",
+      tableRange: "29",
       name: "code",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "Voucher - 12.02.24 - Mardi Gras",
-      tableRange: "31",
-      name: "getCode",
-    },
-    {
-      tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "Voucher - 12.02.24 - Mardi Gras",
-      tableRange: "35",
+      tableName: "Voucher - 19.02.24 - Free beanbag cover",
+      tableRange: "32",
       name: "shopNow",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "Voucher - 12.02.24 - Mardi Gras",
-      tableRange: "38",
+      tableName: "Voucher - 19.02.24 - Free beanbag cover",
+      tableRange: "35",
       name: "soonEnding",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "Voucher - 12.02.24 - Mardi Gras",
-      tableRange: "40",
+      tableName: "Voucher - 19.02.24 - Free beanbag cover",
+      tableRange: "37",
       name: "condition",
     },
   ],
@@ -76,35 +70,35 @@ initApp({
   },
   newsletterLinks: [
     {
+      value: (origin) => origin + "content/lp24-02-19",
+      query: true,
+    },
+    {
+      value: (country) =>
+        `https://beliani.info/newsletter/2022/${country}240219_01.jpg`,
+    },
+    {
+      value: (origin) => origin + "content/lp24-02-19",
+      query: true,
+    },
+    {
+      value: () => "https://upload.pictureserver.net/static/240219gif.gif",
+    },
+    {
       value: (origin) => origin + "content/lp24-02-12",
       query: true,
     },
     {
       value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}240212_01.jpg`,
+        `https://beliani.info/newsletter/2022/${country}240212.png`,
     },
     {
-      value: (origin) => origin + "content/lp24-02-12",
-      query: true,
-    },
-    {
-      value: () => "https://upload.pictureserver.net/static/240212gif.gif",
-    },
-    {
-      value: (origin) => origin + "content/lp24-02-05",
+      value: (origin) => origin + "content/lp24-02-09",
       query: true,
     },
     {
       value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}240205.png`,
-    },
-    {
-      value: (origin) => origin + "content/lp24-02-02",
-      query: true,
-    },
-    {
-      value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}240202.png`,
+        `https://beliani.info/newsletter/2022/${country}240209.png`,
     },
   ],
   landingLinks: [

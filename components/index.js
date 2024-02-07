@@ -10,8 +10,10 @@ import { Title } from "./Title.js";
 import { Image } from "./Image.js";
 import { ImageWithLink } from "./ImageWithLink.js";
 import { Paragraph } from "./Paragraph.js";
+import { Space } from "./Space.js";
 
 export {
+  Space,
   Paragraph,
   ImageWithLink,
   Image,

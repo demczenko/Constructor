@@ -3,33 +3,34 @@ export function GetCode({ type, code, link }) {
   ${
     type === "newsletter"
       ? `
-      <tr>
-        <td align="center" class="newsletterBottom35px">
-            <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-              <tbody>
-                  <tr>
-                      <td align="center">
-                      <a href=${link} style="text-decoration:underline!important; color: #000">
-                          <span class="newsletterParagraph" style="font-size: 20px;  color: #000">
-                          ${code}
-                          </span>
-                      </a>
-                      </td>
-                  </tr>
-              </tbody>
-            </table>
-        </td>
-    </tr>
+
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+          <tbody>
+              <tr>
+                  <td align="center">
+                  <a href=${link} style="text-decoration:underline!important; color: #000">
+                      <span class="newsletterParagraph" style="font-size: 20px;  color: #000">
+                      ${code}
+                      </span>
+                  </a>
+                  </td>
+              </tr>
+          </tbody>
+        </table>
 
         `
       : `
-        <tr>
-            <td align="center" class="newsletterBottom35px">
-                <span class="newsletterParagraph" style="font-size: 20px; color: #000">
-                    ${code}
-                </span>
-            </td>
-        </tr>
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+          <tbody>
+            <tr>
+                <td align="center" class="newsletterBottom35px">
+                    <span class="newsletterParagraph" style="font-size: 20px; color: #000">
+                        ${code}
+                    </span>
+                </td>
+            </tr>
+          </tbody>
+        </table>
         `
   }
   `;

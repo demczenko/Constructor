@@ -1,7 +1,6 @@
 import { copyNewsletterWithHeaderAndStyles } from "../helpers/copyNewsletter.js";
 import { getCss } from "../helpers/getCss.js";
-import { getFormula } from "../helpers/Parse.js";
-import { getState, setState } from "./initApp.js";
+import { setState } from "./initApp.js";
 
 function copyHandlerTemplate(e, copyTemplate, html, state) {
   if (state.template === "newsletter") {
@@ -38,21 +37,6 @@ function copyHandlerTemplate(e, copyTemplate, html, state) {
   }
 }
 
-function copyHandlerFormula(e, copyFormula) {
-  const products_main_id = getState("products_main_id")
-  if (products_main_id) {
-    navigator.clipboard.writeText(getFormula(JSON.stringify(products_main_id)));
-    copyFormula.textContent = "Copied to clipboard";
-  } else {
-    copyFormula.textContent = "Please set products";
-  }
-
-  let id = setTimeout(() => {
-    copyFormula.textContent = "Copy formula";
-    clearInterval(id);
-  }, 2000);
-}
-
 function clickRenderBtnHandler(template, render) {
   if (template === "landing") {
     render();
@@ -71,7 +55,6 @@ function openCampaignHandler(id) {
 
 export {
   copyHandlerTemplate,
-  copyHandlerFormula,
   clickRenderBtnHandler,
   openCampaignHandler,
 };
