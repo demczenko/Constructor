@@ -1,4 +1,4 @@
-export function Product(product, align = "left") {
+export function ProductWithSize(product, align = "left") {
 
   return `
   <table cellspacing="0" cellpadding="0" style="width: 100%; ">
@@ -11,7 +11,7 @@ export function Product(product, align = "left") {
                 <td align="${align}" class="newsletterBottom20px" style="padding-top: 0px; padding-left: 0px; padding-right: 0px;">
                   <a href="${product.href}">
                     <img src="${product.src}" alt="${product.name}"
-                      style="display: block; width: 100%">
+                      style="display: block;">
                   </a>
                 </td>
               </tr>
@@ -22,6 +22,11 @@ export function Product(product, align = "left") {
               <tr>
                 <td align="${align}" style="padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
                   <span class="newsletterProductTitle">${product.name}</span>
+                </td>
+              </tr>
+              <tr>
+                <td align="${align}" style="padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
+                  <span class="newsletterProductTitle">${product.size}</span>
                 </td>
               </tr>
               <tr>

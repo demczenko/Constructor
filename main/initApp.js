@@ -290,7 +290,7 @@ export function initApp({
 
         if (!product) {
           return {
-            name: `Product ${productName} not found`,
+            name: `Product ${productId} not found`,
             lowPrice: "00.00",
             highPrice: "00.00",
           };

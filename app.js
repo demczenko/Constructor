@@ -3,7 +3,7 @@ import { initApp } from "./main/initApp.js";
 initApp({
   startId: "21362",
   token:
-    "1//04PE8R7ALMaiICgYIARAAGAQSNwF-L9Ir6nA-Q-hYMSb3n6IOpXsqOaoJC5dyu5Nu0B3oOngMSk_Ipz5NCwZpc8yShk0iQukeGlQ",
+    "1//04vj7hhH7n2o_CgYIARAAGAQSNwF-L9Iri-4FCRSmeqtb4ZlCpyKuLInQrs9k71CHwV8xqPTwfASj_5GYaMttLujcVBNC1VhbwHc",
   tableQueries: [
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
@@ -46,7 +46,7 @@ initApp({
       tableName: "Voucher - 19.02.24 - Free beanbag cover",
       tableRange: "37",
       name: "condition",
-    },
+    }
   ],
   tableColumns: {
     UK: "F",

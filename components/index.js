@@ -11,8 +11,10 @@ import { Image } from "./Image.js";
 import { ImageWithLink } from "./ImageWithLink.js";
 import { Paragraph } from "./Paragraph.js";
 import { Space } from "./Space.js";
+import { ProductWithSize } from "./productwithsize.js";
 
 export {
+  ProductWithSize,
   Space,
   Paragraph,
   ImageWithLink,

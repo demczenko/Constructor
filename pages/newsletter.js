@@ -7,6 +7,8 @@ import {
   ImageWithLink,
   Space,
   Freebies,
+  Product,
+  ProductWithSize,
 } from "../components/index.js";
 import { priceFree } from "../helpers/index.js";
 import { footer, header } from "../templates/index.js";
@@ -22,6 +24,7 @@ export function newsletter({
   country,
   template,
 }) {
+  console.log(translations.categories);
   return `
   ${header[country]("newsletter", id)}
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffccb7;" >
@@ -97,6 +100,38 @@ export function newsletter({
                   </td>
                 </tr>
 
+                
+                <tr>
+                  <td align="center" class="newsletterContainer" >
+                  ${ProductWithSize(
+                    priceFree(getProductById("414803")),
+                    "center"
+                  )}
+                  </td>
+                </tr>
+
+                
+                <tr>
+                  <td>
+                    ${Space("newsletterBottom35px")}
+                  </td>
+                </tr>
+
+                                
+                <tr>
+                  <td align="center" class="newsletterContainer" >
+                  ${ProductWithSize(
+                    priceFree(getProductById("414522")),
+                    "center"
+                  )}
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    ${Space("newsletterBottom80px")}
+                  </td>
+                </tr>
                   
                 <tr>
                   <td class="newsletterContainer" >
