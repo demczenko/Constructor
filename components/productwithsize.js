@@ -11,7 +11,7 @@ export function ProductWithSize(product, align = "left") {
                 <td align="${align}" class="newsletterBottom20px" style="padding-top: 0px; padding-left: 0px; padding-right: 0px;">
                   <a href="${product.href}">
                     <img src="${product.src}" alt="${product.name}"
-                      style="display: block;">
+                      style="display: block; max-width: 100%">
                   </a>
                 </td>
               </tr>

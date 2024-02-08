@@ -24,7 +24,6 @@ export function newsletter({
   country,
   template,
 }) {
-  console.log(translations.categories);
   return `
   ${header[country]("newsletter", id)}
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffccb7;" >
@@ -278,7 +277,11 @@ export function newsletter({
                     <td align="left">
                         <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tbody>
-                              ${Line(undefined, false)}
+                            <tr>
+                              <td class="newsletterBottom35px" >
+                                ${Line(undefined, false)}
+                              </td>
+                            </tr>
                                 <tr>
                                     <td align="left" class="newsletterBottom35px">
                                         <span class="newsletterSoonEndingTitle">${
