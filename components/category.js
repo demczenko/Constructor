@@ -84,7 +84,7 @@ export function Category({
             <tbody>
               <tr>
                 <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px; text-align: center;">
-                  <a href="${href}" style="color: #000;">
+                  <a href="${href}" style="color:#000; text-decoration: underline;">
                     <span class="newsletterCta">${cta}</span>
                   </a>
                 </td>

@@ -3,7 +3,7 @@ import { initApp } from "./main/initApp.js";
 initApp({
   startId: "21362",
   token:
-    "1//04vj7hhH7n2o_CgYIARAAGAQSNwF-L9Iri-4FCRSmeqtb4ZlCpyKuLInQrs9k71CHwV8xqPTwfASj_5GYaMttLujcVBNC1VhbwHc",
+    "1//042a1oss5ci0rCgYIARAAGAQSNwF-L9IrtlKHGHCdyJCaEMIGryNxAxhfUccnUqoiCTf8SptuQkrgM96dlo_30mpx9kx4H6ju9hM",
   tableQueries: [
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
@@ -85,20 +85,20 @@ initApp({
       value: () => "https://upload.pictureserver.net/static/240219gif.gif",
     },
     {
-      value: (origin) => origin + "content/lp24-02-12",
+      value: (origin) => origin + "content/lp24-02-16",
       query: true,
     },
     {
       value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}240212.png`,
+        `https://beliani.info/newsletter/2022/${country}240216.png`,
     },
     {
-      value: (origin) => origin + "content/lp24-02-09",
+      value: (origin) => origin + "content/lp24-02-15",
       query: true,
     },
     {
       value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}240209.png`,
+        `https://beliani.info/newsletter/2022/${country}240215.png`,
     },
   ],
   landingLinks: [
