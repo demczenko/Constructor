@@ -2,50 +2,63 @@ import { initApp } from "./main/initApp.js";
 
 initApp({
   startId: "21362",
-  token:
-    "1//042a1oss5ci0rCgYIARAAGAQSNwF-L9IrtlKHGHCdyJCaEMIGryNxAxhfUccnUqoiCTf8SptuQkrgM96dlo_30mpx9kx4H6ju9hM",
+  token: "1//04iVDJJCNJ4ijCgYIARAAGAQSNwF-L9Ir0FS3yVd0qZrC9PgYvFSVLMZgOm94zrVrQeCScPCZpj_PIuChRbSNNfze-LphFwLlLGA",
   tableQueries: [
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
       tableName: "Voucher - 19.02.24 - Free beanbag cover",
       tableRange: "18:22",
       name: "offer",
+      tableColumns: true,
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
       tableName: "Voucher - 19.02.24 - Free beanbag cover",
       tableRange: "23:24",
       name: "intro",
+      tableColumns: true,
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
       tableName: "Voucher - 19.02.24 - Free beanbag cover",
       tableRange: "25:28",
       name: "category",
+      tableColumns: true,
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
       tableName: "Voucher - 19.02.24 - Free beanbag cover",
       tableRange: "29",
       name: "code",
+      tableColumns: true,
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
       tableName: "Voucher - 19.02.24 - Free beanbag cover",
       tableRange: "32",
       name: "shopNow",
+      tableColumns: true,
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
       tableName: "Voucher - 19.02.24 - Free beanbag cover",
       tableRange: "35",
       name: "soonEnding",
+      tableColumns: true,
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
       tableName: "Voucher - 19.02.24 - Free beanbag cover",
       tableRange: "37",
       name: "condition",
+      tableColumns: true,
+    },
+    {
+      tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+      tableName: "Categories",
+      tableRange: "A:JS?majorDimension=COLUMNS",
+      name: "categories",
+      tableColumns: false,
     }
   ],
   tableColumns: {

@@ -13,8 +13,9 @@ import {
 import { priceFree } from "../helpers/index.js";
 import { footer, header } from "../templates/index.js";
 
-export function newsletter({
+export async function newsletter({
   links,
+  getProductFromServer,
   getProductByName,
   getProductById,
   getCategory,
@@ -167,7 +168,7 @@ export function newsletter({
                         "https://www.beliani.ch/children-room/kids-beds/"
                       ),
                       products: [
-                        getProductById("422441"),
+                        await getProductFromServer("422441"),
                         getProductById("440578"),
                         getProductById("422028"),
                         getProductById("392610"),

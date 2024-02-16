@@ -15,6 +15,7 @@ import { handleProduct } from "./handlers/index.js";
 import { mainValidation } from "../validation/mainValidation.js";
 import { fetchTranslations, parseLinks } from "../api/fetch/fetch.js";
 import { addParams, getQueryLink } from "../helpers/getQueryLink.js";
+import { getProduct } from "../api/product.js";
 
 const root = document.querySelector("#app");
 const state = {
@@ -28,7 +29,8 @@ const state = {
   categories: [],
   productsIds: [],
   translations: [],
-  token: "",
+  token:
+    "",
 };
 
 export function setState(key, value) {
@@ -127,7 +129,7 @@ export function initApp({
     setState("loading", false);
 
     try {
-      const html = getTemplate();
+      const html = await getTemplate();
       if (html.includes("undefined")) {
         if (confirm("Do you want to render template with undefined value?")) {
           return (root.innerHTML = html);
@@ -253,11 +255,12 @@ export function initApp({
     document.querySelector(".renderTemplate").textContent = template;
   }
 
-  function getTemplate() {
+  async function getTemplate() {
     const country = getState("country");
+    const translations = getState("translations");
     const template = getState("template");
     const ids = getState("ids");
-    return templates[template]({
+    return await templates[template]({
       ...state,
       country,
       origin: origins[country],
@@ -304,14 +307,39 @@ export function initApp({
           new_link.searchParams.append(key, value);
         }
 
+        const [slugs, ...categoriesDB] = translations.categories
+        const parsed_categories = []
+        for (let index = 0; index < slugs.length; index++) {
+          const slug = slugs[index]
+          let parsed_category = {}
+          for (const categoryArray of categoriesDB) {
+            const key = categoryArray[0]
+            parsed_category = {
+              "slug": slug,
+              [key]: categoryArray[index],
+              ...parsed_category
+            }
+          }
+          parsed_categories.push(parsed_category)
+        }
+
+
+
+        let country_categories;
+        if (!translations.categories) {
+          country_categories = categories.find(
+            (category) => category.slug === country.toLowerCase()
+          );
+        } else {
+          country_categories = parsed_categories.find(
+            (category) => category.slug === country.toLowerCase()
+          );
+        }
+
+        
         const pathnames = category_url.pathname
           .split("/")
           .filter((pathname) => pathname.length > 0);
-
-        const country_categories = categories.find(
-          (category) => category.slug === country.toLowerCase()
-        );
-
         const parsed_country_categories = [];
         for (const category of pathnames) {
           const categoryCandidate = country_categories[category];
@@ -327,6 +355,39 @@ export function initApp({
         }
         new_link.pathname += parsed_country_categories.join("/");
         return getQueryLink(new_link);
+      },
+      getProductFromServer: async (productId) => {
+        const country_products = products.filter(
+          (product) => product.country === country.toLowerCase()
+        );
+        const product = country_products.find(
+          (product) => Number(product.main_id) === Number(productId)
+        );
+
+        if (!product) {
+          return {
+            name: `Product ${productId} not found`,
+            lowPrice: "00.00",
+            highPrice: "00.00",
+          };
+        }
+
+        const serverProducts = await getProduct([
+          {
+            main_id: productId,
+            src: product.src,
+          },
+        ]);
+
+        const serverProductCountry = serverProducts.filter(
+          (product) => product.country === country.toLowerCase()
+        );
+
+        const serverProduct = serverProductCountry.find(
+          (product) => Number(product.main_id) === Number(productId)
+        );
+
+        return handleProduct(serverProduct);
       },
     });
   }

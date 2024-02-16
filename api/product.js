@@ -24,11 +24,26 @@ export async function getLink(id) {
   }
 }
 
+export async function getProduct(product) {
+  try {
+    const response = await fetch(`${endpoint.belianiUs}:7777/get-products/`, {
+      method: "POST",
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(product),
+    })
+    const data = await response.json();
+    return data
+  } catch (error) {
+    throw new Error(error);
+  }
+}
+
 export async function getProductPrice(id) {
   try {
-    const response = await fetch(`${endpoint.belianiUs}:7777/product/${id}`).then(
-      (r) => r.json()
-    );
+    const response = await fetch(
+      `${endpoint.belianiUs}:7777/product/${id}`
+    ).then((r) => r.json());
+
     const data = JSON.parse(response.res)[id];
     return data;
   } catch (error) {

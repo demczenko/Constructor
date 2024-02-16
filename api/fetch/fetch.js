@@ -37,7 +37,7 @@ export const fetchTranslations = async ({ tableQueries, tableColumns }) => {
     }
     if ("values" in value && value.values.length > 0) {
       computedPromise.push({
-        data: utils.normalizeTranslations(value.values),
+        data: value.majorDimension === "COLUMNS" ? value.values : utils.normalizeTranslations(value.values),
         name: value.name,
       });
     } else {

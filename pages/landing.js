@@ -12,8 +12,9 @@ import {
 import { priceFree } from "../helpers/index.js";
 import { footer } from "../templates/index.js";
 
-export function landing({
+export async function landing({
   links,
+  getProductFromServer,
   getProductByName,
   getProductById,
   getCategory,
