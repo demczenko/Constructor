@@ -364,18 +364,11 @@ export function initApp({
           (product) => Number(product.main_id) === Number(productId)
         );
 
-        if (!product) {
-          return {
-            name: `Product ${productId} not found`,
-            lowPrice: "00.00",
-            highPrice: "00.00",
-          };
-        }
-
+        setState("loading", true)
         const serverProducts = await getProduct([
           {
             main_id: productId,
-            src: product.src,
+            src: product?.src ?? "",
           },
         ]);
 
@@ -387,6 +380,7 @@ export function initApp({
           (product) => Number(product.main_id) === Number(productId)
         );
 
+        setState("false", true)
         return handleProduct(serverProduct);
       },
     });

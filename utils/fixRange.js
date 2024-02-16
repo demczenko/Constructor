@@ -1,5 +1,5 @@
 const adjustTableRangeToCountry = (query, tableColumn) => {
-  if (!query.tableColumns) {
+  if ("tableColumns" in query && query.tableColumns === false) {
     return query
   }
   if (query.tableRange.includes(":")) {
