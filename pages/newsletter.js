@@ -39,100 +39,111 @@ export async function newsletter({
                       ${ImageWithLink(links[2], links[3])}
                     </td>
                 </tr>
+
                 <tr>
-                  <td>
-                    ${Space("newsletterBottom35px")}
-                  </td>
-                </tr>
-                <tr>
-                    <td align="center" class="newsletterContainer">
-                        ${Paragraph(translations.offer[0], "center")}
+                  <td class="newsletterContainer"style="background-color: #fd9000; color: white;">
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+                      <tr>
+                        <td>
+                          ${Space("newsletterBottom35px")}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center" >
+                            ${Paragraph(translations.offer[0], "center")}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          ${Space("newsletterBottom35px")}
+                        </td>
+                      </tr>
+                      <tr>
+                          <td align="center" >
+                              ${Paragraph(translations.offer[1], "center")}
+                          </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          ${Space("newsletterBottom35px")}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="center"  >
+                          ${GetCode({
+                            code: translations.offer[2],
+                            link: links[0],
+                            type: template,
+                          })}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          ${Space("newsletterBottom35px")}
+                        </td>
+                      </tr>
+                      <tr>
+                          <td align="center"  >
+                            ${Paragraph(translations.offer[3], "center")}
+                          </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          ${Space("newsletterBottom35px")}
+                        </td>
+                      </tr>
+                      <tr>
+                          <td align="center"  >
+                            ${Paragraph(translations.offer[4], "center")}
+                          </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          ${Space("newsletterBottom35px")}
+                        </td>
+                      </tr>
+                      </table>
                     </td>
-                </tr>
-                <tr>
-                  <td>
-                    ${Space("newsletterBottom35px")}
-                  </td>
-                </tr>
-                <tr>
-                    <td align="center" class="newsletterContainer">
-                        ${Paragraph(translations.offer[1], "center")}
-                    </td>
-                </tr>
-                <tr>
-                  <td>
-                    ${Space("newsletterBottom35px")}
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" class="newsletterContainer" >
-                    ${GetCode({
-                      code: translations.offer[3],
-                      link: links[0],
-                      type: template,
+                  </tr>
+                  <tr>
+                    <td align="center" class="newsletterFreebieContainer" style="background-color: #fd9000; color: white; padding-right: 10px" >
+                    ${Freebies({
+                      products: [
+                        priceFree({
+                          ...getProductById("379354"),
+                          style: "background-color: #ffffff;",
+                        }),
+                        priceFree({
+                          ...getProductById("379635"),
+                          style: "background-color: #ffffff;",
+                        }),
+                        priceFree({
+                          ...getProductById("379739"),
+                          style: "background-color: #ffffff;",
+                        }),
+                        priceFree({
+                          ...getProductById("380988"),
+                          style: "background-color: #ffffff;",
+                        }),
+                        priceFree({
+                          ...getProductById("380833"),
+                          style: "background-color: #ffffff;",
+                        }),
+                        priceFree({
+                          ...getProductById("378651"),
+                          style: "background-color: #ffffff;",
+                        }),
+                      ],
+                      size: {
+                        row: 2,
+                        col: 3,
+                      },
                     })}
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    ${Space("newsletterBottom35px")}
-                  </td>
-                </tr>
-                <tr>
-                    <td align="center" class="newsletterContainer" >
-                      ${Paragraph(translations.offer[2], "center")}
-                    </td>
-                </tr>
-                <tr>
-                  <td>
-                    ${Space("newsletterBottom35px")}
-                  </td>
-                </tr>
-                <tr>
-                    <td align="center" class="newsletterContainer" >
-                      ${Paragraph(translations.offer[4], "center")}
-                    </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    ${Space("newsletterBottom35px")}
-                  </td>
-                </tr>
-
-                
-                <tr>
-                  <td align="center" class="newsletterContainer" >
-                  ${ProductWithSize(
-                    priceFree(getProductById("414803")),
-                    "center"
-                  )}
-                  </td>
-                </tr>
-
-                
-                <tr>
-                  <td>
-                    ${Space("newsletterBottom35px")}
-                  </td>
-                </tr>
-
-                                
-                <tr>
-                  <td align="center" class="newsletterContainer" >
-                  ${ProductWithSize(
-                    priceFree(getProductById("414522")),
-                    "center"
-                  )}
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
                     ${Space("newsletterBottom80px")}
-                  </td>
-                </tr>
-                  
+
+                    </td>
+                  </tr>
                 <tr>
                   <td class="newsletterContainer" >
                     ${Line()}
@@ -163,15 +174,13 @@ export async function newsletter({
                   <td >
                     ${Category({
                       name: translations.category[0],
-                      src: "https://beliani.info/newsletter/2022/240219Category1.png",
-                      href: getCategory(
-                        "https://www.beliani.ch/children-room/kids-beds/"
-                      ),
+                      src: "https://beliani.info/newsletter/2022/240226Category1.png",
+                      href: getCategory("https://www.beliani.ch/desks-eng/"),
                       products: [
-                        await getProductFromServer("422441"),
-                        getProductById("440578"),
-                        getProductById("422028"),
-                        getProductById("392610"),
+                        getProductById("183024"),
+                        getProductById("229882"),
+                        getProductById("244778"),
+                        getProductById("196950"),
                       ],
                       cta: translations.shopNow,
                     })}
@@ -194,15 +203,15 @@ export async function newsletter({
                   <td >
                     ${Category({
                       name: translations.category[1],
-                      src: "https://beliani.info/newsletter/2022/240219Category2.png",
+                      src: "https://beliani.info/newsletter/2022/240226Category2.png",
                       href: getCategory(
-                        "https://www.beliani.ch/children-room/kids-chairs/"
+                        "https://www.beliani.ch/office-chairs/gaming-chairs/"
                       ),
                       products: [
-                        getProductById("428726"),
-                        getProductById("428608"),
-                        getProductById("428692"),
-                        getProductById("428743"),
+                        getProductById("56088"),
+                        getProductById("123426"),
+                        getProductById("376076"),
+                        getProductById("178944"),
                       ],
                       cta: translations.shopNow,
                     })}
@@ -224,15 +233,15 @@ export async function newsletter({
                   <td >
                     ${Category({
                       name: translations.category[2],
-                      src: "https://beliani.info/newsletter/2022/240219Category3.png",
+                      src: "https://beliani.info/newsletter/2022/240226Category3.png",
                       href: getCategory(
-                        "https://www.beliani.ch/children-room/kids-rugs/"
+                        "https://www.beliani.ch/storage/office-cabinets/"
                       ),
                       products: [
-                        getProductById("333858"),
-                        getProductById("400222"),
-                        getProductById("395976"),
-                        getProductById("407758"),
+                        getProductById("195370"),
+                        getProductById("330127"),
+                        getProductById("424305"),
+                        getProductById("259091"),
                       ],
                       cta: translations.shopNow,
                     })}
@@ -255,15 +264,15 @@ export async function newsletter({
                   <td >
                     ${Category({
                       name: translations.category[3],
-                      src: "https://beliani.info/newsletter/2022/240219Category4.png",
+                      src: "https://beliani.info/newsletter/2022/240226Category4.png",
                       href: getCategory(
-                        "https://www.beliani.ch/children-room/kids-decor/"
+                        "https://www.beliani.ch/home-accessories/accessories-decor/"
                       ),
                       products: [
-                        getProductById("368545"),
-                        getProductById("431976"),
-                        getProductById("345636"),
-                        getProductById("368601"),
+                        getProductById("212038"),
+                        getProductById("305750"),
+                        getProductById("367200"),
+                        getProductById("432027"),
                       ],
                       cta: translations.shopNow,
                     })}

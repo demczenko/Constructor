@@ -3,14 +3,14 @@ function rowFn(item) {
 }
 
 function colFn(item, width) {
-  return `<td style="vertical-align: top; width: ${width + "%"}">${item}</td>`;
+  return `<td style="vertical-align: top; width: ${width + "%"}; padding-right: 10px; padding-bottom: 10px;">${item}</td>`;
 }
 
 export function Matrix({ row, col, html }) {
   const matrix = Array(Number(row)).fill(Array(Number(col)).fill(""));
   const itemsAmount = html.length;
   let index = 0;
-  let width = 100 / itemsAmount
+  let width = 100 / (itemsAmount / row)
   return matrix
     .map((col) => {
       return rowFn(

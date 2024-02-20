@@ -21,9 +21,9 @@
 
 /* NEWSLETTER START */
 
-.newsletterContainerFreebie {
-  padding-left: 55px;
-  padding-right: 55px;
+.newsletterFreebieContainer {
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
 .newsletterBottom80px {
@@ -127,6 +127,13 @@
   font-size: 20px;
 }
 
+.newsletterProductTitleFreebie {
+  text-align: left;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
 .newsletterFooterCategoryLEFT {
   padding-bottom: 20px !important;
   padding-right: 10px !important;
@@ -173,7 +180,7 @@
   .newsletterFooterCategoryRIGHTBottom {
     padding-left: 5px !important;
   }
-  
+
   .newsletterFooterCategoryLEFT {
     padding-bottom: 10px !important;
     padding-right: 5px !important;
@@ -194,6 +201,10 @@
   }
 
   .newsletterFooterTitle {
+    font-size: 18px;
+  }
+
+  .newsletterProductTitleFreebie {
     font-size: 18px;
   }
 
@@ -222,6 +233,11 @@
     padding-right: 10px;
   }
 
+  .newsletterFreebieContainer {
+    padding-left: 10px;
+    padding-right: 0px!important;
+  }
+
   .newsletterBottom35px {
     padding-bottom: 20px;
   }
@@ -244,5 +260,31 @@
 
   .newsletterBottom80px {
     padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .newsletterProductTitleFreebie {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .newsletterProductTitleFreebie {
+    font-size: 14px;
+  }
+
+  .newsletterProductLowPrice {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .newsletterProductTitleFreebie {
+    font-size: 12px;
+  }
+
+  .newsletterProductLowPrice {
+    font-size: 12px;
   }
 }

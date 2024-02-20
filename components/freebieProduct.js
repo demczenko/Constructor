@@ -1,4 +1,4 @@
-export function Product(product, align = "left", style) {
+export function FreebieProduct(product, align = "left", style) {
 
   return `
   <table cellspacing="0" cellpadding="0" style="width: 100%; ${style ?? ""}">
@@ -21,7 +21,7 @@ export function Product(product, align = "left", style) {
             <tbody>
               <tr>
                 <td align="${align}" style="padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
-                  <span class="newsletterProductTitle">${product.name}</span>
+                  <span class="newsletterProductTitleFreebie">${product.name}</span>
                 </td>
               </tr>
               <tr>
