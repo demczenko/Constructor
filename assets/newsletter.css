@@ -235,7 +235,7 @@
 
   .newsletterFreebieContainer {
     padding-left: 10px;
-    padding-right: 0px!important;
+    padding-right: 0px !important;
   }
 
   .newsletterBottom35px {
@@ -273,18 +273,10 @@
   .newsletterProductTitleFreebie {
     font-size: 14px;
   }
-
-  .newsletterProductLowPrice {
-    font-size: 14px;
-  }
 }
 
 @media screen and (max-width: 370px) {
   .newsletterProductTitleFreebie {
-    font-size: 12px;
-  }
-
-  .newsletterProductLowPrice {
     font-size: 12px;
   }
 }
