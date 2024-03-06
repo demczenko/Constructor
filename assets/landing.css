@@ -45,7 +45,6 @@
 }
 
 #newsletter .newsletterCta {
-  color: #000;
   font-size: 20px;
   line-height: 1.25;
   font-family: "Open Sans", sans-serif;
@@ -63,28 +62,29 @@
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
-  color: #000000;
 }
 
 #newsletter .newsletterTitle {
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
-  color: #000000;
+}
+
+#newsletter .newsletterFreebieContainer {
+  padding-left: 18px;
+  padding-right: 10px;
 }
 
 #newsletter .newsletterProductTitle {
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
-  color: #000000;
 }
 
 #newsletter .newsletterProductLowPrice {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
-  color: #000000;
   font-weight: 600;
 }
 
@@ -92,7 +92,6 @@
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
-  color: #000000;
   text-decoration: line-through;
 }
 
@@ -114,7 +113,7 @@
 #newsletter .newsletterConditions {
   color: black;
   font-family: "Open Sans", sans-serif;
-  font-size: 12px;
+  font-size: 8px;
 }
 
 #newsletter .newsletterFooterCompanyDetails {
@@ -174,7 +173,24 @@
   font-size: 20px;
 }
 
+#newsletter .newsletterProductTitleFreebie {
+  text-align: left;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 768px) {
+
+  #newsletter .newsletterProductTitleFreebie {
+    font-size: 18px;
+  }
+
+  #newsletter .newsletterFreebieContainer {
+    padding-left: 10px;
+    padding-right: 0px !important;
+  }
+
   #newsletter .newsletterFooterCategoryLEFTBottom {
     padding-right: 5px !important;
   }

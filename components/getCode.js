@@ -23,7 +23,7 @@ export function GetCode({ type, code, link }) {
         <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
           <tbody>
             <tr>
-                <td align="center" class="newsletterBottom35px">
+                <td align="center">
                     <span class="newsletterParagraph" style="font-size: 20px; color: #fff">
                         ${code}
                     </span>

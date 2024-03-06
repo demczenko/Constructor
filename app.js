@@ -129,7 +129,7 @@ initApp({
     },
     {
       value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}240301.png`,
+        `https://beliani.info/newsletter/2022/${country}20240301.png`,
     },
     {
       value: (origin) => origin + "content/lp24-02-29",
@@ -137,7 +137,7 @@ initApp({
     },
     {
       value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}240229.png`,
+        `https://beliani.info/newsletter/2022/${country}20240229.png`,
     },
   ],
 });
