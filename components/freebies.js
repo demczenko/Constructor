@@ -9,8 +9,7 @@ export function Freebies({ products, size = { row: 2, col: 2 } }) {
   };
 
   return `
-
-        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
         ${Matrix({
           col: size.col,
           row: size.row,
@@ -24,6 +23,6 @@ export function Freebies({ products, size = { row: 2, col: 2 } }) {
             )
           ),
         })}
-            </table>
+      </table>
     `;
 }

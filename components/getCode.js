@@ -8,8 +8,8 @@ export function GetCode({ type, code, link }) {
           <tbody>
               <tr>
                   <td align="center">
-                  <a href=${link} style="text-decoration:underline!important; color: #000">
-                      <span class="newsletterParagraph" style="font-size: 20px;  color: #000">
+                  <a href=${link} style="text-decoration:underline!important; color: #fff">
+                      <span class="newsletterParagraph" style="font-size: 20px;  color: #fff">
                       ${code}
                       </span>
                   </a>
@@ -24,7 +24,7 @@ export function GetCode({ type, code, link }) {
           <tbody>
             <tr>
                 <td align="center" class="newsletterBottom35px">
-                    <span class="newsletterParagraph" style="font-size: 20px; color: #000">
+                    <span class="newsletterParagraph" style="font-size: 20px; color: #fff">
                         ${code}
                     </span>
                 </td>
