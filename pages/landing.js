@@ -68,7 +68,7 @@ export async function landing({
     FR: "https://www.beliani.fr/content/lp24-03-04",
   };
   return `
-        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #750000;" id="newsletter" >
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px !important; width: 100%; background-color: #750000;" id="newsletter" >
             <tbody>
                 <tr>
                     <td align="center">
