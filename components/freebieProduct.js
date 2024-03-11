@@ -1,9 +1,9 @@
-export function FreebieProduct(product, align = "left", style) {
+export function FreebieProduct(product, align = "left", style, containerAlign="center") {
   return `
   <table cellspacing="0" cellpadding="0" style="width: 100%;">
     <tbody>
       <tr>
-        <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px;">
+        <td align=${containerAlign} style="padding-top: 0px; padding-left: 0px; padding-right: 0px;">
           <a href="${product.href}" style="text-decoration: none !important;">
             <table cellspacing="0" cellpadding="0">
               <tr>
@@ -13,7 +13,7 @@ export function FreebieProduct(product, align = "left", style) {
                 <td>
               </tr>
               <tr>
-                  <td align="${align}" style="${style ?? ""}">
+                  <td style="${style ?? ""}">
                     <table cellspacing="0" cellpadding="0" style="width: 100%;">
                       <tbody>
                       <tr>
@@ -29,16 +29,12 @@ export function FreebieProduct(product, align = "left", style) {
                         </tr>
                         ${
                           "size" in product
-                          ?
-                          `<tr>
+                            ? `<tr>
                             <td align="${align}" style="padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;">
-                              <span class="newsletterProductTitleFreebie">${
-                                product.size
-                              }</span>
+                              <span class="newsletterProductTitleFreebie">${product.size}</span>
                             </td>
                           </tr>`
-                          :
-                          ""
+                            : ""
                         }
                         <tr>
                           <td align="${align}" style="padding-top: 0px; padding-bottom: 8px; padding-left: 0px; padding-right: 0px; color: #000">

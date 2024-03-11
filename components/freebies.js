@@ -18,8 +18,9 @@ export function Freebies({ products, size = { row: 2, col: 2 } }) {
               {
                 ...product,
               },
-              "center",
-              product.style
+              product.align,
+              product.style,
+              product.containerAlign
             )
           ),
         })}

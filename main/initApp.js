@@ -29,8 +29,7 @@ const state = {
   categories: [],
   productsIds: [],
   translations: [],
-  token:
-    "",
+  token: "",
 };
 
 export function setState(key, value) {
@@ -307,36 +306,33 @@ export function initApp({
           new_link.searchParams.append(key, value);
         }
 
-        const [slugs, ...categoriesDB] = translations.categories
-        const parsed_categories = []
-        for (let index = 0; index < slugs.length; index++) {
-          const slug = slugs[index]
-          let parsed_category = {}
-          for (const categoryArray of categoriesDB) {
-            const key = categoryArray[0]
-            parsed_category = {
-              "slug": slug,
-              [key]: categoryArray[index],
-              ...parsed_category
-            }
-          }
-          parsed_categories.push(parsed_category)
-        }
-
-
-
         let country_categories;
         if (!translations.categories) {
           country_categories = categories.find(
             (category) => category.slug === country.toLowerCase()
           );
         } else {
+          const [slugs, ...categoriesDB] = translations.categories;
+          const parsed_categories = [];
+          for (let index = 0; index < slugs.length; index++) {
+            const slug = slugs[index];
+            let parsed_category = {};
+            for (const categoryArray of categoriesDB) {
+              const key = categoryArray[0];
+              parsed_category = {
+                slug: slug,
+                [key]: categoryArray[index],
+                ...parsed_category,
+              };
+            }
+            parsed_categories.push(parsed_category);
+          }
+
           country_categories = parsed_categories.find(
             (category) => category.slug === country.toLowerCase()
           );
         }
 
-        
         const pathnames = category_url.pathname
           .split("/")
           .filter((pathname) => pathname.length > 0);
@@ -364,7 +360,7 @@ export function initApp({
           (product) => Number(product.main_id) === Number(productId)
         );
 
-        setState("loading", true)
+        setState("loading", true);
         const serverProducts = await getProduct([
           {
             main_id: productId,
@@ -380,7 +376,7 @@ export function initApp({
           (product) => Number(product.main_id) === Number(productId)
         );
 
-        setState("false", true)
+        setState("false", true);
         return handleProduct(serverProduct);
       },
     });

@@ -5,7 +5,7 @@ export const ImageWithLink = (link, src) => {
             <tr>
                 <td>
                     <a href="${link}">
-                        <img alt="" src="${src}" style="display: block; width: 100%">
+                        <img alt="" src="${src}" style="display: block; width: 100%;" loading="lazy">
                     </a>
                 </td>
             </tr>

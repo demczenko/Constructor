@@ -1,58 +1,59 @@
 import { initApp } from "./main/initApp.js";
 
 initApp({
-  startId: "21910",
-  token: "1//04xxn4hLWkbOvCgYIARAAGAQSNwF-L9Irrg3byUyyVC4bGe-I7QXLqA2SK7BmJoC7FzpuPDeMsoDGJh5uwKmTQnKKRlsW1sscgig",
+  startId: "22166",
+  token:
+    "1//04I_0h7H_nbuSCgYIARAAGAQSNwF-L9IryNTDjGcyylXy3fZf_kKVGmAj0q2Zd259uBRg0L3RP0EFPBzVgKikC271UCBaT3uUyuY",
   tableQueries: [
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "11.03.24 - Voucher - Free mirror",
+      tableName: "18.03.24 - Free rain cover",
       tableRange: "18:22",
       name: "offer",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "11.03.24 - Voucher - Free mirror",
+      tableName: "18.03.24 - Free rain cover",
       tableRange: "23:24",
       name: "intro",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "11.03.24 - Voucher - Free mirror",
+      tableName: "18.03.24 - Free rain cover",
       tableRange: "25:28",
       name: "category",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "11.03.24 - Voucher - Free mirror",
+      tableName: "18.03.24 - Free rain cover",
       tableRange: "29",
       name: "code",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "11.03.24 - Voucher - Free mirror",
+      tableName: "18.03.24 - Free rain cover",
       tableRange: "32",
       name: "shopNow",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "11.03.24 - Voucher - Free mirror",
+      tableName: "18.03.24 - Free rain cover",
       tableRange: "35",
       name: "soonEnding",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "11.03.24 - Voucher - Free mirror",
+      tableName: "18.03.24 - Free rain cover",
       tableRange: "37:38",
       name: "condition",
     },
-    {
-      tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
-      tableName: "Categories",
-      tableRange: "A:JW?majorDimension=COLUMNS",
-      name: "categories",
-      tableColumns: false,
-    }
+    // {
+    //   tableId: "1g4YNCi3FzxsYpbP-BWMmz9vBJuZCz_yNIfcatqUf6O8",
+    //   tableName: "Categories",
+    //   tableRange: "A:JW?majorDimension=COLUMNS",
+    //   name: "categories",
+    //   tableColumns: false,
+    // }
   ],
   tableColumns: {
     UK: "F",
@@ -76,68 +77,68 @@ initApp({
   },
   newsletterLinks: [
     {
-      value: (origin) => origin + "content/lp24-03-11",
+      value: (origin) => origin + "content/lp24-03-18",
       query: true,
     },
     {
       value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}240311_01.jpg`,
+        `https://beliani.info/newsletter/2022/${country}240318_01.jpg`,
     },
     {
-      value: (origin) => origin + "content/lp24-03-11",
+      value: (origin) => origin + "content/lp24-03-18",
       query: true,
     },
     {
-      value: () => "https://upload.pictureserver.net/static/240311gif.gif",
+      value: () => "https://upload.pictureserver.net/static/240318gif.gif",
     },
     {
-      value: (origin) => origin + "content/lp24-03-01",
-      query: true,
-    },
-    {
-      value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}20240301.png`,
-    },
-    {
-      value: (origin) => origin + "content/lp24-02-29",
+      value: (origin) => origin + "content/lp24-03-08",
       query: true,
     },
     {
       value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}20240229.png`,
+        `https://beliani.info/newsletter/2022/${country}20240308b.png`,
+    },
+    {
+      value: (origin) => origin + "content/lp24-03-07",
+      query: true,
+    },
+    {
+      value: (country) =>
+        `https://beliani.info/newsletter/2022/${country}20240307b.png`,
     },
   ],
   landingLinks: [
-    { 
-      value: (origin) => origin + "content/lp24-03-11",
+    {
+      value: (origin) => origin + "content/lp24-03-18",
       query: true,
     },
     {
       value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}240311_01.jpg`,
+        `https://beliani.info/newsletter/2022/${country}240318_01.jpg`,
     },
     {
-      value: (origin) => origin + "content/lp24-03-11",
+      value: (origin) => origin + "content/lp24-03-18",
       query: true,
     },
     {
-      value: () => "https://upload.pictureserver.net/static/240311gif.gif",
+      value: () => "https://upload.pictureserver.net/static/240318gif.gif",
     },
     {
-      value: (origin) => origin + "content/lp24-03-01",
-      query: true,
-    },
-    {
-      value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}20240301.png`,
-    },
-    {
-      value: (origin) => origin + "content/lp24-02-29",
+      value: (origin) => origin + "content/lp24-03-08",
       query: true,
     },
     {
       value: (country) =>
-        `https://beliani.info/newsletter/2022/${country}20240229.png`,
+        `https://beliani.info/newsletter/2022/${country}20240308.png`,
+    },
+    {
+      value: (origin) => origin + "content/lp24-03-07",
+      query: true,
+    },
+    {
+      value: (country) =>
+        `https://beliani.info/newsletter/2022/${country}20240307.png`,
     },
   ],
 });
