@@ -16,6 +16,7 @@ import { mainValidation } from "../validation/mainValidation.js";
 import { fetchTranslations, parseLinks } from "../api/fetch/fetch.js";
 import { addParams, getQueryLink } from "../helpers/getQueryLink.js";
 import { getProduct } from "../api/product.js";
+import { updateCampaign } from "../api/campaign.js";
 
 const root = document.querySelector("#app");
 const state = {

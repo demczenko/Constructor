@@ -68,7 +68,7 @@ export async function landing({
     FR: "https://www.beliani.fr/content/lp24-03-04",
   };
   return `
-        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px !important; width: 100%; background-color: #750000;" id="newsletter" >
+        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffccb7; color: #000;" id="newsletter" >
             <tbody>
                 <tr>
                     <td align="center">
@@ -84,14 +84,16 @@ export async function landing({
                 <tr>
                     <td align="center">
                       ${ImageWithLink(
-                        banners_link[country],
+                        banners_link[country] +
+                          "?utm_source=newsletter&utm_medium=email&utm_campaign=" +
+                          id,
                         banners[country]
                       )}
                     </td>
                 </tr>
 
                 <tr>
-                  <td class="newsletterContainer"style="background-color: #750000; color: white;">
+                  <td class="newsletterContainer"style="background-color: #ffccb7; ">
                     <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                       <tr>
                         <td>
@@ -157,47 +159,60 @@ export async function landing({
                     </td>
                   </tr>
                   <tr>
-                    <td align="center" class="newsletterFreebieContainer" style="background-color: #750000; color: white; padding-right: 6px" >
+                    <td align="center" class="newsletterFreebieContainer" style="background-color: #ffccb7;" >
                     ${Freebies({
                       products: [
                         priceFree({
-                          ...getProductById("165960"),
-                          style: "background-color: #ffffff; color: white;",
+                          ...getProductById("1601"),
+                          style: "background-color: #ffffff; ",
+                          align: "center",
+                          containerAlign: "right",
                         }),
                         priceFree({
-                          ...getProductById("95891"),
-                          style: "background-color: #ffffff; color: white;",
-                        }),
-                        priceFree({
-                          ...getProductById("138621"),
-                          style: "background-color: #ffffff; color: white;",
-                        }),
-                        priceFree({
-                          ...getProductById("95884"),
-                          style: "background-color: #ffffff; color: white;",
-                        }),
-                        priceFree({
-                          ...getProductById("165918"),
-                          style: "background-color: #ffffff; color: white;",
-                        }),
-                        priceFree({
-                          ...getProductById("166010"),
-                          style: "background-color: #ffffff; color: white;",
+                          ...getProductById("34094"),
+                          style: "background-color: #ffffff; ",
+                          align: "center",
+                          containerAlign: "left",
                         }),
                       ],
                       size: {
-                        row: 2,
-                        col: 3,
+                        row: 1,
+                        col: 2,
                       },
                     })}
-                    ${Space("newsletterBottom80px")}
                     </td>
                   </tr>
+                  <tr>
+                  <td align="center" class="newsletterFreebieContainer" style="background-color: #ffccb7;" >
+                  ${Freebies({
+                    products: [
+                      priceFree({
+                        ...getProductById("2002"),
+                        style: "background-color: #ffffff; ",
+                        align: "center",
+                      }),
+                      priceFree({
+                        ...getProductById("12427"),
+                        style: "background-color: #ffffff; ",
+                        align: "center",
+                      }),
+                      priceFree({
+                        ...getProductById("1602"),
+                        style: "background-color: #ffffff; ",
+                        align: "center",
+                      }),
+                    ],
+                    size: {
+                      row: 1,
+                      col: 3,
+                    },
+                  })}
+                  ${Space("newsletterBottom80px")}
+                  </td>
+                </tr>
                 <tr>
                   <td class="newsletterContainer" >
-                    ${Line(
-                      "https://beliani.info/newsletter/2022/whiteline.png"
-                    )}
+                    ${Line()}
                   </td>
                 </tr>
 
@@ -208,7 +223,7 @@ export async function landing({
                 </tr>
 
               <tr>
-                <td class="newsletterContainer" style="color: #fff" >
+                <td class="newsletterContainer" style="color: #000" >
                   ${Intro({
                     data: translations.intro,
                   })}
@@ -222,18 +237,18 @@ export async function landing({
               </tr>
 
                 <tr>
-                  <td style="color: #fff">
+                  <td style="color: #000">
                     ${Category({
                       name: translations.category[0],
-                      src: "https://upload.pictureserver.net/static/240311Category1.gif",
+                      src: "https://beliani.info/newsletter/2022/240318Category1.png",
                       href: getCategory(
-                        "https://www.beliani.ch/storage/bookcases-and-shelves/"
+                        "https://www.beliani.ch/garden-furniture/outdoor-furniture/lounge-sets/"
                       ),
                       products: [
-                        getProductById("443190"),
-                        getProductById("391623"),
-                        getProductById("108386"),
-                        getProductById("100835"),
+                        getProductById("326780"),
+                        getProductById("376374"),
+                        getProductById("321238"),
+                        getProductById("248918"),
                       ],
                       cta: translations.shopNow,
                     })}
@@ -242,9 +257,7 @@ export async function landing({
 
                 <tr>
                   <td class="newsletterContainer" >
-                    ${Line(
-                      "https://beliani.info/newsletter/2022/whiteline.png"
-                    )}
+                    ${Line()}
                   </td>
                 </tr>
 
@@ -254,18 +267,18 @@ export async function landing({
                 </tr>
 
                 <tr>
-                  <td style="color: #fff">
+                  <td style="color: #000">
                     ${Category({
                       name: translations.category[1],
-                      src: "https://beliani.info/newsletter/2022/240311Category2.png",
+                      src: "https://beliani.info/newsletter/2022/240318Category2.png",
                       href: getCategory(
-                        "https://www.beliani.ch/storage/tv-stands/"
+                        "https://www.beliani.ch/garden-furniture/outdoor-furniture/garden-dining-sets/"
                       ),
                       products: [
-                        getProductById("354653"),
-                        getProductById("336263"),
-                        getProductById("322030"),
-                        getProductById("110655"),
+                        getProductById("82159"),
+                        getProductById("360813"),
+                        getProductById("374902"),
+                        getProductById("249069"),
                       ],
                       cta: translations.shopNow,
                     })}
@@ -274,9 +287,7 @@ export async function landing({
 
                 <tr>
                   <td class="newsletterContainer" >
-                    ${Line(
-                      "https://beliani.info/newsletter/2022/whiteline.png"
-                    )}
+                    ${Line()}
                   </td>
                 </tr>
 
@@ -286,18 +297,18 @@ export async function landing({
                 </tr>
 
                 <tr>
-                  <td style="color: #fff">
+                  <td style="color: #000">
                     ${Category({
                       name: translations.category[2],
-                      src: "https://beliani.info/newsletter/2022/240311Category3.png",
+                      src: "https://beliani.info/newsletter/2022/240318Category3.png",
                       href: getCategory(
-                        "https://www.beliani.ch/storage/sideboards/"
+                        "https://www.beliani.ch/garden-furniture/outdoor-furniture/sun-loungers/"
                       ),
                       products: [
-                        getProductById("433322"),
-                        getProductById("409931"),
-                        getProductById("405313"),
-                        getProductById("310256"),
+                        getProductById("416079"),
+                        getProductById("270973"),
+                        getProductById("395368"),
+                        getProductById("386818"),
                       ],
                       cta: translations.shopNow,
                     })}
@@ -307,9 +318,7 @@ export async function landing({
                 
                 <tr>
                   <td class="newsletterContainer" >
-                    ${Line(
-                      "https://beliani.info/newsletter/2022/whiteline.png"
-                    )}
+                    ${Line()}
                   </td>
                 </tr>
 
@@ -319,18 +328,18 @@ export async function landing({
                 </tr>
                 
                 <tr>
-                  <td style="color: #fff">
+                  <td style="color: #000">
                     ${Category({
                       name: translations.category[3],
-                      src: "https://beliani.info/newsletter/2022/240311Category4.png",
+                      src: "https://beliani.info/newsletter/2022/240318Category4.png",
                       href: getCategory(
-                        "https://www.beliani.ch/storage/kitchen-trolleys/"
+                        "https://www.beliani.ch/garden-furniture/garden-accessories/fire-pits/"
                       ),
                       products: [
-                        getProductById("329545"),
-                        getProductById("311096"),
-                        getProductById("311095"),
-                        getProductById("336520"),
+                        getProductById("315877"),
+                        getProductById("315896"),
+                        getProductById("177344"),
+                        getProductById("301788"),
                       ],
                       cta: translations.shopNow,
                     })}
@@ -339,16 +348,12 @@ export async function landing({
             <tbody>
         </table>
 
-        <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;"  id="newsletter">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
             <tbody>
                 <tr>
                     <td align="left">
                         <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tbody>
-                            <tr>
-                              <td class="newsletterBottom20px" >
-                              </td>
-                            </tr>
                             <tr>
                               <td class="newsletterBottom35px" >
                                 ${Line()}

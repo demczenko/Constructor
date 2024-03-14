@@ -159,7 +159,7 @@ export async function newsletter({
                     </td>
                   </tr>
                   <tr>
-                    <td align="center" class="newsletterFreebieContainer" style="background-color: #ffccb7;  padding-right: 6px" >
+                    <td align="center" class="newsletterFreebieContainer" style="background-color: #ffccb7;" >
                     ${Freebies({
                       products: [
                         priceFree({
@@ -180,32 +180,36 @@ export async function newsletter({
                         col: 2,
                       },
                     })}
-                    ${Freebies({
-                      products: [
-                        priceFree({
-                          ...getProductById("2002"),
-                          style: "background-color: #ffffff; ",
-                          align: "center",
-                        }),
-                        priceFree({
-                          ...getProductById("12427"),
-                          style: "background-color: #ffffff; ",
-                          align: "center",
-                        }),
-                        priceFree({
-                          ...getProductById("1602"),
-                          style: "background-color: #ffffff; ",
-                          align: "center",
-                        }),
-                      ],
-                      size: {
-                        row: 1,
-                        col: 3,
-                      },
-                    })}
-                    ${Space("newsletterBottom80px")}
                     </td>
                   </tr>
+                  <tr>
+                  <td align="center" class="newsletterFreebieContainer" style="background-color: #ffccb7;" >
+                  ${Freebies({
+                    products: [
+                      priceFree({
+                        ...getProductById("2002"),
+                        style: "background-color: #ffffff; ",
+                        align: "center",
+                      }),
+                      priceFree({
+                        ...getProductById("12427"),
+                        style: "background-color: #ffffff; ",
+                        align: "center",
+                      }),
+                      priceFree({
+                        ...getProductById("1602"),
+                        style: "background-color: #ffffff; ",
+                        align: "center",
+                      }),
+                    ],
+                    size: {
+                      row: 1,
+                      col: 3,
+                    },
+                  })}
+                  ${Space("newsletterBottom80px")}
+                  </td>
+                </tr>
                 <tr>
                   <td class="newsletterContainer" >
                     ${Line()}
@@ -236,7 +240,7 @@ export async function newsletter({
                   <td style="color: #000">
                     ${Category({
                       name: translations.category[0],
-                      src: "https://upload.pictureserver.net/static/240318Category1.png",
+                      src: "https://beliani.info/newsletter/2022/240318Category1.png",
                       href: getCategory(
                         "https://www.beliani.ch/garden-furniture/outdoor-furniture/lounge-sets/"
                       ),

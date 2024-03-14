@@ -1,16 +1,18 @@
-import endpoint from "./endpoint"
+import endpoint from "./endpoint.js";
 
+export async function updateCampaign(id, body, subject) {
+  const data = new FormData();
+  data.append("body", body);
+  data.append("subject", subject);
 
-
-
-
-export async function updateCampaign(id, body) {
-
-    const data = new FormData()
-    data.append("body", body)
-
-    return fetch(`${endpoint.belianiUs}:7777/api/campaign/?id=${id}`, {
-        method: "POST",
-        body: data
-    }).then(data => data.json())
+  return fetch(
+    `${endpoint.localhost}:7777/update/?id=${id}`,
+    {
+      method: "POST",
+      body: data,
+    }
+  ).then((data) => data.json()).then(r => {
+    console.log(r)
+    return r
+  });
 }

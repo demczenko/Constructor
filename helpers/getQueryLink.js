@@ -6,9 +6,13 @@ export function addParams(arr) {
 
   return arr.map((link) => {
     if ("query" in link) {
-      return getQueryLink({ href: link.value(origins[country]) });
+      return getQueryLink({
+        href: link.value(origins[country], country.toLowerCase()),
+      });
     }
-    return typeof link === "object" ? link.value(country.toLowerCase()) : link;
+    return typeof link === "object"
+      ? link.value(origins[country], country.toLowerCase())
+      : link;
   });
 }
 

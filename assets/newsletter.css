@@ -22,8 +22,7 @@
 /* NEWSLETTER START */
 
 .newsletterFreebieContainer {
-  padding-left: 18px;
-  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .newsletterBottom80px {
@@ -122,7 +121,7 @@
 }
 
 .newsletterProductTitleFreebie {
-  text-align: left;
+  text-align: center;
   color: #000000;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;

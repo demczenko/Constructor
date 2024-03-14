@@ -17,33 +17,34 @@ export const fetchTranslations = async ({ tableQueries, tableColumns }) => {
     promises.push(queryWithAdjustedRange);
   }
 
-
   const promisesResult = await Promise.allSettled(
     promises.map((queryWithAdjustedRange) =>
       getTranslations(queryWithAdjustedRange, getState("token"))
     )
   );
 
-
   const computedPromise = [];
   for (const { value } of promisesResult) {
-
     if (value.error) {
       computedPromise.push({
         data: value.error.message,
         name: value.name,
       });
-      continue
+      continue;
     }
     if ("values" in value && value.values.length > 0) {
       computedPromise.push({
-        data: value.majorDimension === "COLUMNS" ? value.values : utils.normalizeTranslations(value.values),
+        data:
+          value.majorDimension === "COLUMNS"
+            ? value.values
+            : utils.normalizeTranslations(value.values),
         name: value.name,
       });
     } else {
-      throw new Error(
-        `Probably translation cell is empty for ${country}. Try to render another country or use local text instead.`
-      );
+      computedPromise.push({
+        data: undefined,
+        name: value.name,
+      });
     }
   }
 

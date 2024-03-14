@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
-
-/* HEADER START */
-
 #newsletter .title-advantages {
   text-align: center;
   font-size: 11px;
@@ -25,21 +22,20 @@
 
 /* NEWSLETTER START */
 
-#newsletter .newsletterContainerFreebie {
-  padding-left: 55px;
-  padding-right: 55px;
+#newsletter .newsletterFreebieContainer {
+  padding-left: 10px;
 }
 
 #newsletter .newsletterBottom80px {
   padding-bottom: 80px;
 }
 
-#newsletter.newsletterContainer {
+#newsletter .newsletterContainer {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-#newsletter .newsletterContainer {
+#newsletter.newsletterContainer {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -68,11 +64,6 @@
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
-}
-
-#newsletter .newsletterFreebieContainer {
-  padding-left: 18px;
-  padding-right: 10px;
 }
 
 #newsletter .newsletterProductTitle {
@@ -135,6 +126,13 @@
   font-size: 20px;
 }
 
+#newsletter .newsletterProductTitleFreebie {
+  text-align: center;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
 #newsletter .newsletterFooterCategoryLEFT {
   padding-bottom: 20px !important;
   padding-right: 10px !important;
@@ -173,24 +171,7 @@
   font-size: 20px;
 }
 
-#newsletter .newsletterProductTitleFreebie {
-  text-align: left;
-  color: #000000;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-}
-
 @media screen and (max-width: 768px) {
-
-  #newsletter .newsletterProductTitleFreebie {
-    font-size: 18px;
-  }
-
-  #newsletter .newsletterFreebieContainer {
-    padding-left: 10px;
-    padding-right: 0px !important;
-  }
-
   #newsletter .newsletterFooterCategoryLEFTBottom {
     padding-right: 5px !important;
   }
@@ -222,6 +203,10 @@
     font-size: 18px;
   }
 
+  #newsletter .newsletterProductTitleFreebie {
+    font-size: 18px;
+  }
+
   #newsletter .newsletterProductTitle {
     font-size: 18px;
   }
@@ -246,10 +231,15 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-
+  
   #newsletter.newsletterContainer {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  #newsletter .newsletterFreebieContainer {
+    padding-left: 10px;
+    padding-right: 0px !important;
   }
 
   #newsletter .newsletterBottom35px {
@@ -274,5 +264,23 @@
 
   #newsletter .newsletterBottom80px {
     padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #newsletter .newsletterProductTitleFreebie {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #newsletter .newsletterProductTitleFreebie {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #newsletter .newsletterProductTitleFreebie {
+    font-size: 12px;
   }
 }
