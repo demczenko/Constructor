@@ -1,50 +1,50 @@
 import { initApp } from "./main/initApp.js";
 
 initApp({
-  startId: "22166",
-  token:
-    "1//046Em-dQr4gIGCgYIARAAGAQSNwF-L9IrnjDjRrEnomjZ9NorIXQBkhkaKe2U9mgA6wPyWmKmB5a7bnjXwiH1Xd22e7pPhSDy7nA",
+  startId: "22555",
+  optimizeImg: true,
+  token: "",
   tableQueries: [
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "18.03.24 - Free rain cover",
-      tableRange: "18:22",
+      tableName: "Voucher - 01.04.24 - Free cushion for chair",
+      tableRange: "19:23",
       name: "offer",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "18.03.24 - Free rain cover",
-      tableRange: "23:24",
+      tableName: "Voucher - 01.04.24 - Free cushion for chair",
+      tableRange: "24:25",
       name: "intro",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "18.03.24 - Free rain cover",
-      tableRange: "25:28",
+      tableName: "Voucher - 01.04.24 - Free cushion for chair",
+      tableRange: "26:29",
       name: "category",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "18.03.24 - Free rain cover",
-      tableRange: "29",
+      tableName: "Voucher - 01.04.24 - Free cushion for chair",
+      tableRange: "30",
       name: "code",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "18.03.24 - Free rain cover",
-      tableRange: "32",
+      tableName: "Voucher - 01.04.24 - Free cushion for chair",
+      tableRange: "33",
       name: "shopNow",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "18.03.24 - Free rain cover",
-      tableRange: "35",
+      tableName: "Voucher - 01.04.24 - Free cushion for chair",
+      tableRange: "36",
       name: "soonEnding",
     },
     {
       tableId: "1sVDViDxz4CVoDaa7di4oVC7Oa-8uyKmzhMAs9lQIV88",
-      tableName: "18.03.24 - Free rain cover",
-      tableRange: "37:38",
+      tableName: "Voucher - 01.04.24 - Free cushion for chair",
+      tableRange: "38:39",
       name: "condition",
     },
     // {
@@ -77,66 +77,66 @@ initApp({
   },
   newsletterLinks: [
     {
-      value: (origin, country) => origin + "content/lp24-03-18",
+      value: (origin, country) => origin + "content/lp24-04-01",
       query: true,
     },
     {
-      value: (origin, country) => `https://upload.pictureserver.net/static/2024/${country}240318_01.jpg`,
+      value: (origin, country) => `https://upload.pictureserver.net/static/2024/${country}240401_01.jpg`,
     },
     {
-      value: (origin, country) => origin + "content/lp24-03-18",
+      value: (origin, country) => origin + "content/lp24-04-01",
       query: true,
     },
     {
-      value: () => "https://upload.pictureserver.net/static/2024/20240318gif.gif",
+      value: () => "https://upload.pictureserver.net/static/2024/240104gif.gif",
     },
     {
-      value: (origin, country) => origin + "content/lp24-03-08",
-      query: true,
-    },
-    {
-      value: (origin, country) =>
-        `https://beliani.info/newsletter/2022/${country}20240308b.png`,
-    },
-    {
-      value: (origin, country) => origin + "content/lp24-03-07",
+      value: (origin, country) => origin + "content/lp24-03-22",
       query: true,
     },
     {
       value: (origin, country) =>
-        `https://beliani.info/newsletter/2022/${country}20240307b.png`,
+        `https://beliani.info/newsletter/2024/${country}20240322b.png`,
+    },
+    {
+      value: (origin, country) => origin + "content/lp24-03-21",
+      query: true,
+    },
+    {
+      value: (origin, country) =>
+        `https://beliani.info/newsletter/2024/${country}20240321b.png`,
     },
   ],
   landingLinks: [
     {
-      value: (origin, country) => origin + "content/lp24-03-18",
+      value: (origin, country) => origin + "content/lp24-04-01",
       query: true,
     },
     {
-      value: (origin, country) => `https://upload.pictureserver.net/static/2024/${country}240318_01.jpg`,
+      value: (origin, country) => `https://upload.pictureserver.net/static/2024/${country}240401_01.jpg`,
     },
     {
-      value: (origin, country) => origin + "content/lp24-03-18",
+      value: (origin, country) => origin + "content/lp24-04-01",
       query: true,
     },
     {
-      value: () => "https://upload.pictureserver.net/static/2024/20240318gif.gif",
+      value: () => "https://upload.pictureserver.net/static/2024/240104gif.gif",
     },
     {
-      value: (origin, country) => origin + "content/lp24-03-08",
-      query: true,
-    },
-    {
-      value: (origin, country) =>
-        `https://beliani.info/newsletter/2022/${country}20240308b.png`,
-    },
-    {
-      value: (origin, country) => origin + "content/lp24-03-07",
+      value: (origin, country) => origin + "content/lp24-03-22",
       query: true,
     },
     {
       value: (origin, country) =>
-        `https://beliani.info/newsletter/2022/${country}20240307b.png`,
+        `https://beliani.info/newsletter/2024/${country}20240322b.png`,
+    },
+    {
+      value: (origin, country) => origin + "content/lp24-03-21",
+      query: true,
+    },
+    {
+      value: (origin, country) =>
+        `https://beliani.info/newsletter/2024/${country}20240321b.png`,
     },
   ],
 });

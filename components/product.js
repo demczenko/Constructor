@@ -1,3 +1,5 @@
+import { ImageWithLink } from "./ImageWithLink.js";
+
 export function Product(product, align = "left", style) {
 
   return `
@@ -9,10 +11,7 @@ export function Product(product, align = "left", style) {
             <tbody>
               <tr>
                 <td align="${align}" class="newsletterBottom20px" style="padding-top: 0px; padding-left: 0px; padding-right: 0px;">
-                  <a href="${product.href}">
-                    <img src="${product.src}" alt="${product.name}"
-                      style="display: block; max-width: 100%">
-                  </a>
+                  ${ImageWithLink(product.href, product.src, product.name)}
                 </td>
               </tr>
             </tbody>

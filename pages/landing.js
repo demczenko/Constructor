@@ -68,285 +68,292 @@ export async function landing({
     FR: "https://www.beliani.fr/content/lp24-03-04",
   };
   return `
-        <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffccb7; color: #000;" id="newsletter" >
-            <tbody>
-                <tr>
-                    <td align="center">
-                      ${ImageWithLink(links[0], links[1])}
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center" class="newsletterBottom35px">
-                      ${ImageWithLink(links[2], links[3])}
-                    </td>
-                </tr>
+  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffccb7; color: #000;" id="newsletter">
+  <tbody>
+      <tr>
+          <td align="center">
+            ${ImageWithLink(links[0], links[1])}
+          </td>
+      </tr>
+      <tr>
+          <td align="center" class="newsletterBottom35px">
+            ${ImageWithLink(links[2], links[3])}
+          </td>
+      </tr>
 
-                <tr>
-                    <td align="center">
-                      ${ImageWithLink(
-                        banners_link[country] +
-                          "?utm_source=newsletter&utm_medium=email&utm_campaign=" +
-                          id,
-                        banners[country]
-                      )}
-                    </td>
-                </tr>
+      <tr>
+          <td align="center">
+            ${ImageWithLink(banners_link[country], banners[country])}
+          </td>
+      </tr>
 
-                <tr>
-                  <td class="newsletterContainer"style="background-color: #ffccb7; ">
-                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
-                      <tr>
-                        <td>
-                          ${Space("newsletterBottom35px")}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center" >
-                            ${Paragraph(translations.offer[0], "center")}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          ${Space("newsletterBottom35px")}
-                        </td>
-                      </tr>
-                      <tr>
-                          <td align="center" >
-                              ${Paragraph(translations.offer[1], "center")}
-                          </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          ${Space("newsletterBottom35px")}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center"  >
-                          ${GetCode({
-                            code: translations.code,
-                            link: links[0],
-                            type: template,
-                          })}
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          ${Space("newsletterBottom35px")}
-                        </td>
-                      </tr>
-                      <tr>
-                          <td align="center"  >
-                            ${Paragraph(translations.offer[3], "center")}
-                          </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          ${Space("newsletterBottom35px")}
-                        </td>
-                      </tr>
-                      <tr>
-                          <td align="center"  >
-                            ${Paragraph(translations.offer[4], "center")}
-                          </td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          ${Space("newsletterBottom35px")}
-                        </td>
-                      </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center" class="newsletterFreebieContainer" style="background-color: #ffccb7;" >
-                    ${Freebies({
-                      products: [
-                        priceFree({
-                          ...getProductById("1601"),
-                          style: "background-color: #ffffff; ",
-                          align: "center",
-                          containerAlign: "right",
-                        }),
-                        priceFree({
-                          ...getProductById("34094"),
-                          style: "background-color: #ffffff; ",
-                          align: "center",
-                          containerAlign: "left",
-                        }),
-                      ],
-                      size: {
-                        row: 1,
-                        col: 2,
-                      },
-                    })}
-                    </td>
-                  </tr>
-                  <tr>
-                  <td align="center" class="newsletterFreebieContainer" style="background-color: #ffccb7;" >
-                  ${Freebies({
-                    products: [
-                      priceFree({
-                        ...getProductById("2002"),
-                        style: "background-color: #ffffff; ",
-                        align: "center",
-                      }),
-                      priceFree({
-                        ...getProductById("12427"),
-                        style: "background-color: #ffffff; ",
-                        align: "center",
-                      }),
-                      priceFree({
-                        ...getProductById("1602"),
-                        style: "background-color: #ffffff; ",
-                        align: "center",
-                      }),
-                    ],
-                    size: {
-                      row: 1,
-                      col: 3,
-                    },
-                  })}
-                  ${Space("newsletterBottom80px")}
-                  </td>
-                </tr>
-                <tr>
-                  <td class="newsletterContainer" >
-                    ${Line()}
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    ${Space("newsletterBottom35px")}
-                  </td>
-                </tr>
-
-              <tr>
-                <td class="newsletterContainer" style="color: #000" >
-                  ${Intro({
-                    data: translations.intro,
-                  })}
+      <tr>
+        <td class="newsletterContainer"style="background-color: #ffccb7; ">
+          <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+            <tr>
+              <td>
+                ${Space("newsletterBottom35px")}
+              </td>
+            </tr>
+            <tr>
+              <td align="center" >
+                  ${Paragraph(translations.offer[0], "center")}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                ${Space("newsletterBottom35px")}
+              </td>
+            </tr>
+            <tr>
+                <td align="center" >
+                    ${Paragraph(translations.offer[1], "center")}
                 </td>
-              </tr>
-
-              <tr>
-                <td>
-                  ${Space("newsletterBottom80px")}
+            </tr>
+            <tr>
+              <td>
+                ${Space("newsletterBottom35px")}
+              </td>
+            </tr>
+            <tr>
+              <td align="center"  >
+                ${GetCode({
+                  code: translations.code,
+                  link: links[0],
+                  type: template,
+                })}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                ${Space("newsletterBottom35px")}
+              </td>
+            </tr>
+            <tr>
+                <td align="center"  >
+                  ${Paragraph(translations.offer[3], "center")}
                 </td>
-              </tr>
+            </tr>
+            <tr>
+              <td>
+                ${Space("newsletterBottom35px")}
+              </td>
+            </tr>
+            <tr>
+                <td align="center"  >
+                  ${Paragraph(translations.offer[4], "center")}
+                </td>
+            </tr>
 
-                <tr>
-                  <td style="color: #000">
-                    ${Category({
-                      name: translations.category[0],
-                      src: "https://beliani.info/newsletter/2022/240318Category1.png",
-                      href: getCategory(
-                        "https://www.beliani.ch/garden-furniture/outdoor-furniture/lounge-sets/"
-                      ),
-                      products: [
-                        getProductById("326780"),
-                        getProductById("376374"),
-                        getProductById("321238"),
-                        getProductById("248918"),
-                      ],
-                      cta: translations.shopNow,
-                    })}
-                  </td>
-                </tr>
+            <tr>
+              <td>
+                ${Space("newsletterBottom35px")}
+              </td>
+            </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" class="newsletterFreebieContainer" style="background-color: #ffccb7;" >
+          ${Freebies({
+            products: [
+              priceFree({
+                ...getProductById("189862"),
+                align: "center",
+                containerAlign: "right",
+              }),
+              priceFree({
+                ...getProductById("194038"),
+                align: "center",
+                containerAlign: "left",
+              }),
+              priceFree({
+                ...getProductById("170246"),
+                align: "center",
+                containerAlign: "left",
+              }),
+            ],
+            size: {
+              row: 1,
+              col: 3,
+            },
+          })}
+          </td>
+        </tr>
+        <tr>
+        <td align="center" class="newsletterFreebieContainer" style="background-color: #ffccb7;" >
+        ${Freebies({
+          products: [
+            priceFree({
+              ...getProductById("355890"),
+              align: "center",
+            }),
+            priceFree({
+              ...getProductById("359971"),
+              align: "center",
+            }),
+            priceFree({
+              ...getProductById("355801"),
+              align: "center",
+            }),
+          ],
+          size: {
+            row: 1,
+            col: 3,
+          },
+        })}
+        </td>
+      </tr>
+      <tr>
+      <td align="center" class="newsletterFreebieContainer" style="background-color: #ffccb7;" >
+      ${Freebies({
+        products: [
+          priceFree({
+            ...getProductById("159092"),
 
-                <tr>
-                  <td class="newsletterContainer" >
-                    ${Line()}
-                  </td>
-                </tr>
+            align: "center",
+          }),
+          priceFree({
+            ...getProductById("185596"),
 
-                <tr>
-                  <td class="newsletterBottom35px" >
-                  </td>
-                </tr>
+            align: "center",
+          }),
+          priceFree({
+            ...getProductById("185567"),
 
-                <tr>
-                  <td style="color: #000">
-                    ${Category({
-                      name: translations.category[1],
-                      src: "https://beliani.info/newsletter/2022/240318Category2.png",
-                      href: getCategory(
-                        "https://www.beliani.ch/garden-furniture/outdoor-furniture/garden-dining-sets/"
-                      ),
-                      products: [
-                        getProductById("82159"),
-                        getProductById("360813"),
-                        getProductById("374902"),
-                        getProductById("249069"),
-                      ],
-                      cta: translations.shopNow,
-                    })}
-                  </td>
-                </tr>
+            align: "center",
+          }),
+        ],
+        size: {
+          row: 1,
+          col: 3,
+        },
+      })}
+      ${Space("newsletterBottom80px")}
+      </td>
+    </tr>
 
-                <tr>
-                  <td class="newsletterContainer" >
-                    ${Line()}
-                  </td>
-                </tr>
+    <tr>
+      <td style="color: #fff; background-color: #750000;">
+        ${Space("newsletterBottom35px")}
+      </td>
+    </tr>
 
-                <tr>
-                  <td class="newsletterBottom35px" >
-                  </td>
-                </tr>
+    <tr>
+      <td class="newsletterContainer" style="color: #fff; background-color: #750000;" >
+        ${Intro({
+          data: translations.intro,
+        })}
+      </td>
+    </tr>
 
-                <tr>
-                  <td style="color: #000">
-                    ${Category({
-                      name: translations.category[2],
-                      src: "https://beliani.info/newsletter/2022/240318Category3.png",
-                      href: getCategory(
-                        "https://www.beliani.ch/garden-furniture/outdoor-furniture/sun-loungers/"
-                      ),
-                      products: [
-                        getProductById("416079"),
-                        getProductById("270973"),
-                        getProductById("395368"),
-                        getProductById("386818"),
-                      ],
-                      cta: translations.shopNow,
-                    })}
-                  </td>
-                </tr>
+    <tr>
+      <td style="color: #fff; background-color: #750000;">
+        ${Space("newsletterBottom80px")}
+      </td>
+    </tr>
 
-                
-                <tr>
-                  <td class="newsletterContainer" >
-                    ${Line()}
-                  </td>
-                </tr>
+      <tr>
+        <td style="color: #fff; background-color: #750000;">
+          ${Category({
+            name: translations.category[0],
+            src: "https://upload.pictureserver.net/static/2024/240401Category1.png",
+            href: getCategory(
+              "https://www.beliani.ch/garden-furniture/outdoor-furniture/balcony-furniture/"
+            ),
+            products: [
+              getProductById("294750"),
+              getProductById("245423"),
+              getProductById("294785"),
+              getProductById("392813"),
+            ],
+            cta: translations.shopNow,
+            ctaComponent: (href, cta) => `
+            <a href="${href}" style="color:#fff; text-decoration: underline;">
+              <span class="newsletterCta">${cta}</span>
+            </a>
+            `,
+          })}
+        </td>
+      </tr>
 
-                <tr>
-                  <td class="newsletterBottom35px" >
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td style="color: #000">
-                    ${Category({
-                      name: translations.category[3],
-                      src: "https://beliani.info/newsletter/2022/240318Category4.png",
-                      href: getCategory(
-                        "https://www.beliani.ch/garden-furniture/garden-accessories/fire-pits/"
-                      ),
-                      products: [
-                        getProductById("315877"),
-                        getProductById("315896"),
-                        getProductById("177344"),
-                        getProductById("301788"),
-                      ],
-                      cta: translations.shopNow,
-                    })}
-                  </td>
-                </tr>
-            <tbody>
-        </table>
+      <tr>
+        <td class="newsletterBottom35px" >
+        </td>
+      </tr>
+
+      <tr>
+        <td style="color: #000">
+          ${Category({
+            name: translations.category[1],
+            src: "https://upload.pictureserver.net/static/2024/240401Category2.png",
+            href: getCategory(
+              "https://www.beliani.ch/garden-furniture/outdoor-furniture/garden-chairs/"
+            ),
+            products: [
+              getProductById("248864"),
+              getProductById("405140"),
+              getProductById("351365"),
+              getProductById("311704"),
+            ],
+            cta: translations.shopNow,
+          })}
+        </td>
+      </tr>
+      <tr>
+        <td style="color: #fff; background-color: #750000;" class="newsletterBottom35px" >
+        </td>
+      </tr>
+
+      <tr>
+        <td style="color: #fff; background-color: #750000;">
+          ${Category({
+            name: translations.category[2],
+            src: "https://upload.pictureserver.net/static/2024/240401Category3.png",
+            href: getCategory(
+              "https://www.beliani.ch/garden-furniture/garden-accessories/garden-lanterns/"
+            ),
+            products: [
+              getProductById("121559"),
+              getProductById("106078"),
+              getProductById("199504"),
+              getProductById("305825"),
+            ],
+            cta: translations.shopNow,
+            ctaComponent: (href, cta) => `
+            <a href="${href}" style="color:#fff; text-decoration: underline;">
+              <span class="newsletterCta">${cta}</span>
+            </a>
+            `,
+          })}
+        </td>
+      </tr>
+
+      <tr>
+        <td class="newsletterBottom35px" >
+        </td>
+      </tr>
+      
+      <tr>
+        <td style="color: #000">
+          ${Category({
+            name: translations.category[3],
+            src: "https://upload.pictureserver.net/static/2024/240401Category4.png",
+            href: getCategory(
+              "https://www.beliani.ch/garden-furniture/garden-rugs/"
+            ),
+            products: [
+              getProductById("185967"),
+              getProductById("185861"),
+              getProductById("97540"),
+              getProductById("377473"),
+            ],
+            cta: translations.shopNow,
+          })}
+        </td>
+      </tr>
+  <tbody>
+</table>
 
         <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="margin: 0 auto; max-width: 650px; color: #000000; background-color:#ffffff;" id="newsletter">
             <tbody>

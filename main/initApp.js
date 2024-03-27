@@ -30,7 +30,8 @@ const state = {
   categories: [],
   productsIds: [],
   translations: [],
-  token: "",
+  token:
+    "ya29.a0Ad52N38tEqguyGen6AJwu-GaWg0AZ47F5kNcPQhKgkYjh9DvBvk83BiaE30mwB_517tItGR6Nd_MNuqjglw8mW-Zzj7qSaqpARsDqp2ZzlF9FhM5q5z2FLTpLncSbg3mNSo4SOEMEQnIilALVjGqNPKE8ui_AQ8eR0xtaCgYKAZISARMSFQHGX2MiGMZDBJYuHNp5ij3rzM-Zvg0171",
 };
 
 export function setState(key, value) {
@@ -67,6 +68,7 @@ export function initApp({
   newsletterLinks,
   landingLinks,
   token,
+  optimizeImg,
 }) {
   mainValidation({
     tableQueries,
@@ -77,6 +79,7 @@ export function initApp({
     landingLinks,
   });
 
+  setState("optimizeImg", optimizeImg);
   setState("ids", incrementId(startId));
   setEvents();
   attachCss(state);

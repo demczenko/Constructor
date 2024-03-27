@@ -1,15 +1,20 @@
-export function FreebieProduct(product, align = "left", style, containerAlign="center") {
+import { ImageWithLink } from "./ImageWithLink.js";
+
+export function FreebieProduct(
+  product,
+  align = "left",
+  style,
+  containerAlign = "center"
+) {
   return `
   <table cellspacing="0" cellpadding="0" style="width: 100%;" align="center">
     <tbody>
       <tr>
         <td align=${containerAlign} style="padding-top: 0px; padding-left: 0px; padding-right: 0px;">
-          <a href="${product.href}" style="text-decoration: none !important; color: #000">
             <table cellspacing="0" cellpadding="0">
               <tr>
                 <td>
-                  <img src="${product.src}" alt="${product.name}"
-                  style="vertical-align: middle;  max-width: 100%">
+                  ${ImageWithLink(product.href, product.src, product.name)}
                 <td>
               </tr>
               <tr>
@@ -51,7 +56,6 @@ export function FreebieProduct(product, align = "left", style, containerAlign="c
                   </td>
                 </tr>
             </table>
-          </a>
         </td>
       </tr>
     </tbody>

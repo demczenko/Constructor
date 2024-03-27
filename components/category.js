@@ -5,6 +5,7 @@ export function Category({
   href,
   src,
   products,
+  ctaComponent,
   cta = "CTA",
   type = "monday",
 }) {
@@ -18,7 +19,7 @@ export function Category({
     <thead>
       <tr>
         <td style="padding-top: 0px; padding-bottom: 0px;" class="newsletterContainer">
-          ${Title(name)}
+          ${Title(name, "left")}
         </td>
       </tr>
       <tr>
@@ -26,7 +27,7 @@ export function Category({
       </tr>
       <tr>
         <td style="padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;">
-          ${ImageWithLink(href, src)}
+          ${ImageWithLink(href, src, name)}
         </td>
       </tr>
       <tr>
@@ -84,9 +85,16 @@ export function Category({
             <tbody>
               <tr>
                 <td style="padding-top: 0px; padding-left: 0px; padding-right: 0px; text-align: center;">
-                  <a href="${href}" style="color:#000; text-decoration: underline;">
-                    <span class="newsletterCta">${cta}</span>
-                  </a>
+                  ${ctaComponent
+        ?
+        ctaComponent(href, cta)
+        :
+        `
+                      <a href="${href}" style="color:#000; text-decoration: underline;">
+                        <span class="newsletterCta">${cta}</span>
+                      </a>
+                    `
+      }
                 </td>
               </tr>
             </tbody>
