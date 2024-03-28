@@ -93,7 +93,6 @@ export function getQueryLink(item) {
         collectFilters.push(handleSpecialCharacters(filterValue));
       });
 
-      console.log(collectFilters);
       queryLink.searchParams.append(filterName.value, collectFilters.join(","));
     }
   }
