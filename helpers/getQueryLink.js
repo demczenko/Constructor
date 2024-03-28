@@ -26,7 +26,7 @@ export function addParamsProduct(product) {
 const relativeLanguageToCountry = {
   PL: "polish",
   PT: "portugal",
-  SP: "spanish",
+  ES: "spanish",
   CHDE: "german",
   DE: "germanDE",
   AT: "germanDE",
