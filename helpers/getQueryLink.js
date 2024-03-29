@@ -28,6 +28,7 @@ const relativeLanguageToCountry = {
   PT: "portugal",
   ES: "spanish",
   CHDE: "german",
+    CHFR: "french",
   DE: "germanDE",
   AT: "germanDE",
   HU: "Hungarian",
