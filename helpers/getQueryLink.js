@@ -28,7 +28,7 @@ const relativeLanguageToCountry = {
   PT: "portugal",
   ES: "spanish",
   CHDE: "german",
-    CHFR: "french",
+  CHFR: "french",
   DE: "germanDE",
   AT: "germanDE",
   HU: "Hungarian",
@@ -42,27 +42,6 @@ const relativeLanguageToCountry = {
   UK: "english",
   NO: "norsk",
   NL: "dutch",
-};
-
-const list_of_special_chars = {
-  Ą: "A",
-  ą: "a",
-  Ę: "E",
-  ę: "e",
-  Ó: "O",
-  ó: "o",
-  Ć: "C",
-  ć: "c",
-  Ł: "L",
-  ł: "l",
-  Ń: "N",
-  ń: "n",
-  Ś: "S",
-  ś: "s",
-  Ź: "Z",
-  ź: "z",
-  Ż: "Z",
-  ż: "z",
 };
 
 export function getQueryLink(item) {
@@ -91,10 +70,12 @@ export function getQueryLink(item) {
           (filter) => filter.title === filterTitle
         );
         const filterValue = filterItem.data[relativeLanguageToCountry[country]];
-        collectFilters.push(handleSpecialCharacters(filterValue));
+        collectFilters.push(handleSpace(handleSpecialCharacters(filterValue)));
       });
-
-      queryLink.searchParams.append(filterName.value, collectFilters.join(","));
+      queryLink.searchParams.append(
+        handleSpecialCharacters(filterName),
+        collectFilters.join(",")
+      );
     }
   }
 
@@ -107,7 +88,46 @@ export function getQueryLink(item) {
   return queryLink.href;
 }
 
+function handleSpace(string) {
+  let new_string = "";
+
+  if (string.includes(" ")) {
+    new_string = string.replaceAll(" ", "_");
+    return new_string;
+  } else {
+    return string;
+  }
+}
+
 function handleSpecialCharacters(filterValue) {
+  const list_of_special_chars = {
+    Ą: "A",
+    ą: "a",
+    ä: "a",
+    á: "a",
+    æ: "ae",
+    Ę: "E",
+    ę: "e",
+    é: "e",
+    Ó: "O",
+    ó: "o",
+    Ć: "C",
+    ć: "c",
+    Ł: "L",
+    ł: "l",
+    Ń: "N",
+    ń: "n",
+    Ś: "S",
+    ś: "s",
+    Ź: "Z",
+    ź: "z",
+    Ż: "Z",
+    ž: "z",
+    ż: "z",
+    ü: "u",
+    í: "i",
+  };
+
   let string = "";
   const value = filterValue.value.split("");
   for (const item of value) {
@@ -116,10 +136,6 @@ function handleSpecialCharacters(filterValue) {
     } else {
       string += item;
     }
-  }
-
-  if (string.includes(" ")) {
-    string = string.replace(" ", "_");
   }
 
   return string;
