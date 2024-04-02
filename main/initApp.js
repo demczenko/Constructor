@@ -269,7 +269,7 @@ export function initApp({
       origin: origins[country],
       id: ids[country],
       template: template,
-      getProductByName: (productName) => {
+      getProductByName: (productName, src) => {
         const country_products = products.filter(
           (product) => product.country === country.toLowerCase()
         );
@@ -282,11 +282,12 @@ export function initApp({
             name: `Product ${productName} not found`,
             lowPrice: "00.00",
             highPrice: "00.00",
+            src: src,
           };
         }
-        return handleProduct(product);
+        return handleProduct(src ? { ...product, src } : product);
       },
-      getProductById: (productId) => {
+      getProductById: (productId, src) => {
         const country_products = products.filter(
           (product) => product.country === country.toLowerCase()
         );
@@ -299,9 +300,10 @@ export function initApp({
             name: `Product ${productId} not found`,
             lowPrice: "00.00",
             highPrice: "00.00",
+            src: src,
           };
         }
-        return handleProduct(product);
+        return handleProduct(src ? { ...product, src } : product);
       },
       getCategory: (category) => {
         let new_link = new URL(origins[country]);
