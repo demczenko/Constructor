@@ -2376,10 +2376,22 @@ export default {
       <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
        border="0" align="center">
        <tbody>
-          <tr>
-              <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
-          </tr>
-           <tr>
+            <tr>
+                <td>
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="newsletterTopBottomContainer">
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/inside_banner_footer_UK_delivery.png" style="display:block" width="100%" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                </td>
+            </tr>
+            <tr>
                <td class="newsletterTopBottomContainer">
                    <span class="newsletterFooterTitle">
                    See thousands more
@@ -2459,7 +2471,7 @@ export default {
            </td>
        </tr>
           <tr>
-              <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
+              <td><img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt=""></td>
           </tr>
           <!--KLARNA-->
           <tr>
@@ -2534,10 +2546,10 @@ export default {
                </td>
            </tr>
            <tr>
-               <td>
-                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
-               </td>
-           </tr>
+                <td>
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                </td>
+            </tr>
            <!-- ADVANTAGES -->
            <tr>
                <td class="newsletterTopBottomContainer">
@@ -2622,10 +2634,22 @@ export default {
       <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
        border="0" align="center">
        <tbody>
-          <tr>
-              <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
-          </tr>
-           <tr>
+            <tr>
+                <td>
+                    <img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" />
+                </td>
+            </tr>
+            <tr>
+                <td class="newsletterTopBottomContainer">
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/inside_banner_footer_UK_delivery.png" style="display:block" width="100%" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                </td>
+            </tr>
+            <tr>
                <td class="newsletterTopBottomContainer">
                    <span class="newsletterFooterTitle">
                    See thousands more
@@ -2780,10 +2804,10 @@ export default {
                </td>
            </tr>
            <tr>
-               <td>
-                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
-               </td>
-           </tr>
+                <td>
+                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+                </td>
+            </tr>
            <tr>
                <td class="newsletterTopBottomContainer" align="left">
                    <span class="newsletterConditions" style="color: #000000;">*Conditions: ${text}</span>
@@ -3986,7 +4010,7 @@ export default {
                           <td><a href="https://www.beliani.hu/content/rolunk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0" src="https://beliani.info/newsletter/2022/hufooter2023_2_07.jpg" style="display:block" width="100%" /> </a></td>
                       </tr>
                       <tr>
-                          <td><a href="https://www.beliani.hu/content/faq/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0" src="https://beliani.info/newsletter/2022/hufooter2023_2_08.jpg" style="display:block" width="100%" /> </a></td>
+                          <td><a href="https://www.beliani.hu/content/faq-hu/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0" src="https://beliani.info/newsletter/2022/hufooter2023_2_08.jpg" style="display:block" width="100%" /> </a></td>
                       </tr>
                       <tr>
                           <td><a href="https://www.beliani.hu/content/aszf/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0" src="https://beliani.info/newsletter/2022/hufooter2023_2_09.jpg" style="display:block" width="100%" /> </a></td>
