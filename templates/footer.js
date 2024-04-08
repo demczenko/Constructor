@@ -6,7 +6,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0" border="0" align="center">
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0" border="0" align="center">
           <tbody>
               <tr>
                   <td>
@@ -21,7 +21,7 @@ export default {
                   </td>
               </tr>
               <tr>
-                  <td class="newsletterBottom35px">
+                  <td class="newsletterFooterCategories">
                       <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                           <tbody>
                               <tr>
@@ -97,7 +97,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.de/content/klarna-de/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img data-table="Klarna" data-src="Src" alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_deat.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.de/content/klarna-de/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_deat.png" style="display:block" width="100%" /></a></td>
           </tr>
               <tr>
                   <td>
@@ -227,7 +227,14 @@ export default {
                       <span class="newsletterConditions" style="color: #000000;">*Bedingungen: ${text}</span>
                   </td>
               </tr>
-              
+              <tr>
+                  <td
+                      style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                      <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Newsletter
+                              abbestellen</a>
+                      </p>
+                  </td>
+              </tr>
           </tbody>
       </table>
       <table cellspacing="0" cellpadding="0" border="0" align="center">
@@ -238,7 +245,8 @@ export default {
                           <b><font style="font-size: 10px;">Impressum</font></b>
                           <br />Beliani GmbH, 6340 Baar, Schweiz<br />Telefonnummer: 0221 6778 9927; E-Mail-Adresse:
                           <a href="mailto:mail@beliani.de">mail@beliani.de</a>
-                          <br />Handelsregister: Handelsregister des Kantons Zug, CH-170.4.009.724-3<br />USt-IDNr: DE 276156472
+                          <br />Handelsregister: Handelsregister des Kantons Zug, CH-170.4.009.724-3<br />USt-IDNr:
+                          DE 276156472
                       </span>
                   </td>
               </tr>
@@ -247,7 +255,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0" border="0" align="center">
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0" border="0" align="center">
           <tbody>
               <tr>
                   <td>
@@ -262,7 +270,7 @@ export default {
                   </td>
               </tr>
               <tr>
-                  <td class="newsletterBottom35px">
+                  <td class="newsletterFooterCategories">
                       <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                           <tbody>
                               <tr>
@@ -338,7 +346,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.de/content/klarna-de/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_deat.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.de/content/klarna-de/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_deat.png" style="display:block" width="100%" /></a></td>
           </tr>
               <tr>
                   <td>
@@ -436,7 +444,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-      <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="max-width:650px; background-color:#ffffff; display: block;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterFooter" style="max-width:650px; background-color:#ffffff; display: block;">
           <tbody>
               <tr>
                   <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -445,7 +453,7 @@ export default {
                   <td class="newsletterTopBottomContainer"><span class="newsletterFooterTitle">Tausende weitere Möbel </span></td>
               </tr>
               <tr>
-                  <td class="newsletterBottom35px">
+                  <td class="newsletterFooterCategories">
                   <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tbody>
                           <tr>
@@ -473,7 +481,7 @@ export default {
               </tr>
               <!--KLARNA-->
               <tr>
-                  <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.ch/content/bezahlung/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0" src="https://beliani.info/newsletter/2022/NsltBanner_dach.png" style="display:block" width="100%" /></a></td>
+                  <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.ch/content/bezahlung/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0" margin-top="30px" src="https://beliani.info/newsletter/2022/NsltBanner_dach.png" style="display:block" width="100%" /></a></td>
               </tr>
               <tr>
                   <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -539,7 +547,11 @@ export default {
               <tr>
                   <td align="left" class="newsletterTopBottomContainer"><span class="newsletterConditions" style="color: #000000;">*Bedingungen: ${text}</span></td>
               </tr>
-
+              <tr>
+                  <td style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                  <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Newsletter abbestellen</a></p>
+                  </td>
+              </tr>
           </tbody>
       </table>
       
@@ -557,7 +569,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-      <table id="newsletter" align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="max-width:650px; background-color:#ffffff; display: block;">
+      <table id="newsletter" align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterFooter" style="max-width:650px; background-color:#ffffff; display: block;">
           <tbody>
               <tr>
                   <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -566,7 +578,7 @@ export default {
                   <td class="newsletterTopBottomContainer"><span class="newsletterFooterTitle">Tausende weitere Möbel </span></td>
               </tr>
               <tr>
-                  <td class="newsletterBottom35px">
+                  <td class="newsletterFooterCategories">
                   <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tbody>
                           <tr>
@@ -594,7 +606,7 @@ export default {
               </tr>
               <!--KLARNA-->
               <tr>
-                  <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.ch/content/bezahlung/"><img alt="" border="0" src="https://beliani.info/newsletter/2022/NsltBanner_dach.png" style="display:block" width="100%" /></a></td>
+                  <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.ch/content/bezahlung/"><img alt="" border="0" margin-top="30px" src="https://beliani.info/newsletter/2022/NsltBanner_dach.png" style="display:block" width="100%" /></a></td>
               </tr>
               <tr>
                   <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -654,7 +666,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
           border="0" align="center">
           <tbody>
           <tr>
@@ -668,7 +680,7 @@ export default {
                   </td>
               </tr>
               <tr>
-                  <td class="newsletterBottom35px">
+                  <td class="newsletterFooterCategories">
                       <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                           <tbody>
                               <tr>
@@ -744,7 +756,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.at/content/klarna-at/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_deat.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.at/content/klarna-at/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_deat.png" style="display:block" width="100%" /></a></td>
           </tr>
           <tr>
               <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -871,7 +883,13 @@ export default {
                       <span class="newsletterConditions" style="color: #000000;">*Bedingungen: ${text}</span>
                   </td>
               </tr>
-
+              <tr>
+                  <td
+                      style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                      <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Newsletter abbestellen</a>
+                      </p>
+                  </td>
+              </tr>
   
           </tbody>
       </table>
@@ -895,7 +913,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
           border="0" align="center">
           <tbody>
           <tr>
@@ -909,7 +927,7 @@ export default {
                   </td>
               </tr>
               <tr>
-                  <td class="newsletterBottom35px">
+                  <td class="newsletterFooterCategories">
                       <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                           <tbody>
                               <tr>
@@ -985,7 +1003,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.at/content/klarna-at/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_deat.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.at/content/klarna-at/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_deat.png" style="display:block" width="100%" /></a></td>
           </tr>
           <tr>
               <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -1081,7 +1099,7 @@ export default {
     ) => {
       const newsletter = `
       <!--FOOTER-->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
        border="0" align="center">
        <tbody>
           <tr>
@@ -1095,7 +1113,7 @@ export default {
                </td>
            </tr>
            <tr>
-               <td class="newsletterBottom35px">
+               <td class="newsletterFooterCategories">
                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                        <tbody>
                            <tr>
@@ -1171,7 +1189,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.fr/content/paiement/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_fr.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.fr/content/paiement/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_fr.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -1202,7 +1220,7 @@ export default {
                                            <tr>
                                                <td class="newsletterSocialIcon">
                                                    <a
-                                                       href="https://www.instagram.com/beliani_fr/?hl=fr&utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
+                                                       href="https://www.instagram.com/beliani_fr/?hl=fr?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/footerInstagram2022New.jpg"
                                                            width="100%" border="0" style="display:block;"
                                                            alt="Instagram"    >
@@ -1254,7 +1272,7 @@ export default {
                            <tr>
                                <td>
                                    <a
-                                       href="https://www.beliani.fr/content/livraison/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
+                                       href="https://www.beliani.fr/content/livraison//?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                        <img loading="lazy" src="https://beliani.info/newsletter/2022/fr2023fr_27.jpg"
                                            alt="" style="display:block" width="100%" border="0" />
                                    </a>
@@ -1301,7 +1319,13 @@ export default {
                    <span class="newsletterConditions" style="color: #000000;">*Conditions: ${text}</span>
                </td>
            </tr>
-
+           <tr>
+               <td
+                   style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                   <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Désabonnement</a>
+                   </p>
+               </td>
+           </tr>
   
        </tbody>
       </table>
@@ -1324,7 +1348,7 @@ export default {
       `;
       const landing = `
       <!--FOOTER-->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
        border="0" align="center">
        <tbody>
           <tr>
@@ -1338,7 +1362,7 @@ export default {
                </td>
            </tr>
            <tr>
-               <td class="newsletterBottom35px">
+               <td class="newsletterFooterCategories">
                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                        <tbody>
                            <tr>
@@ -1414,7 +1438,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.fr/content/paiement/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_fr.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.fr/content/paiement/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_fr.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -1512,7 +1536,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
       border="0" align="center">
       <tbody>
          <tr>
@@ -1526,7 +1550,7 @@ export default {
               </td>
           </tr>
           <tr>
-              <td class="newsletterBottom35px">
+              <td class="newsletterFooterCategories">
                   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                       <tbody>
                           <tr>
@@ -1602,7 +1626,7 @@ export default {
          </tr>
          <!--KLARNA-->
          <tr>
-             <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.ch/content/paiement/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_chfr.png" style="display:block" width="100%" /></a></td>
+             <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.ch/content/paiement/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_chfr.png" style="display:block" width="100%" /></a></td>
          </tr>
           <tr>
               <td>
@@ -1732,7 +1756,13 @@ export default {
                   <span class="newsletterConditions" style="color: #000000;">*Conditions: ${text}</span>
               </td>
           </tr>
-
+          <tr>
+              <td
+                  style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                  <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Désabonnement</a>
+                  </p>
+              </td>
+          </tr>
   
       </tbody>
      </table>
@@ -1754,7 +1784,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
       border="0" align="center">
       <tbody>
          <tr>
@@ -1768,7 +1798,7 @@ export default {
               </td>
           </tr>
           <tr>
-              <td class="newsletterBottom35px">
+              <td class="newsletterFooterCategories">
                   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                       <tbody>
                           <tr>
@@ -1844,7 +1874,7 @@ export default {
          </tr>
          <!--KLARNA-->
          <tr>
-             <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.ch/content/paiement/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_chfr.png" style="display:block" width="100%" /></a></td>
+             <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.ch/content/paiement/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_chfr.png" style="display:block" width="100%" /></a></td>
          </tr>
           <tr>
               <td>
@@ -1942,7 +1972,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
        border="0" align="center">
        <tbody>
           <tr>
@@ -1956,7 +1986,7 @@ export default {
                </td>
            </tr>
            <tr>
-               <td class="newsletterBottom35px">
+               <td class="newsletterFooterCategories">
                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                        <tbody>
                            <tr>
@@ -2032,7 +2062,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.it/content/klarna-it/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_it.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.it/content/klarna-it/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_it.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -2162,7 +2192,14 @@ export default {
                    <span class="newsletterConditions" style="color: #000000;">*Termini e Condizioni: ${text}</span>
                </td>
            </tr>
-
+           <tr>
+               <td
+                   style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                   <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Annulla l’iscrizione</a>
+                   </p>
+               </td>
+           </tr>
+  
        </tbody>
       </table>
       <table cellspacing="0" cellpadding="0" border="0" align="center">
@@ -2185,7 +2222,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
        border="0" align="center">
        <tbody>
           <tr>
@@ -2199,7 +2236,7 @@ export default {
                </td>
            </tr>
            <tr>
-               <td class="newsletterBottom35px">
+               <td class="newsletterFooterCategories">
                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                        <tbody>
                            <tr>
@@ -2275,7 +2312,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.it/content/klarna-it/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_it.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.it/content/klarna-it/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_it.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -2373,25 +2410,26 @@ export default {
     ) => {
       const newsletter = `
       <!--FOOTER-->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
        border="0" align="center">
        <tbody>
-            <tr>
-                <td>
-                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td class="newsletterTopBottomContainer">
-                    <img loading="lazy" src="https://beliani.info/newsletter/2022/inside_banner_footer_UK_delivery.png" style="display:block" width="100%" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
-                </td>
-            </tr>
-            <tr>
+       <tr>
+       <td>
+           <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+       </td>
+   </tr>
+   </td>
+</tr>
+<tr>
+   <td class="newsletterTopBottomContainer">
+       <img loading="lazy" src="https://beliani.info/newsletter/2022/inside_banner_footer_UK_delivery.png" style="display:block" width="100%" alt="">
+   </td>
+</tr>
+
+          <tr>
+              <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
+          </tr>
+           <tr>
                <td class="newsletterTopBottomContainer">
                    <span class="newsletterFooterTitle">
                    See thousands more
@@ -2399,7 +2437,7 @@ export default {
                </td>
            </tr>
            <tr>
-           <td class="newsletterBottom35px">
+           <td class="newsletterFooterCategories">
                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                    <tbody>
                        <tr>
@@ -2471,11 +2509,11 @@ export default {
            </td>
        </tr>
           <tr>
-              <td><img src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt=""></td>
+              <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.co.uk/content/klarna-uk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_uk.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.co.uk/content/klarna-uk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_uk.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -2546,10 +2584,10 @@ export default {
                </td>
            </tr>
            <tr>
-                <td>
-                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
-                </td>
-            </tr>
+               <td>
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+               </td>
+           </tr>
            <!-- ADVANTAGES -->
            <tr>
                <td class="newsletterTopBottomContainer">
@@ -2605,7 +2643,13 @@ export default {
                    <span class="newsletterConditions" style="color: #000000;">*Conditions: ${text}</span>
                </td>
            </tr>
-
+           <tr>
+               <td
+                   style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                   <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Unsubscribe</a>
+                   </p>
+               </td>
+           </tr>
   
        </tbody>
         
@@ -2631,25 +2675,13 @@ export default {
       `;
       const landing = `
       <!--FOOTER-->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
        border="0" align="center">
        <tbody>
-            <tr>
-                <td>
-                    <img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" />
-                </td>
-            </tr>
-            <tr>
-                <td class="newsletterTopBottomContainer">
-                    <img loading="lazy" src="https://beliani.info/newsletter/2022/inside_banner_footer_UK_delivery.png" style="display:block" width="100%" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
-                </td>
-            </tr>
-            <tr>
+          <tr>
+              <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
+          </tr>
+           <tr>
                <td class="newsletterTopBottomContainer">
                    <span class="newsletterFooterTitle">
                    See thousands more
@@ -2657,7 +2689,7 @@ export default {
                </td>
            </tr>
            <tr>
-           <td class="newsletterBottom35px">
+           <td class="newsletterFooterCategories">
                <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                    <tbody>
                        <tr>
@@ -2733,7 +2765,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.co.uk/content/klarna-uk/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_uk.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.co.uk/content/klarna-uk/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_uk.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -2804,10 +2836,10 @@ export default {
                </td>
            </tr>
            <tr>
-                <td>
-                    <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
-                </td>
-            </tr>
+               <td>
+                   <img loading="lazy" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" alt="">
+               </td>
+           </tr>
            <tr>
                <td class="newsletterTopBottomContainer" align="left">
                    <span class="newsletterConditions" style="color: #000000;">*Conditions: ${text}</span>
@@ -2831,7 +2863,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
           border="0" align="center">
           <tbody>
           <tr>
@@ -2845,7 +2877,7 @@ export default {
                   </td>
               </tr>
               <tr>
-                  <td class="newsletterBottom35px">
+                  <td class="newsletterFooterCategories">
                       <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                           <tbody>
                               <tr>
@@ -2883,7 +2915,7 @@ export default {
                               <tr>
                                   <td class="newsletterFooterCategoryLEFT">
                                       <a
-                                          href="https://www.beliani.es/sillones/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
+                                          href="https://www.beliani.es/sillones/??utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                           <img loading="lazy" src="https://beliani.info/newsletter/2022/footerES230330mp1_19.jpg" alt=""
                                               style="display:block" width="100%" border="0" />
                                       </a>
@@ -2921,7 +2953,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.es/content/metodos-de-pago/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_es.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.es/content/metodos-de-pago/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_es.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -3051,7 +3083,13 @@ export default {
                       <span class="newsletterConditions" style="color: #000000;">*Condiciones: ${text}</span>
                   </td>
               </tr>
-
+              <tr>
+                  <td
+                      style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                      <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Cancelar suscripción</a>
+                      </p>
+                  </td>
+              </tr>
   
           </tbody>
       </table>
@@ -3075,7 +3113,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
           border="0" align="center">
           <tbody>
           <tr>
@@ -3089,7 +3127,7 @@ export default {
                   </td>
               </tr>
               <tr>
-                  <td class="newsletterBottom35px">
+                  <td class="newsletterFooterCategories">
                       <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                           <tbody>
                               <tr>
@@ -3165,7 +3203,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.es/content/metodos-de-pago/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_es.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.es/content/metodos-de-pago/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_es.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -3263,7 +3301,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-  <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="max-width:650px; background-color:#ffffff; display: block;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterFooter" style="max-width:650px; background-color:#ffffff; display: block;">
       <tbody>
           <tr>
               <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -3272,7 +3310,7 @@ export default {
               <td class="newsletterTopBottomContainer"><span class="newsletterFooterTitle">Veja muito mais </span></td>
           </tr>
           <tr>
-              <td class="newsletterBottom35px">
+              <td class="newsletterFooterCategories">
               <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tbody>
                       <tr>
@@ -3300,7 +3338,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.pt/content/pagamento/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_pt.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.pt/content/pagamento/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_pt.png" style="display:block" width="100%" /></a></td>
           </tr>
           <tr>
               <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -3366,7 +3404,11 @@ export default {
           <tr>
               <td align="left" class="newsletterTopBottomContainer"><span class="newsletterConditions" style="color: #000000;">*Termos e Condições: ${text}</span></td>
           </tr>
-
+          <tr>
+              <td style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+              <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Cancelar a subscrição</a></p>
+              </td>
+          </tr>
       </tbody>
   </table>
   
@@ -3384,7 +3426,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-  <table id="newsletter" align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="max-width:650px; background-color:#ffffff; display: block;">
+  <table id="newsletter" align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterFooter" style="max-width:650px; background-color:#ffffff; display: block;">
       <tbody>
           <tr>
               <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -3393,7 +3435,7 @@ export default {
               <td class="newsletterTopBottomContainer"><span class="newsletterFooterTitle">Veja muito mais </span></td>
           </tr>
           <tr>
-              <td class="newsletterBottom35px">
+              <td class="newsletterFooterCategories">
               <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tbody>
                       <tr>
@@ -3421,7 +3463,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.pt/content/pagamento/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_pt.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.pt/content/pagamento/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_pt.png" style="display:block" width="100%" /></a></td>
           </tr>
           <tr>
               <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -3481,7 +3523,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
         border="0" align="center">
         <tbody>
            <tr>
@@ -3495,7 +3537,7 @@ export default {
                 </td>
             </tr>
             <tr>
-                <td class="newsletterBottom35px">
+                <td class="newsletterFooterCategories">
                     <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                         <tbody>
                             <tr>
@@ -3571,7 +3613,7 @@ export default {
            </tr>
            <!--KLARNA-->
            <tr>
-               <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.pl/content/platnosc/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_pl.png" style="display:block" width="100%" /></a></td>
+               <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.pl/content/platnosc/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_pl.png" style="display:block" width="100%" /></a></td>
            </tr>
             <tr>
                 <td>
@@ -3647,7 +3689,7 @@ export default {
                 </td>
             </tr>
             <tr>
-                <td class="newsletterTopBottomContainer"><a href="https://www.facebook.com/BelianiAtWork/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/WorkBanner_PL.png" style="display:block" width="100%" /></a></td>
+                <td class="newsletterKlarnaBannerContainer"><a href="https://www.facebook.com/BelianiAtWork/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/WorkBanner_PL.png" style="display:block" width="100%" /></a></td>
            </tr>
            <tr>
               <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -3707,7 +3749,13 @@ export default {
                     <span class="newsletterConditions" style="color: #000000;">*Warunki: ${text}</span>
                 </td>
             </tr>
-
+            <tr>
+                <td
+                    style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                    <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Wypisz się z newslettera</a>
+                    </p>
+                </td>
+            </tr>
    
         </tbody>
          
@@ -3733,7 +3781,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
         border="0" align="center">
         <tbody>
            <tr>
@@ -3747,7 +3795,7 @@ export default {
                 </td>
             </tr>
             <tr>
-                <td class="newsletterBottom35px">
+                <td class="newsletterFooterCategories">
                     <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                         <tbody>
                             <tr>
@@ -3823,7 +3871,7 @@ export default {
            </tr>
            <!--KLARNA-->
            <tr>
-               <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.pl/content/platnosc/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_pl.png" style="display:block" width="100%" /></a></td>
+               <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.pl/content/platnosc/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_pl.png" style="display:block" width="100%" /></a></td>
            </tr>
             <tr>
                 <td>
@@ -3899,7 +3947,7 @@ export default {
                 </td>
             </tr>
             <tr>
-                <td class="newsletterTopBottomContainer"><a href="https://www.facebook.com/BelianiAtWork/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/WorkBanner_PL.png" style="display:block" width="100%" /></a></td>
+                <td class="newsletterKlarnaBannerContainer"><a href="https://www.facebook.com/BelianiAtWork/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/WorkBanner_PL.png" style="display:block" width="100%" /></a></td>
            </tr>
             <tr>
                 <td>
@@ -3929,7 +3977,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-  <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="max-width:650px; background-color:#ffffff; display: block;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterFooter" style="max-width:650px; background-color:#ffffff; display: block;">
       <tbody>
           <tr>
               <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -3938,7 +3986,7 @@ export default {
               <td class="newsletterTopBottomContainer"><span class="newsletterFooterTitle">Mutass többet </span></td>
           </tr>
           <tr>
-              <td class="newsletterBottom35px">
+              <td class="newsletterFooterCategories">
               <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tbody>
                       <tr>
@@ -4010,7 +4058,7 @@ export default {
                           <td><a href="https://www.beliani.hu/content/rolunk/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0" src="https://beliani.info/newsletter/2022/hufooter2023_2_07.jpg" style="display:block" width="100%" /> </a></td>
                       </tr>
                       <tr>
-                          <td><a href="https://www.beliani.hu/content/faq-hu/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0" src="https://beliani.info/newsletter/2022/hufooter2023_2_08.jpg" style="display:block" width="100%" /> </a></td>
+                          <td><a href="https://www.beliani.hu/content/faq/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0" src="https://beliani.info/newsletter/2022/hufooter2023_2_08.jpg" style="display:block" width="100%" /> </a></td>
                       </tr>
                       <tr>
                           <td><a href="https://www.beliani.hu/content/aszf/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0" src="https://beliani.info/newsletter/2022/hufooter2023_2_09.jpg" style="display:block" width="100%" /> </a></td>
@@ -4025,7 +4073,11 @@ export default {
           <tr>
               <td align="left" class="newsletterTopBottomContainer"><span class="newsletterConditions" style="color: #000000;">*Feltételek: ${text}</span></td>
           </tr>
-
+          <tr>
+              <td style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+              <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Leiratkozás</a></p>
+              </td>
+          </tr>
       </tbody>
   </table>
   
@@ -4043,7 +4095,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-  <table id="newsletter" align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="max-width:650px; background-color:#ffffff; display: block;">
+  <table id="newsletter" align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterFooter" style="max-width:650px; background-color:#ffffff; display: block;">
       <tbody>
           <tr>
               <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -4052,7 +4104,7 @@ export default {
               <td class="newsletterTopBottomContainer"><span class="newsletterFooterTitle">Mutass többet </span></td>
           </tr>
           <tr>
-              <td class="newsletterBottom35px">
+              <td class="newsletterFooterCategories">
               <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tbody>
                       <tr>
@@ -4133,7 +4185,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
           border="0" align="center">
           <tbody>
           <tr>
@@ -4147,7 +4199,7 @@ export default {
                   </td>
               </tr>
               <tr>
-                  <td class="newsletterBottom35px">
+                  <td class="newsletterFooterCategories">
                       <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                           <tbody>
                               <tr>
@@ -4223,7 +4275,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.nl/content/betalen/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_nl.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.nl/content/betalen/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_nl.png" style="display:block" width="100%" /></a></td>
           </tr>
               <tr>
                   <td>
@@ -4353,7 +4405,13 @@ export default {
                       <span class="newsletterConditions" style="color: #000000;">*Voorwaarden: ${text}</span>
                   </td>
               </tr>
-
+              <tr>
+                  <td
+                      style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                      <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Afmelden</a>
+                      </p>
+                  </td>
+              </tr>
   
           </tbody>
       </table>
@@ -4377,7 +4435,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
           border="0" align="center">
           <tbody>
           <tr>
@@ -4391,7 +4449,7 @@ export default {
                   </td>
               </tr>
               <tr>
-                  <td class="newsletterBottom35px">
+                  <td class="newsletterFooterCategories">
                       <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                           <tbody>
                               <tr>
@@ -4467,7 +4525,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.nl/content/betalen/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_nl.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.nl/content/betalen/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_nl.png" style="display:block" width="100%" /></a></td>
           </tr>
               <tr>
                   <td>
@@ -4565,7 +4623,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
       border="0" align="center">
       <tbody>
           <tr>
@@ -4579,20 +4637,20 @@ export default {
               </td>
           </tr>
           <tr>
-              <td class="newsletterBottom35px">
+              <td class="newsletterFooterCategories">
                   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                       <tbody>
                           <tr>
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
-                                      href="https://www.beliani.se/soffor/alla+produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
+                                      href="https://www.beliani.se/soffor/alla%20produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_06.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
-                                      href="https://www.beliani.se/sangar/alla+produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
+                                      href="https://www.beliani.se/sangar/alla%20produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_08.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
@@ -4608,7 +4666,7 @@ export default {
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
-                                      href="https://www.beliani.se/stolar/alla+produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
+                                      href="https://www.beliani.se/stolar/alla%20produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_12.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
@@ -4617,7 +4675,7 @@ export default {
                           <tr>
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
-                                      href="https://www.beliani.se/fatolj/alla+produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
+                                      href="https://www.beliani.se/fatolj/alla%20produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_15.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
@@ -4633,14 +4691,14 @@ export default {
                           <tr>
                               <td class="newsletterFooterCategoryLEFTBottom">
                                   <a
-                                      href="https://www.beliani.se/lampor/alla+produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
+                                      href="https://www.beliani.se/lampor/alla%20produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_20.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHTBottom">
                                   <a
-                                      href="https://www.beliani.se/mattor/alla+produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
+                                      href="https://www.beliani.se/mattor/alla%20produkter/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_21.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
@@ -4655,7 +4713,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.se/content/klarna-se/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_se.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.se/content/klarna-se/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_se.png" style="display:block" width="100%" /></a></td>
           </tr>
           <tr>
               <td>
@@ -4785,7 +4843,13 @@ export default {
                   <span class="newsletterConditions" style="color: #000000;">*Villkor: ${text}</span>
               </td>
           </tr>
-
+          <tr>
+              <td
+                  style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                  <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Avanmäl dig</a>
+                  </p>
+              </td>
+          </tr>
       </tbody>
       </table>
       <table cellspacing="0" cellpadding="0" border="0" align="center">
@@ -4809,7 +4873,7 @@ export default {
   
       const landing = `
       <!-- FOOTER -->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
       border="0" align="center">
       <tbody>
           <tr>
@@ -4823,20 +4887,20 @@ export default {
               </td>
           </tr>
           <tr>
-              <td class="newsletterBottom35px">
+              <td class="newsletterFooterCategories">
                   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                       <tbody>
                           <tr>
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
-                                      href="https://www.beliani.se/soffor/alla+produkter/">
+                                      href="https://www.beliani.se/soffor/alla%20produkter/">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_06.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
-                                      href="https://www.beliani.se/sangar/alla+produkter/">
+                                      href="https://www.beliani.se/sangar/alla%20produkter/">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_08.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
@@ -4852,7 +4916,7 @@ export default {
                               </td>
                               <td class="newsletterFooterCategoryRIGHT">
                                   <a
-                                      href="https://www.beliani.se/stolar/alla+produkter/">
+                                      href="https://www.beliani.se/stolar/alla%20produkter/">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_12.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
@@ -4861,7 +4925,7 @@ export default {
                           <tr>
                               <td class="newsletterFooterCategoryLEFT">
                                   <a
-                                      href="https://www.beliani.se/fatolj/alla+produkter/">
+                                      href="https://www.beliani.se/fatolj/alla%20produkter/">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_15.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
@@ -4877,14 +4941,14 @@ export default {
                           <tr>
                               <td class="newsletterFooterCategoryLEFTBottom">
                                   <a
-                                      href="https://www.beliani.se/lampor/alla+produkter/">
+                                      href="https://www.beliani.se/lampor/alla%20produkter/">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_20.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
                               </td>
                               <td class="newsletterFooterCategoryRIGHTBottom">
                                   <a
-                                      href="https://www.beliani.se/mattor/alla+produkter/">
+                                      href="https://www.beliani.se/mattor/alla%20produkter/">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/footer2023se_21.jpg" alt=""
                                           style="display:block" width="100%" border="0" />
                                   </a>
@@ -4899,7 +4963,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.se/content/klarna-se/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_se.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.se/content/klarna-se/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_se.png" style="display:block" width="100%" /></a></td>
           </tr>
           <tr>
               <td>
@@ -4997,7 +5061,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
        border="0" align="center">
        <tbody>
            <tr>
@@ -5011,7 +5075,7 @@ export default {
                </td>
            </tr>
            <tr>
-               <td class="newsletterBottom35px">
+               <td class="newsletterFooterCategories">
                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                        <tbody>
                            <tr>
@@ -5087,7 +5151,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.dk/content/betalingsmetoder/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_dk.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.dk/content/betalingsmetoder/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_dk.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -5217,7 +5281,13 @@ export default {
                    <span class="newsletterConditions" style="color: #000000;">*Vilkår og betingelser: ${text}</span>
                </td>
            </tr>
-
+           <tr>
+               <td
+                   style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                   <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Afmeld nyhedsbrev</a>
+                   </p>
+               </td>
+           </tr>
   
        </tbody>
       </table>
@@ -5240,7 +5310,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
        border="0" align="center">
        <tbody>
            <tr>
@@ -5254,7 +5324,7 @@ export default {
                </td>
            </tr>
            <tr>
-               <td class="newsletterBottom35px">
+               <td class="newsletterFooterCategories">
                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                        <tbody>
                            <tr>
@@ -5330,7 +5400,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.dk/content/betalingsmetoder/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_dk.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.dk/content/betalingsmetoder/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_dk.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -5428,7 +5498,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->	
-      <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="max-width:650px; background-color:#ffffff; display: block;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterFooter" style="max-width:650px; background-color:#ffffff; display: block;">
           <tbody>
               <tr>
                   <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -5437,7 +5507,7 @@ export default {
                   <td class="newsletterTopBottomContainer"><span class="newsletterFooterTitle">Objevte další produkty</span></td>
               </tr>
               <tr>
-                  <td class="newsletterBottom35px">
+                  <td class="newsletterFooterCategories">
                   <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tbody>
                           <tr>
@@ -5465,7 +5535,7 @@ export default {
               </tr>
               <!--KLARNA-->
               <tr>
-                  <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.cz/content/zpusoby-platby/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_cz.png" style="display:block" width="100%" /></a></td>
+                  <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.cz/content/zpusoby-platby/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_cz.png" style="display:block" width="100%" /></a></td>
               </tr>
               <tr>
                   <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -5531,7 +5601,11 @@ export default {
               <tr>
                   <td align="left" class="newsletterTopBottomContainer"><span class="newsletterConditions" style="color: #000000;">*Podmínky: ${text}</span></td>
               </tr>
-
+              <tr>
+                  <td style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                  <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Odhlásit se</a></p>
+                  </td>
+              </tr>
           </tbody>
       </table>
       
@@ -5549,7 +5623,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->	
-      <table id="newsletter" align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="max-width:650px; background-color:#ffffff; display: block;">
+      <table id="newsletter" align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterFooter" style="max-width:650px; background-color:#ffffff; display: block;">
           <tbody>
               <tr>
                   <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -5558,7 +5632,7 @@ export default {
                   <td class="newsletterTopBottomContainer"><span class="newsletterFooterTitle">Objevte další produkty</span></td>
               </tr>
               <tr>
-                  <td class="newsletterBottom35px">
+                  <td class="newsletterFooterCategories">
                   <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tbody>
                           <tr>
@@ -5586,7 +5660,7 @@ export default {
               </tr>
               <!--KLARNA-->
               <tr>
-                  <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.cz/content/zpusoby-platby/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_cz.png" style="display:block" width="100%" /></a></td>
+                  <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.cz/content/zpusoby-platby/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_cz.png" style="display:block" width="100%" /></a></td>
               </tr>
               <tr>
                   <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -5646,7 +5720,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
        border="0" align="center">
        <tbody>
                     <tr>
@@ -5660,7 +5734,7 @@ export default {
                </td>
            </tr>
            <tr>
-               <td class="newsletterBottom35px">
+               <td class="newsletterFooterCategories">
                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                        <tbody>
                            <tr>
@@ -5736,7 +5810,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.fi/content/klarna-fi/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_fi.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.fi/content/klarna-fi/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_fi.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -5866,7 +5940,13 @@ export default {
                    <span class="newsletterConditions" style="color: #000000;">*Ehdot: ${text}</span>
                </td>
            </tr>
-
+           <tr>
+               <td
+                   style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                   <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Lopeta tilaus</a>
+                   </p>
+               </td>
+           </tr>
   
        </tbody>
       </table>
@@ -5889,7 +5969,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
        border="0" align="center">
        <tbody>
                     <tr>
@@ -5903,7 +5983,7 @@ export default {
                </td>
            </tr>
            <tr>
-               <td class="newsletterBottom35px">
+               <td class="newsletterFooterCategories">
                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                        <tbody>
                            <tr>
@@ -5979,7 +6059,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.fi/content/klarna-fi/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_fi.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.fi/content/klarna-fi/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_fi.png" style="display:block" width="100%" /></a></td>
           </tr>
            <tr>
                <td>
@@ -6077,7 +6157,7 @@ export default {
     ) => {
       const newsletter = `
       <!-- FOOTER -->
-      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
      border="0" align="center">
      <tbody>
          <tr>
@@ -6091,7 +6171,7 @@ export default {
              </td>
          </tr>
          <tr>
-             <td class="newsletterBottom35px">
+             <td class="newsletterFooterCategories">
                  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                      <tbody>
                          <tr>
@@ -6167,7 +6247,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.no/content/klarna-no/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_no.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.no/content/klarna-no/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=${id}"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_no.png" style="display:block" width="100%" /></a></td>
           </tr>
          <tr>
              <td>
@@ -6297,7 +6377,13 @@ export default {
                  <span class="newsletterConditions" style="color: #000000;">*Vilkår: ${text}</span>
              </td>
          </tr>
-
+         <tr>
+             <td
+                 style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+                 <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Avslutt abonnement</a>
+                 </p>
+             </td>
+         </tr>
   
      </tbody>
       </table>
@@ -6321,7 +6407,7 @@ export default {
       `;
       const landing = `
       <!-- FOOTER -->
-      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterContainer" cellspacing="0" cellpadding="0"
+      <table id="newsletter" style="max-width:650px; background-color:#ffffff; display: block;" class="newsletterFooter" cellspacing="0" cellpadding="0"
      border="0" align="center">
      <tbody>
          <tr>
@@ -6335,7 +6421,7 @@ export default {
              </td>
          </tr>
          <tr>
-             <td class="newsletterBottom35px">
+             <td class="newsletterFooterCategories">
                  <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
                      <tbody>
                          <tr>
@@ -6411,7 +6497,7 @@ export default {
           </tr>
           <!--KLARNA-->
           <tr>
-              <td class="newsletterTopBottomContainer"><a data-table="Klarna" data-href="Href" href="https://www.beliani.no/content/klarna-no/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_no.png" style="display:block" width="100%" /></a></td>
+              <td class="newsletterKlarnaBannerContainer"><a href="https://www.beliani.no/content/klarna-no/"><img alt="" border="0"  src="https://beliani.info/newsletter/2022/NsltBanner_no.png" style="display:block" width="100%" /></a></td>
           </tr>
          <tr>
              <td>
@@ -6509,7 +6595,7 @@ export default {
     ) => {
       const newsletter = `
       <!--FOOTER-->
-  <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="max-width:650px; background-color:#ffffff; display: block;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterFooter" style="max-width:650px; background-color:#ffffff; display: block;">
       <tbody>
           <tr>
               <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -6518,7 +6604,7 @@ export default {
               <td class="newsletterTopBottomContainer"><span class="newsletterFooterTitle">Objavte ďalšie produkty</span></td>
           </tr>
           <tr>
-              <td class="newsletterBottom35px">
+              <td class="newsletterFooterCategories">
               <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tbody>
                       <tr>
@@ -6605,7 +6691,11 @@ export default {
           <tr>
               <td align="left" class="newsletterTopBottomContainer"><span class="newsletterConditions" style="color: #000000;">*Podmienky: ${text}</span></td>
           </tr>
-
+          <tr>
+              <td style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
+              <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Zrušiť odber</a></p>
+              </td>
+          </tr>
       </tbody>
   </table>
   
@@ -6623,7 +6713,7 @@ export default {
       `;
       const landing = `
       <!--FOOTER-->
-  <table id="newsletter" align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterContainer" style="max-width:650px; background-color:#ffffff; display: block;">
+  <table id="newsletter" align="center" border="0" cellpadding="0" cellspacing="0" class="newsletterFooter" style="max-width:650px; background-color:#ffffff; display: block;">
       <tbody>
           <tr>
               <td><img alt="" src="https://beliani.info/newsletter/2022/line.jpg" style="display:block" width="100%" /></td>
@@ -6632,7 +6722,7 @@ export default {
               <td class="newsletterTopBottomContainer"><span class="newsletterFooterTitle">Objavte ďalšie produkty</span></td>
           </tr>
           <tr>
-              <td class="newsletterBottom35px">
+              <td class="newsletterFooterCategories">
               <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tbody>
                       <tr>
