@@ -227,14 +227,7 @@ export default {
                       <span class="newsletterConditions" style="color: #000000;">*Bedingungen: ${text}</span>
                   </td>
               </tr>
-              <tr>
-                  <td
-                      style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                      <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Newsletter
-                              abbestellen</a>
-                      </p>
-                  </td>
-              </tr>
+              
           </tbody>
       </table>
       <table cellspacing="0" cellpadding="0" border="0" align="center">
@@ -547,11 +540,7 @@ export default {
               <tr>
                   <td align="left" class="newsletterTopBottomContainer"><span class="newsletterConditions" style="color: #000000;">*Bedingungen: ${text}</span></td>
               </tr>
-              <tr>
-                  <td style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                  <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Newsletter abbestellen</a></p>
-                  </td>
-              </tr>
+             
           </tbody>
       </table>
       
@@ -883,13 +872,7 @@ export default {
                       <span class="newsletterConditions" style="color: #000000;">*Bedingungen: ${text}</span>
                   </td>
               </tr>
-              <tr>
-                  <td
-                      style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                      <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Newsletter abbestellen</a>
-                      </p>
-                  </td>
-              </tr>
+              
   
           </tbody>
       </table>
@@ -1319,13 +1302,7 @@ export default {
                    <span class="newsletterConditions" style="color: #000000;">*Conditions: ${text}</span>
                </td>
            </tr>
-           <tr>
-               <td
-                   style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                   <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Désabonnement</a>
-                   </p>
-               </td>
-           </tr>
+          
   
        </tbody>
       </table>
@@ -1756,13 +1733,7 @@ export default {
                   <span class="newsletterConditions" style="color: #000000;">*Conditions: ${text}</span>
               </td>
           </tr>
-          <tr>
-              <td
-                  style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                  <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Désabonnement</a>
-                  </p>
-              </td>
-          </tr>
+          
   
       </tbody>
      </table>
@@ -2192,13 +2163,7 @@ export default {
                    <span class="newsletterConditions" style="color: #000000;">*Termini e Condizioni: ${text}</span>
                </td>
            </tr>
-           <tr>
-               <td
-                   style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                   <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Annulla l’iscrizione</a>
-                   </p>
-               </td>
-           </tr>
+          
   
        </tbody>
       </table>
@@ -2643,13 +2608,7 @@ export default {
                    <span class="newsletterConditions" style="color: #000000;">*Conditions: ${text}</span>
                </td>
            </tr>
-           <tr>
-               <td
-                   style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                   <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Unsubscribe</a>
-                   </p>
-               </td>
-           </tr>
+           
   
        </tbody>
         
@@ -3083,13 +3042,7 @@ export default {
                       <span class="newsletterConditions" style="color: #000000;">*Condiciones: ${text}</span>
                   </td>
               </tr>
-              <tr>
-                  <td
-                      style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                      <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Cancelar suscripción</a>
-                      </p>
-                  </td>
-              </tr>
+              
   
           </tbody>
       </table>
@@ -3404,11 +3357,7 @@ export default {
           <tr>
               <td align="left" class="newsletterTopBottomContainer"><span class="newsletterConditions" style="color: #000000;">*Termos e Condições: ${text}</span></td>
           </tr>
-          <tr>
-              <td style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-              <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Cancelar a subscrição</a></p>
-              </td>
-          </tr>
+         
       </tbody>
   </table>
   
@@ -3749,13 +3698,7 @@ export default {
                     <span class="newsletterConditions" style="color: #000000;">*Warunki: ${text}</span>
                 </td>
             </tr>
-            <tr>
-                <td
-                    style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                    <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Wypisz się z newslettera</a>
-                    </p>
-                </td>
-            </tr>
+            
    
         </tbody>
          
@@ -4073,11 +4016,7 @@ export default {
           <tr>
               <td align="left" class="newsletterTopBottomContainer"><span class="newsletterConditions" style="color: #000000;">*Feltételek: ${text}</span></td>
           </tr>
-          <tr>
-              <td style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-              <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Leiratkozás</a></p>
-              </td>
-          </tr>
+          
       </tbody>
   </table>
   
@@ -4405,13 +4344,7 @@ export default {
                       <span class="newsletterConditions" style="color: #000000;">*Voorwaarden: ${text}</span>
                   </td>
               </tr>
-              <tr>
-                  <td
-                      style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                      <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Afmelden</a>
-                      </p>
-                  </td>
-              </tr>
+             
   
           </tbody>
       </table>
@@ -4843,13 +4776,7 @@ export default {
                   <span class="newsletterConditions" style="color: #000000;">*Villkor: ${text}</span>
               </td>
           </tr>
-          <tr>
-              <td
-                  style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                  <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Avanmäl dig</a>
-                  </p>
-              </td>
-          </tr>
+          
       </tbody>
       </table>
       <table cellspacing="0" cellpadding="0" border="0" align="center">
@@ -5281,13 +5208,7 @@ export default {
                    <span class="newsletterConditions" style="color: #000000;">*Vilkår og betingelser: ${text}</span>
                </td>
            </tr>
-           <tr>
-               <td
-                   style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                   <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Afmeld nyhedsbrev</a>
-                   </p>
-               </td>
-           </tr>
+           
   
        </tbody>
       </table>
@@ -5601,11 +5522,7 @@ export default {
               <tr>
                   <td align="left" class="newsletterTopBottomContainer"><span class="newsletterConditions" style="color: #000000;">*Podmínky: ${text}</span></td>
               </tr>
-              <tr>
-                  <td style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                  <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Odhlásit se</a></p>
-                  </td>
-              </tr>
+              
           </tbody>
       </table>
       
@@ -5940,13 +5857,7 @@ export default {
                    <span class="newsletterConditions" style="color: #000000;">*Ehdot: ${text}</span>
                </td>
            </tr>
-           <tr>
-               <td
-                   style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                   <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Lopeta tilaus</a>
-                   </p>
-               </td>
-           </tr>
+           
   
        </tbody>
       </table>
@@ -6377,13 +6288,7 @@ export default {
                  <span class="newsletterConditions" style="color: #000000;">*Vilkår: ${text}</span>
              </td>
          </tr>
-         <tr>
-             <td
-                 style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-                 <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Avslutt abonnement</a>
-                 </p>
-             </td>
-         </tr>
+        
   
      </tbody>
       </table>
@@ -6691,11 +6596,7 @@ export default {
           <tr>
               <td align="left" class="newsletterTopBottomContainer"><span class="newsletterConditions" style="color: #000000;">*Podmienky: ${text}</span></td>
           </tr>
-          <tr>
-              <td style="vertical-align: middle; text-align: center; font-size: 14px; font-family: 'Open Sans', sans-serif!important; color: #000000;">
-              <p><a href="[[newsunassignurl]]" style="text-decoration: underline; color: #000000;">Zrušiť odber</a></p>
-              </td>
-          </tr>
+          
       </tbody>
   </table>
   
