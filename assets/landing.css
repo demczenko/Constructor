@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+table {
+  table-collapse: unset;
+}
+
 #newsletter .title-advantages-item {
   margin-left: 4px;
 }
