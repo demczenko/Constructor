@@ -358,6 +358,31 @@ export function initApp({
         new_link.pathname += parsed_country_categories.join("/");
         return getQueryLink(new_link);
       },
+      getField: (data, field) => {
+        const [slugs, ...categoriesDB] = data;
+        const parsed_categories = [];
+        for (let index = 0; index < slugs.length; index++) {
+          const slug = slugs[index];
+          let parsed_category = {};
+          for (const categoryArray of categoriesDB) {
+            const key = categoryArray[0];
+            parsed_category = {
+              slug: slug,
+              [key]: categoryArray[index],
+              ...parsed_category,
+            };
+          }
+          parsed_categories.push(parsed_category);
+        }
+
+        const filterToSelectedCountry = parsed_categories.find(
+          (item) => item.slug === country
+        );
+        if (filterToSelectedCountry) {
+          return filterToSelectedCountry[field];
+        }
+        return "Not found";
+      },
       getProductFromServer: async (productId) => {
         const country_products = products.filter(
           (product) => product.country === country.toLowerCase()
