@@ -7,13 +7,13 @@ export function FreebieProduct(
   containerAlign = "center"
 ) {
   return `
-  <table cellspacing="0" cellpadding="0" style="width: 100%;" align="center">
+  <table cellspacing="0" cellpadding="0" style="width: 100%;" align=${containerAlign}>
     <tbody>
       <tr>
         <td align=${containerAlign} style="padding-top: 0px; padding-left: 0px; padding-right: 0px;">
-            <table cellspacing="0" cellpadding="0">
+          <table cellspacing="0" cellpadding="0" align=${containerAlign}>
               <tr>
-                <td>
+                <td align=${containerAlign}>
                   ${ImageWithLink(product.href, product.src, product.name)}
                 <td>
               </tr>
