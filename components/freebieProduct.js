@@ -7,7 +7,7 @@ export function FreebieProduct(
   containerAlign = "center"
 ) {
   return `
-  <table cellspacing="0" cellpadding="0" style="width: 100%;" align=${containerAlign}>
+  <table cellspacing="0" cellpadding="0" style="width: 100%; ${style ?? ""}" align=${containerAlign}>
     <tbody>
       <tr>
         <td align=${containerAlign} style="padding-top: 0px; padding-left: 0px; padding-right: 0px;">
@@ -18,7 +18,7 @@ export function FreebieProduct(
                 <td>
               </tr>
               <tr>
-                  <td align="center" style="${style ?? ""}">
+                  <td align="center">
                     <table cellspacing="0" cellpadding="0" style="width: 100%;">
                       <tbody>
                       <tr>
