@@ -8,7 +8,7 @@ export default {
     <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Gratis Lieferung & Rückversand</span>
-        <span class="title-advantages-item">✔️ Beste Auswahl</span>
+        <span class="title-advantages-item">✔️ 365 Tage Rückgaberecht</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Der Newsletter wird nicht richtig angezeigt? <a class="newsletterRecommendationHeaderLink" style="color: #000000;" href="[[newsshowurl]]">Sieh</a> dir die Online-Version an.
@@ -63,7 +63,7 @@ export default {
       <![endif]-->
         <p class="title-advantages">
             <span class="title-advantages-item">✔️ Gratis Lieferung & Rückversand</span>
-            <span class="title-advantages-item">✔️ Beste Auswahl</span>
+            <span class="title-advantages-item">✔️ 365 Tage Rückgaberecht</span>
         </p>
 
         <p class="newsletterRecommendationHeader">
@@ -119,7 +119,7 @@ export default {
       <![endif]-->
         <p class="title-advantages">
             <span class="title-advantages-item">✔️ Gratis Lieferung & Rückversand</span>
-            <span class="title-advantages-item">✔️ Beste Auswahl</span>
+            <span class="title-advantages-item">✔️ 365 Tage Rückgaberecht</span>
         </p>
         <p class="newsletterRecommendationHeader">
             Der Newsletter wird nicht richtig angezeigt? <a class="newsletterRecommendationHeaderLink" style="color: #000000;" href="[[newsshowurl]]">Sieh</a> dir die Online-Version an.
@@ -172,7 +172,7 @@ export default {
     <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Livraison & retour gratuits</span>
-        <span class="title-advantages-item">✔️ La meilleure sélection</span>
+        <span class="title-advantages-item">✔️ Droit de retour 365 jours</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Ce message n’apparaît pas, consultez la <a class="newsletterRecommendationHeaderLink" style="color: #000000;" href="[[newsshowurl]]">version en ligne.</a>
@@ -241,7 +241,7 @@ export default {
       <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Livraison & retour gratuits</span>
-        <span class="title-advantages-item">✔️ La meilleure sélection</span>
+        <span class="title-advantages-item">✔️ Droit de retour 365 jours</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Ce message n’apparaît pas, consultez la <a class="newsletterRecommendationHeaderLink" style="color: #000000;" href="[[newsshowurl]]">version en ligne.</a>
@@ -309,8 +309,8 @@ export default {
     </v:background>
     <![endif]-->
     <p class="title-advantages">
-        <span class="title-advantages-item">✔️ Spedizione e reso gratuiti</span>
-        <span class="title-advantages-item">✔️ Miglior selezione</span>
+        <span class="title-advantages-item">✔️ Spedizione e Reso Gratuiti</span>
+        <span class="title-advantages-item">✔️ Reso fino a 365 Giorni</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Non riesci a visualizzare la newsletter? Prova <a class="newsletterRecommendationHeaderLink" style="color: #000;" href="[[newsshowurl]]">la versione online.</a>
@@ -363,7 +363,7 @@ export default {
       <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Free Delivery & Return</span>
-        <span class="title-advantages-item">✔️ Best Selection</span>
+        <span class="title-advantages-item">✔️ 365-Day Returns</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Having trouble viewing Newsletter? View the <a class="newsletterRecommendationHeaderLink" style="color: #000000;" href="[[newsshowurl]]">online version.</a>
@@ -432,7 +432,7 @@ export default {
     <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Entrega & devolución gratis</span>
-        <span class="title-advantages-item">✔️ Amplia selección</span>
+        <span class="title-advantages-item">✔️ 365 días de devolución</span>
     </p>
     <p class="newsletterRecommendationHeader">
         ¿No puedes ver la Newsletter? Consulta la versión <a class="newsletterRecommendationHeaderLink" style="color: #000000;" href="[[newsshowurl]]">en línea.</a>
@@ -483,7 +483,7 @@ export default {
     <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Entrega & devolução grátis</span>
-        <span class="title-advantages-item">✔️ A melhor seleção</span>
+        <span class="title-advantages-item">✔️ Devolução até 365 dias</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Está com problemas para visualizar a Newsletter? Veja a versão <a href="[[newsshowurl]]" class="newsletterRecommendationHeaderLink" style="color: #000000;">online.</a>
@@ -538,7 +538,7 @@ export default {
     <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Darmowa dostawa i zwroty</span>
-        <span class="title-advantages-item">✔️ Najlepszy wybór</span>
+        <span class="title-advantages-item">✔️ Zwrot do 365 dni</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Przejdź do naszej <a class="newsletterRecommendationHeaderLink" style="color: #000000;" href="[[newsshowurl]]">wersji online.</a>
@@ -605,7 +605,7 @@ export default {
     <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Ingyenes szállítás és visszaküldés</span>
-        <span class="title-advantages-item">✔️ Széles választék</span>
+        <span class="title-advantages-item">✔️ 365 napos visszaküldési jog</span>
     </p>
 
     <p class="newsletterRecommendationHeader">
@@ -659,7 +659,7 @@ export default {
     <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Gratis levering & retour</span>
-        <span class="title-advantages-item">✔️ Beste selectie</span>
+        <span class="title-advantages-item">✔️ 365 dagen retourrecht</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Wordt deze nieuwsbrief niet correct weergegeven? Naar de <a class="newsletterRecommendationHeaderLink" style="color: #000000;" href="[[newsshowurl]]">online versie.</a>
@@ -712,7 +712,7 @@ export default {
     <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Fri leverans och retur</span>
-        <span class="title-advantages-item">✔️ Bästa urvalet</span>
+        <span class="title-advantages-item">✔️ 365-dagars returrätt</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Ser du inte bilderna? Gå till vår <a class="newsletterRecommendationHeaderLink" href="[[newsshowurl]]" style="color: #000;">onlineversion.</a>
@@ -765,7 +765,7 @@ export default {
     <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Gratis levering og returnering</span>
-        <span class="title-advantages-item">✔️ Bedste udvalg</span>
+        <span class="title-advantages-item">✔️ 365 dages returret</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Kan du ikke se billeder? Tjek online version <a class="newsletterRecommendationHeaderLink" style="color: #000;" href="[[newsshowurl]]">af vores webshop.</a>
@@ -818,7 +818,7 @@ export default {
       <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Doručení a vrácení zdarma</span>
-        <span class="title-advantages-item">✔️ Nejlepší výběr</span>
+        <span class="title-advantages-item">✔️ 365 dní na vrácení</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Máte problémy se zobrazením newsletteru? Tady zobrazíte <a class="newsletterRecommendationHeaderLink" style="color: #000000;" href="[[newsshowurl]]">online verzi.</a>
@@ -870,7 +870,7 @@ export default {
     <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Ilmainen toimitus ja palautus</span>
-        <span class="title-advantages-item">✔️ Paras valikoima</span>
+        <span class="title-advantages-item">✔️ 365 päivän palautusoikeus</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Eikö uutiskirje näy kunnolla? Avaa <a href="[[newsshowurl]]" class="newsletterRecommendationHeaderLink" style="color: #000000;">uutiskirje selaimessa.</a>
@@ -922,8 +922,8 @@ export default {
       </v:background>
       <![endif]-->
     <p class="title-advantages">
-        <span class="title-advantages-item">✔️ Gratis levering</span>
-        <span class="title-advantages-item">✔️ Beste utvalg</span>
+        <span class="title-advantages-item">✔️ Gratis frakt</span>
+        <span class="title-advantages-item">✔️ 365-dagers returrett</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Har du problemer med å se nyhetsbrevet? Se <a class="newsletterRecommendationHeaderLink" style="color: #000;" href="[[newsshowurl]]">online versjonen.</a>
@@ -976,7 +976,7 @@ export default {
       <![endif]-->
     <p class="title-advantages">
         <span class="title-advantages-item">✔️ Bezplatné doručenie a vrátenie</span>
-        <span class="title-advantages-item">✔️ Najlepší výber</span>
+        <span class="title-advantages-item">✔️ 365 dní na vrátenie</span>
     </p>
     <p class="newsletterRecommendationHeader">
         Máte problémy s čítaním e-mailu? Pozrite si <a class="newsletterRecommendationHeaderLink" style="color: #000;" href="[[newsshowurl]]">online verziu.</a>
