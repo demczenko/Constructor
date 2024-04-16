@@ -1703,7 +1703,7 @@ export default {
                           <tr>
                               <td>
                                   <a
-                                      href="https://www.beliani.ch/content/faq/#7._Kann_ich_die_Garantie_auf_meinen_M_beln_auch_verl_ngern_/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
+                                      href="https://www.beliani.ch/content/faq-fr/?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                       <img loading="lazy" src="https://beliani.info/newsletter/2022/chfr2023chfr_29.jpg"
                                           alt="" style="display:block" width="100%" border="0" />
                                   </a>
