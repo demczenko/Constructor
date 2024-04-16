@@ -42,7 +42,7 @@ export function FreebieProduct(
                             : ""
                         }
                         <tr>
-                          <td align="${align}" style="padding-top: 0px; padding-bottom: 8px; padding-left: 0px; padding-right: 0px; color: #000">
+                          <td align="${align}" style="color: #000">
                             <span class="newsletterProductLowPrice" >${
                               product.lowPrice
                             } </span>
