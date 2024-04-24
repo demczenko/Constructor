@@ -3063,7 +3063,7 @@ export default {
                           <b><font style="font-size: 10px;">Datos de empresa</font></b>
                           <br />
                           Beliani (DE) GmbH CH 6340 Baar Suiza<br />
-                          teléfono: 911 987 330; dirección e-mail: <a
+                          teléfono: 932 714 061; dirección e-mail: <a
                               href="mailto:mail@beliani.es">mail@beliani.es</a><br />
                           Registro comercial: Registro comercial de cantón ZUG, CHE-115.695.894<br />
                           USt-IDNr: DE 276156472
