@@ -27,11 +27,16 @@ export async function TimerGIF({
   country,
   type,
   categories,
-  background
+  background,
 }) {
   return `
-    ${Header({
+  ${Header(
+    {
       id,
+      advantages: {
+        freeDelivery: getField(queries.header, "Free Delivery"),
+        daysReturn: getField(queries.header, "365-Day Return"),
+      },
       paragraph: {
         troubleViewing: getField(queries.header, "Trouble viewing"),
         troubleViewingHrefText: getField(
@@ -41,10 +46,6 @@ export async function TimerGIF({
         addBeliani: getField(queries.header, "Add Beliani to your"),
         whiteList: getField(queries.header, "Whitelist"),
         whitelistHref: getField(queries.header, "Whitelist href"),
-      },
-      advantages: {
-        freeDelivery: getField(queries.header, "Free Delivery"),
-        daysReturn: getField(queries.header, "365-Day Return"),
       },
       topImage: {
         src: getField(queries.header, "Top image src"),
@@ -65,12 +66,19 @@ export async function TimerGIF({
         },
       },
       assembly: {
-        src: getField(queries.header, "Header asembly src"),
+        src: ["AT", "PL", "FR", "UK"].includes(country)
+          ? ["#fd9000"].includes(background)
+            ? getField(queries.header, "Header delivery_cosy src")
+            : getField(queries.header, "Header delivery src")
+          : ["#750000"].includes(background)
+          ? getField(queries.header, "Header asembly src")
+          : getField(queries.header, "Header asembly_cosy src"),
         href: getField(queries.header, "Header asembly href"),
-        exclude: ["FI", "NO", "SE", "SK"].includes(country),
+        exclude: ["SK", "CHIT", "SE", "NO", "FI"].includes(country),
       },
     },
-    {type})}
+    { type }
+  )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffccb7; color: #000;" id="newsletter">
         <tbody>
               <tr>

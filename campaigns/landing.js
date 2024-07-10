@@ -72,24 +72,55 @@ export async function landing({
   };
 
   return `
-  ${
-    country === "UK"
-      ? `
-   <table align="center" cellspacing="0" cellpadding="0" border="0"  style="margin: 0 auto; background-color:#ffffff; padding-top: 0em; padding-bottom: 0em; ">
-      <tbody>
-          <tr>
-              <td>
-                  <img src="${getField(
-                    queries.header,
-                    "Header asembly src"
-                  )}" border="0" alt="M&ouml;bel" style="display:block; max-width: 100%;" />
-              </td>
-          </tr>
-      </tbody>
-  </table>
-  `
-      : ""
-  }
+  ${Header(
+    {
+      id,
+      advantages: {
+        freeDelivery: getField(queries.header, "Free Delivery"),
+        daysReturn: getField(queries.header, "365-Day Return"),
+      },
+      paragraph: {
+        troubleViewing: getField(queries.header, "Trouble viewing"),
+        troubleViewingHrefText: getField(
+          queries.header,
+          "Trouble viewing href text"
+        ),
+        addBeliani: getField(queries.header, "Add Beliani to your"),
+        whiteList: getField(queries.header, "Whitelist"),
+        whitelistHref: getField(queries.header, "Whitelist href"),
+      },
+      topImage: {
+        src: getField(queries.header, "Top image src"),
+        href: getField(queries.header, "Top image href"),
+      },
+      categories: {
+        firstCategory: {
+          src: getField(queries.header, "Header Category 1 src"),
+          href: getField(queries.header, "Header Category 1 href"),
+        },
+        secondCategory: {
+          src: getField(queries.header, "Header Category 2 src"),
+          href: getField(queries.header, "Header Category 2 href"),
+        },
+        thirdCategory: {
+          src: getField(queries.header, "Header Category 3 src"),
+          href: getField(queries.header, "Header Category 3 href"),
+        },
+      },
+      assembly: {
+        src: ["AT", "PL", "FR", "UK"].includes(country)
+          ? ["#fd9000"].includes(background)
+            ? getField(queries.header, "Header delivery_cosy src")
+            : getField(queries.header, "Header delivery src")
+          : ["#750000"].includes(background)
+          ? getField(queries.header, "Header asembly src")
+          : getField(queries.header, "Header asembly_cosy src"),
+        href: getField(queries.header, "Header asembly href"),
+        exclude: ["SK", "CHIT", "SE", "NO", "FI"].includes(country),
+      },
+    },
+    { type }
+  )}
   <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 650px; width: 100%; background-color: #ffccb7; color: #000;" id="newsletter">
   <tbody>
       <tr>

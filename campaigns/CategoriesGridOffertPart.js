@@ -34,6 +34,10 @@ export async function CategoriesGridOffertPart({
   ${Header(
     {
       id,
+      advantages: {
+        freeDelivery: getField(queries.header, "Free Delivery"),
+        daysReturn: getField(queries.header, "365-Day Return"),
+      },
       paragraph: {
         troubleViewing: getField(queries.header, "Trouble viewing"),
         troubleViewingHrefText: getField(
@@ -43,10 +47,6 @@ export async function CategoriesGridOffertPart({
         addBeliani: getField(queries.header, "Add Beliani to your"),
         whiteList: getField(queries.header, "Whitelist"),
         whitelistHref: getField(queries.header, "Whitelist href"),
-      },
-      advantages: {
-        freeDelivery: getField(queries.header, "Free Delivery"),
-        daysReturn: getField(queries.header, "365-Day Return"),
       },
       topImage: {
         src: getField(queries.header, "Top image src"),
