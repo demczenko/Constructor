@@ -310,7 +310,7 @@ export function Footer(sections, options) {
                   <!--KLARNA-->
                     <tr>
                         <td class="newsletterTopBottomContainer">
-                            <a href="${href}">
+                            <a href="${href}?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
                                 <img alt="" border="0"  src="${src}" style="display:block; max-width: 100%;"/>
                             </a>
                         </td>
