@@ -109,7 +109,19 @@ export function Header(sections, options) {
                 </table>`,
       },
       [types.LANDINGPAGE]: {
-        value: () => "",
+        value: (
+          assembly
+        ) => `<table align="center" cellspacing="0" cellpadding="0" border="0"  style="margin: 0 auto; background-color:#ffffff; padding-top: 0em; padding-bottom: 0em; ">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="${assembly.href}">
+                                    <img src="${assembly.src}" border="0" alt="" style="display:block; max-width: 100%;" />
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>`,
       },
     },
   };
