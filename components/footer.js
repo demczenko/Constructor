@@ -75,7 +75,7 @@ export function Footer(sections, options) {
                         <tr>
                             <td>
                                 <a href="${href}?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                <img loading="lazy" src="${src}" style="display: block; max-width: 100%;">
+                                <img loading="lazy" src="${src}" style="display: block; max-width: 610px;">
                                 </a>
                             </td>
                         </tr>
