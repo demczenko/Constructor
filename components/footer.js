@@ -18,7 +18,7 @@ export function Footer(sections, options) {
                 <tr>
                     <td>
                         <a href="${href}">
-                            <img loading="lazy" src="${src}" width="610" style="display: block; max-width: 610px;">
+                            <img loading="lazy" src="${src}" width="610" style="display: block; max-width: 610px; width: 100%;">
                         </a>
                     </td>
                 </tr>
@@ -43,7 +43,7 @@ export function Footer(sections, options) {
                 <tr>
                     <td>
                         <a href="${href}">
-                          <img loading="lazy" src="${src}" style="display: block; max-width: 610px;">
+                          <img loading="lazy" src="${src}" style="display: block; max-width: 610px; widht: 100%;">
                         </a>
                     </td>
                 </tr>
@@ -75,7 +75,7 @@ export function Footer(sections, options) {
                         <tr>
                             <td>
                                 <a href="${href}?utm_source=newsletter&utm_medium=email&utm_campaign=${id}">
-                                <img loading="lazy" src="${src}" style="display: block; max-width: 610px;">
+                                <img loading="lazy" src="${src}" style="display: block; max-width: 610px; width: 100%;">
                                 </a>
                             </td>
                         </tr>
