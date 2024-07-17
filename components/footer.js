@@ -43,7 +43,7 @@ export function Footer(sections, options) {
                 <tr>
                     <td>
                         <a href="${href}">
-                          <img loading="lazy" src="${src}" style="display: block; max-width: 610px; widht: 100%;">
+                          <img loading="lazy" src="${src}" style="display: block; max-width: 610px; width: 100%;">
                         </a>
                     </td>
                 </tr>
